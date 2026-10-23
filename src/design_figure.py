@@ -41,7 +41,7 @@ def main():
         ["BASE: adviser role + menu", "+ JSON format", "SUIT: BASE + suitability", "protocol (C1-C5 -> R cap)"],
         "treat")
     box(ax, c2, 0.05, w, 1.15, "4  Three LLMs",
-        ["Doubao, DeepSeek, Kimi", "via Volcano Ark (one key)", "same settings, JSON mode", "random call order",
+        ["Doubao, DeepSeek, Kimi", "via OpenRouter (pinned)", "same settings, JSON mode", "random call order",
          "2,508 planned calls"], "treat")
     box(ax, c3, 0.55, w, 1.35, "5  Log and code",
         ["append-only raw log", "prompt hashes, model ID,", "tokens, timestamps", "", "rule-based coding:",

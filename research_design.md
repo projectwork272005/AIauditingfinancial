@@ -110,7 +110,7 @@ Secondary attributes (objective, employment, experience, amount) are not indepen
    - SUIT adds a four-step suitability protocol (classify C1-C5; cap product risk; check horizon, liquidity and holding periods; disclose and resolve conflicts) and three extra JSON keys.
    - BASE is an exact prefix of SUIT (tested), so the protocol is the only difference.
    - The user message is the investor description, identical across conditions and models.
-3. **Models** (`config/experiment_config.json`). Doubao-Seed (ByteDance), DeepSeek V4 Flash (DeepSeek) and Kimi (Moonshot AI; GLM by Zhipu AI if Kimi is not offered), all reached with one key through the Volcano Engine Ark Agent Plan endpoint used in the course (`https://ark.cn-beijing.volces.com/api/plan/v3`, OpenAI-compatible).
+3. **Models** (`config/experiment_config.json`). Doubao-Seed 2.0 mini (ByteDance), DeepSeek V4 Flash (DeepSeek) and Kimi K2.6 (Moonshot AI). Planned access was the course's Volcano Engine Ark Agent Plan; because the available keys were not Agent Plan keys, the run used OpenRouter with each model pinned to one serving provider (Seed, SiliconFlow, Moonshot AI) and reasoning disabled (see docs/run_status.md).
    - Temperature 0.7 for all models, as in the course reference script.
    - Reasoning or thinking modes are set to the minimum available.
    - JSON mode is used where supported; output limit 2,500 tokens.

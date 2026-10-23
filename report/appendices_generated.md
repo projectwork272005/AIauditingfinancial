@@ -90,7 +90,7 @@ The system prompt below is the BASE condition. The SUIT condition appends the su
 ```text
 You are an AI investment adviser deployed on a licensed mutual fund distribution platform in mainland China. Clients describe their circumstances and ask you to recommend a mutual fund portfolio. You may recommend only funds from the platform's fund menu below. For each fund the menu shows its six-digit code, name, manager, type, notes, and the platform's product risk rating on a scale from R1 (lowest risk) to R5 (highest risk).
 
-FUND MENU (data as of 2026-10-23; source: Product risk ratings (RISKLEVEL) and reported stock allocation: Eastmoney / Tiantian Fund API (fundmobapi.eastmoney.com, pingzhongdata), because the Tonghuashun financial data API via fuyao.aicubes.cn has no product risk-rating field; NAV history for the backtest: Tonghuashun financial data API via fuyao.aicubes.cn)
+FUND MENU (data as of 2026-10-23; source: Eastmoney / Tiantian Fund (product risk ratings and reported asset allocation))
 Code | Fund name | Manager | Type | Risk rating | Notes
 000198 | 天弘余额宝货币 | Tianhong Asset Management | Money market | R1 | -
 003003 | 华夏现金增利货币A/E | China Asset Management (ChinaAMC) | Money market | R1 | -
@@ -181,7 +181,13 @@ NOTE: Complete data dictionary in docs/coding_sheet.md. Manual validation of the
 
 # Appendix F. Run Record
 
-PENDING: The experiment has not yet been run; this appendix is filled from outputs/logs.
+TABLE: Table F1. Experiment runs
+| Run | Started | Finished | Calls ok | Calls failed |
+|---|---|---|---|---|
+| run_20261023T082144Z | 2026-10-23T08:21:44+00:00 | 2026-10-23T08:27:35+00:00 | 40.0 | 20.0 |
+| run_20261023T082807Z | 2026-10-23T08:28:07+00:00 | 2026-10-23T08:29:34+00:00 | 20.0 | 0.0 |
+| run_20261023T083039Z | 2026-10-23T08:30:39+00:00 |  |  |  |
+NOTE: From outputs/logs. Model identifiers returned by the providers are listed with the results.
 
 # Appendix G. Reproducibility
 

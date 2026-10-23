@@ -22,7 +22,7 @@ This statement discloses how AI tools were used in the project. It distinguishes
 
 ## 2. AI as the object of study
 
-The audited models are named in `config/experiment_config.json`: Doubao-Seed (ByteDance), DeepSeek V4 Flash (DeepSeek) and Kimi (Moonshot AI; GLM by Zhipu AI as fallback), all reached through the Volcano Engine Ark Agent Plan as instructed by the course. Each is called through its provider's API with fixed, logged settings. Their replies are **data**, stored verbatim in `outputs/raw/`. Model-generated recommendations are always labelled as such and are never presented as financial advice or as statements of fact.
+The audited models are named in `config/experiment_config.json`: Doubao-Seed (ByteDance), DeepSeek V4 Flash (DeepSeek) and Kimi (Moonshot AI; GLM by Zhipu AI as fallback), Doubao-Seed 2.0 mini, DeepSeek V4 Flash and Kimi K2.6, reached through OpenRouter after the course's Volcano Engine Ark Agent Plan route could not be used (docs/run_status.md). Each is called through its provider's API with fixed, logged settings. Their replies are **data**, stored verbatim in `outputs/raw/`. Model-generated recommendations are always labelled as such and are never presented as financial advice or as statements of fact.
 
 ## 3. Synthetic and real data
 

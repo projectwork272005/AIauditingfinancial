@@ -96,7 +96,7 @@ TABLE: Table 1. Design overview and planned observations
 |---|---|---|---|
 | Investor attributes (between investors) | Horizon (5) x risk tolerance (5) x age band (8), one investor per cell | 200 investors | - |
 | Prompt condition (within investor) | BASE vs SUIT (BASE plus suitability protocol) | 2 | - |
-| Model (within investor) | Doubao, DeepSeek, Kimi (via Volcano Ark) | 3 | - |
+| Model (within investor) | Doubao, DeepSeek, Kimi | 3 | - |
 | Main sample | Investors x conditions x models | 200 investors | 1,200 |
 | Consistency module | 40 investors, two extra replicates | 40 investors | 480 |
 | Probe module | 10 anchors x 16 single-attribute versions | 138 distinct texts | 828 |
@@ -185,18 +185,19 @@ Each request has two messages. The system message plays the platform's deploymen
 
 ## 7.2 Models and configuration
 
-Three models from three Chinese developers are audited (Table 6): Doubao-Seed (ByteDance), DeepSeek V4 Flash (DeepSeek) and Kimi (Moonshot AI). All three are reached with one key through the Volcano Engine Ark Agent Plan, the access route specified for the course, using its OpenAI-compatible endpoint with identical messages and settings. Exact identifiers are taken from the plan's model list and recorded with the identifier returned in every response, because hosted models change without notice. Temperature is 0.7 for every model, as in the course's reference script; sampling is therefore stochastic, which the consistency module measures directly.
+Three models from three Chinese developers are audited (Table 6): Doubao-Seed 2.0 mini (ByteDance), DeepSeek V4 Flash (DeepSeek) and Kimi K2.6 (Moonshot AI). The course specified access through the Volcano Engine Ark Agent Plan. That route could not be used: the keys available to the group were ordinary Ark keys, which the Agent Plan endpoint rejected, and the pay-as-you-go alternative required a verification step the account holder could not complete. The same three model families were therefore called through OpenRouter, an OpenAI-compatible gateway. Each model was pinned to a single serving provider with fallbacks disabled, so every reply for a model comes from the same deployment: ByteDance's own Seed service, Moonshot AI's own service, and SiliconFlow for DeepSeek, for which no first-party provider was offered. Every call uses identical messages and settings, and the provider and model identifier returned with each reply are logged. Temperature is 0.7 for every model, as in the course's reference script, so sampling is stochastic; the consistency module measures this directly. Reasoning modes were disabled for all three models. For Kimi this was done after the pilot, where the model spent its whole output allowance on hidden reasoning and returned no answer; the 20 failed pilot calls remain in the log.
 
 TABLE: Table 6. Model configuration
-| Setting | Doubao | DeepSeek | Kimi (fallback: GLM) |
+| Setting | Doubao | DeepSeek | Kimi |
 |---|---|---|---|
-| Developer | ByteDance | DeepSeek | Moonshot AI (Zhipu AI) |
-| Model identifier | doubao-seed-2.0-mini, confirmed at run time | Flash tier, recorded at run time | Recorded at run time |
+| Developer | ByteDance | DeepSeek | Moonshot AI |
+| Model identifier | bytedance-seed/seed-2.0-mini | deepseek/deepseek-v4-flash | moonshotai/kimi-k2.6 |
+| Serving provider (pinned) | Seed (ByteDance) | SiliconFlow | Moonshot AI |
 | Temperature | 0.7 | 0.7 | 0.7 |
-| Reasoning | Thinking disabled | Thinking disabled | Endpoint default, recorded |
+| Reasoning | Disabled | Disabled | Disabled |
 | Output | JSON mode, up to 2,500 tokens | Same | Same |
 | Retries | 5 attempts, exponential back-off, 180 s timeout | Same | Same |
-NOTE: Access through the Volcano Engine Ark Agent Plan endpoint (https://ark.cn-beijing.volces.com/api/plan/v3). Settings are in config/experiment_config.json; any parameter a model rejects is dropped and the change is recorded per call.
+NOTE: Access through OpenRouter (https://openrouter.ai/api/v1) on 23 October 2026, after the Volcano Engine Ark Agent Plan route failed (docs/run_status.md). Settings are in config/experiment_config.json; the serving provider is recorded for every call.
 
 ## 7.3 Execution, coding and historical check
 

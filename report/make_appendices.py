@@ -20,8 +20,9 @@ from prompts import SUIT_BLOCK, USER_TEMPLATE, build_system_prompt  # noqa: E402
 
 def md_table(df: pd.DataFrame) -> str:
     lines = ["| " + " | ".join(df.columns) + " |", "|" + "---|" * len(df.columns)]
-    for row in df.astype(str).itertuples(index=False):
-        lines.append("| " + " | ".join(v.replace("|", "/") for v in row) + " |")
+    for row in df.itertuples(index=False):
+        cells = ["" if (v is None or (isinstance(v, float) and pd.isna(v))) else str(v) for v in row]
+        lines.append("| " + " | ".join(c.replace("|", "/") for c in cells) + " |")
     return "\n".join(lines)
 
 
