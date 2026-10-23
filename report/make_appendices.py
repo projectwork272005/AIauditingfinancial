@@ -141,8 +141,10 @@ def main():
         recs = [json.loads(m.read_text(encoding="utf-8")) for m in manifests]
         out += ["TABLE: Table F1. Experiment runs",
                 md_table(pd.DataFrame([{"Run": r["run_id"], "Started": r.get("started"), "Finished": r.get("finished"),
-                                        "Calls ok": r.get("ok"), "Calls failed": r.get("failed")} for r in recs])),
-                "NOTE: From outputs/logs. Model identifiers returned by the providers are listed with the results.", ""]
+                                        "Calls ok": r.get("ok"), "Calls failed": r.get("failed")} for r in recs]).astype(str)),
+                ("NOTE: From outputs/logs. The first two runs are the 60-call pilot: 20 Kimi calls failed with reasoning "
+                 "enabled and were retried after it was disabled. Model identifiers and serving providers are in Table 6; "
+                 "per-model calls and token usage are in docs/run_status.md."), ""]
     else:
         out += ["PENDING: The experiment has not yet been run; this appendix is filled from outputs/logs.", ""]
 
@@ -150,7 +152,7 @@ def main():
             "All code, data and logs are in the project repository. The samples are regenerated exactly with "
             "`python src/generate_profiles.py` (seed 20261022) and checked with `python src/validate_profiles.py`. "
             "The experiment runs with `python src/run_experiment.py`; coding, back-test, analysis and figures follow "
-            "with `code_responses.py`, `backtest.py`, `analysis.py` and `figures.py`. Every table and figure in "
+            "with `code_responses.py`, `backtest.py`, `analysis.py` and `figures.py`, and `report/report_supplement.py` writes the supplementary tables T22 to T25 cited in Section 9. Every table and figure in "
             "Sections 9 to 11 is produced by these scripts from the raw logs; no number is typed by hand. "
             "Automated tests (`python -m pytest tests`) check the parser, the suitability rules, the back-test "
             "arithmetic and the full pipeline on fixture data.", ""]

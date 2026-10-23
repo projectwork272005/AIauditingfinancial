@@ -184,14 +184,14 @@ NOTE: Complete data dictionary in docs/coding_sheet.md. Manual validation of the
 TABLE: Table F1. Experiment runs
 | Run | Started | Finished | Calls ok | Calls failed |
 |---|---|---|---|---|
-| run_20261023T082144Z | 2026-10-23T08:21:44+00:00 | 2026-10-23T08:27:35+00:00 | 40.0 | 20.0 |
-| run_20261023T082807Z | 2026-10-23T08:28:07+00:00 | 2026-10-23T08:29:34+00:00 | 20.0 | 0.0 |
-| run_20261023T083039Z | 2026-10-23T08:30:39+00:00 |  |  |  |
-NOTE: From outputs/logs. Model identifiers returned by the providers are listed with the results.
+| run_20261023T082144Z | 2026-10-23T08:21:44+00:00 | 2026-10-23T08:27:35+00:00 | 40 | 20 |
+| run_20261023T082807Z | 2026-10-23T08:28:07+00:00 | 2026-10-23T08:29:34+00:00 | 20 | 0 |
+| run_20261023T083039Z | 2026-10-23T08:30:39+00:00 | 2026-10-23T10:16:40+00:00 | 2508 | 0 |
+NOTE: From outputs/logs. The first two runs are the 60-call pilot: 20 Kimi calls failed with reasoning enabled and were retried after it was disabled. Model identifiers and serving providers are in Table 6; per-model calls and token usage are in docs/run_status.md.
 
 # Appendix G. Reproducibility
 
-All code, data and logs are in the project repository. The samples are regenerated exactly with `python src/generate_profiles.py` (seed 20261022) and checked with `python src/validate_profiles.py`. The experiment runs with `python src/run_experiment.py`; coding, back-test, analysis and figures follow with `code_responses.py`, `backtest.py`, `analysis.py` and `figures.py`. Every table and figure in Sections 9 to 11 is produced by these scripts from the raw logs; no number is typed by hand. Automated tests (`python -m pytest tests`) check the parser, the suitability rules, the back-test arithmetic and the full pipeline on fixture data.
+All code, data and logs are in the project repository. The samples are regenerated exactly with `python src/generate_profiles.py` (seed 20261022) and checked with `python src/validate_profiles.py`. The experiment runs with `python src/run_experiment.py`; coding, back-test, analysis and figures follow with `code_responses.py`, `backtest.py`, `analysis.py` and `figures.py`, and `report/report_supplement.py` writes the supplementary tables T22 to T25 cited in Section 9. Every table and figure in Sections 9 to 11 is produced by these scripts from the raw logs; no number is typed by hand. Automated tests (`python -m pytest tests`) check the parser, the suitability rules, the back-test arithmetic and the full pipeline on fixture data.
 
 # Appendix H. AI Use Statement
 

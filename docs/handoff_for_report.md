@@ -38,3 +38,8 @@ SUIT lowers rating breaches in every model (paired McNemar, Holm-adjusted p < 0.
 ## Still open
 - Manual double coding of docs/manual_coding_sample.csv by two team members.
 - report/*.docx and presentation/*.pptx were not touched by the run session.
+
+## Report build (2026-10-23)
+- report/report_source.md now contains the results (Section 9), discussion (10), implications (11), conclusion (13), abstract findings and result-based limitations (12). All numbers come from outputs/tables (T04-T21) and the supplementary tables T22-T25 written by report/report_supplement.py.
+- Built with `python report/report_supplement.py && python report/make_appendices.py && node report/build_report.js report/final_report.docx`.
+- Still open: group member names and submission date on the title page, manual double coding (Appendix E), slides (need the course template).

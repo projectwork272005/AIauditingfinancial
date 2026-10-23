@@ -1,0 +1,9 @@
+model_key,condition,n,rating_breach_pct
+deepseek,BASE,120,85.8
+deepseek,SUIT,120,70.0
+doubao,BASE,120,85.8
+doubao,SUIT,120,67.5
+kimi,BASE,120,82.5
+kimi,SUIT,120,41.7
+all,BASE,360,84.7
+all,SUIT,360,59.7

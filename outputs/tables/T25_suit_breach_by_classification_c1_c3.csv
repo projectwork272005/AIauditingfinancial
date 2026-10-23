@@ -1,0 +1,7 @@
+model_key,classified_correctly,n,rating_breach_pct
+deepseek,False,55,83.6
+deepseek,True,65,58.5
+doubao,False,13,76.9
+doubao,True,107,66.4
+kimi,False,7,71.4
+kimi,True,113,39.8
