@@ -50,3 +50,4 @@ config menu.as_of = 2026-10-23; menu.source states both sources (the planned wor
 - `python src/run_experiment.py --dry-run`: 2,508 planned calls, 0 completed, estimated 4.01 M input tokens.
 
 Needed to continue: an Agent Plan API Key (Agent Plan console, with an active Agent Plan subscription) in `AI_agents`. Steps 3-6 not started; no model output exists.
+- 2026-10-23, second key supplied for `AI_agents`: identical results (plan endpoint 401 in OpenAI and Anthropic formats; /api/v3 404 model not activated; /api/coding/v3 400 InvalidSubscription for account 2133393355). It is also a regular Ark key, not an Agent Plan key.
