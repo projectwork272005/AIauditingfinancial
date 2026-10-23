@@ -5,7 +5,7 @@
   "menu": {
     "path": "data/fund_menu.csv",
     "as_of": "2026-10-23",
-    "source": "Product risk ratings (RISKLEVEL) and reported stock allocation: Eastmoney / Tiantian Fund API (fundmobapi.eastmoney.com, pingzhongdata), because the Tonghuashun financial data API via fuyao.aicubes.cn has no product risk-rating field; NAV history for the backtest: Tonghuashun financial data API via fuyao.aicubes.cn"
+    "source": "Eastmoney / Tiantian Fund (product risk ratings and reported asset allocation)"
   },
   "conditions": [
     "BASE",
@@ -39,8 +39,80 @@
   "models": [
     {
       "key": "doubao",
-      "label": "Doubao-Seed (ByteDance)",
+      "label": "Doubao-Seed 2.0 mini (ByteDance) via OpenRouter",
       "enabled": true,
+      "route": "openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "bytedance-seed/seed-2.0-mini",
+      "api_key_env": "OPENROUTER_API_KEY",
+      "concurrency": 4,
+      "temperature": 0.7,
+      "max_tokens_param": "max_tokens",
+      "extra_body": {
+        "reasoning": {
+          "enabled": false
+        },
+        "provider": {
+          "order": [
+            "Seed"
+          ],
+          "allow_fallbacks": false
+        }
+      },
+      "model_note": "OpenRouter used because Volcano Engine Ark could not be used: the supplied keys were not Agent Plan keys, and pay-as-you-go endpoints require Chinese real-name verification. Provider pinned (allow_fallbacks false) for reproducibility."
+    },
+    {
+      "key": "deepseek",
+      "label": "DeepSeek V4 Flash (DeepSeek) via OpenRouter",
+      "enabled": true,
+      "route": "openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "deepseek/deepseek-v4-flash",
+      "api_key_env": "OPENROUTER_API_KEY",
+      "concurrency": 4,
+      "temperature": 0.7,
+      "max_tokens_param": "max_tokens",
+      "extra_body": {
+        "reasoning": {
+          "enabled": false
+        },
+        "provider": {
+          "order": [
+            "SiliconFlow"
+          ],
+          "allow_fallbacks": false
+        }
+      },
+      "model_note": "OpenRouter used because Volcano Engine Ark could not be used: the supplied keys were not Agent Plan keys, and pay-as-you-go endpoints require Chinese real-name verification. Provider pinned (allow_fallbacks false) for reproducibility."
+    },
+    {
+      "key": "kimi",
+      "label": "Kimi K2.6 (Moonshot AI) via OpenRouter",
+      "enabled": true,
+      "route": "openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "moonshotai/kimi-k2.6",
+      "api_key_env": "OPENROUTER_API_KEY",
+      "concurrency": 4,
+      "temperature": 0.7,
+      "max_tokens_param": "max_tokens",
+      "extra_body": {
+        "reasoning": {
+          "enabled": false
+        },
+        "provider": {
+          "order": [
+            "Moonshot AI"
+          ],
+          "allow_fallbacks": false
+        }
+      },
+      "model_note": "OpenRouter used because Volcano Engine Ark could not be used: the supplied keys were not Agent Plan keys, and pay-as-you-go endpoints require Chinese real-name verification. Provider pinned (allow_fallbacks false) for reproducibility. Reasoning disabled as for doubao and deepseek: in the pilot, default reasoning used all 2,500 output tokens (finish_reason length, empty content) on 20/20 calls."
+    },
+    {
+      "key": "doubao",
+      "label": "Doubao-Seed (ByteDance)",
+      "enabled": false,
       "route": "ark-agent-plan",
       "base_url": "https://ark.cn-beijing.volces.com/api/plan/v3",
       "model": "doubao-seed-2.0-mini",
@@ -62,7 +134,7 @@
     {
       "key": "deepseek",
       "label": "DeepSeek V4 Flash (DeepSeek)",
-      "enabled": true,
+      "enabled": false,
       "route": "ark-agent-plan",
       "base_url": "https://ark.cn-beijing.volces.com/api/plan/v3",
       "model": "deepseek-v4-flash",
@@ -84,7 +156,7 @@
     {
       "key": "kimi",
       "label": "Kimi (Moonshot AI)",
-      "enabled": true,
+      "enabled": false,
       "route": "ark-agent-plan",
       "base_url": "https://ark.cn-beijing.volces.com/api/plan/v3",
       "model": "kimi-k2.8-preview",
@@ -174,19 +246,6 @@
       "extra_body": {
         "reasoning_effort": "none"
       }
-    },
-    {
-      "key": "deepseek",
-      "label": "DeepSeek Flash via OpenRouter",
-      "enabled": false,
-      "route": "alternative-openrouter",
-      "base_url": "https://openrouter.ai/api/v1",
-      "model": "SET_AFTER_LISTING_MODELS",
-      "api_key_env": "OPENROUTER_API_KEY",
-      "concurrency": 6,
-      "temperature": 1.0,
-      "max_tokens_param": "max_tokens",
-      "extra_body": {}
     },
     {
       "key": "qwen",

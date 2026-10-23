@@ -51,3 +51,25 @@ config menu.as_of = 2026-10-23; menu.source states both sources (the planned wor
 
 Needed to continue: an Agent Plan API Key (Agent Plan console, with an active Agent Plan subscription) in `AI_agents`. Steps 3-6 not started; no model output exists.
 - 2026-10-23, second key supplied for `AI_agents`: identical results (plan endpoint 401 in OpenAI and Anthropic formats; /api/v3 404 model not activated; /api/coding/v3 400 InvalidSubscription for account 2133393355). It is also a regular Ark key, not an Agent Plan key.
+
+## Step 2 (revised) - models via OpenRouter
+
+Volcano Engine Ark could not be used: both keys supplied for `AI_agents` were ordinary Ark keys rejected by the Agent Plan endpoint, and the pay-as-you-go route needs custom inference endpoints, which require Chinese real-name verification that the account holder cannot complete. The same three model families were therefore called through OpenRouter (https://openrouter.ai/api/v1, key in `OPENROUTER_API_KEY`). Config: the ark-agent-plan entries are disabled, three `route: openrouter` entries are enabled; the unused alternative-openrouter deepseek template was removed.
+
+| key | model ID | provider (pinned, allow_fallbacks false) | reasoning |
+|---|---|---|---|
+| doubao | bytedance-seed/seed-2.0-mini | Seed (ByteDance; the only provider) | disabled |
+| deepseek | deepseek/deepseek-v4-flash | SiliconFlow (fp8; no first-party DeepSeek provider on OpenRouter) | disabled |
+| kimi | moonshotai/kimi-k2.6 | Moonshot AI (first party) | disabled |
+
+Prices on 2026-10-23 (USD per 1M input / output tokens): seed-2.0-mini 0.10 / 0.40; deepseek-v4-flash 0.091 / 0.182; kimi-k2.6 0.65 / 3.41. Kimi was chosen over GLM because a Kimi chat model is available. Temperature 0.7, max_tokens 2500 and JSON mode unchanged.
+
+Other changes:
+- config menu.source shortened to "Eastmoney / Tiantian Fund (product risk ratings and reported asset allocation)", because this string is inserted into the system prompt ("FUND MENU (data as of ...; source: ...)"); the longer explanation is in Step 1 above. NAV data are not shown to the models.
+- src/llm_client.py: the serving provider returned by OpenRouter is logged in `provider`.
+
+## Step 3 - pilot (60 calls, 2026-10-23)
+
+- First pass: doubao 20/20 and deepseek 20/20 ok; kimi 0/20, every call finish_reason "length" with 2,499 of 2,500 completion tokens spent on reasoning and empty content (Kimi reasons by default on OpenRouter). Reasoning was then disabled for kimi, matching the other two models (the original Ark config also disabled thinking for doubao and deepseek). The 20 failed records stay in outputs/raw/calls_kimi.jsonl; the rerun retried them: 20/20 ok.
+- `python src/code_responses.py`: 60 replies coded, 0 issues; parse_status ok 60/60; off-menu codes 0; weight sum 100 in every reply; funds per reply: doubao mean 5.0, deepseek 4.75, kimi 5.85 (range 3-7).
+- Cost per successful call: doubao USD 0.00040, deepseek 0.00031, kimi 0.00277; forecast for the main run (836 calls per model) USD 2.91. Pilot spend including the failed kimi calls: about USD 0.28.

@@ -94,6 +94,7 @@ def chat(model_cfg: dict, gen_cfg: dict, system: str, user: str) -> dict:
                     "content": content,
                     "finish_reason": choice.get("finish_reason"),
                     "model_returned": data.get("model"),
+                    "provider": data.get("provider"),  # serving provider (OpenRouter)
                     "response_id": data.get("id"),
                     "system_fingerprint": data.get("system_fingerprint"),
                     "usage": data.get("usage") or {},

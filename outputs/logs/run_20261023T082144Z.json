@@ -1,0 +1,95 @@
+{
+  "run_id": "run_20261023T082144Z",
+  "started": "2026-10-23T08:21:44+00:00",
+  "args": {
+    "models": null,
+    "samples": [
+      "pilot"
+    ],
+    "conditions": null,
+    "max_calls": null,
+    "dry_run": false,
+    "list_models": false
+  },
+  "python": "3.14.6 | packaged by Anaconda, Inc. | (main, Jul  9 2026, 14:30:20) [Clang 20.1.8 ]",
+  "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+  "n_pending": 60,
+  "system_prompt_sha256": {
+    "BASE": "b24ca10a9bf328d451f045e47ae7d75c56a29165820f4cd431f70cf68a43a77c",
+    "SUIT": "aa82ecf724fbc7bf16d0caf7de2ce7abfe3ebdab10fad7910e0f73a3740f092d"
+  },
+  "models": [
+    {
+      "key": "doubao",
+      "label": "Doubao-Seed 2.0 mini (ByteDance) via OpenRouter",
+      "enabled": true,
+      "route": "openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "bytedance-seed/seed-2.0-mini",
+      "api_key_env": "OPENROUTER_API_KEY",
+      "concurrency": 4,
+      "temperature": 0.7,
+      "max_tokens_param": "max_tokens",
+      "extra_body": {
+        "reasoning": {
+          "enabled": false
+        },
+        "provider": {
+          "order": [
+            "Seed"
+          ],
+          "allow_fallbacks": false
+        }
+      },
+      "model_note": "OpenRouter used because Volcano Engine Ark could not be used: the supplied keys were not Agent Plan keys, and pay-as-you-go endpoints require Chinese real-name verification. Provider pinned (allow_fallbacks false) for reproducibility."
+    },
+    {
+      "key": "deepseek",
+      "label": "DeepSeek V4 Flash (DeepSeek) via OpenRouter",
+      "enabled": true,
+      "route": "openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "deepseek/deepseek-v4-flash",
+      "api_key_env": "OPENROUTER_API_KEY",
+      "concurrency": 4,
+      "temperature": 0.7,
+      "max_tokens_param": "max_tokens",
+      "extra_body": {
+        "reasoning": {
+          "enabled": false
+        },
+        "provider": {
+          "order": [
+            "SiliconFlow"
+          ],
+          "allow_fallbacks": false
+        }
+      },
+      "model_note": "OpenRouter used because Volcano Engine Ark could not be used: the supplied keys were not Agent Plan keys, and pay-as-you-go endpoints require Chinese real-name verification. Provider pinned (allow_fallbacks false) for reproducibility."
+    },
+    {
+      "key": "kimi",
+      "label": "Kimi K2.6 (Moonshot AI) via OpenRouter",
+      "enabled": true,
+      "route": "openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "moonshotai/kimi-k2.6",
+      "api_key_env": "OPENROUTER_API_KEY",
+      "concurrency": 4,
+      "temperature": 0.7,
+      "max_tokens_param": "max_tokens",
+      "extra_body": {
+        "provider": {
+          "order": [
+            "Moonshot AI"
+          ],
+          "allow_fallbacks": false
+        }
+      },
+      "model_note": "OpenRouter used because Volcano Engine Ark could not be used: the supplied keys were not Agent Plan keys, and pay-as-you-go endpoints require Chinese real-name verification. Provider pinned (allow_fallbacks false) for reproducibility."
+    }
+  ],
+  "finished": "2026-10-23T08:27:35+00:00",
+  "ok": 40,
+  "failed": 20
+}
