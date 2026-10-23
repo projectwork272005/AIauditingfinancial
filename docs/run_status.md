@@ -78,3 +78,44 @@ Other changes:
 
 - `python src/backtest.py fetch --source fuyao` (2026-10-23): 23/23 funds, range=fyear, adj_nav, dates 2021-10-20/22 to 2026-09-30 (window end fixed at 2026-09-30 by backtest.py).
 - adj_nav check against unit_nav from the same raw files: adj_nav includes distributions. Examples over the five years: 000015 unit -2.1% vs adj +17.5%; 100018 +0.9% vs +17.9%; 110017 +2.2% vs +22.4%; 161725 -61.6% vs -59.5%; money market funds unit 0% vs adj +7.4% to +7.7%. Funds with adj_nav equal to unit_nav throughout (e.g. 110020, 000083, 163406) show no distribution in the window.
+
+## Step 4 - main run (2026-10-23)
+
+- `python src/run_experiment.py` (main + consistency + probe): run run_20261023T083039Z, 2,508 planned, 2,508 succeeded, 0 failed in that run; a final `--dry-run` reports 0 pending. The Mac slept for about 48 minutes during the run (lid closed); the process resumed after wake without failed calls.
+- Calls in the logs (pilot included), first start 08:21:44 UTC, last finish 10:16:40 UTC:
+
+| model | model returned | provider | records | ok | failed | prompt tokens | completion tokens | cost (USD, OpenRouter usage.cost) |
+|---|---|---|---|---|---|---|---|---|
+| doubao | bytedance-seed/seed-2.0-mini | Seed | 856 | 856 | 0 | 1,345,286 | 496,250 | 0.333 |
+| deepseek | deepseek/deepseek-v4-flash | SiliconFlow | 856 | 856 | 0 | 1,170,044 | 429,478 | 0.232 |
+| kimi | moonshotai/kimi-k2.6 | Moonshot AI | 876 | 856 | 20 (pilot, reasoning) | 1,205,036 | 529,593 | 2.561 |
+| total | | | 2,588 | 2,568 | 20 | 3,720,366 | 1,455,321 | 3.126 |
+
+Each model: 836 successful calls in main + consistency + probe and 20 in the pilot.
+
+## Step 5 - analysis
+
+- `python src/code_responses.py`: 2,568 replies coded, 5 issues (outputs/coding_issues.csv): 3 doubao replies are malformed JSON from the model (a value without a key inside a portfolio entry; finish_reason stop), parse_status failed; 2 deepseek replies contain one off-menu code each (005827, 000218). Not systematic, so the parser was not changed.
+- `python src/backtest.py fetch --source fuyao` (see above) and `evaluate`: 2,565 portfolios back-tested over 2021-11-01 to 2026-09-30 (59 months).
+- `python src/analysis.py`: 18 tables plus results_digest.md. Warnings: scipy ConstantInputWarning in the Spearman alignment (T08) for cells where an attribute or equity share is constant; the coefficient is then undefined (NaN).
+- `python src/figures.py`: figures F01-F08.
+- `python src/sample_for_manual_coding.py`: 60 replies to docs/manual_coding_sample.csv. Code fix: pandas 3 drops grouping columns inside groupby().apply, which raised KeyError; replaced by an explicit loop over groups with the same per-cell sample(random_state=7). Tests: 11 passed.
+- Sanity checks on the main sample: 200 replies per model x condition (doubao SUIT 199 coded, 1 unparseable); weight sums 100 in every coded reply; equity share 0-95%; weighted and maximum risk 1-4 (menu has no R5 fund); 51 coded replies list fewer than 3 funds (the prompt asks for 3-8; recorded by fund_count_ok, not altered).
+
+## Step 6 - main results (from outputs/tables/T11 and T13; main sample)
+
+| model | condition | n | rating breach % | equity over cap % | holding-period breach % | loss-tolerance breach % | mean equity % |
+|---|---|---|---|---|---|---|---|
+| deepseek | BASE | 200 | 51.5 | 22.0 | 0.5 | 1.0 | 32.0 |
+| deepseek | SUIT | 200 | 42.0 | 16.0 | 0.0 | 1.0 | 28.7 |
+| doubao | BASE | 200 | 51.5 | 20.5 | 0.0 | 0.0 | 31.0 |
+| doubao | SUIT | 199 | 40.7 | 13.1 | 0.0 | 0.0 | 24.7 |
+| kimi | BASE | 200 | 49.5 | 18.5 | 0.0 | 0.0 | 28.0 |
+| kimi | SUIT | 200 | 25.0 | 11.5 | 0.0 | 0.0 | 23.0 |
+
+(mean equity % for doubao is over the 199 paired units in T13.) Paired BASE vs SUIT tests (T13, Holm-adjusted): rating breach falls in all three models (deepseek -9.5 points, p_holm < 0.001; doubao -11.1, p_holm < 0.001; kimi -24.5, p_holm < 0.001), equity over cap falls by 6-7 points (p_holm 0.012-0.029), equity share falls by 3.4 (deepseek), 6.3 (doubao) and 5.0 (kimi) points. Model differences in rating breach: BASE Cochran's Q p = 0.29; SUIT Q = 45.2, p < 0.001.
+
+## Unresolved / notes for the report
+- Models were called via OpenRouter, not Volcano Engine Ark (see Step 2 revised); reasoning disabled for all three.
+- Risk ratings are Eastmoney's (distributor) ratings; the menu has no R5 fund (R1 3, R2 4, R3 2, R4 14).
+- Manual coding of docs/manual_coding_sample.csv (two human coders) is still to be done by the team.

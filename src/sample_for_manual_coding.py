@@ -24,8 +24,9 @@ def main():
     for flag, n in ((True, 30), (False, 30)):
         pool = res[res["profile_risk_horizon_conflict"] == flag]
         per_cell = max(1, n // pool.groupby(["model_key", "condition"]).ngroups)
-        part = pool.groupby(["model_key", "condition"], group_keys=False).apply(
-            lambda g: g.sample(min(len(g), per_cell), random_state=7))
+        # explicit loop: pandas >= 3 drops grouping columns inside groupby().apply
+        part = pd.concat([g.sample(min(len(g), per_cell), random_state=7)
+                          for _, g in pool.groupby(["model_key", "condition"])])
         picks.append(part.head(n))
     sample = pd.concat(picks)
     replies = {}

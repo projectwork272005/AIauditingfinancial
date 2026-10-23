@@ -1,0 +1,7 @@
+model_key,condition,rating_breach_pct,equity_over_cap_pct,holding_period_breach_pct,loss_tolerance_breach_pct,n,mean_breach_weight,mean_excess_equity
+deepseek,BASE,51.5,22.0,0.5,1.0,200,20.0,5.921112794117648
+deepseek,SUIT,42.0,16.0,0.0,1.0,200,14.625,4.4160525
+doubao,BASE,51.5,20.5,0.0,0.0,200,21.375,6.5464975
+doubao,SUIT,40.7035175879397,13.06532663316583,0.0,0.0,199,12.989949748743719,3.759221105527638
+kimi,BASE,49.5,18.5,0.0,0.0,200,16.4,4.0934159999999995
+kimi,SUIT,25.0,11.5,0.0,0.0,200,8.125,1.768425

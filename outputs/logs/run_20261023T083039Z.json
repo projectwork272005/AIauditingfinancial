@@ -93,5 +93,8 @@
       },
       "model_note": "OpenRouter used because Volcano Engine Ark could not be used: the supplied keys were not Agent Plan keys, and pay-as-you-go endpoints require Chinese real-name verification. Provider pinned (allow_fallbacks false) for reproducibility. Reasoning disabled as for doubao and deepseek: in the pilot, default reasoning used all 2,500 output tokens (finish_reason length, empty content) on 20/20 calls."
     }
-  ]
+  ],
+  "finished": "2026-10-23T10:16:40+00:00",
+  "ok": 2508,
+  "failed": 0
 }

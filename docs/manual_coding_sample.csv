@@ -1,0 +1,1176 @@
+call_id,model_key,condition,risk_class,horizon_band,reply_text,coder_1,coder_2,mentions_conflict_terms
+deepseek|BASE|main|INV-170|r1,deepseek,BASE,C5,H2,"{
+  ""portfolio"": [
+    {
+      ""code"": ""000083"",
+      ""fund_name"": ""汇添富消费行业混合"",
+      ""weight_pct"": 15,
+      ""reason"": ""Consumer sector offers growth potential aligned with your aggressive risk tolerance.""
+    },
+    {
+      ""code"": ""163406"",
+      ""fund_name"": ""兴全合润混合A"",
+      ""weight_pct"": 20,
+      ""reason"": ""Active equity fund provides diversified exposure to growth companies.""
+    },
+    {
+      ""code"": ""260108"",
+      ""fund_name"": ""景顺长城新兴成长混合A"",
+      ""weight_pct"": 15,
+      ""reason"": ""Growth-oriented fund targets high-return opportunities in emerging sectors.""
+    },
+    {
+      ""code"": ""110020"",
+      ""fund_name"": ""易方达沪深300ETF联接A"",
+      ""weight_pct"": 15,
+      ""reason"": ""Broad market index captures overall equity market upside.""
+    },
+    {
+      ""code"": ""160119"",
+      ""fund_name"": ""南方中证500ETF联接(LOF)A"",
+      ""weight_pct"": 15,
+      ""reason"": ""Mid-cap index adds diversification and higher growth potential.""
+    },
+    {
+      ""code"": ""270042"",
+      ""fund_name"": ""广发纳斯达克100ETF联接人民币(QDII)A"",
+      ""weight_pct"": 10,
+      ""reason"": ""Offshore tech exposure enhances return potential and global diversification.""
+    },
+    {
+      ""code"": ""000216"",
+      ""fund_name"": ""华安黄金ETF联接A"",
+      ""weight_pct"": 10,
+      ""reason"": ""Gold acts as a hedge against market volatility and inflation.""
+    }
+  ],
+  ""dca_recommended"": true,
+  ""rebalancing_rule"": ""Rebalance quarterly or if any asset class drifts more than 5 percentage points from target."",
+  ""risk_warnings"": [
+    ""Your 2-year horizon is short for a high-equity portfolio; a market downturn could significantly reduce your savings when you need them."",
+    ""Equity funds can experience declines of 40% or more, which may jeopardize your car purchase and moving plans."",
+    ""QDII funds involve currency risk and overseas market volatility."",
+    ""This portfolio is not suitable for capital preservation; prioritize your liquidity needs over aggressive growth.""
+  ],
+  ""explanation"": ""This portfolio is heavily weighted toward equities to match your very aggressive risk tolerance and long-term return priority, with some gold for diversification. However, your 2-year horizon is short for such high-risk assets, so you should consider whether potential losses are acceptable for your planned car purchase and moving costs. Regular investment (DCA) and disciplined rebalancing can help manage volatility.""
+}",,,False
+deepseek|BASE|main|INV-033|r1,deepseek,BASE,C4,H2,"{
+  ""portfolio"": [
+    {
+      ""code"": ""000198"",
+      ""fund_name"": ""天弘余额宝货币"",
+      ""weight_pct"": 10,
+      ""reason"": ""Provides liquidity and stability for near-term needs.""
+    },
+    {
+      ""code"": ""110017"",
+      ""fund_name"": ""易方达增强回报债券A"",
+      ""weight_pct"": 20,
+      ""reason"": ""Enhances income with moderate risk, balancing the portfolio.""
+    },
+    {
+      ""code"": ""110020"",
+      ""fund_name"": ""易方达沪深300ETF联接A"",
+      ""weight_pct"": 30,
+      ""reason"": ""Provides broad domestic equity exposure for growth.""
+    },
+    {
+      ""code"": ""000071"",
+      ""fund_name"": ""华夏恒生ETF联接(QDII)A"",
+      ""weight_pct"": 15,
+      ""reason"": ""Adds offshore equity diversification with Hong Kong exposure.""
+    },
+    {
+      ""code"": ""270042"",
+      ""fund_name"": ""广发纳斯达克100ETF联接人民币(QDII)A"",
+      ""weight_pct"": 15,
+      ""reason"": ""Offers growth potential via US tech leaders.""
+    },
+    {
+      ""code"": ""000216"",
+      ""fund_name"": ""华安黄金ETF联接A"",
+      ""weight_pct"": 10,
+      ""reason"": ""Acts as a hedge against inflation and market volatility.""
+    }
+  ],
+  ""dca_recommended"": true,
+  ""rebalancing_rule"": ""Rebalance semi-annually or if any asset class drifts by more than 5 percentage points from target."",
+  ""risk_warnings"": [
+    ""Equity funds can decline by more than 25% in a short period, which exceeds your stated tolerance."",
+    ""QDII funds carry currency and overseas market risks."",
+    ""Gold prices can be volatile and may not always hedge equity losses."",
+    ""With a 2-year horizon, market recovery is uncertain; you may not recoup losses before withdrawal.""
+  ],
+  ""explanation"": ""This portfolio aims for growth with a moderate risk overlay, allocating 60% to equities (domestic and overseas) and 40% to bonds, cash, and gold to cushion volatility. Given your aggressive stance and 2-year horizon, the equity portion is kept below the maximum to reduce the chance of a large shortfall at the goal date. The inclusion of liquid assets and bonds provides some stability, while gold and overseas equities add diversification.""
+}",,,False
+deepseek|BASE|main|INV-168|r1,deepseek,BASE,C4,H1,"{
+  ""portfolio"": [
+    {
+      ""code"": ""000198"",
+      ""fund_name"": ""天弘余额宝货币"",
+      ""weight_pct"": 70,
+      ""reason"": ""Provides high liquidity and capital preservation for tuition payment due within 3 months.""
+    },
+    {
+      ""code"": ""006662"",
+      ""fund_name"": ""易方达安悦超短债债券A"",
+      ""weight_pct"": 20,
+      ""reason"": ""Offers slightly higher yield than money market while maintaining short duration and low volatility.""
+    },
+    {
+      ""code"": ""000015"",
+      ""fund_name"": ""华夏纯债债券A"",
+      ""weight_pct"": 10,
+      ""reason"": ""Adds modest income potential with low risk, suitable for a short-term horizon.""
+    }
+  ],
+  ""dca_recommended"": false,
+  ""rebalancing_rule"": ""No rebalancing needed due to short horizon; review at maturity if funds are not withdrawn."",
+  ""risk_warnings"": [
+    ""Although you have an aggressive risk tolerance, the 3-month horizon and high liquidity need make equity exposure unsuitable."",
+    ""Even bond funds can experience minor fluctuations; choose low-duration funds to minimize price risk."",
+    ""This portfolio prioritizes capital preservation over growth, which is necessary given the imminent tuition payment.""
+  ],
+  ""explanation"": ""Given the 3-month horizon and high liquidity need, the portfolio is heavily weighted toward money market and ultra-short bond funds to ensure the tuition funds are available. A small allocation to a pure bond fund adds a bit of income while keeping risk low. Despite your aggressive stance, the short time frame does not allow recovery from equity losses, so equities are excluded.""
+}",,,False
+deepseek|BASE|main|INV-014|r1,deepseek,BASE,C5,H1,"{
+  ""portfolio"": [
+    {
+      ""code"": ""000198"",
+      ""fund_name"": ""天弘余额宝货币"",
+      ""weight_pct"": 100,
+      ""reason"": ""Given the 3-month horizon and high liquidity need, a money market fund preserves capital and ensures availability for the renovation.""
+    }
+  ],
+  ""dca_recommended"": false,
+  ""rebalancing_rule"": ""No rebalancing needed due to the short horizon and single-fund allocation."",
+  ""risk_warnings"": [
+    ""The stated aggressive risk tolerance conflicts with the short 3-month horizon and high liquidity need; investing in equities could lead to significant losses before withdrawal."",
+    ""Money market funds are not risk-free but are appropriate for capital preservation over this period.""
+  ],
+  ""explanation"": ""Although you describe a very aggressive risk tolerance, the investment horizon is only about 3 months and you need to withdraw most of the money for a home renovation. Such a short period does not allow recovery from market drops, so capital preservation is paramount. A 100% allocation to a money market fund ensures the funds are available when needed, despite your long-term aggressive preference.""
+}",,,True
+deepseek|BASE|main|INV-037|r1,deepseek,BASE,C5,H2,"{
+  ""portfolio"": [
+    {""code"": ""000198"", ""fund_name"": ""天弘余额宝货币"", ""weight_pct"": 10, ""reason"": ""Provides liquidity and stability for near-term travel and family support needs.""},
+    {""code"": ""006662"", ""fund_name"": ""易方达安悦超短债债券A"", ""weight_pct"": 10, ""reason"": ""Adds low-risk income with minimal duration risk, suitable for a short horizon.""},
+    {""code"": ""110020"", ""fund_name"": ""易方达沪深300ETF联接A"", ""weight_pct"": 25, ""reason"": ""Offers broad domestic equity exposure for high return potential.""},
+    {""code"": ""000071"", ""fund_name"": ""华夏恒生ETF联接(QDII)A"", ""weight_pct"": 20, ""reason"": ""Diversifies into Hong Kong equities with growth potential.""},
+    {""code"": ""270042"", ""fund_name"": ""广发纳斯达克100ETF联接人民币(QDII)A"", ""weight_pct"": 20, ""reason"": ""Provides exposure to US tech growth, aligning with aggressive return goals.""},
+    {""code"": ""000216"", ""fund_name"": ""华安黄金ETF联接A"", ""weight_pct"": 15, ""reason"": ""Adds a non-correlated asset to hedge against equity volatility and inflation.""}
+  ],
+  ""dca_recommended"": false,
+  ""rebalancing_rule"": ""Rebalance semi-annually or if any asset class drifts by more than 5 percentage points from target."",
+  ""risk_warnings"": [
+    ""The portfolio has high equity exposure and can experience temporary declines exceeding 40%, which may impact your planned withdrawals."",
+    ""QDII funds carry currency risk and overseas market volatility."",
+    ""Your investment horizon is short (1.5 years), and high volatility may not align with your goal timing despite your stated risk tolerance.""
+  ],
+  ""explanation"": ""Given your very aggressive risk tolerance and focus on maximum returns, the portfolio is heavily weighted toward equities (70% across domestic and offshore indexes) with a small cash/bond buffer for liquidity. Gold adds diversification. However, the 1.5-year horizon creates significant risk of loss, so the cash/bond portion helps meet near-term needs if markets fall.""
+}",,,False
+deepseek|SUIT|main|INV-072|r1,deepseek,SUIT,C5,H2,"{
+  ""portfolio"": [
+    {
+      ""code"": ""000198"",
+      ""fund_name"": ""天弘余额宝货币"",
+      ""weight_pct"": 10,
+      ""reason"": ""Provides liquidity and stability for near-term goal.""
+    },
+    {
+      ""code"": ""000015"",
+      ""fund_name"": ""华夏纯债债券A"",
+      ""weight_pct"": 15,
+      ""reason"": ""Adds defensive bond exposure to cushion equity volatility.""
+    },
+    {
+      ""code"": ""110020"",
+      ""fund_name"": ""易方达沪深300ETF联接A"",
+      ""weight_pct"": 25,
+      ""reason"": ""Core broad-market equity exposure for long-term growth.""
+    },
+    {
+      ""code"": ""160119"",
+      ""fund_name"": ""南方中证500ETF联接(LOF)A"",
+      ""weight_pct"": 20,
+      ""reason"": ""Adds mid-cap growth potential to enhance returns.""
+    },
+    {
+      ""code"": ""001592"",
+      ""fund_name"": ""天弘创业板ETF联接A"",
+      ""weight_pct"": 15,
+      ""reason"": ""High-growth ChiNext exposure aligns with aggressive risk appetite.""
+    },
+    {
+      ""code"": ""000071"",
+      ""fund_name"": ""华夏恒生ETF联接(QDII)A"",
+      ""weight_pct"": 15,
+      ""reason"": ""Diversifies into Hong Kong equities for additional growth.""
+    }
+  ],
+  ""dca_recommended"": true,
+  ""rebalancing_rule"": ""Rebalance quarterly or if any asset class drifts by more than 5 percentage points from target."",
+  ""risk_warnings"": [
+    ""This portfolio can lose over 40% in a year due to high equity exposure."",
+    ""QDII funds carry currency and overseas market risks."",
+    ""The 1.5-year horizon is short for equities; a market downturn near withdrawal could reduce the amount available."",
+    ""Sector and growth index funds (ChiNext, Hang Seng) are more volatile than broad market funds.""
+  ],
+  ""explanation"": ""Your very aggressive risk tolerance justifies a high-equity portfolio, but the 1.5-year horizon for a home upgrade creates a conflict because equities are typically suited to longer horizons. I allocate a small defensive sleeve (money market and bonds) to preserve some capital for the goal, while the majority in broad and growth equity index funds aims for maximum growth. The portfolio is designed to match your willingness to accept large drawdowns, but you should be aware that short-term losses could affect your planned withdrawal."",
+  ""risk_class_assessed"": ""C5"",
+  ""suitability_check"": ""All funds are rated R4 or lower, which is within your C5 risk class; however, the 1.5-year horizon is shorter than ideal for equity-heavy portfolios, so a small defensive allocation is added."",
+  ""conflicts_identified"": [
+    ""Very aggressive risk tolerance conflicts with a short 1.5-year investment horizon for a planned home upgrade; resolved by including a defensive sleeve while keeping most funds in equities.""
+  ]
+}",,,True
+deepseek|SUIT|main|INV-168|r1,deepseek,SUIT,C4,H1,"{
+  ""portfolio"": [
+    {
+      ""code"": ""000198"",
+      ""fund_name"": ""天弘余额宝货币"",
+      ""weight_pct"": 80,
+      ""reason"": ""Provides high liquidity and capital preservation for the tuition payment due in three months.""
+    },
+    {
+      ""code"": ""006662"",
+      ""fund_name"": ""易方达安悦超短债债券A"",
+      ""weight_pct"": 20,
+      ""reason"": ""Offers slightly higher yield than money market while maintaining low volatility and short duration suitable for a 3-month horizon.""
+    }
+  ],
+  ""dca_recommended"": false,
+  ""rebalancing_rule"": ""No rebalancing needed due to very short horizon; keep funds in low-risk instruments until withdrawal."",
+  ""risk_warnings"": [
+    ""Even low-risk bond funds can experience minor price fluctuations, though unlikely to cause losses over 3 months."",
+    ""Your aggressive risk tolerance conflicts with the short-term liquidity need; the portfolio prioritizes capital safety over growth.""
+  ],
+  ""explanation"": ""Given the 3-month horizon and high liquidity need for tuition, the portfolio is allocated to money market and ultra-short bond funds to preserve capital while earning modest returns. Despite your aggressive stance, the short-term necessity overrides growth objectives, as any equity exposure could jeopardize the required funds."",
+  ""risk_class_assessed"": ""C2"",
+  ""suitability_check"": ""Client's short horizon and high liquidity need require low-risk instruments; all recommended funds are R1/R2, consistent with a C2 risk class, and have no minimum holding period."",
+  ""conflicts_identified"": [
+    ""Aggressive risk tolerance conflicts with the 3-month investment horizon and high liquidity need; resolved in favor of capital preservation.""
+  ]
+}",,,True
+deepseek|SUIT|main|INV-087|r1,deepseek,SUIT,C4,H1,"{
+  ""portfolio"": [
+    {
+      ""code"": ""000198"",
+      ""fund_name"": ""天弘余额宝货币"",
+      ""weight_pct"": 100,
+      ""reason"": ""The investment horizon is only 6 months with high liquidity need, so a money market fund provides stability and immediate access.""
+    }
+  ],
+  ""dca_recommended"": false,
+  ""rebalancing_rule"": ""No rebalancing needed; review the fund before the renovation date to ensure liquidity."",
+  ""risk_warnings"": [
+    ""The portfolio is very conservative despite your stated aggressive risk tolerance, because the 6-month horizon conflicts with the need for high liquidity and the risk of a 25% decline."",
+    ""You have no investment experience; a sudden market drop could cause you to panic, even though you say you would hold."",
+    ""Money market funds are not guaranteed; returns can fluctuate, though principal risk is very low.""
+  ],
+  ""explanation"": ""Given your 6-month horizon and high liquidity need for the renovation, capital preservation is paramount. Although you stated an aggressive risk tolerance, the short time frame does not allow recovery from a market downturn, so the suitable portfolio is 100% in a money market fund. This ensures the funds will be available when needed, with minimal risk."",
+  ""risk_class_assessed"": ""C1"",
+  ""suitability_check"": ""The client's 6-month horizon and high liquidity need require a C1 risk class, limiting to R1 funds, which aligns with the money market fund selected."",
+  ""conflicts_identified"": [
+    ""The client's aggressive risk tolerance conflicts with the short 6-month horizon and high liquidity need; the short horizon takes precedence to protect the renovation funds.""
+  ]
+}",,,True
+deepseek|SUIT|main|INV-122|r1,deepseek,SUIT,C5,H1,"{
+  ""portfolio"": [
+    {
+      ""code"": ""000198"",
+      ""fund_name"": ""天弘余额宝货币"",
+      ""weight_pct"": 100,
+      ""reason"": ""Given the 9-month horizon and high liquidity need, capital preservation is essential; money market funds offer stability and immediate access.""
+    }
+  ],
+  ""dca_recommended"": false,
+  ""rebalancing_rule"": ""No rebalancing needed as the portfolio is 100% in a money market fund."",
+  ""risk_warnings"": [
+    ""The client's stated very aggressive risk tolerance conflicts with the short investment horizon and high liquidity need."",
+    ""Equity funds could lose more than 40% in a year, jeopardizing the renovation funds."",
+    ""Money market funds provide low returns but protect principal, which is appropriate for a 9-month goal.""
+  ],
+  ""explanation"": ""Although you are very aggressive, your 9-month horizon and need to withdraw most of the money make high-risk investments unsuitable. A money market fund (R1) ensures the renovation funds are available when needed, with minimal risk. This prioritizes your liquidity need over long-term return, as the short horizon does not allow recovery from market declines."",
+  ""risk_class_assessed"": ""C1"",
+  ""suitability_check"": ""Only R1 funds are suitable because the investment horizon is under one year and liquidity need is high; higher-risk funds exceed the appropriate risk level."",
+  ""conflicts_identified"": [
+    ""Very aggressive risk tolerance conflicts with short horizon and high liquidity need; resolved in favor of capital preservation.""
+  ]
+}",,,True
+deepseek|SUIT|main|INV-098|r1,deepseek,SUIT,C5,H1,"{
+  ""portfolio"": [
+    {
+      ""code"": ""000198"",
+      ""fund_name"": ""天弘余额宝货币"",
+      ""weight_pct"": 100,
+      ""reason"": ""Given the 9-month horizon and high liquidity need, the money market fund preserves capital and ensures availability for the car purchase.""
+    }
+  ],
+  ""dca_recommended"": false,
+  ""rebalancing_rule"": ""No rebalancing is needed as the portfolio is a single money market fund."",
+  ""risk_warnings"": [
+    ""The investment horizon is too short for high-risk equity funds; a market decline could significantly reduce the amount available for the car purchase."",
+    ""Despite your aggressive risk tolerance, the priority for this specific goal is capital preservation due to the short horizon."",
+    ""Money market funds are not risk-free but offer low volatility and high liquidity.""
+  ],
+  ""explanation"": ""Your stated risk tolerance is very aggressive, but your investment horizon is only 9 months and you need to withdraw most of the money for a planned car purchase. High-risk funds could lose 40% or more, jeopardizing your goal. Therefore, I recommend a money market fund (R1) to protect your capital while providing easy access at the end of the horizon."",
+  ""risk_class_assessed"": ""C1"",
+  ""suitability_check"": ""The recommended fund (R1) is within the assessed C1 risk class and matches the short horizon and high liquidity need."",
+  ""conflicts_identified"": [
+    ""Very aggressive risk tolerance conflicts with the short 9-month horizon and high liquidity need for a planned purchase; the short horizon takes precedence to protect the capital.""
+  ]
+}",,,True
+doubao|BASE|main|INV-062|r1,doubao,BASE,C4,H1,"{
+  ""portfolio"": [
+    {""code"": ""000198"", ""fund_name"": ""天弘余额宝货币"", ""weight_pct"": 40, ""reason"": ""Highly liquid money market fund to cover near-term needs and preserve principal for the upcoming car purchase in 6 months.""},
+    {""code"": ""000015"", ""fund_name"": ""华夏纯债债券A"", ""weight_pct"": 20, ""reason"": ""Low-volatility pure bond fund to generate modest returns while maintaining stable value for the short investment horizon.""},
+    {""code"": ""000083"", ""fund_name"": ""汇添富消费行业混合"", ""weight_pct"": 20, ""reason"": ""Equity-oriented active hybrid fund focused on consumer sectors, suitable for the client's aggressive risk tolerance and long-term growth goal within the 6-month window.""},
+    {""code"": ""001592"", ""fund_name"": ""天弘创业板ETF联接A"", ""weight_pct"": 20, ""reason"": ""Growth index fund tracking the ChiNext, aligned with the client's aggressive risk tolerance and growth objective to enhance potential returns over the short horizon.""}
+  ],
+  ""dca_recommended"": false,
+  ""rebalancing_rule"": ""No rebalancing is needed for this 6-month short-term portfolio; the portfolio will be liquidated in full at the end of the 6-month horizon to meet the car purchase funding need."",
+  ""risk_warnings"": [
+    ""The equity and sector-focused components of this portfolio have high volatility, and while the client can tolerate a 25% temporary decline, the 6-month horizon may not be sufficient to recover from significant market drops."",
+    ""The bond fund is subject to interest rate risk, which could impact its short-term returns."",
+    ""Money market fund returns are low and may not outpace inflation over the short term.""
+  ],
+  ""explanation"": ""This portfolio is tailored to the client's 6-month car purchase goal, aggressive risk tolerance, and 8 years of investment experience. The money market and pure bond components provide the necessary liquidity and principal preservation for the near-term withdrawal, while the equity-oriented hybrid and growth index funds capture potential growth to align with the client's stated growth priority. The short investment horizon means no rebalancing is required, and the portfolio is structured to meet the full liquidity need at the end of the period.""
+}",,,False
+doubao|BASE|main|INV-197|r1,doubao,BASE,C5,H2,"{
+  ""portfolio"": [
+    {""code"": ""000083"", ""fund_name"": ""汇添富消费行业混合"", ""weight_pct"": 35, ""reason"": ""This equity-oriented active hybrid fund focuses on the consumer sector with high growth potential to pursue strong returns.""},
+    {""code"": ""161725"", ""fund_name"": ""招商中证白酒指数(LOF)A"", ""weight_pct"": 25, ""reason"": ""This sector index fund tracks the CSI Liquor Index, a high-growth segment with robust performance potential.""},
+    {""code"": ""260108"", ""fund_name"": ""景顺长城新兴成长混合A"", ""weight_pct"": 20, ""reason"": ""This equity-oriented active hybrid fund targets high-growth companies, aligning with your goal of maximum returns.""},
+    {""code"": ""050025"", ""fund_name"": ""博时标普500ETF联接(QDII)A"", ""weight_pct"": 10, ""reason"": ""This offshore index fund tracks the S&P 500, providing diversified exposure to developed market equities for enhanced return potential.""},
+    {""code"": ""000216"", ""fund_name"": ""华安黄金ETF联接A"", ""weight_pct"": 10, ""reason"": ""This gold feeder fund adds a hedge against market volatility while maintaining exposure to growth assets.""}
+  ],
+  ""dca_recommended"": false,
+  ""rebalancing_rule"": ""No rebalancing is required given the 1.5-year short investment horizon; the portfolio will be liquidated in full upon the goal's maturity."",
+  ""risk_warnings"": [
+    ""The portfolio has significant exposure to equities and sector-specific assets, which are highly volatile and may experience sharp short-term declines, including the 40% temporary loss you noted you can accept."",
+    ""The QDII fund carries currency risk due to exposure to overseas markets and fluctuating exchange rates."",
+    ""The 1.5-year investment horizon is relatively short for high-growth assets, so the portfolio may not be able to fully recover from market downturns before your planned withdrawal date.""
+  ],
+  ""explanation"": ""This portfolio is tailored to your very aggressive risk tolerance and priority of maximum returns, with 90% allocated to high-growth domestic and international equities and 10% to a gold hedge. The sector-focused and broad-market equity funds align with your 3 years of investment experience, while the 1.5-year horizon is accommodated by a full liquidation strategy rather than rebalancing. It fits your goal of funding a home upgrade by targeting the highest possible returns from growth-oriented assets, while accounting for your stated willingness to tolerate significant temporary declines.""
+}",,,False
+doubao|BASE|main|INV-078|r1,doubao,BASE,C5,H1,"{
+  ""portfolio"": [
+    {""code"": ""000198"", ""fund_name"": ""天弘余额宝货币"", ""weight_pct"": 30, ""reason"": ""Highly liquid money market fund to cover near-term planned expenses and preserve principal""},
+    {""code"": ""000015"", ""fund_name"": ""华夏纯债债券A"", ""weight_pct"": 25, ""reason"": ""Low-volatility pure bond fund providing stable modest returns with low risk""},
+    {""code"": ""110017"", ""fund_name"": ""易方达增强回报债券A"", ""weight_pct"": 20, ""reason"": ""Enhanced-return bond fund with slightly higher yield and moderate risk compared to pure bonds""},
+    {""code"": ""000083"", ""fund_name"": ""汇添富消费行业混合"", ""weight_pct"": 15, ""reason"": ""Equity-oriented active hybrid fund focused on consumer sector, offering growth potential""},
+    {""code"": ""050025"", ""fund_name"": ""博时标普500ETF联接(QDII)A"", ""weight_pct"": 10, ""reason"": ""Offshore index fund tracking S&P 500 for additional global growth exposure""}
+  ],
+  ""dca_recommended"": false,
+  ""rebalancing_rule"": ""No rebalancing is needed before the 9-month horizon; the portfolio will be adjusted as needed to ensure sufficient liquidity for withdrawal at the end of the period"",
+  ""risk_warnings"": [
+    ""The equity and QDII components of the portfolio carry significant market volatility risk, and temporary declines of up to 40% are possible as stated, though the 9-month horizon may not align with long-term growth expectations"",
+    ""QDII funds involve currency risk, meaning exchange rate fluctuations may affect returns when converting back to CNY for withdrawal"",
+    ""While the money market and bond funds aim to preserve capital, the equity allocation exposes the portfolio to stock market downturns, including a potential 20% decline as noted""
+  ],
+  ""explanation"": ""This portfolio balances the client's high liquidity need for planned expenses in 9 months with their stated aggressive risk tolerance and long-term growth priority. The majority allocation to money market and pure/enhanced bond funds ensures that a large portion of the investment is low-risk and accessible when needed, while the smaller equity and global index allocations seek to capture higher growth potential. The allocation aligns with the client's 9-month time frame, prioritizing liquidity for planned withdrawals while still incorporating growth assets as they are willing to accept significant short-term volatility.""
+}",,,False
+doubao|BASE|main|INV-184|r1,doubao,BASE,C5,H2,"{
+  ""portfolio"": [
+    {""code"": ""000083"", ""fund_name"": ""汇添富消费行业混合"", ""weight_pct"": 40, ""reason"": ""Equity-oriented active hybrid focused on consumer sectors, with strong growth potential to pursue high long-term returns matching your aggressive risk tolerance""},
+    {""code"": ""161725"", ""fund_name"": ""招商中证白酒指数(LOF)A"", ""weight_pct"": 25, ""reason"": ""Sector index fund tracking the CSI Liquor Index, offering concentrated exposure to a high-growth consumer sector aligned with your return goal""},
+    {""code"": ""001592"", ""fund_name"": ""天弘创业板ETF联接A"", ""weight_pct"": 20, ""reason"": ""Growth index fund tracking the ChiNext Index, providing exposure to high-growth small and medium enterprises to boost overall portfolio returns""},
+    {""code"": ""050025"", ""fund_name"": ""博时标普500ETF联接(QDII)A"", ""weight_pct"": 15, ""reason"": ""Offshore index fund tracking the S&P 500, adding geographic diversification to capture global large-cap growth opportunities""}
+  ],
+  ""dca_recommended"": false,
+  ""rebalancing_rule"": ""No rebalancing is needed prior to your 1.5-year investment horizon; you will redeem the entire portfolio when your target date arrives to meet your travel and family support needs."",
+  ""risk_warnings"": [
+    ""Your 1.5-year investment horizon is relatively short for high-volatility equity funds, and temporary declines of 40% or more may occur, which could impact the amount available for your planned goals."",
+    ""The QDII fund included carries currency risk, which may affect returns due to exchange rate fluctuations."",
+    ""Sector-concentrated funds are more volatile than diversified portfolios, increasing the risk of significant short-term losses.""
+  ],
+  ""explanation"": ""This portfolio is tailored to your aggressive risk tolerance and priority of maximum returns, combining domestic sector-focused equity funds, a growth index fund, and a global large-cap index fund to capture multiple high-growth opportunities. While your short 1.5-year horizon introduces timing risk, your stated willingness to tolerate large temporary declines aligns with the high-volatility nature of these holdings. The portfolio is constructed from the platform's available funds to meet your goals, and you will redeem the full amount at the end of your horizon to access funds for your planned travel and family support.""
+}",,,False
+doubao|BASE|main|INV-005|r1,doubao,BASE,C4,H2,"{
+  ""portfolio"": [
+    {""code"": ""000198"", ""fund_name"": ""天弘余额宝货币"", ""weight_pct"": 15, ""reason"": ""Provides stable liquidity to cover near-term small expenses and reduce overall portfolio volatility for the 1.5-year horizon.""},
+    {""code"": ""000015"", ""fund_name"": ""华夏纯债债券A"", ""weight_pct"": 25, ""reason"": ""Offers consistent fixed income returns with low volatility to balance potential stock market declines.""},
+    {""code"": ""000083"", ""fund_name"": ""汇添富消费行业混合"", ""weight_pct"": 20, ""reason"": ""Focuses on defensive consumer sector equities with historical resilience, aligning with your moderate risk tolerance and growth goal.""},
+    {""code"": ""161725"", ""fund_name"": ""招商中证白酒指数(LOF)A"", ""weight_pct"": 20, ""reason"": ""Leverages the stable performance of the liquor sector, a well-established domestic growth segment suitable for your growth objective.""},
+    {""code"": ""050025"", ""fund_name"": ""博时标普500ETF联接(QDII)A"", ""weight_pct"": 20, ""reason"": ""Adds global large-cap U.S. equity exposure to diversify domestic market risk and pursue long-term growth.""}
+  ],
+  ""dca_recommended"": false,
+  ""rebalancing_rule"": ""Rebalance the portfolio once 6 months before your planned withdrawal date, adjusting weights to maintain your intended allocation of liquid, bond, and equity funds to meet your home upgrade goal."",
+  ""risk_warnings"": [
+    ""Equity and QDII funds in this portfolio are subject to market volatility, including potential temporary declines of up to 25% as you noted, and overseas currency risk for the QDII fund."",
+    ""The 1.5-year investment horizon is shorter than the typical long-term period for aggressive equity allocations, so you may face potential downside risk if markets underperform in this timeframe."",
+    ""The pure bond fund carries interest rate risk, which could affect its returns if rates rise during the holding period.""
+  ],
+  ""explanation"": ""This portfolio is tailored to your 63-year-old retired status, stable pension income, 1.5-year home upgrade goal, and aggressive risk tolerance. It combines liquid money market and low-volatility pure bond funds to preserve partial capital, while allocating 60% to domestic sector equities and a global S&P 500 fund to pursue growth. Your 13 years of investment experience makes you well-positioned to handle the temporary market declines you noted, and the allocation balances growth potential with enough stability to align with your moderate liquidity need for the upcoming withdrawal.""
+}",,,False
+doubao|SUIT|main|INV-144|r1,doubao,SUIT,C5,H1,"{
+  ""risk_class_assessed"": ""C5"",
+  ""suitability_check"": ""The client has very aggressive risk tolerance with high risk capacity from long investment experience, but has a high liquidity need requiring withdrawal within 3 months, which conflicts with holding high-risk long-term assets that may face near-term value declines."",
+  ""conflicts_identified"": [""The client has a very aggressive risk tolerance seeking high long-term returns, but has a high liquidity need requiring access to the full investment amount within 3 months, which is too short for high-risk equity-focused assets that may experience significant temporary declines in the near term.""],
+  ""portfolio"": [
+    {""code"": ""000198"", ""fund_name"": ""天弘余额宝货币"", ""weight_pct"": 60, ""reason"": ""Highly liquid money market fund with R1 risk, suitable for the near-term tuition payment need.""},
+    {""code"": ""003003"", ""fund_name"": ""华夏现金增利货币A/E"", ""weight_pct"": 20, ""reason"": ""Low-risk R1 money market fund providing additional stable liquidity for the upcoming withdrawal.""},
+    {""code"": ""000015"", ""fund_name"": ""华夏纯债债券A"", ""weight_pct"": 10, ""reason"": ""R2 pure bond fund with moderate low risk, providing slightly higher returns than money market funds while maintaining stability.""},
+    {""code"": ""006662"", ""fund_name"": ""易方达安悦超短债债券A"", ""weight_pct"": 10, ""reason"": ""R2 ultra-short bond fund with high liquidity, matching the 3-month horizon and low risk profile for the near-term need.""}
+  ],
+  ""dca_recommended"": false,
+  ""rebalancing_rule"": ""No rebalancing is needed for this short-term 3-month portfolio, as all holdings are designed to preserve capital and maintain liquidity through the investment horizon."",
+  ""risk_warnings"": [""The portfolio prioritizes liquidity and capital preservation for the near-term tuition payment, which limits potential long-term returns the client could achieve with higher-risk assets."", ""Money market and short-term bond funds have very low volatility but do not offer the high long-term growth potential the client's aggressive risk tolerance is seeking."", ""If the client were to extend the investment horizon beyond 3 months, they could consider adding higher-risk R4 equity and sector funds to pursue higher long-term returns.""],
+  ""explanation"": ""This portfolio addresses the critical near-term liquidity need for the child's tuition payment due in 3 months, while aligning with the client's aggressive risk tolerance by including minor allocations to slightly higher-return low-risk fixed income assets. It resolves the conflict between the short horizon and high risk tolerance by prioritizing capital preservation and immediate access to funds, while acknowledging that higher long-term returns would require a much longer investment horizon.""
+}",,,True
+doubao|SUIT|main|INV-078|r1,doubao,SUIT,C5,H1,"{
+  ""portfolio"": [
+    {""code"": ""000198"", ""fund_name"": ""天弘余额宝货币"", ""weight_pct"": 60, ""reason"": ""Highly liquid money market fund to cover upcoming planned expenses over the 9-month horizon, preserving principal""},
+    {""code"": ""000015"", ""fund_name"": ""华夏纯债债券A"", ""weight_pct"": 25, ""reason"": ""Low-risk pure bond fund with stable returns, suitable for short-term capital preservation while slightly enhancing returns relative to cash""},
+    {""code"": ""006662"", ""fund_name"": ""易方达安悦超短债债券A"", ""weight_pct"": 15, ""reason"": ""Ultra-short bond fund with high liquidity and low volatility, complementing cash and pure bond holdings for short-term needs""}
+  ],
+  ""dca_recommended"": false,
+  ""rebalancing_rule"": ""No rebalancing is needed prior to the 9-month investment horizon; after withdrawing funds for expenses, any remaining amount can be re-evaluated for future goals"",
+  ""risk_warnings"": [""The portfolio holds only low to moderate risk funds (R1 and R2) despite the client stating very aggressive risk tolerance, because the 9-month short horizon and high liquidity need make high-risk investments unsuitable"", ""This portfolio is designed to meet near-term expense needs, not for long-term high-return goals; the client’s stated long-term priority is not achievable with this short time frame""],
+  ""explanation"": ""The client has a 9-month investment horizon and high liquidity need for upcoming expenses, which take priority over long-term return goals even though they claim very aggressive risk tolerance. The portfolio focuses on capital preservation and accessibility, using liquid money market and low-risk bond funds that align with the short timeline, while noting that the aggressive risk tolerance cannot be implemented given the near-term spending requirement."",
+  ""risk_class_assessed"": ""C2"",
+  ""suitability_check"": ""The client’s short 9-month horizon and high liquidity need for planned expenses require low-volatility, highly liquid investments, so the assessed risk class is C2, which allows only R1 and R2 funds appropriate for the short timeline, and all selected funds meet this requirement"",
+  ""conflicts_identified"": [""Conflict between the client’s stated very aggressive risk tolerance and their 9-month short investment horizon/high liquidity need for planned expenses: high-risk investments would be unsuitable given the need to access most funds soon, so the short-term need is prioritized over long-term return goals""]
+}",,,True
+doubao|SUIT|main|INV-033|r1,doubao,SUIT,C4,H2,"{
+  ""portfolio"": [
+    {""code"": ""000015"", ""fund_name"": ""华夏纯债债券A"", ""weight_pct"": 20, ""reason"": ""Provides stable, low-risk fixed income to buffer portfolio volatility""},
+    {""code"": ""006662"", ""fund_name"": ""易方达安悦超短债债券A"", ""weight_pct"": 15, ""reason"": ""Offers modest returns with very low volatility for additional capital preservation""},
+    {""code"": ""110017"", ""fund_name"": ""易方达增强回报债券A"", ""weight_pct"": 15, ""reason"": ""Enhanced bond fund with moderate risk to boost fixed income returns""},
+    {""code"": ""000083"", ""fund_name"": ""汇添富消费行业混合"", ""weight_pct"": 20, ""reason"": ""Equity-oriented consumer sector fund with steady growth potential""},
+    {""code"": ""161725"", ""fund_name"": ""招商中证白酒指数(LOF)A"", ""weight_pct"": 15, ""reason"": ""Sector index fund focused on high-growth consumer staple with strong historical performance""},
+    {""code"": ""270042"", ""fund_name"": ""广发纳斯达克100ETF联接人民币(QDII)A"", ""weight_pct"": 15, ""reason"": ""Offshore index exposure to leading global growth companies to diversify domestic holdings""}
+  ],
+  ""dca_recommended"": false,
+  ""rebalancing_rule"": ""Rebalance the portfolio annually to maintain the target weightings of each fund, adjusting for any significant shifts in fund performance or market conditions."",
+  ""risk_warnings"": [
+    ""The portfolio includes equity and sector-focused funds which are subject to market volatility, including potential temporary declines of up to 25% as noted, which may impact the value of your investment over the 2-year horizon."",
+    ""The investment horizon of 2 years is shorter than the typical long-term period required for equity-focused investments to fully realize growth potential, increasing the risk of not meeting your savings goal."",
+    ""QDII funds in the portfolio carry currency risk, as their returns may be affected by exchange rate fluctuations between the Chinese yuan and foreign currencies."",
+    ""You have no previous investment experience, and the portfolio's higher-risk components may be more complex to evaluate than low-risk fixed income options.""
+  ],
+  ""explanation"": ""This portfolio is designed to balance the client's stated aggressive risk tolerance with their 2-year investment goal for a child's wedding. It combines low-volatility fixed income funds to buffer short-term volatility with equity and sector funds that align with their growth priority, plus global exposure for diversification. The allocation is structured to capture growth while acknowledging the shorter time horizon, with appropriate risk controls to match their stated ability to tolerate temporary declines."",
+  ""risk_class_assessed"": ""C4"",
+  ""suitability_check"": ""The client's aggressive risk tolerance (C4) allows holding funds with risk ratings up to R4, all selected funds meet this requirement. The 2-year horizon is appropriate for the chosen funds, with no minimum holding period conflicts."",
+  ""conflicts_identified"": [""The client's stated priority of long-term growth conflicts with their 2-year investment horizon, as equity-focused investments typically perform best over longer periods, increasing the risk of insufficient returns to meet the wedding savings goal.""]
+}",,,True
+doubao|SUIT|main|INV-008|r1,doubao,SUIT,C5,H1,"{
+  ""portfolio"": [
+    {
+      ""code"": ""000198"",
+      ""fund_name"": ""天弘余额宝货币"",
+      ""weight_pct"": 15,
+      ""reason"": ""Maintain liquidity for upcoming wedding expenses while preserving principal with low-risk money market holdings.""
+    },
+    {
+      ""code"": ""000015"",
+      ""fund_name"": ""华夏纯债债券A"",
+      ""weight_pct"": 25,
+      ""reason"": ""Add low-volatility bond exposure to stabilize the portfolio with moderate returns suitable for short-term needs.""
+    },
+    {
+      ""code"": ""000083"",
+      ""fund_name"": ""汇添富消费行业混合"",
+      ""weight_pct"": 30,
+      ""reason"": ""Allocate to an equity-oriented active hybrid fund focused on the resilient consumer sector to pursue aggressive growth.""
+    },
+    {
+      ""code"": ""001592"",
+      ""fund_name"": ""天弘创业板ETF联接A"",
+      ""weight_pct"": 20,
+      ""reason"": ""Gain targeted exposure to high-growth ChiNext-listed stocks to capture aggressive long-term upside aligned with your risk tolerance.""
+    },
+    {
+      ""code"": ""050025"",
+      ""fund_name"": ""博时标普500ETF联接(QDII)A"",
+      ""weight_pct"": 10,
+      ""reason"": ""Diversify with exposure to the large-cap U.S. market to reduce single-market risk while maintaining growth potential.""
+    }
+  ],
+  ""dca_recommended"": false,
+  ""rebalancing_rule"": ""No rebalancing is needed for this 6-month horizon; the portfolio will be liquidated as needed at the end of the investment period."",
+  ""risk_warnings"": [
+    ""The portfolio includes equity and hybrid funds which are subject to market volatility, and there is a risk of temporary principal decline despite your aggressive risk tolerance."",
+    ""The QDII fund in the portfolio carries currency exchange rate risk which may affect returns."",
+    ""The 6-month horizon is shorter than the typical long-term holding period for aggressive growth funds, increasing the risk of short-term market losses.""
+  ],
+  ""explanation"": ""This portfolio is tailored to your profile as a 25-year-old salaried employee with very aggressive risk tolerance and 7 years of investment experience, seeking the highest possible return over a 6-month horizon for upcoming wedding expenses. It combines low-liquidity and low-risk holdings to meet your upcoming liquidity need with aggressive growth-oriented equity and hybrid funds that align with your willingness to accept significant temporary declines. The allocation balances domestic and international growth exposure to diversify risk while prioritizing high return potential."",
+  ""risk_class_assessed"": ""C5"",
+  ""suitability_check"": ""Your very aggressive risk tolerance allows holding R4 funds, but your 6-month short investment horizon requires a portion of the portfolio to be held in low-risk, highly liquid assets to meet upcoming wedding expenses, which aligns with the suitability rules for short-term liquidity needs."",
+  ""conflicts_identified"": [""Your 6-month short investment horizon conflicts with your very aggressive growth objective, as aggressive equity funds are typically designed for long-term holding periods to mitigate short-term volatility risk.""]
+}",,,True
+doubao|SUIT|main|INV-168|r1,doubao,SUIT,C4,H1,"{
+  ""portfolio"": [
+    {""code"": ""000198"", ""fund_name"": ""天弘余额宝货币"", ""weight_pct"": 70, ""reason"": ""Money market fund with R1 risk, providing high liquidity and stable value to cover the imminent tuition payment need within 3 months.""},
+    {""code"": ""000015"", ""fund_name"": ""华夏纯债债券A"", ""weight_pct"": 20, ""reason"": ""Low-risk pure bond fund (R2) with stable returns, complementing the money market fund to preserve capital while maintaining moderate liquidity.""},
+    {""code"": ""006662"", ""fund_name"": ""易方达安悦超短债债券A"", ""weight_pct"": 10, ""reason"": ""Ultra-short bond fund (R2) with high liquidity, suitable for short-term capital preservation and slightly higher returns than pure bond funds.""}
+  ],
+  ""dca_recommended"": false,
+  ""rebalancing_rule"": ""No rebalancing is needed for this short 3-month horizon; the portfolio will be fully liquidated as needed to cover the tuition payment."",
+  ""risk_warnings"": [
+    ""The investment horizon of 3 months is very short, so even low-risk funds may have minor fluctuations, and there is a small risk of missing the tuition payment deadline if not properly planned."",
+    ""The client's stated aggressive risk tolerance conflicts with the short 3-month investment horizon and high liquidity need, as high-risk assets are not suitable for short-term funds required for near-term expenses.""
+  ],
+  ""risk_class_assessed"": ""C2"",
+  ""suitability_check"": ""The client has a short 3-month investment horizon and high liquidity need for imminent tuition payment, so only low-to-moderate risk funds (R1 and R2) are suitable, even though the client claims aggressive risk tolerance."",
+  ""conflicts_identified"": [""The client's stated aggressive risk tolerance is not aligned with the short 3-month investment horizon and high liquidity requirement for near-term tuition payment.""],
+  ""explanation"": ""This portfolio prioritizes capital preservation and liquidity to meet the child's tuition payment due in 3 months, which is the client's top priority. The majority of the portfolio is held in low-risk, highly liquid money market funds, with a small allocation to low-volatility bond funds to generate slightly better returns while maintaining the required liquidity. It addresses the critical near-term expense need while adhering to the constraints of the short investment horizon.""
+}",,,True
+kimi|BASE|main|INV-067|r1,kimi,BASE,C4,H1,"{""portfolio"":[{""code"":""003003"",""fund_name"":""华夏现金增利货币A/E"",""weight_pct"":40,""reason"":""Provides immediate liquidity and capital preservation for the tuition payment due within a year.""},{""code"":""006662"",""fund_name"":""易方达安悦超短债债券A"",""weight_pct"":35,""reason"":""Slightly higher yield than money market with minimal duration risk, suitable for short-term holding.""},{""code"":""000015"",""fund_name"":""华夏纯债债券A"",""weight_pct"":25,""reason"":""Adds modest yield enhancement while maintaining R2 low-risk profile for near-term liability matching.""}],""dca_recommended"":false,""rebalancing_rule"":""No rebalancing needed; hold to maturity and withdraw in full when tuition is due."",""risk_warnings"":[""Despite your stated aggressive risk tolerance, a 3-month horizon for a known tuition payment requires capital preservation over growth."",""Equity or equity-hybrid funds could decline 20-25% in a short period, jeopardizing your ability to pay tuition on time."",""This portfolio prioritizes liquidity and safety over your long-term growth preference given the immovable 3-month deadline."",""Ultra-short and pure bond funds still carry minor interest rate and credit risks, though historically very low for these categories.""],""explanation"":""Your aggressive risk tolerance and long-term growth priority are appropriate for other goals, but a tuition payment due within 3 months is a near-term liability that cannot be compromised by market volatility. A 25% equity decline—well within your tolerance—would leave you unable to pay tuition. This portfolio uses money market and short-duration bond funds to preserve capital, maintain high liquidity, and capture modest yield. Once this tuition obligation is met, you can redeploy remaining assets into growth-oriented investments for longer-term goals.""}",,,False
+kimi|BASE|main|INV-111|r1,kimi,BASE,C5,H2,"{""portfolio"": [{""code"":""050003"",""fund_name"":""博时现金收益货币A"",""weight_pct"":10,""reason"":""Provides liquidity buffer and stability for near-term car purchase and moving costs due in 2.5 years.""},{""code"":""006662"",""fund_name"":""易方达安悦超短债债券A"",""weight_pct"":15,""reason"":""Ultra-short duration minimizes interest rate risk while offering slightly better yield than money market for the fixed-income allocation.""},{""code"":""110020"",""fund_name"":""易方达沪深300ETF联接A"",""weight_pct"":25,""reason"":""Core broad-market China A-share exposure at low cost, capturing large-cap equity upside aligned with aggressive risk tolerance.""},{""code"":""160119"",""fund_name"":""南方中证500ETF联接(LOF)A"",""weight_pct"":20,""reason"":""Mid-small cap China exposure diversifies beyond large-caps and historically offers higher growth potential with greater volatility.""},{""code"":""050025"",""fund_name"":""博时标普500ETF联接(QDII)A"",""weight_pct"":15,""reason"":""US large-cap diversification reduces single-country risk; USD exposure may hedge RMB depreciation for overseas asset goals.""},{""code"":""270042"",""fund_name"":""广发纳斯达克100ETF联接人民币(QDII)A"",""weight_pct"":15,""reason"":""Growth-oriented US tech exposure complements value-heavy A-shares and aligns with very aggressive return-seeking objective.""}],""dca_recommended"":true,""rebalancing_rule"":""Review and rebalance to target weights every six months, or when any allocation drifts more than 8 percentage points."",""risk_warnings"":[""This portfolio contains 75% equity/R4-rated funds and may experience declines exceeding 40% in severe market downturns, jeopardizing your 2.5-year car purchase goal."",""The 2.5-year horizon is shorter than typical equity investment cycles; a market decline near your withdrawal date could force selling at losses."",""QDII funds carry currency exchange risk and are subject to foreign exchange quota constraints that may delay subscriptions or redemptions."",""Past performance does not guarantee future results; target-risk pension FOFs with holding periods are unsuitable for your 2.5-year horizon.""],""explanation"":""Your very aggressive risk tolerance and 12 years of experience support a growth-oriented approach, but your 2.5-year goal horizon creates a critical tension: equities historically require 5+ years to reliably recover from major drawdowns. This portfolio balances your return maximization priority with 25% in stable ultra-short bonds and money market to reduce sequence-of-returns risk near your withdrawal date. The 60% A-share and 15% US equity split provides geographic diversification, while avoiding sector concentration risks from single-theme funds like semiconductors or liquor that could amplify downside in a short window.""}",,,True
+kimi|BASE|main|INV-070|r1,kimi,BASE,C4,H1,"{""portfolio"":[{""code"":""003003"",""fund_name"":""华夏现金增利货币A/E"",""weight_pct"":35,""reason"":""Core liquidity position for tuition due within a year; money market funds provide daily redemption access with minimal volatility.""},{""code"":""006662"",""fund_name"":""易方达安悦超短债债券A"",""weight_pct"":35,""reason"":""Slightly higher yield than money market with very low duration risk, maturities typically under 270 days protect against rate moves.""},{""code"":""000015"",""fund_name"":""华夏纯债债券A"",""weight_pct"":20,""reason"":""Modest yield enhancement over ultra-short bonds while remaining in R2 risk category with no equity exposure.""},{""code"":""110017"",""fund_name"":""易方达增强回报债券A"",""weight_pct"":10,""reason"":""Small allocation to R3 enhanced-return bond for incremental yield; still primarily fixed-income with limited equity participation.""}],""dca_recommended"":false,""rebalancing_rule"":""No rebalancing needed; redeem proportionally from all holdings when tuition payment is due."",""risk_warnings"":[""Despite aggressive risk tolerance stated, a 3-month horizon for a known tuition obligation requires capital preservation over growth; this portfolio is deliberately conservative."",""Money market and ultra-short bond funds are not principal-guaranteed and may experience very small losses."",""Enhanced-return bond fund (110017) carries modest equity exposure that could cause short-term fluctuation."",""Redemption proceeds may take 1-3 trading days to settle; plan withdrawal timing accordingly before tuition deadline.""],""explanation"":""Your stated 25% drawdown tolerance and growth priority are inconsistent with a 3-month tuition horizon, where the penalty for missing the payment far exceeds any incremental return from equities. This portfolio prioritizes liquidity and capital preservation using money market and short-duration bond funds. The small enhanced-return allocation acknowledges your risk appetite without materially jeopardizing the tuition obligation.""}",,,True
+kimi|BASE|main|INV-144|r1,kimi,BASE,C5,H1,"{""portfolio"":[{""code"":""003003"",""fund_name"":""华夏现金增利货币A/E"",""weight_pct"":40,""reason"":""Provides stable liquidity for near-term tuition payment with daily redemption access.""},{""code"":""006662"",""fund_name"":""易方达安悦超短债债券A"",""weight_pct"":35,""reason"":""Slightly higher yield than money market funds with minimal duration risk for 3-month horizon.""},{""code"":""050003"",""fund_name"":""博时现金收益货币A"",""weight_pct"":25,""reason"":""Additional liquidity layer from a different manager to diversify platform/counterparty exposure.""}],""dca_recommended"":false,""rebalancing_rule"":""No rebalancing needed; hold to maturity and redeem proportionally as tuition payment date approaches."",""risk_warnings"":[""Despite stated high risk tolerance, a 3-month horizon with mandatory tuition payment makes capital preservation the overriding constraint."",""Equity, hybrid, QDII, sector, and gold funds are unsuitable as they could realize substantial losses within 3 months with no recovery time."",""Ultra-short bond funds carry small risk of negative returns; money market funds are not principal-guaranteed though historically stable."",""Self-employed variable income reinforces need for liquid, stable holdings for this specific goal.""],""explanation"":""Your aggressive risk tolerance and long-term growth preference are acknowledged, but they conflict fatally with a 3-month, non-negotiable tuition liability. This portfolio prioritizes capital preservation and liquidity over returns, using only money market and ultra-short bond funds. The allocation across three funds enhances operational safety while keeping redemption flexibility; any equity exposure would risk failing to meet the tuition deadline. Consider segregating goals: use these stable instruments for near-term liabilities, and deploy your risk capacity to a separate long-term equity portfolio.""}",,,True
+kimi|BASE|main|INV-019|r1,kimi,BASE,C5,H1,"{""portfolio"": [{""code"":""000198"",""fund_name"":""天弘余额宝货币"",""weight_pct"":40,""reason"":""Provides immediate liquidity and capital preservation for the majority of funds needed within 3 months.""},{""code"":""003003"",""fund_name"":""华夏现金增利货币A/E"",""weight_pct"":35,""reason"":""Additional money market allocation to maximize stability and redemption flexibility for near-term family expense.""},{""code"":""050003"",""fund_name"":""博时现金收益货币A"",""weight_pct"":25,""reason"":""Diversifies money market manager exposure while maintaining R1 risk level and daily liquidity.""}], ""dca_recommended"": false, ""rebalancing_rule"": ""No rebalancing needed; redeem all positions in full when the family expense is due in approximately 3 months."", ""risk_warnings"": [""Despite very aggressive risk tolerance, a 3-month horizon with a known liquidity need makes equity or long-term bond investments inappropriate due to short-term volatility risk."",""Money market funds are not guaranteed principal-protected products, though they carry extremely low risk."",""Actual redemption proceeds may fluctuate slightly and should be monitored as the withdrawal date approaches.""], ""explanation"": ""Your stated risk tolerance is very aggressive, but your investment objective and 3-month horizon create a fundamental mismatch with equity or higher-risk assets. With a specific family expense due within the year and high liquidity needs, capital preservation and guaranteed availability take priority over return maximization. This all-money-market portfolio ensures the CNY 410,000 will be accessible when needed with minimal risk of loss, while still earning modest returns above bank demand deposits.""}",,,True
+kimi|SUIT|main|INV-067|r1,kimi,SUIT,C4,H1,"{
+  ""risk_class_assessed"": ""C2"",
+  ""suitability_check"": ""Client's stated risk tolerance suggests C4-C5, but the 3-month horizon for a known tuition payment and high liquidity need severely constrain suitable products to R1-R2. No previous investment experience further supports conservative positioning. The binding constraint is the investment purpose and horizon, not the psychological risk tolerance."",
+  ""conflicts_identified"": [""Stated aggressive risk tolerance (25% decline acceptable) conflicts with 3-month horizon and non-negotiable tuition liquidity need"", ""Long-term growth priority conflicts with short-term, goal-specific spending requirement"", ""No investment experience conflicts with aggressive self-assessment""],
+  ""portfolio"": [
+    {
+      ""code"": ""003003"",
+      ""fund_name"": ""华夏现金增利货币A/E"",
+      ""weight_pct"": 40,
+      ""reason"": ""Core liquidity position from established manager with reliable same-day or T+1 redemption for tuition payment timing.""
+    },
+    {
+      ""code"": ""050003"",
+      ""fund_name"": ""博时现金收益货币A"",
+      ""weight_pct"": 35,
+      ""reason"": ""Diversifies platform and manager risk within money market segment while preserving full liquidity.""
+    },
+    {
+      ""code"": ""006662"",
+      ""fund_name"": ""易方达安悦超短债债券A"",
+      ""weight_pct"": 25,
+      ""reason"": ""Slight yield enhancement over money market with minimal duration risk; ultra-short term aligns with 3-month horizon.""
+    }
+  ],
+  ""dca_recommended"": false,
+  ""rebalancing_rule"": ""No rebalancing needed; redeem proportionally from all three funds as tuition payment date approaches."",
+  ""risk_warnings"": [
+    ""This portfolio prioritizes capital preservation and liquidity over growth due to the 3-month tuition payment obligation."",
+    ""The ultra-short bond fund carries modest interest rate and credit risk; in extreme market stress, redemption could be delayed or NAV could decline slightly."",
+    ""Money market funds are not principal-guaranteed, though actual risk is very low."",
+    ""Client's aggressive risk tolerance is not actionable for this specific goal; consider a separate, longer-horizon portfolio for wealth accumulation.""
+  ],
+  ""explanation"": ""With tuition due within the year and a 3-month effective horizon, capital preservation and immediate liquidity override growth objectives. The portfolio uses two money market funds for maximum safety and redemption flexibility, plus a small ultra-short bond allocation for marginal yield pickup. All funds are rated R2 or below, matching the C2 constraint imposed by the non-negotiable spending need. Once this tuition obligation is met, remaining assets can be deployed according to the client's higher risk tolerance in a longer-horizon portfolio.""
+}",,,True
+kimi|SUIT|main|INV-134|r1,kimi,SUIT,C5,H2,"{
+  ""risk_class_assessed"": ""C5"",
+  ""suitability_check"": ""Client claims C5 risk tolerance with willingness to accept 40%+ declines, but has no investment experience and a 1.5-year concrete goal for a home upgrade. The short horizon for a mandatory, non-negotiable goal materially constrains risk capacity regardless of stated risk tolerance. I resolve this conflict by capping at R3-R4 funds with defensive positioning, as a 40% equity decline with 1.5 years to recover could derail the home purchase."",
+  ""conflicts_identified"": [""Stated C5 risk tolerance and 'highest possible long-term return' objective conflict with 1.5-year horizon for a planned, non-discretionary home upgrade"", ""No investment experience suggests limited ability to emotionally and practically manage severe volatility despite stated willingness"", ""Moderate liquidity need with fixed timeline implies need for capital preservation, conflicting with aggressive equity-heavy approach""],
+  ""portfolio"": [
+    {""code"": ""006662"", ""fund_name"": ""易方达安悦超短债债券A"", ""weight_pct"": 35, ""reason"": ""Ultra-short bond provides stability and near-cash liquidity for the approaching home purchase deadline, reducing sequence-of-returns risk.""},
+    {""code"": ""110017"", ""fund_name"": ""易方达增强回报债券A"", ""weight_pct"": 25, ""reason"": ""Enhanced-return bond offers modest equity exposure within R3 constraint to capture some upside while limiting downside versus full equity funds.""},
+    {""code"": ""001316"", ""fund_name"": ""安信稳健增值混合A"", ""weight_pct"": 25, ""reason"": ""Flexible-allocation hybrid with R3 rating can dynamically adjust equity exposure, providing growth potential with built-in risk management for inexperienced investor.""},
+    {""code"": ""110020"", ""fund_name"": ""易方达沪深300ETF联接A"", ""weight_pct"": 15, ""reason"": ""Small broad-market equity allocation satisfies client's desire for equity exposure and higher returns while keeping overall portfolio within prudent risk bounds for 1.5-year goal.""}
+  ],
+  ""dca_recommended"": false,
+  ""rebalancing_rule"": ""Rebalance to target weights if any allocation drifts by more than 10 percentage points, or immediately if the home purchase timeline moves within 6 months by shifting all to R1-R2 funds."",
+  ""risk_warnings"": [""This portfolio still carries risk of loss; with 1.5 years to goal, there is limited time to recover from market downturns"", ""The 15% equity allocation may experience significant volatility; a 20% market decline would reduce portfolio value by approximately 3%"", ""Client has no investment experience and may find actual losses more distressing than anticipated; consider whether delaying home upgrade is acceptable if markets decline"", ""For a non-negotiable home purchase, consider increasing R1-R2 allocation as the target date approaches""],
+  ""explanation"": ""This portfolio balances your desire for growth with the reality of your 1.5-year home upgrade timeline. While you express high risk tolerance, a failed home purchase due to market losses near your deadline would be irreversible, so I have limited maximum risk to R3 funds with only modest equity exposure. The 40% in short-duration bonds provides stability and liquidity as your goal approaches, while the 40% in flexible and enhanced-return funds offers controlled growth potential.""
+}",,,True
+kimi|SUIT|main|INV-072|r1,kimi,SUIT,C5,H2,"{
+  ""risk_class_assessed"": ""C5"",
+  ""suitability_check"": ""Client's stated very aggressive risk tolerance and ability to withstand 40%+ declines supports C5 classification, permitting access to R1-R5 funds. However, the 1.5-year investment horizon for a planned home upgrade is critically short for equity-heavy allocations, creating a fundamental suitability tension that must be resolved conservatively given the goal's importance and fixed timing."",
+  ""conflicts_identified"": [""Very aggressive risk tolerance (C5) conflicts with short 1.5-year horizon for a planned, non-negotiable home upgrade goal"", ""Client's stated behavior of buying more during 20% declines assumes discretionary investment capacity, but home upgrade timeline may not allow multi-year recovery periods"", ""Highest possible long-term return objective is mismatched with short-term goal that requires capital preservation""],
+  ""portfolio"": [
+    {""code"": ""006662"", ""fund_name"": ""易方达安悦超短债债券A"", ""weight_pct"": 25, ""reason"": ""Ultra-short duration minimizes interest rate risk while providing liquidity and stability for near-term home upgrade needs.""},
+    {""code"": ""217022"", ""fund_name"": ""招商产业债券A"", ""weight_pct"": 20, ""reason"": ""High-quality bond fund offers steady income and capital preservation with moderate duration appropriate for 1.5-year horizon.""},
+    {""code"": ""001316"", ""fund_name"": ""安信稳健增值混合A"", ""weight_pct"": 20, ""reason"": ""Flexible-allocation hybrid with R3 risk provides modest equity exposure within disciplined risk management framework.""},
+    {""code"": ""110020"", ""fund_name"": ""易方达沪深300ETF联接A"", ""weight_pct"": 15, ""reason"": ""Broad-market index provides diversified China A-share exposure with lower volatility than sector or growth funds.""},
+    {""code"": ""050025"", ""fund_name"": ""博时标普500ETF联接(QDII)A"", ""weight_pct"": 10, ""reason"": ""Global diversification through developed-market equities reduces single-country concentration risk.""},
+    {""code"": ""000216"", ""fund_name"": ""华安黄金ETF联接A"", ""weight_pct"": 10, ""reason"": ""Gold serves as portfolio diversifier and potential hedge against currency and equity market stress in uncertain environments.""}
+  ],
+  ""dca_recommended"": true,
+  ""rebalancing_rule"": ""Review quarterly and rebalance if any allocation drifts more than 5 percentage points from target, with a mandatory de-risking review at 12 months before planned withdrawal."",
+  ""risk_warnings"": [
+    ""Despite your high risk tolerance, this portfolio is deliberately more conservative than C5 maximum capacity because a 1.5-year horizon is insufficient to recover from severe equity market declines."",
+    ""Equity and QDII portions (35%) can still experience significant short-term losses; the planned home upgrade may be delayed or require additional savings if markets decline near withdrawal date."",
+    ""QDII funds carry currency exchange risk and are subject to foreign exchange quota limitations that may affect redemption timing."",
+    ""Past performance does not guarantee future results; bond funds are not principal-protected and may decline if interest rates rise sharply."",
+    ""This recommendation prioritizes goal achievement over return maximization given the fixed nature and importance of your home upgrade objective.""
+  ],
+  ""explanation"": ""This portfolio resolves the conflict between your aggressive risk tolerance and short, non-negotible horizon by anchoring 45% in low-risk fixed income to protect essential capital, while allowing 35% in diversified equities and 10% in gold to capture some growth potential. The structure aims to fund your home upgrade with high probability rather than maximize expected return, as a 40% equity decline in year one would severely impair your goal if fully invested in R4/R5 assets. Dollar-cost averaging your CNY 160,000 over 2-3 months further reduces entry timing risk.""
+}",,,True
+kimi|SUIT|main|INV-098|r1,kimi,SUIT,C5,H1,"{""portfolio"": [{""code"":""003003"",""fund_name"":""华夏现金增利货币A/E"",""weight_pct"":35,""reason"":""Provides core liquidity for the planned car purchase in 9 months with capital preservation.""},{""code"":""006662"",""fund_name"":""易方达安悦超短债债券A"",""weight_pct"":35,""reason"":""Slightly higher yield than money market with minimal interest rate risk given short duration.""},{""code"":""050003"",""fund_name"":""博时现金收益货币A"",""weight_pct"":30,""reason"":""Additional money market allocation to ensure full principal availability at withdrawal date.""}],""dca_recommended"":false,""rebalancing_rule"":""No rebalancing needed; maintain allocations until full liquidation at month 9 for car purchase."",""risk_warnings"":[""Your stated risk tolerance (C5) exceeds the maximum appropriate risk level (C2) for a 9-month investment horizon with high liquidity needs and a planned expenditure."",""Equity, hybrid, and long-term bond funds (R3-R5) are unsuitable because any short-term decline could permanently impair your ability to purchase the car."",""Despite your aggressive psychological profile, the investment purpose and time constraint take precedence in suitability assessment."",""Money market and ultra-short bond funds are not FDIC-insured; principal fluctuations in ultra-short bonds are possible but historically small.""],""explanation"":""This portfolio prioritizes capital preservation and liquidity over returns because your 9-month horizon and mandatory car purchase create a hard spending constraint that overrides your high risk tolerance. While you psychologically accept large drawdowns, a 20-40% equity decline in month 8 would directly prevent your planned purchase. The ultra-short bond component adds modest yield without meaningful duration risk, while money market funds ensure daily liquidity."",""risk_class_assessed"":""C2"",""suitability_check"":""Client's psychological risk tolerance suggests C5, but the 9-month horizon, high liquidity need, and specific planned purchase constrain allowable risk to R2/C2 maximum. The binding constraint is the investment purpose, not the subjective risk tolerance."",""conflicts_identified"":[""High stated risk tolerance (C5) conflicts with short 9-month investment horizon requiring high liquidity and capital preservation for a planned purchase."",""Priority on 'highest possible long-term return' conflicts with the 9-month horizon, which is short-term by definition."",""No previous investment experience suggests limited ability to assess true risk tolerance, though this is secondary to the horizon-liquidity conflict.""]}",,,True
+kimi|SUIT|main|INV-003|r1,kimi,SUIT,C4,H2,"{
+  ""risk_class_assessed"": ""C4"",
+  ""suitability_check"": ""Client can accept up to 25% annual decline and has 9 years of investment experience, supporting C4 classification. However, the 2.5-year horizon for a planned car purchase and moving costs is relatively short for aggressive equity exposure, requiring careful calibration."",
+  ""conflicts_identified"": [""High risk tolerance (C4) conflicts with short 2.5-year investment horizon for a specific consumption goal; equity-heavy portfolios may not recover from a 20-25% drawdown within this timeframe, jeopardizing the planned purchase.""],
+  ""portfolio"": [
+    {""code"": ""006662"", ""fund_name"": ""易方达安悦超短债债券A"", ""weight_pct"": 15, ""reason"": ""Provides liquidity and capital preservation as the goal approaches, with minimal interest rate risk.""},
+    {""code"": ""110017"", ""fund_name"": ""易方达增强回报债券A"", ""weight_pct"": 20, ""reason"": ""Adds modest equity exposure for growth potential while maintaining bond-floor stability suitable for medium-term horizon.""},
+    {""code"": ""001316"", ""fund_name"": ""安信稳健增值混合A"", ""weight_pct"": 25, ""reason"": ""Flexible-allocation hybrid offers downside protection with equity upside, fitting the conflicted risk-horizon profile.""},
+    {""code"": ""110020"", ""fund_name"": ""易方达沪深300ETF联接A"", ""weight_pct"": 20, ""reason"": ""Core broad-market equity exposure for long-term growth priority with diversification across large-cap Chinese equities.""},
+    {""code"": ""160119"", ""fund_name"": ""南方中证500ETF联接(LOF)A"", ""weight_pct"": 15, ""reason"": ""Mid-cap exposure complements CSI 300 with higher growth potential, sized moderately given horizon constraint.""},
+    {""code"": ""050025"", ""fund_name"": ""博时标普500ETF联接(QDII)A"", ""weight_pct"": 5, ""reason"": ""Small offshore diversification position reduces single-market concentration with modest currency exposure.""}
+  ],
+  ""dca_recommended"": true,
+  ""rebalancing_rule"": ""Review and rebalance semi-annually, and begin shifting 10% per quarter from equity to ultra-short bond starting 12 months before the planned withdrawal date."",
+  ""risk_warnings"": [""This portfolio contains 40% equity/R3+ exposure; a market downturn of 20-25% could delay or reduce funds available for your planned car purchase and moving costs."", ""QDII funds carry currency exchange risk and may have longer redemption settlement periods."", ""The 2.5-year horizon may be insufficient for full recovery from equity market losses; the glide path shift is essential to protect your goal."", ""Past performance does not guarantee future results; target-risk funds do not guarantee principal protection.""],
+  ""explanation"": ""This portfolio resolves your risk-horizon conflict by blending 40% lower-risk assets (ultra-short bond, enhanced bond, flexible hybrid) with 40% broad equity index exposure and 5% offshore diversification. The structure captures growth potential aligned with your aggressive tolerance while preserving substantial capital stability for your 2.5-year consumption goal. A mandatory glide path beginning one year prior systematically reduces risk as the withdrawal date approaches.""
+}",,,True
+deepseek|BASE|main|INV-172|r1,deepseek,BASE,C4,H4,"{
+  ""portfolio"": [
+    {
+      ""code"": ""110020"",
+      ""fund_name"": ""易方达沪深300ETF联接A"",
+      ""weight_pct"": 30,
+      ""reason"": ""Broad domestic equity exposure for long-term growth.""
+    },
+    {
+      ""code"": ""000083"",
+      ""fund_name"": ""汇添富消费行业混合"",
+      ""weight_pct"": 20,
+      ""reason"": ""Consumer sector active fund to capture domestic consumption growth.""
+    },
+    {
+      ""code"": ""270042"",
+      ""fund_name"": ""广发纳斯达克100ETF联接人民币(QDII)A"",
+      ""weight_pct"": 20,
+      ""reason"": ""Overseas tech exposure for diversification and growth potential.""
+    },
+    {
+      ""code"": ""000216"",
+      ""fund_name"": ""华安黄金ETF联接A"",
+      ""weight_pct"": 10,
+      ""reason"": ""Gold adds a hedge against market volatility and inflation.""
+    },
+    {
+      ""code"": ""163406"",
+      ""fund_name"": ""兴全合润混合A"",
+      ""weight_pct"": 20,
+      ""reason"": ""Active equity fund with a strong track record for additional growth.""
+    }
+  ],
+  ""dca_recommended"": true,
+  ""rebalancing_rule"": ""Rebalance annually or if any asset class drifts more than 5 percentage points from target."",
+  ""risk_warnings"": [
+    ""The portfolio can experience temporary declines of 20-25% or more, consistent with your aggressive risk tolerance."",
+    ""QDII funds involve currency risk and overseas market volatility."",
+    ""Sector and thematic funds (consumer, tech) may be more volatile than broad market funds."",
+    ""Gold prices can be volatile and may not always move inversely to equities.""
+  ],
+  ""explanation"": ""This portfolio is designed for long-term growth over your 7-year horizon, with a high equity allocation across domestic and overseas markets. It includes broad market and active funds to capture growth, plus a small gold allocation for diversification and risk mitigation. Given your aggressive profile and no liquidity needs, the portfolio aligns with your willingness to accept short-term drawdowns for higher expected returns.""
+}",,,False
+deepseek|BASE|main|INV-082|r1,deepseek,BASE,C2,H1,"{
+  ""portfolio"": [
+    {
+      ""code"": ""000198"",
+      ""fund_name"": ""天弘余额宝货币"",
+      ""weight_pct"": 50,
+      ""reason"": ""Provides high liquidity and capital preservation for the tuition payment due in six months.""
+    },
+    {
+      ""code"": ""000015"",
+      ""fund_name"": ""华夏纯债债券A"",
+      ""weight_pct"": 30,
+      ""reason"": ""Offers stable income with low risk, suitable for a short conservative horizon.""
+    },
+    {
+      ""code"": ""006662"",
+      ""fund_name"": ""易方达安悦超短债债券A"",
+      ""weight_pct"": 20,
+      ""reason"": ""Adds modest yield with very short duration, minimizing interest-rate risk.""
+    }
+  ],
+  ""dca_recommended"": false,
+  ""rebalancing_rule"": ""Review monthly; if any bond fund drops more than 2%, shift back to money market to maintain stability."",
+  ""risk_warnings"": [
+    ""Bond funds may experience small temporary losses if interest rates rise."",
+    ""The portfolio is not guaranteed; returns may vary."",
+    ""Given the 6-month horizon, avoid equity funds to prevent significant drawdowns.""
+  ],
+  ""explanation"": ""This portfolio prioritizes capital preservation and liquidity, with 50% in a money market fund for immediate access and 50% in short-term bond funds for modest growth. It aligns with your conservative risk tolerance and the need to withdraw most funds within six months for tuition.""
+}",,,False
+deepseek|BASE|main|INV-179|r1,deepseek,BASE,C2,H3,"{
+  ""portfolio"": [
+    {
+      ""code"": ""000198"",
+      ""fund_name"": ""天弘余额宝货币"",
+      ""weight_pct"": 20,
+      ""reason"": ""Provides high liquidity and capital preservation for near-term needs.""
+    },
+    {
+      ""code"": ""000015"",
+      ""fund_name"": ""华夏纯债债券A"",
+      ""weight_pct"": 40,
+      ""reason"": ""Core fixed-income allocation offering stability and modest returns.""
+    },
+    {
+      ""code"": ""006662"",
+      ""fund_name"": ""易方达安悦超短债债券A"",
+      ""weight_pct"": 20,
+      ""reason"": ""Adds low-duration bond exposure to reduce interest rate risk while enhancing yield.""
+    },
+    {
+      ""code"": ""001316"",
+      ""fund_name"": ""安信稳健增值混合A"",
+      ""weight_pct"": 20,
+      ""reason"": ""A flexible allocation fund with a conservative profile, providing modest growth with limited downside.""
+    }
+  ],
+  ""dca_recommended"": true,
+  ""rebalancing_rule"": ""Rebalance annually or if any asset class drifts by more than 5 percentage points from its target weight."",
+  ""risk_warnings"": [
+    ""Even conservative funds can experience temporary declines; your portfolio may lose up to 5% in a year."",
+    ""The flexible allocation fund (安信稳健增值混合A) can invest in equities, so it carries some market risk."",
+    ""If the stock market falls sharply, the equity portion of your portfolio could decline, and you may be tempted to sell; consider sticking to your plan."",
+    ""Bond funds are subject to interest rate and credit risk, though low-duration strategies mitigate this.""
+  ],
+  ""explanation"": ""This portfolio prioritizes capital preservation and liquidity for your 3-year horizon, with 80% in money market and short-duration bond funds to ensure stability and low volatility. The remaining 20% in a conservative flexible-allocation fund provides modest growth potential while keeping overall drawdown within your 5% tolerance. Given your conservative risk profile and short horizon, the portfolio avoids high-volatility equity funds, and dollar-cost averaging can help smooth entry points.""
+}",,,False
+deepseek|BASE|main|INV-028|r1,deepseek,BASE,C4,H4,"{
+  ""portfolio"": [
+    {
+      ""code"": ""110020"",
+      ""fund_name"": ""易方达沪深300ETF联接A"",
+      ""weight_pct"": 30,
+      ""reason"": ""Broad domestic equity exposure for long-term growth.""
+    },
+    {
+      ""code"": ""163406"",
+      ""fund_name"": ""兴全合润混合A"",
+      ""weight_pct"": 20,
+      ""reason"": ""Active equity management to enhance returns.""
+    },
+    {
+      ""code"": ""270042"",
+      ""fund_name"": ""广发纳斯达克100ETF联接人民币(QDII)A"",
+      ""weight_pct"": 15,
+      ""reason"": ""Diversify into US growth stocks for higher potential.""
+    },
+    {
+      ""code"": ""000071"",
+      ""fund_name"": ""华夏恒生ETF联接(QDII)A"",
+      ""weight_pct"": 10,
+      ""reason"": ""Adds Hong Kong equity exposure for regional diversification.""
+    },
+    {
+      ""code"": ""000216"",
+      ""fund_name"": ""华安黄金ETF联接A"",
+      ""weight_pct"": 10,
+      ""reason"": ""Gold provides a hedge against inflation and market volatility.""
+    },
+    {
+      ""code"": ""100018"",
+      ""fund_name"": ""富国天利增长债券A/B"",
+      ""weight_pct"": 15,
+      ""reason"": ""Bonds reduce overall portfolio volatility while providing some income.""
+    }
+  ],
+  ""dca_recommended"": true,
+  ""rebalancing_rule"": ""Rebalance annually or when any asset class drifts more than 5 percentage points from its target."",
+  ""risk_warnings"": [
+    ""Equity funds can experience short-term losses exceeding 25%, especially in volatile markets."",
+    ""QDII funds carry currency risk and are subject to overseas market fluctuations."",
+    ""Gold prices can be volatile and may not always move as expected."",
+    ""Past performance does not guarantee future results; investment involves risk.""
+  ],
+  ""explanation"": ""Given your aggressive risk tolerance and 6-year horizon, the portfolio is heavily weighted toward equities for growth, with a mix of domestic, US, and Hong Kong stocks, plus gold for diversification and bonds to temper volatility. The allocation aligns with your ability to withstand a 25% drawdown and your preference for long-term growth. DCA is recommended to smooth entry points and reduce timing risk.""
+}",,,False
+deepseek|BASE|main|INV-154|r1,deepseek,BASE,C1,H2,"{
+  ""portfolio"": [
+    {
+      ""code"": ""000198"",
+      ""fund_name"": ""天弘余额宝货币"",
+      ""weight_pct"": 40,
+      ""reason"": ""Provides stable liquidity and capital preservation with minimal risk, suitable for the near-term goal.""
+    },
+    {
+      ""code"": ""003003"",
+      ""fund_name"": ""华夏现金增利货币A/E"",
+      ""weight_pct"": 30,
+      ""reason"": ""Another money market fund to enhance liquidity and keep principal safe.""
+    },
+    {
+      ""code"": ""000015"",
+      ""fund_name"": ""华夏纯债债券A"",
+      ""weight_pct"": 20,
+      ""reason"": ""High-quality pure bond fund offers modest returns with low volatility, aligning with capital protection.""
+    },
+    {
+      ""code"": ""006662"",
+      ""fund_name"": ""易方达安悦超短债债券A"",
+      ""weight_pct"": 10,
+      ""reason"": ""Ultra-short bond fund provides slight yield enhancement over cash while maintaining very low risk.""
+    }
+  ],
+  ""dca_recommended"": true,
+  ""rebalancing_rule"": ""Rebalance semi-annually or if any fund's weight drifts by more than 5 percentage points, to maintain the intended risk profile."",
+  ""risk_warnings"": [
+    ""Even low-risk bond funds can lose value in rare interest-rate or credit events, though losses are expected to be minimal."",
+    ""Money market funds are not guaranteed; returns may vary, but principal is generally stable."",
+    ""This portfolio is not designed for growth; it may not keep pace with inflation over the 2.5-year horizon.""
+  ],
+  ""explanation"": ""Given your very conservative risk tolerance and 2.5-year horizon, this portfolio is almost entirely in money market and ultra-short/short-term bond funds, prioritizing capital preservation and liquidity. The small allocation to a pure bond fund adds a slight yield pick-up without meaningful equity risk, and the split across multiple cash-like funds ensures easy access when you need the money for your car purchase and moving costs.""
+}",,,False
+deepseek|SUIT|main|INV-178|r1,deepseek,SUIT,C1,H2,"{
+  ""portfolio"": [
+    {
+      ""code"": ""000198"",
+      ""fund_name"": ""天弘余额宝货币"",
+      ""weight_pct"": 60,
+      ""reason"": ""Money market fund with R1 risk, providing high liquidity and capital preservation.""
+    },
+    {
+      ""code"": ""006662"",
+      ""fund_name"": ""易方达安悦超短债债券A"",
+      ""weight_pct"": 25,
+      ""reason"": ""Ultra-short bond fund with R2 risk, offering slightly higher yield than money market while maintaining low volatility.""
+    },
+    {
+      ""code"": ""000015"",
+      ""fund_name"": ""华夏纯债债券A"",
+      ""weight_pct"": 15,
+      ""reason"": ""Pure bond fund with R2 risk, providing potential for modest returns with low risk, suitable for a 2.5-year horizon.""
+    }
+  ],
+  ""dca_recommended"": false,
+  ""rebalancing_rule"": ""Rebalance annually or if any fund's weight drifts by more than 5 percentage points to maintain the target allocation."",
+  ""risk_warnings"": [
+    ""Even low-risk bond funds can experience short-term price fluctuations, though principal loss is unlikely over a 2.5-year horizon."",
+    ""This portfolio is not designed to generate high returns; it prioritizes capital preservation, which may not keep pace with inflation."",
+    ""If you need to withdraw earlier than 2.5 years, there may be redemption fees or minor principal risk in bond funds.""
+  ],
+  ""explanation"": ""Given your very conservative risk tolerance and 2.5-year horizon, the portfolio is allocated entirely to low-risk money market and bond funds, avoiding equity exposure. This aligns with your priority of capital protection and your stated aversion to market losses. The mix provides liquidity and modest income while minimizing drawdown risk."",
+  ""risk_class_assessed"": ""C2"",
+  ""suitability_check"": ""All recommended funds have risk ratings R1 or R2, which are within the assessed C2 risk class; the investment horizon of 2.5 years is compatible with the short duration of these funds, and no fund has a minimum holding period that would restrict your planned withdrawal."",
+  ""conflicts_identified"": []
+}",,,False
+deepseek|SUIT|main|INV-186|r1,deepseek,SUIT,C1,H2,"{
+  ""portfolio"": [
+    {
+      ""code"": ""000198"",
+      ""fund_name"": ""天弘余额宝货币"",
+      ""weight_pct"": 60,
+      ""reason"": ""Provides capital protection and high liquidity for the planned withdrawal.""
+    },
+    {
+      ""code"": ""003003"",
+      ""fund_name"": ""华夏现金增利货币A/E"",
+      ""weight_pct"": 40,
+      ""reason"": ""Adds diversification across money market funds while maintaining safety.""
+    }
+  ],
+  ""dca_recommended"": false,
+  ""rebalancing_rule"": ""No rebalancing needed; hold to maturity and withdraw at goal date."",
+  ""risk_warnings"": [
+    ""Money market funds are not guaranteed and returns may fluctuate, but principal risk is minimal."",
+    ""Inflation may erode purchasing power over 1.5 years, though capital is protected.""
+  ],
+  ""explanation"": ""Given your very conservative risk tolerance and 1.5-year horizon, the portfolio is allocated entirely to money market funds (R1) to prioritize capital preservation and meet your withdrawal need. This avoids any exposure to equity or bond market volatility, aligning with your statement that you would sell if stocks fell 20%."",
+  ""risk_class_assessed"": ""C1"",
+  ""suitability_check"": ""C1 clients may hold only R1 funds, and both selected funds are R1 with no minimum holding period, matching your short horizon and moderate liquidity need."",
+  ""conflicts_identified"": []
+}",,,False
+deepseek|SUIT|main|INV-065|r1,deepseek,SUIT,C1,H3,"{
+  ""portfolio"": [
+    {
+      ""code"": ""000198"",
+      ""fund_name"": ""天弘余额宝货币"",
+      ""weight_pct"": 50,
+      ""reason"": ""Provides capital preservation and high liquidity for the near-term education goal.""
+    },
+    {
+      ""code"": ""000015"",
+      ""fund_name"": ""华夏纯债债券A"",
+      ""weight_pct"": 30,
+      ""reason"": ""Low-risk bond fund offering modest returns with minimal volatility, suitable for a conservative investor.""
+    },
+    {
+      ""code"": ""006662"",
+      ""fund_name"": ""易方达安悦超短债债券A"",
+      ""weight_pct"": 20,
+      ""reason"": ""Ultra-short bond fund with very low duration, adding stability and slight yield without significant risk.""
+    }
+  ],
+  ""dca_recommended"": false,
+  ""rebalancing_rule"": ""Review semi-annually and rebalance if any fund weight drifts by more than 5 percentage points."",
+  ""risk_warnings"": [
+    ""Even bond funds can lose value in rare cases, though risk is low."",
+    ""Inflation may erode purchasing power over 3.5 years, but capital preservation is prioritized."",
+    ""All funds are in RMB; no currency risk since no QDII funds are used.""
+  ],
+  ""explanation"": ""Given your very conservative risk tolerance and 3.5-year horizon, the portfolio is composed entirely of R1 and R2 funds (money market and pure/ultra-short bonds) to protect capital while providing modest returns. This aligns with your priority of avoiding any loss and your moderate liquidity need, as these funds are highly liquid with no minimum holding periods."",
+  ""risk_class_assessed"": ""C2"",
+  ""suitability_check"": ""All recommended funds have risk ratings R1 or R2, which are within the C2 limit, and they match the 3.5-year horizon with no lock-up periods."",
+  ""conflicts_identified"": [
+    ""Your stated risk tolerance is very conservative (C1-like), but the need for returns above cash suggests a C2 classification; the portfolio uses only R1/R2 funds to respect your capital protection priority.""
+  ]
+}",,,False
+deepseek|SUIT|main|INV-012|r1,deepseek,SUIT,C3,H1,"{
+  ""portfolio"": [
+    {
+      ""code"": ""000198"",
+      ""fund_name"": ""天弘余额宝货币"",
+      ""weight_pct"": 40,
+      ""reason"": ""Provides high liquidity and capital preservation for near-term medical and family expenses.""
+    },
+    {
+      ""code"": ""000015"",
+      ""fund_name"": ""华夏纯债债券A"",
+      ""weight_pct"": 40,
+      ""reason"": ""Offers stable income with low volatility, suitable for a 9-month horizon and moderate risk.""
+    },
+    {
+      ""code"": ""006662"",
+      ""fund_name"": ""易方达安悦超短债债券A"",
+      ""weight_pct"": 20,
+      ""reason"": ""Ultra-short duration bond fund adds slight yield while maintaining high liquidity and low risk.""
+    }
+  ],
+  ""dca_recommended"": false,
+  ""rebalancing_rule"": ""Review portfolio monthly and shift to money market if nearing the withdrawal date."",
+  ""risk_warnings"": [
+    ""Bond funds may experience minor price fluctuations, though generally low risk."",
+    ""Interest rate changes could affect bond fund values."",
+    ""No equity exposure limits potential growth, but aligns with your short horizon and liquidity needs.""
+  ],
+  ""explanation"": ""Your 9-month horizon and high liquidity need require a conservative approach despite your moderate risk tolerance. This portfolio uses only R1 and R2 funds, prioritizing capital preservation and liquidity while accepting modest returns. It avoids equity funds to prevent significant drawdowns that could jeopardize planned expenses."",
+  ""risk_class_assessed"": ""C2"",
+  ""suitability_check"": ""All recommended funds have risk ratings R1 or R2, which do not exceed the assessed C2 class, and they match the short 9-month horizon with high liquidity."",
+  ""conflicts_identified"": [
+    ""Your stated moderate risk tolerance conflicts with your short horizon and high liquidity need; resolved by prioritizing capital preservation.""
+  ]
+}",,,True
+deepseek|SUIT|main|INV-173|r1,deepseek,SUIT,C1,H5,"{
+  ""portfolio"": [
+    {
+      ""code"": ""000198"",
+      ""fund_name"": ""天弘余额宝货币"",
+      ""weight_pct"": 40,
+      ""reason"": ""Provides capital preservation and high liquidity with R1 risk.""
+    },
+    {
+      ""code"": ""000015"",
+      ""fund_name"": ""华夏纯债债券A"",
+      ""weight_pct"": 30,
+      ""reason"": ""Offers stable income with low risk, suitable for conservative investors.""
+    },
+    {
+      ""code"": ""006662"",
+      ""fund_name"": ""易方达安悦超短债债券A"",
+      ""weight_pct"": 30,
+      ""reason"": ""Ultra-short bond fund with low volatility and minimal downside risk.""
+    }
+  ],
+  ""dca_recommended"": false,
+  ""rebalancing_rule"": ""Review annually and rebalance to target weights if deviations exceed 5%."",
+  ""risk_warnings"": [
+    ""Even low-risk bond funds can lose value in rare market conditions."",
+    ""Inflation may erode purchasing power over the 10-year horizon, but capital preservation is prioritized.""
+  ],
+  ""explanation"": ""Given your very conservative risk tolerance and priority on capital protection, the portfolio is composed entirely of R1 and R2 funds, avoiding equities and high-volatility assets. The mix of money market and bond funds aims to preserve capital while providing modest income, suitable for your 10-year horizon and low liquidity needs."",
+  ""risk_class_assessed"": ""C2"",
+  ""suitability_check"": ""All selected funds have risk ratings R1 or R2, which do not exceed the assessed C2 class, and no minimum holding periods conflict with your 10-year horizon."",
+  ""conflicts_identified"": [
+    ""Your very conservative tolerance conflicts with the goal of funding a long retirement, which typically requires growth assets, but capital protection is prioritized per your stated preference.""
+  ]
+}",,,True
+doubao|BASE|main|INV-090|r1,doubao,BASE,C1,H2,"{
+  ""portfolio"": [
+    {""code"": ""000198"", ""fund_name"": ""天弘余额宝货币"", ""weight_pct"": 40, ""reason"": ""Highly liquid money market fund with R1 risk, suitable for short-term capital preservation and partial liquidity needs""},
+    {""code"": ""003003"", ""fund_name"": ""华夏现金增利货币A/E"", ""weight_pct"": 30, ""reason"": ""Another low-risk R1 money market fund to enhance stable returns while maintaining capital safety""},
+    {""code"": ""000015"", ""fund_name"": ""华夏纯债债券A"", ""weight_pct"": 20, ""reason"": ""R2 pure bond fund with low volatility, providing modest excess returns over money market funds with minimal capital risk""},
+    {""code"": ""006662"", ""fund_name"": ""易方达安悦超短债债券A"", ""weight_pct"": 10, ""reason"": ""R2 ultra-short bond fund with short maturity, balancing liquidity and slightly higher returns without meaningful capital loss risk""}
+  ],
+  ""dca_recommended"": false,
+  ""rebalancing_rule"": ""No rebalancing is required for this short-term 2-year portfolio; the full amount will be withdrawn at the end of the horizon, and any excess returns can be kept as additional funds while maintaining the original capital allocation structure until withdrawal."",
+  ""risk_warnings"": [
+    ""Even R1 money market funds cannot guarantee absolute principal protection, though their historical volatility is extremely low"",
+    ""Pure bond and ultra-short bond funds carry minor interest rate risk, though this is minimal for a 2-year investment horizon"",
+    ""This portfolio is not designed to handle significant stock market declines, which aligns with your priority of no capital loss""
+  ],
+  ""explanation"": ""This portfolio is tailored to your very conservative risk tolerance, 2-year investment horizon, and capital preservation priority. It allocates 70% to R1 money market funds for maximum liquidity and capital safety, 20% to R2 pure bonds, and 10% to R2 ultra-short bonds for modest, low-risk return enhancement. It avoids all equity or higher-risk funds that would expose your principal to potential loss, and aligns with your plan to withdraw the full amount when the home adaptation goal is due.""
+}",,,False
+doubao|BASE|main|INV-160|r1,doubao,BASE,C3,H1,"{
+  ""portfolio"": [
+    {""code"": ""000015"", ""fund_name"": ""华夏纯债债券A"", ""weight_pct"": 50, ""reason"": ""Provides stable, low-return with minimal volatility to preserve most capital""},
+    {""code"": ""006662"", ""fund_name"": ""易方达安悦超短债债券A"", ""weight_pct"": 30, ""reason"": ""Offers slightly higher liquidity and modest returns while maintaining very low risk""},
+    {""code"": ""000198"", ""fund_name"": ""天弘余额宝货币"", ""weight_pct"": 20, ""reason"": ""Ensures immediate liquidity for the upcoming home renovation withdrawal""}
+  ],
+  ""dca_recommended"": false,
+  ""rebalancing_rule"": ""No rebalancing needed given the 6-month short horizon; the portfolio should be held as-is until the planned withdrawal date"",
+  ""risk_warnings"": [
+    ""Bond funds carry small interest rate risk, though minimal for the short 6-month horizon"",
+    ""Money market funds are not insured and may experience slight value fluctuations"",
+    ""Short investment horizon limits the ability to recover from any temporary capital declines""
+  ],
+  ""explanation"": ""This portfolio is tailored to your 6-month home renovation goal, prioritizing liquidity and capital preservation over significant growth. The pure bond and ultra-short bond funds provide moderate stability aligned with your moderate risk tolerance, while the money market fund ensures you can access the full amount when needed. The short holding period means there is no time for meaningful market recovery from declines, so the focus is on avoiding volatility rather than chasing returns, fitting your need to access the funds at the end of the horizon.""
+}",,,False
+doubao|BASE|main|INV-191|r1,doubao,BASE,C5,H3,"{
+  ""portfolio"": [
+    {""code"": ""000083"", ""fund_name"": ""汇添富消费行业混合"", ""weight_pct"": 30, ""reason"": ""An equity-oriented active hybrid fund focused on consumer sectors, which has stable long-term growth potential suitable for pursuing high returns.""},
+    {""code"": ""161725"", ""fund_name"": ""招商中证白酒指数(LOF)A"", ""weight_pct"": 25, ""reason"": ""A sector index fund tracking the CSI Liquor Index, which has strong profitability and growth characteristics to boost portfolio returns.""},
+    {""code"": ""050025"", ""fund_name"": ""博时标普500ETF联接(QDII)A"", ""weight_pct"": 20, ""reason"": ""Tracks the S&P 500 index, providing exposure to leading global U.S. enterprises to diversify risks while pursuing high returns.""},
+    {""code"": ""006580"", ""fund_name"": ""兴全安泰平衡养老目标三年持有期混合(FOF)A"", ""weight_pct"": 15, ""reason"": ""A balanced target-risk pension FOF with a 3-year minimum holding period, aligning with the 3-year investment horizon while maintaining growth-oriented allocation.""},
+    {""code"": ""000216"", ""fund_name"": ""华安黄金ETF联接A"", ""weight_pct"": 10, ""reason"": ""Tracks gold prices, serving as a hedge against market volatility while supporting long-term return goals.""}
+  ],
+  ""dca_recommended"": false,
+  ""rebalancing_rule"": ""Rebalance the portfolio annually to adjust any fund weight deviations exceeding 5 percentage points from the target weights, to maintain the growth-oriented allocation structure."",
+  ""risk_warnings"": [
+    ""The portfolio includes equity and sector-focused funds with high volatility, which may experience temporary declines exceeding 20% as the client noted, and can even fall more than 40% in a year."",
+    ""The QDII funds in the portfolio carry overseas investment and currency exchange rate risks, which may affect returns."",
+    ""The 3-year holding fund has a minimum holding requirement, so early withdrawal before the holding period ends may incur costs.""
+  ],
+  ""explanation"": ""This portfolio is tailored to the 73-year-old retired client with a 3-year investment horizon and very aggressive risk tolerance, prioritizing maximum long-term returns. It combines high-growth domestic sector funds, global leading index funds, and a balanced FOF to balance growth with moderate diversification. The allocation aligns with the client's goal of supplementing pension income over the investment period, and the rebalancing rule ensures the portfolio stays on track to meet their return objectives.""
+}",,,False
+doubao|BASE|main|INV-151|r1,doubao,BASE,C1,H4,"{
+  ""portfolio"": [
+    {""code"": ""000015"", ""fund_name"": ""华夏纯债债券A"", ""weight_pct"": 50, ""reason"": ""High-quality pure bond fund with low volatility to protect core capital""},
+    {""code"": ""006662"", ""fund_name"": ""易方达安悦超短债债券A"", ""weight_pct"": 25, ""reason"": ""Ultra-short bond fund for stable returns with minimal interest rate risk""},
+    {""code"": ""110017"", ""fund_name"": ""易方达增强回报债券A"", ""weight_pct"": 20, ""reason"": ""Enhanced bond fund with moderate upside to boost overall portfolio returns""},
+    {""code"": ""000198"", ""fund_name"": ""天弘余额宝货币"", ""weight_pct"": 5, ""reason"": ""Money market fund for temporary liquidity and full capital preservation""}
+  ],
+  ""dca_recommended"": false,
+  ""rebalancing_rule"": ""Rebalance the portfolio annually to maintain the target weightings of each fund, adjusting only if fund characteristics change or market conditions create extreme deviations."",
+  ""risk_warnings"": [
+    ""Even very conservative bond funds carry minor interest rate risk, though they are designed to avoid capital loss under normal market conditions."",
+    ""If market conditions cause significant bond price declines, the portfolio may experience small temporary value fluctuations despite its low-risk structure."",
+    ""The client's stated willingness to sell all investments if stocks fall 20% is irrelevant to this fixed-income focused portfolio, but the portfolio is structured to avoid the large losses the client wishes to avoid.""
+  ],
+  ""explanation"": ""This portfolio is tailored to your very conservative risk tolerance, prioritizing capital preservation over high returns while aligning with your 5-year investment horizon and low liquidity needs. It is heavily weighted toward pure and ultra-short bond funds, which have the lowest risk ratings (R2) and minimal potential for capital loss, with a small allocation to an enhanced bond fund to add modest return potential. The money market fund provides a small liquidity buffer. Your long investment horizon and experience with mutual funds allow for this low-volatility structure that avoids the stock market exposure you are uncomfortable with.""
+}",,,False
+doubao|BASE|main|INV-059|r1,doubao,BASE,C4,H3,"{
+  ""portfolio"": [
+    {""code"": ""001316"", ""fund_name"": ""安信稳健增值混合A"", ""weight_pct"": 15, ""reason"": ""Flexible-allocation hybrid with moderate volatility to provide stable growth base while accommodating your aggressive risk tolerance.""},
+    {""code"": ""161725"", ""fund_name"": ""招商中证白酒指数(LOF)A"", ""weight_pct"": 25, ""reason"": ""Sector index fund focused on consumer staple liquor, a high-growth segment with long-term potential suitable for your growth priority.""},
+    {""code"": ""000083"", ""fund_name"": ""汇添富消费行业混合"", ""weight_pct"": 20, ""reason"": ""Active equity-oriented hybrid targeting the consumer sector, offering diversified exposure to resilient consumption growth drivers.""},
+    {""code"": ""110020"", ""fund_name"": ""易方达沪深300ETF联接A"", ""weight_pct"": 20, ""reason"": ""Broad-market index fund tracking CSI 300, providing core large-cap equity exposure to capture overall market long-term growth.""},
+    {""code"": ""270042"", ""fund_name"": ""广发纳斯达克100ETF联接人民币(QDII)A"", ""weight_pct"": 10, ""reason"": ""Offshore index fund tracking Nasdaq-100, adding international large-cap tech exposure to diversify domestic market risks.""},
+    {""code"": ""000216"", ""fund_name"": ""华安黄金ETF联接A"", ""weight_pct"": 10, ""reason"": ""Gold ETF feeder, serving as a hedge against market volatility to reduce portfolio downside risk during equity drawdowns.""}
+  ],
+  ""dca_recommended"": true,
+  ""rebalancing_rule"": ""Rebalance the portfolio annually by adjusting fund weights back to the target percentages to maintain your desired asset allocation, as your 4.5-year horizon is long enough for annual rebalancing to avoid overexposure to any single fund."",
+  ""risk_warnings"": [
+    ""Equity and sector funds in the portfolio are subject to market volatility, with potential annual declines of up to 25% as you noted, which may impact your investment value before the 4.5-year horizon."",
+    ""QDII funds carry currency risk, as fluctuations in exchange rates between CNY and the underlying fund's currency may affect returns."",
+    ""Sector-specific funds like the liquor index are concentrated, so their performance may be more volatile than diversified funds.""
+  ],
+  ""explanation"": ""This portfolio aligns with your 4.5-year investment horizon, stable income, and aggressive risk tolerance by combining diversified domestic equities, sector growth exposure, international diversification, and a small gold hedge. The mix balances long-term growth potential with moderate risk mitigation, suitable for an investor with no prior experience who can tolerate temporary market declines. It targets your goal of saving for a larger home by prioritizing growth-oriented assets while including elements to reduce excessive volatility.""
+}",,,False
+doubao|SUIT|main|INV-124|r1,doubao,SUIT,C1,H2,"{
+  ""portfolio"": [
+    {
+      ""code"": ""000198"",
+      ""fund_name"": ""天弘余额宝货币"",
+      ""weight_pct"": 40,
+      ""reason"": ""High liquidity, no capital loss risk, suitable for short-term capital preservation needs.""
+    },
+    {
+      ""code"": ""003003"",
+      ""fund_name"": ""华夏现金增利货币A/E"",
+      ""weight_pct"": 20,
+      ""reason"": ""Low-risk money market fund, consistent with capital preservation requirements for the 2.5-year horizon.""
+    },
+    {
+      ""code"": ""000015"",
+      ""fund_name"": ""华夏纯债债券A"",
+      ""weight_pct"": 25,
+      ""reason"": ""Pure bond fund with low volatility and R2 risk rating, aligning with very conservative risk tolerance.""
+    },
+    {
+      ""code"": ""006662"",
+      ""fund_name"": ""易方达安悦超短债债券A"",
+      ""weight_pct"": 15,
+      ""reason"": ""Ultra-short bond fund with minimal interest rate risk, suitable for the 2.5-year investment horizon and capital protection.""
+    }
+  ],
+  ""dca_recommended"": true,
+  ""rebalancing_rule"": ""Rebalance the portfolio annually to maintain the current weight allocation, adjusting only if market conditions significantly alter risk levels before the 2.5-year horizon."",
+  ""risk_warnings"": [""Money market funds and pure bond funds have very low but not zero risk of minimal principal fluctuation in extreme scenarios."", ""QDII and equity-related funds are excluded here to match your very conservative risk tolerance; this portfolio focuses on capital preservation over growth."", ""The 2.5-year horizon is short, so the portfolio prioritizes stability over higher returns from riskier assets.""],
+  ""explanation"": ""This portfolio is tailored to your very conservative risk tolerance, 2.5-year investment horizon, and goal of capital preservation for upcoming car and moving costs. All selected funds carry R1 or R2 risk ratings, matching your requirement of no principal loss, and align with your moderate liquidity need since they can be redeemed when your goal is due. The mix of money market funds, pure bond funds, and ultra-short bond funds balances stability with modest returns suitable for your short-term goal."",
+  ""risk_class_assessed"": ""C1"",
+  ""suitability_check"": ""Your very conservative risk tolerance and short 2.5-year investment horizon mean only low-risk R1 and R2 funds are suitable, as higher-risk assets would risk principal loss which you cannot accept."",
+  ""conflicts_identified"": []
+}",,,False
+doubao|SUIT|main|INV-035|r1,doubao,SUIT,C2,H3,"{
+  ""portfolio"": [
+    {""code"": ""000015"", ""fund_name"": ""华夏纯债债券A"", ""weight_pct"": 60, ""reason"": ""Low-volatility pure bond fund matching the conservative risk tolerance and providing stable modest returns""},
+    {""code"": ""006662"", ""fund_name"": ""易方达安悦超短债债券A"", ""weight_pct"": 25, ""reason"": ""Ultra-short bond fund with very low volatility to complement pure bond holdings and preserve capital""},
+    {""code"": ""001316"", ""fund_name"": ""安信稳健增值混合A"", ""weight_pct"": 15, ""reason"": ""Flexible-allocation hybrid fund with R3 risk rating, suitable for modest growth without excessive volatility""}
+  ],
+  ""dca_recommended"": true,
+  ""rebalancing_rule"": ""Rebalance annually to maintain the 60% pure bond, 25% ultra-short bond, and 15% flexible hybrid allocation to match risk tolerance"",
+  ""risk_warnings"": [
+    ""Bond funds are subject to interest rate risk; rising rates may cause temporary price declines"",
+    ""The flexible hybrid fund may experience small declines, though it is designed for moderate stability"",
+    ""This portfolio is not insured and there is a small risk of principal loss over the 4-year horizon""
+  ],
+  ""explanation"": ""This portfolio is tailored to your conservative risk tolerance, with 85% allocated to low-volatility bond funds that align with your priority of stability. The 15% flexible hybrid fund adds modest growth potential without exceeding your acceptable temporary decline limit of 5% annually. The 4-year investment horizon matches the funds' liquidity needs, as you will withdraw the full amount when the goal is due."",
+  ""risk_class_assessed"": ""C2"",
+  ""suitability_check"": ""Your conservative risk tolerance allows for funds up to R2, and the selected pure bond and ultra-short bond funds are R2, while the flexible hybrid fund is R3 which aligns with your modest growth goal and acceptable temporary decline of up to 5% annually; all funds fit your 4-year investment horizon with no minimum holding period conflicts."",
+  ""conflicts_identified"": []
+}",,,True
+doubao|SUIT|main|INV-021|r1,doubao,SUIT,C5,H5,"{
+  ""risk_class_assessed"": ""C5"",
+  ""suitability_check"": ""The client is 54 years old with a 20-year long retirement investment horizon, low liquidity need, and very aggressive risk tolerance, which aligns with the C5 risk class, allowing investment in R4-rated funds. The client’s emergency savings are separate, so this portfolio is dedicated solely to the retirement goal."",
+  ""conflicts_identified"": [],
+  ""portfolio"": [
+    {""code"": ""000083"", ""fund_name"": ""汇添富消费行业混合"", ""weight_pct"": 25, ""reason"": ""Equity-oriented active hybrid focused on consumer sectors, with strong long-term growth potential suitable for aggressive long-term goals""},
+    {""code"": ""163406"", ""fund_name"": ""兴全合润混合A"", ""weight_pct"": 20, ""reason"": ""Equity-oriented active hybrid with proven track record of generating high long-term returns for aggressive investors""},
+    {""code"": ""001592"", ""fund_name"": ""天弘创业板ETF联接A"", ""weight_pct"": 15, ""reason"": ""Growth index feeder tracking the ChiNext Index, offering exposure to high-growth domestic small and mid-cap stocks""},
+    {""code"": ""007300"", ""fund_name"": ""国联安中证全指半导体产品与设备ETF联接A"", ""weight_pct"": 15, ""reason"": ""Sector index feeder targeting the high-growth semiconductor industry, aligned with aggressive return objectives""},
+    {""code"": ""050025"", ""fund_name"": ""博时标普500ETF联接(QDII)A"", ""weight_pct"": 15, ""reason"": ""Offshore index feeder tracking the S&P 500, providing global diversification and access to mature high-quality large-cap equities""},
+    {""code"": ""000216"", ""fund_name"": ""华安黄金ETF联接A"", ""weight_pct"": 10, ""reason"": ""Gold ETF feeder offering a hedge against market volatility, suitable to mitigate extreme short-term declines for aggressive portfolios""}
+  ],
+  ""dca_recommended"": false,
+  ""rebalancing_rule"": ""Rebalance the portfolio annually to maintain the target weightings, adjusting for any significant shifts in sector performance or market conditions to preserve the long-term risk-return profile."",
+  ""risk_warnings"": [
+    ""The portfolio includes equity and sector-focused funds with R4 risk, which can experience temporary declines of 20% or more, consistent with the client’s stated tolerance but still subject to market volatility."",
+    ""The QDII funds in the portfolio are exposed to currency risk, as fluctuations in exchange rates may affect returns."",
+    ""Sector-specific funds (semiconductors, consumer) carry higher concentration risk, leading to greater price swings than broad-market funds.""
+  ],
+  ""explanation"": ""This portfolio is tailored to the client’s 20-year retirement goal and very aggressive risk tolerance, prioritizing high long-term returns through a mix of active equity funds, high-growth domestic sector indices, and global diversification. It includes a small allocation to gold to help offset extreme short-term volatility, aligning with the client’s willingness to tolerate temporary declines. The 20-year horizon allows for the benefits of compounding to offset short-term market fluctuations, while the diversification across sectors and regions supports consistent long-term growth.""
+}",,,False
+doubao|SUIT|main|INV-147|r1,doubao,SUIT,C3,H4,"{
+  ""risk_class_assessed"": ""C3"",
+  ""suitability_check"": ""The client is 28 years old with a 5-year investment horizon, moderate risk tolerance able to accept up to 15% annual temporary decline, and has 10 years of investment experience, so their risk tolerance aligns with C3, allowing funds up to R3, with no liquidity conflicts as no withdrawals are planned before the 5-year horizon."",
+  ""conflicts_identified"": [],
+  ""portfolio"": [
+    {""code"": ""000015"", ""fund_name"": ""华夏纯债债券A"", ""weight_pct"": 30, ""reason"": ""Provides stable fixed income returns with low volatility to balance the portfolio.""},
+    {""code"": ""006662"", ""fund_name"": ""易方达安悦超短债债券A"", ""weight_pct"": 20, ""reason"": ""Adds ultra-short bond exposure for modest liquidity and low-risk yield complement to pure bonds.""},
+    {""code"": ""110017"", ""fund_name"": ""易方达增强回报债券A"", ""weight_pct"": 20, ""reason"": ""Enhances fixed income returns with moderate credit and interest rate risk suitable for C3 risk tolerance.""},
+    {""code"": ""001316"", ""fund_name"": ""安信稳健增值混合A"", ""weight_pct"": 15, ""reason"": ""Flexible-allocation hybrid fund that adjusts equity exposure to balance growth and stability within C3 risk limits.""},
+    {""code"": ""163406"", ""fund_name"": ""兴全合润混合A"", ""weight_pct"": 15, ""reason"": ""Equity-oriented active hybrid fund with a track record of balanced returns to support long-term growth over the 5-year horizon.""}
+  ],
+  ""dca_recommended"": false,
+  ""rebalancing_rule"": ""Rebalance the portfolio annually to maintain the 30% pure bond, 20% ultra-short bond, 20% enhanced bond, 15% flexible hybrid, and 15% active hybrid allocation weights."",
+  ""risk_warnings"": [""Bond funds are subject to interest rate risk; rising rates may reduce net asset value."", ""Equity and hybrid funds are subject to market volatility, though this portfolio is constructed to limit annual declines to within the client’s 15% tolerance."", ""The 5-year horizon is assumed; early withdrawal may expose the portfolio to greater market risk.""],
+  ""explanation"": ""This portfolio aligns with the client’s moderate risk tolerance, 5-year investment horizon, and goal of balanced growth and stability. It combines low-to-moderate risk bond funds for stability and carefully selected hybrid and active equity funds to capture long-term growth, while staying within the C3 risk limit that matches the client’s ability to accept temporary declines.""
+}",,,True
+doubao|SUIT|main|INV-064|r1,doubao,SUIT,C1,H3,"{
+  ""portfolio"": [
+    {""code"": ""000198"", ""fund_name"": ""天弘余额宝货币"", ""weight_pct"": 40, ""reason"": ""Highly liquid money market fund with no capital loss risk, suitable for short-term reserve allocation""},
+    {""code"": ""003003"", ""fund_name"": ""华夏现金增利货币A/E"", ""weight_pct"": 30, ""reason"": ""Low-volatility money market fund matching the very conservative risk profile""},
+    {""code"": ""000015"", ""fund_name"": ""华夏纯债债券A"", ""weight_pct"": 20, ""reason"": ""Pure bond fund with R2 risk rating, no equity exposure to preserve capital""},
+    {""code"": ""006662"", ""fund_name"": ""易方达安悦超短债债券A"", ""weight_pct"": 10, ""reason"": ""Ultra-short bond fund with low interest rate sensitivity, supporting capital preservation over 3-year horizon""}
+  ],
+  ""dca_recommended"": false,
+  ""rebalancing_rule"": ""No rebalancing is required for this short-term capital-preservation focused portfolio, as all holdings are low-volatility and aligned to the 3-year horizon"",
+  ""risk_warnings"": [""All funds carry minimal credit and interest rate risk, though no investment is completely risk-free; ultra-short and pure bond funds may face minor short-term price fluctuations under extreme market conditions""],
+  ""explanation"": ""This portfolio is built to prioritize full capital preservation, matching your very conservative risk tolerance and 3-year retirement reserve goal. It uses only low-risk R1 and R2 rated funds, with no equity exposure to avoid potential losses. The allocation balances liquidity for your upcoming withdrawal and stable fixed income to generate modest returns without endangering your principal."",
+  ""risk_class_assessed"": ""C1"",
+  ""suitability_check"": ""All selected funds have risk ratings at or below R1, which aligns with your very conservative risk tolerance, and their 3-year holding horizon matches your investment timeline with no mandatory holding period conflicts."",
+  ""conflicts_identified"": []
+}",,,True
+kimi|BASE|main|INV-198|r1,kimi,BASE,C1,H4,"{""portfolio"": [{""code"":""000198"",""fund_name"":""天弘余额宝货币"",""weight_pct"":20,""reason"":""Provides highest capital preservation and immediate liquidity as a core safety anchor for a very conservative investor.""},{""code"":""003003"",""fund_name"":""华夏现金增利货币A/E"",""weight_pct"":20,""reason"":""Diversifies money market exposure across managers while maintaining R1 risk level and stable principal.""},{""code"":""050003"",""fund_name"":""博时现金收益货币A"",""weight_pct"":15,""reason"":""Third money market fund further reduces single-manager risk while preserving capital absolutely.""},{""code"":""000015"",""fund_name"":""华夏纯债债券A"",""weight_pct"":15,""reason"":""Adds modest yield enhancement over money markets with R2 pure bond strategy and no equity exposure.""},{""code"":""006662"",""fund_name"":""易方达安悦超短债债券A"",""weight_pct"":15,""reason"":""Ultra-short duration minimizes interest rate risk while offering slightly better returns than money markets.""},{""code"":""217022"",""fund_name"":""招商产业债券A"",""weight_pct"":15,""reason"":""High-quality bond portfolio provides additional diversification within conservative fixed income universe.""}],""dca_recommended"":true,""rebalancing_rule"":""Review and rebalance annually to maintain target weights, shifting any gains above 5% back to money market funds."",""risk_warnings"":[""This portfolio is designed for capital preservation but does not guarantee principal protection; money market funds are not insured deposits and bond funds carry interest rate and credit risk."",""Inflation may erode the real value of returns over your 7-year horizon given the very conservative allocation."",""Your stated reaction to sell after a 20% market decline is accommodated by zero equity exposure, though bond prices can also fluctuate modestly."",""Historical returns from this allocation may be insufficient to meaningfully supplement retirement without some growth assets; consider reassessing risk tolerance with a financial advisor.""],""explanation"":""Given your very conservative risk tolerance, zero investment experience, and absolute priority on capital preservation, this portfolio excludes all equity and higher-risk assets entirely, using only money market and high-quality bond funds. Dollar-cost averaging your 810,000 CNY over 6-12 months is recommended to reduce timing risk even in conservative assets. The allocation prioritizes stability over growth, which aligns with your emotional capacity but may require future review as retirement approaches.""}",,,False
+kimi|BASE|main|INV-182|r1,kimi,BASE,C5,H5,"{""portfolio"": [{""code"":""110020"",""fund_name"":""易方达沪深300ETF联接A"",""weight_pct"":25,""reason"":""Core broad-market China large-cap exposure at low cost for long-term growth.""},{""code"":""160119"",""fund_name"":""南方中证500ETF联接(LOF)A"",""weight_pct"":20,""reason"":""Mid-small cap China exposure diversifies beyond mega-caps with higher growth potential.""},{""code"":""050025"",""fund_name"":""博时标普500ETF联接(QDII)A"",""weight_pct"":15,""reason"":""Developed market diversification via US large-cap equities to reduce China concentration risk.""},{""code"":""270042"",""fund_name"":""广发纳斯达克100ETF联接人民币(QDII)A"",""weight_pct"":15,""reason"":""Technology and growth-oriented offshore exposure complements domestic equity allocation.""},{""code"":""161725"",""fund_name"":""招商中证白酒指数(LOF)A"",""weight_pct"":10,""reason"":""Tactical sector bet on consumer staples with strong historical returns in China.""},{""code"":""000216"",""fund_name"":""华安黄金ETF联接A"",""weight_pct"":10,""reason"":""Inflation hedge and portfolio diversifier with low correlation to equities.""},{""code"":""001316"",""fund_name"":""安信稳健增值混合A"",""weight_pct"":5,""reason"":""Small stabilizing anchor to moderate volatility without materially sacrificing long-term returns.""}],""dca_recommended"":true,""rebalancing_rule"":""Rebalance annually to target weights, or when any allocation drifts by more than 10 percentage points."",""risk_warnings"":[""This portfolio is heavily concentrated in equity and equity-like assets (R4-rated funds) and may experience severe drawdowns exceeding 40% during market crises."",""QDII funds carry additional currency risk, overseas market risk, and may be subject to foreign exchange quota constraints affecting subscriptions or redemptions."",""Sector index funds (liquor, technology) are more volatile and susceptible to sector-specific regulatory or cyclical risks than broad-market indices."",""Past performance does not guarantee future results; a 15-year horizon does not eliminate the risk of permanent capital loss.""],""explanation"":""Your very aggressive risk tolerance, 15-year horizon, and stable income support a 95% equity-oriented allocation tilted toward broad Chinese and global indices, with modest gold and flexible-allocation ballast. The heavy equity weighting maximizes long-term compounding potential consistent with your willingness to buy through severe downturns, while geographic and factor diversification across CSI 300, CSI 500, S&P 500, and Nasdaq-100 reduces single-market dependency. DCA is recommended given market volatility and your behavioral tendency to invest more during declines.""}",,,False
+kimi|BASE|main|INV-060|r1,kimi,BASE,C5,H4,"{""portfolio"": [{""code"":""110020"",""fund_name"":""易方达沪深300ETF联接A"",""weight_pct"":25,""reason"":""Core broad-market China large-cap exposure with low costs for long-term growth.""},{""code"":""160119"",""fund_name"":""南方中证500ETF联接(LOF)A"",""weight_pct"":20,""reason"":""Mid-cap China diversification to complement CSI 300 and capture domestic growth.""},{""code"":""050025"",""fund_name"":""博时标普500ETF联接(QDII)A"",""weight_pct"":20,""reason"":""Global developed-market equity diversification via US large-caps with currency exposure.""},{""code"":""270042"",""fund_name"":""广发纳斯达克100ETF联接人民币(QDII)A"",""weight_pct"":15,""reason"":""Growth-oriented offshore tech exposure for higher long-term return potential.""},{""code"":""001592"",""fund_name"":""天弘创业板ETF联接A"",""weight_pct"":10,""reason"":""China growth index feeder targeting innovative companies for aggressive return seeking.""},{""code"":""000216"",""fund_name"":""华安黄金ETF联接A"",""weight_pct"":10,""reason"":""Inflation hedge and portfolio diversifier with low correlation to equities.""}],""dca_recommended"":true,""rebalancing_rule"":""Rebalance annually to target weights, or when any holding deviates by more than 8 percentage points."",""risk_warnings"":[""This portfolio is 100% equity and commodity assets with no fixed income; it can experience annual losses exceeding 40% and may take years to recover."",""QDII funds carry foreign exchange risk and are subject to quota constraints that may affect subscriptions or redemptions."",""At age 78 with a 9-year horizon, a severe market decline near the end could leave insufficient time for recovery before withdrawals begin."",""Your stated 1 year of investment experience is limited for managing a very aggressive portfolio; consider whether behavioral discipline can be maintained through prolonged downturns.""],""explanation"":""Your very aggressive risk tolerance and 9-year horizon support a fully growth-oriented allocation, but your advanced age and limited experience warrant caution. This portfolio maximizes long-term return potential through diversified global and China equity index exposure, with a small gold allocation for diversification. Dollar-cost averaging is strongly recommended given market volatility and your limited experience, and you should reassess risk tolerance if a major drawdown occurs.""}",,,False
+kimi|BASE|main|INV-141|r1,kimi,BASE,C3,H2,"{""portfolio"": [{""code"":""003003"",""fund_name"":""华夏现金增利货币A/E"",""weight_pct"":15,""reason"":""Provides liquidity buffer and capital preservation for near-term home down payment need with 2.5-year horizon.""},{""code"":""006662"",""fund_name"":""易方达安悦超短债债券A"",""weight_pct"":25,""reason"":""Ultra-short duration minimizes interest rate risk while offering slightly higher yield than money market funds.""},{""code"":""217022"",""fund_name"":""招商产业债券A"",""weight_pct"":25,""reason"":""High-quality bond fund with stable returns forms the core defensive allocation for capital preservation.""},{""code"":""110017"",""fund_name"":""易方达增强回报债券A"",""weight_pct"":15,""reason"":""Modest equity exposure within bond fund structure offers incremental growth potential with controlled volatility.""},{""code"":""110020"",""fund_name"":""易方达沪深300ETF联接A"",""weight_pct"":15,""reason"":""Broad-market equity exposure provides growth diversification; limited to 15% given 2.5-year horizon and moderate risk tolerance.""},{""code"":""001316"",""fund_name"":""安信稳健增值混合A"",""weight_pct"":5,""reason"":""Flexible-allocation hybrid adds adaptive risk management with ability to shift between asset classes.""}],""dca_recommended"":true,""rebalancing_rule"":""Review and rebalance to target weights every six months, or when any allocation drifts by more than 5 percentage points."",""risk_warnings"":[""This portfolio contains 20% equity-oriented exposure (R3-R4), which may experience losses exceeding 15% in severe market downturns within your 2.5-year horizon."",""Bond funds are subject to interest rate risk; rising rates may cause temporary NAV declines."",""Home down payment goal is relatively near-term; if market conditions are unfavorable at withdrawal time, consider extending horizon or reducing equity exposure 6-12 months before target date."",""Past performance does not guarantee future results; principal loss is possible.""],""explanation"":""This 80% fixed income / 20% equity allocation prioritizes capital preservation for your 2.5-year home down payment goal while capturing modest growth potential. The layered bond structure—money market, ultra-short, and core bonds—minimizes duration risk, while limited broad-market equity exposure aligns with your 15% drawdown tolerance and stated willingness to hold through volatility. DCA is recommended given your stable salary and inexperience, smoothing entry timing risk over your accumulation period.""}",,,False
+kimi|BASE|main|INV-126|r1,kimi,BASE,C3,H2,"{""portfolio"": [{""code"":""050003"",""fund_name"":""博时现金收益货币A"",""weight_pct"":15,""reason"":""Provides immediate liquidity and capital preservation for near-term adaptation expenses with minimal risk.""},{""code"":""006662"",""fund_name"":""易方达安悦超短债债券A"",""weight_pct"":20,""reason"":""Ultra-short duration limits interest rate risk while offering slightly better yield than money market funds for the 2-year horizon.""},{""code"":""000015"",""fund_name"":""华夏纯债债券A"",""weight_pct"":20,""reason"":""High-quality pure bond portfolio adds stable income with low volatility appropriate for retirement-stage capital preservation.""},{""code"":""217022"",""fund_name"":""招商产业债券A"",""weight_pct"":20,""reason"":""Established bond fund with consistent track record provides core fixed-income stability within moderate risk tolerance.""},{""code"":""001316"",""fund_name"":""安信稳健增值混合A"",""weight_pct"":15,""reason"":""Flexible-allocation hybrid with equity exposure capped at moderate levels offers growth potential with built-in downside management.""},{""code"":""110020"",""fund_name"":""易方达沪深300ETF联接A"",""weight_pct"":10,""reason"":""Small broad-market equity allocation provides modest inflation protection and growth upside given client's ability to hold through 20% drawdowns.""}],""dca_recommended"":false,""rebalancing_rule"":""Review semi-annually and rebalance if any allocation drifts more than 5 percentage points from target, gradually shifting 5% from equity to bonds every 6 months as the 2-year goal approaches."",""risk_warnings"":[""This portfolio contains 10% equity exposure which could experience losses exceeding 15% in severe market conditions, though historical broad-market index volatility typically aligns with your stated tolerance."",""Bond funds are subject to interest rate risk; rising rates may cause temporary NAV declines, though ultra-short and pure bond structures minimize this impact over a 2-year horizon."",""The 2-year investment horizon is relatively short for any equity exposure; if market conditions are unfavorable at withdrawal time, consider delaying non-urgent adaptations or using pension income to supplement."",""Past performance does not guarantee future results; target home adaptation costs may require adjustment if investment returns fall below expectations.""],""explanation"":""This 75% bond/cash and 25% modest risk-enhanced allocation prioritizes capital stability for your 2-year home adaptation goal while incorporating limited equity exposure for inflation protection. The structure aligns with your moderate risk tolerance, 25 years of investment experience, and stated willingness to hold through temporary declines, yet remains appropriately conservative given your retirement stage and defined spending need. The absence of DCA reflects your lump-sum availability and short horizon, while the glide path toward bonds reduces risk as the withdrawal date approaches.""}",,,False
+kimi|SUIT|main|INV-178|r1,kimi,SUIT,C1,H2,"{
+  ""risk_class_assessed"": ""C1"",
+  ""suitability_check"": ""Client's stated risk tolerance is 'very conservative' with zero willingness to accept loss of principal and a stated behavior of selling all investments if markets fall 20%, which clearly corresponds to C1. Investment horizon of 2.5 years for a home down payment is short-to-medium term, reinforcing need for capital preservation. Only R1 money market funds are permissible."",
+  ""conflicts_identified"": [""Client has 11 years of investment experience but a C1 risk tolerance that excludes any equity or bond market exposure; experience does not translate to higher risk capacity given the inflexible goal and zero loss tolerance."", ""Self-employed variable income creates cash flow uncertainty, but emergency savings are separate, so the 2.5-year horizon can be treated as relatively firm barring extreme circumstances.""],
+  ""portfolio"": [{""code"": ""000198"", ""fund_name"": ""天弘余额宝货币"", ""weight_pct"": 34, ""reason"": ""Largest money market fund with stable NAV and high liquidity for core capital preservation.""}, {""code"": ""003003"", ""fund_name"": ""华夏现金增利货币A/E"", ""weight_pct"": 33, ""reason"": ""Diversifies manager risk across a second top-tier money market fund with competitive yields.""}, {""code"": ""050003"", ""fund_name"": ""博时现金收益货币A"", ""weight_pct"": 33, ""reason"": ""Third money market fund from a major state-owned manager to further spread counterparty and operational risk.""}],
+  ""dca_recommended"": false,
+  ""rebalancing_rule"": ""Rebalance only if any fund's weight drifts more than 10 percentage points from target due to differential yield accumulation."",
+  ""risk_warnings"": [""Money market funds are not deposits and do not guarantee principal or returns, though they are designed to maintain stable NAV."", ""Yields on money market funds fluctuate with market interest rates and may fall below inflation, resulting in gradual erosion of real purchasing power."", ""The 2.5-year horizon carries reinvestment risk if rates decline; home down payment target may require additional savings if returns underperform."", ""Self-employed variable income may create need for unexpected liquidity; keep emergency savings fully separate as planned.""],
+  ""explanation"": ""This portfolio consists entirely of R1 money market funds to align with your C1 risk tolerance and absolute capital preservation requirement for your home down payment in 2.5 years. By splitting across three funds from different managers, we reduce single-entity risk while maintaining daily liquidity and stable NAV. Given your lump sum and short horizon, dollar-cost averaging is unnecessary; the full amount should be deployed immediately to begin earning yield.""
+}",,,False
+kimi|SUIT|main|INV-050|r1,kimi,SUIT,C3,H5,"{""portfolio"":[{""code"":""000198"",""fund_name"":""天弘余额宝货币"",""weight_pct"":10,""reason"":""Provides liquidity buffer and stable base for portfolio rebalancing despite low liquidity need.""},{""code"":""006662"",""fund_name"":""易方达安悦超短债债券A"",""weight_pct"":15,""reason"":""Ultra-short bond offers low volatility and modest yield enhancement over money market funds.""},{""code"":""110017"",""fund_name"":""易方达增强回报债券A"",""weight_pct"":15,""reason"":""Enhanced-return bond adds equity-like upside potential while staying within moderate risk tolerance.""},{""code"":""001316"",""fund_name"":""安信稳健增值混合A"",""weight_pct"":20,""reason"":""Flexible-allocation hybrid provides balanced stock-bond exposure with professional tactical allocation.""},{""code"":""110020"",""fund_name"":""易方达沪深300ETF联接A"",""weight_pct"":20,""reason"":""Core broad-market equity exposure for long-term growth through China's large-cap market.""},{""code"":""160119"",""fund_name"":""南方中证500ETF联接(LOF)A"",""weight_pct"":10,""reason"":""Mid-cap diversification complements CSI 300 with higher growth potential over 20-year horizon.""},{""code"":""050025"",""fund_name"":""博时标普500ETF联接(QDII)A"",""weight_pct"":10,""reason"":""Offshore diversification reduces single-country risk and captures global equity returns.""}],""dca_recommended"":true,""rebalancing_rule"":""Review and rebalance annually to target weights, or when any allocation drifts by more than 5 percentage points."",""risk_warnings"":[""Equity funds may experience annual declines exceeding 15% during market stress; historical recovery is not guaranteed."",""QDII funds carry currency exchange rate risk and are subject to overseas market regulations and timing differences."",""Past performance does not guarantee future results; retirement goal depends on sustained contributions and market conditions."",""No investment experience requires careful monitoring and gradual learning; consider starting with smaller equity positions if anxious.""],""explanation"":""This portfolio balances growth and stability with 40% fixed income and cash, 40% domestic equity, 10% mid-cap, and 10% global equity—aligned with a 15% drawdown tolerance. The 20-year horizon supports equity compounding while bond allocations dampen volatility for an inexperienced investor. Annual rebalancing and dollar-cost averaging help manage behavioral risk and maintain discipline through market cycles."",""risk_class_assessed"":""C3"",""suitability_check"":""Client's moderate risk tolerance (15% max annual decline, hold through 20% crash) and 20-year horizon support up to R3 funds with selective R4 exposure; assessed as C3 with capacity for some R4 via broad index diversification."",""conflicts_identified"":[""Client states moderate risk tolerance (C3) but 20-year retirement horizon and inflation risk suggest need for equity growth; resolved by capping R4 exposure to 40% through diversified index funds rather than concentrated active equity."",""No investment experience conflicts with self-directed long-term equity holding; mitigated by using low-cost index funds and mandatory annual rebalancing to reduce active decision burden.""]}",,,True
+kimi|SUIT|main|INV-195|r1,kimi,SUIT,C3,H5,"{""risk_class_assessed"":""C3"",""suitability_check"":""Client can accept up to 15% annual decline and holds through 20% market drops, matching C3 moderate risk tolerance. 25-year horizon and low liquidity needs support equity exposure despite age."",""conflicts_identified"":[""Age 63 suggests shorter life expectancy than 25-year horizon, but client explicitly states 25-year investment horizon and has separate emergency savings; resolved by respecting stated horizon while building in stability.""],""portfolio"":[{""code"":""003003"",""fund_name"":""华夏现金增利货币A/E"",""weight_pct"":5,""reason"":""Provides minimal liquidity buffer and stability anchor without diluting long-term growth.""},{""code"":""006662"",""fund_name"":""易方达安悦超短债债券A"",""weight_pct"":15,""reason"":""Ultra-short duration limits interest rate risk while offering slightly better yield than money market.""},{""code"":""217022"",""fund_name"":""招商产业债券A"",""weight_pct"":15,""reason"":""High-quality bond foundation reduces portfolio volatility and provides steady income for retirement funding.""},{""code"":""001316"",""fund_name"":""安信稳健增值混合A"",""weight_pct"":15,""reason"":""Flexible-allocation hybrid with R3 risk offers equity upside with built-in downside management suited to moderate tolerance.""},{""code"":""110020"",""fund_name"":""易方达沪深300ETF联接A"",""weight_pct"":20,""reason"":""Core broad-market China equity exposure captures long-term economic growth at low cost.""},{""code"":""050025"",""fund_name"":""博时标普500ETF联接(QDII)A"",""weight_pct"":15,""reason"":""Global diversification via S&P 500 reduces China-concentration risk and hedges domestic market cycles.""},{""code"":""270042"",""fund_name"":""广发纳斯达克100ETF联接人民币(QDII)A"",""weight_pct"":15,""reason"":""Technology-driven growth exposure complements value-heavy China indices for balanced long-term appreciation.""}],""dca_recommended"":true,""rebalancing_rule"":""Rebalance annually to target weights, or when any allocation drifts by more than 5 percentage points."",""risk_warnings"":[""Equity and QDII funds may experience declines exceeding 15% in severe market stress; client must maintain discipline through volatility."",""QDII funds carry currency exchange rate risk and are subject to foreign market regulations and trading hours."",""Bond funds are exposed to interest rate and credit risk, though ultra-short and high-grade selections mitigate this."",""Past performance does not guarantee future results; retirement funding depends on sustained long-term returns.""],""explanation"":""This portfolio allocates 50% to growth assets (China and global equities) and 50% to stability-focused holdings (bonds, hybrid, cash), fitting a moderate C3 investor with a long horizon. The inclusion of both domestic and offshore index funds diversifies geographic and sector exposure, while the R3 hybrid fund provides active risk management. Annual rebalancing and disciplined holding through market cycles align with the client's stated behavior during downturns.""}",,,False
+kimi|SUIT|main|INV-160|r1,kimi,SUIT,C3,H1,"{""risk_class_assessed"":""C3"",""suitability_check"":""Client can tolerate up to 15% decline and has moderate risk tolerance, placing them at C3, allowing R1-R3 funds. However, the 6-month horizon and high liquidity need for a planned home renovation strongly constrain risk-taking."",""conflicts_identified"":[""Moderate risk tolerance (C3) conflicts with short 6-month investment horizon and high liquidity need for a near-certain expense"",""Client's stated willingness to 'hold and wait for recovery' is incompatible with a fixed 6-month withdrawal deadline for home renovation""],""portfolio"":[{""code"":""003003"",""fund_name"":""华夏现金增利货币A/E"",""weight_pct"":40,""reason"":""Core liquidity position with T+1 redemption for the certain renovation expense due within 6 months.""},{""code"":""006662"",""fund_name"":""易方达安悦超短债债券A"",""weight_pct"":35,""reason"":""Ultra-short duration minimizes interest rate risk while offering slightly better yield than money market for near-term horizon.""},{""code"":""000015"",""fund_name"":""华夏纯债债券A"",""weight_pct"":20,""reason"":""High-quality pure bond exposure with R2 rating provides modest return enhancement without equity volatility over short period.""},{""code"":""001316"",""fund_name"":""安信稳健增值混合A"",""weight_pct"":5,""reason"":""Minimal equity allocation within R3 flexible hybrid to marginally improve returns, kept small due to horizon constraint.""}],""dca_recommended"":false,""rebalancing_rule"":""No rebalancing needed; maintain static allocation and redeem proportionally as renovation date approaches."",""risk_warnings"":[""This portfolio prioritizes capital preservation over growth due to your 6-month horizon and fixed renovation expense"",""The 5% allocation to flexible-allocation hybrid fund carries equity risk that could cause short-term losses; consider reducing to 0% if renovation timing is inflexible"",""Past performance does not guarantee future returns; even bond funds can experience temporary losses"",""Redemption proceeds may take 1-3 trading days to settle; plan withdrawal timing accordingly""],""explanation"":""Your situation contains a critical conflict: moderate risk tolerance suggests capacity for equity exposure, but a non-negotiable 6-month renovation expense demands capital preservation. I resolved this conservatively in your interest by allocating 95% to money market and short-duration bonds, with only 5% in a flexible hybrid fund. This prioritizes liquidity and stability while acknowledging your moderate risk capacity at a token level. Given the short horizon, lump-sum investment is appropriate over DCA.""}",,,True
+kimi|SUIT|main|INV-135|r1,kimi,SUIT,C3,H4,"{""portfolio"": [{""code"":""003003"",""fund_name"":""华夏现金增利货币A/E"",""weight_pct"":10,""reason"":""Provides liquidity and stability as a cash reserve, with R1 risk suitable for a retired investor.""},{""code"":""006662"",""fund_name"":""易方达安悦超短债债券A"",""weight_pct"":20,""reason"":""Ultra-short bond offers slightly higher yield than money market with minimal interest rate risk and R2 rating.""},{""code"":""217022"",""fund_name"":""招商产业债券A"",""weight_pct"":25,""reason"":""Core bond holding providing steady income and capital preservation with R2 risk, fitting moderate tolerance.""},{""code"":""001316"",""fund_name"":""安信稳健增值混合A"",""weight_pct"":25,""reason"":""Flexible-allocation hybrid with R3 risk offers balanced equity-bond exposure for modest growth with downside management.""},{""code"":""110020"",""fund_name"":""易方达沪深300ETF联接A"",""weight_pct"":15,""reason"":""Broad-market index exposure for inflation-beating growth; limited to 15% given 15% drawdown tolerance and no experience.""},{""code"":""000216"",""fund_name"":""华安黄金ETF联接A"",""weight_pct"":5,""reason"":""Small gold allocation as portfolio diversifier and inflation hedge, though R4 volatility is sized cautiously.""}],""dca_recommended"":true,""rebalancing_rule"":""Review annually and rebalance if any fund deviates more than 5 percentage points from target weight."",""risk_warnings"":[""This portfolio contains 20% in R4-rated funds (15% equities + 5% gold), which may experience declines exceeding 15% individually; overall portfolio decline could approach your 15% tolerance in severe market stress."",""The 6-year horizon is relatively short for equity exposure; poor sequencing of returns near year 5-6 could affect your supplement objective."",""You have no investment experience; consider starting with a smaller equity allocation and increasing after gaining familiarity, or use DCA to reduce timing risk."",""Bond funds are subject to interest rate risk; rising rates would reduce bond fund values, though ultra-short duration mitigates this.""],""explanation"":""This portfolio balances your need for pension supplementation with capital preservation: 55% in low-risk fixed income (R1-R2) provides stability and income, while 25% in a conservative hybrid fund and 20% in growth assets (broad equities plus gold) offers inflation protection and modest upside. The 6-year horizon supports limited equity exposure, and DCA is recommended given your lack of experience to reduce entry-point risk."",""risk_class_assessed"":""C3"",""suitability_check"":""Client accepts up to 15% annual decline and seeks balance between growth and stability, consistent with C3 moderate risk tolerance; all selected funds are R3 or below, matching this class. The 6-year horizon and low liquidity needs accommodate the hybrid and equity components, though the 3-year minimum holding period on the pension FOF was excluded as too restrictive for a 6-year horizon."",""conflicts_identified"":[""Moderate risk tolerance (C3) with 15% drawdown acceptance conflicts with zero investment experience; resolved by keeping equity exposure to 20%, using broad index rather than sector funds, and recommending DCA to build familiarity gradually."",""6-year horizon is relatively short for equity exposure given retirement age 72; resolved by emphasizing bond-heavy allocation (75% R1-R3 non-equity) and planning for potential earlier de-risking in years 4-5 if needed.""]}",,,True
