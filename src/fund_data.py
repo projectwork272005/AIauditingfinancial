@@ -68,7 +68,9 @@ class FuyaoSource:
     RISK_WORDS = {"低风险": "R1", "中低风险": "R2", "中风险": "R3", "中高风险": "R4", "高风险": "R5"}
 
     def __init__(self):
-        self.key = os.environ.get("FUYAO_API_KEY", "").strip()
+        cfg = json.loads((ROOT / "config" / "experiment_config.json").read_text(encoding="utf-8"))
+        names = cfg.get("fund_data", {}).get("fuyao_key_env", ["FUYAO_API_KEY"])
+        self.key = next((os.environ[n].strip() for n in names if os.environ.get(n, "").strip()), "")
 
     @staticmethod
     def thscode(code: str) -> str:

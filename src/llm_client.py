@@ -28,9 +28,19 @@ RETRYABLE = {408, 409, 425, 429, 500, 502, 503, 504}
 OPTIONAL_PARAMS = ("response_format", "thinking", "reasoning_effort", "reasoning", "enable_thinking")
 
 
+def key_env_names(model_cfg: dict) -> list[str]:
+    names = model_cfg["api_key_env"]
+    return [names] if isinstance(names, str) else list(names)
+
+
 def api_key_for(model_cfg: dict) -> str:
-    """Key from the environment; empty string if the proxy is expected to inject it."""
-    return os.environ.get(model_cfg["api_key_env"], "").strip()
+    """Key from the first listed environment variable that is set; empty string
+    if none is set (the network proxy may inject the key)."""
+    for name in key_env_names(model_cfg):
+        value = os.environ.get(name, "").strip()
+        if value:
+            return value
+    return ""
 
 
 def auth_headers(model_cfg: dict) -> dict:
@@ -95,7 +105,7 @@ def chat(model_cfg: dict, gen_cfg: dict, system: str, user: str) -> dict:
                 }
             last_error = f"HTTP {resp.status_code}: {resp.text[:300]}"
             if resp.status_code == 401:
-                last_error += (f" (check {model_cfg['api_key_env']}: not set in the environment"
+                last_error += (f" (none of {key_env_names(model_cfg)} is set in the environment)"
                                if not api_key_for(model_cfg) else "")
                 break
             if resp.status_code == 400:

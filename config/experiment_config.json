@@ -44,7 +44,9 @@
       "route": "ark-agent-plan",
       "base_url": "https://ark.cn-beijing.volces.com/api/plan/v3",
       "model": "doubao-seed-2.0-mini",
-      "api_key_env": "ARK_API_KEY",
+      "api_key_env": [
+        "ARK_API_KEY"
+      ],
       "concurrency": 4,
       "temperature": 0.7,
       "max_tokens_param": "max_tokens",
@@ -62,7 +64,9 @@
       "route": "ark-agent-plan",
       "base_url": "https://ark.cn-beijing.volces.com/api/plan/v3",
       "model": "SET_AFTER_LISTING_MODELS",
-      "api_key_env": "ARK_API_KEY",
+      "api_key_env": [
+        "ARK_API_KEY"
+      ],
       "concurrency": 4,
       "temperature": 0.7,
       "max_tokens_param": "max_tokens",
@@ -79,7 +83,9 @@
       "route": "ark-agent-plan",
       "base_url": "https://ark.cn-beijing.volces.com/api/plan/v3",
       "model": "SET_AFTER_LISTING_MODELS",
-      "api_key_env": "ARK_API_KEY",
+      "api_key_env": [
+        "ARK_API_KEY"
+      ],
       "concurrency": 4,
       "temperature": 0.7,
       "max_tokens_param": "max_tokens",
@@ -93,7 +99,9 @@
       "route": "ark-agent-plan",
       "base_url": "https://ark.cn-beijing.volces.com/api/plan/v3",
       "model": "SET_AFTER_LISTING_MODELS",
-      "api_key_env": "ARK_API_KEY",
+      "api_key_env": [
+        "ARK_API_KEY"
+      ],
       "concurrency": 4,
       "temperature": 0.7,
       "max_tokens_param": "max_tokens",
@@ -201,5 +209,12 @@
         }
       }
     }
-  ]
+  ],
+  "fund_data": {
+    "source": "fuyao",
+    "fuyao_key_env": [
+      "FUYAO_API_KEY"
+    ],
+    "note": "Add the environment-variable names used in the cloud environment settings to these lists."
+  }
 }

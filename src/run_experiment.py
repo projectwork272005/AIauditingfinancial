@@ -154,7 +154,7 @@ def main() -> int:
         if m["model"] == PLACEHOLDER:
             raise SystemExit(f"model ID for '{m['key']}' not set; run --list-models and edit the config")
         if not llm_client.api_key_for(m):
-            print(f"[{m['key']}] {m['api_key_env']} is empty: sending without a key header "
+            print(f"[{m['key']}] none of {llm_client.key_env_names(m)} is set: sending without a key header "
                   "(works only if the network proxy injects the key)")
     if args.max_calls is not None:
         pending = pending[: args.max_calls]
