@@ -160,7 +160,7 @@ def pending_panel(slide, x, y, w, h, what):
             "no number is shown before then.", {"size": 11, "color": GREY})]], spacing=10)
 
 
-def card(slide, x, y, w, h, head, head_fill, title, body):
+def card(slide, x, y, w, h, head, head_fill, title, body, body_size=11.5):
     rect(slide, x, y, w, h, PALE)
     hd = rect(slide, x, y, w, 0.55, head_fill)
     tf = hd.text_frame
@@ -173,7 +173,7 @@ def card(slide, x, y, w, h, head, head_fill, title, body):
     if title:
         text(slide, x + 0.2, top, w - 0.4, 0.6, title, size=13, bold=True, color=NAVY)
         top += 0.65
-    text(slide, x + 0.2, top, w - 0.4, h - (top - y) - 0.15, body, size=11.5)
+    text(slide, x + 0.2, top, w - 0.4, h - (top - y) - 0.15, body, size=body_size)
 
 
 def stat(slide, x, y, w, value, label):
@@ -224,6 +224,175 @@ def style_chart(chart, colors, title=None, legend=True, y_max=None, y_title=None
 
 def lighten(c: RGBColor, f=0.55) -> RGBColor:
     return RGBColor(*(int(v + (255 - v) * f) for v in (c[0], c[1], c[2])))
+
+
+# ---------------------------------------------------------- result slides --
+
+def rng(values, fmt="{:.2f}", sep="-"):
+    v = pd.Series(values).dropna()
+    lo, hi = fmt.format(v.min()), fmt.format(v.max())
+    return lo if lo == hi else f"{lo}{sep}{hi}"
+
+
+def rating_mix(menu: pd.DataFrame) -> str:
+    if "risk_rating" not in menu or menu["risk_rating"].fillna("").eq("").all():
+        return "retrieved immediately before the run."
+    c = menu["risk_rating"].value_counts()
+    return ", ".join(f"{r} {int(c.get(r, 0))}" for r in ("R1", "R2", "R3", "R4", "R5")) + " (no R5 fund)."
+
+
+def side_panel(slide, x, y, w, h, rows):
+    """rows: list of (big value, explanation)."""
+    rect(slide, x, y, w, h, PALE)
+    rect(slide, x, y, 0.06, h, RED)
+    step = h / len(rows)
+    for i, (v, lab) in enumerate(rows):
+        text(slide, x + 0.25, y + i * step + 0.12, w - 0.4, 0.5, v, size=20, bold=True, color=NAVY)
+        text(slide, x + 0.25, y + i * step + 0.62, w - 0.4, step - 0.7, lab, size=10.5)
+
+
+def series_colors(models, conds=("BASE", "SUIT")):
+    return [lighten(MODEL_RGB[i % 3]) if c == "BASE" else MODEL_RGB[i % 3] for i, _ in enumerate(models) for c in conds]
+
+
+def result_slides(d, tables: Path, outputs: Path):
+    t05 = pd.read_csv(tables / "T05_equity_by_risk_class.csv")
+    t09 = pd.read_csv(tables / "T09_anova_partial_eta_squared.csv")
+    t10 = pd.read_csv(tables / "T10_pooled_regression_cluster_se.csv").set_index("term")
+    t11 = pd.read_csv(tables / "T11_suitability_by_model_condition.csv")
+    t12 = pd.read_csv(tables / "T12_suitability_by_risk_class.csv")
+    t13 = pd.read_csv(tables / "T13_condition_effects_paired.csv")
+    t14 = pd.read_csv(tables / "T14_model_comparison.csv")
+    t15 = pd.read_csv(tables / "T15_consistency_repeated_queries.csv")
+    t16 = pd.read_csv(tables / "T16_single_attribute_sensitivity.csv")
+    t17 = pd.read_csv(tables / "T17_conflict_handling.csv")
+    t22 = pd.read_csv(tables / "T22_rating_breach_c1_c3.csv")
+    t25 = pd.read_csv(tables / "T25_suit_breach_by_classification_c1_c3.csv")
+    res = pd.read_csv(outputs / "experiment_results.csv")
+    models = sorted(t05["model_key"].unique())
+    names = [MODEL_LABEL.get(m, m) for m in models]
+    eta = {f: t09[t09.factor == f]["partial_eta_sq"] for f in ("risk_class", "horizon_band", "age_band")}
+
+    # 13 responsiveness
+    s = d.content("Responsiveness (RQ1)", "Risk tolerance drives the portfolio; age barely matters",
+                  "Equity rises steeply with the stated risk class in every model and prompt. Horizon matters mainly "
+                  "below one year; age has almost no effect. Source: T05, T09, T10.")
+    cats = ["C1", "C2", "C3", "C4", "C5"]
+    cd = CategoryChartData()
+    cd.categories = cats
+    for mk in models:
+        for cond in ("BASE", "SUIT"):
+            g = t05[(t05.model_key == mk) & (t05.condition == cond)].set_index("risk_class").reindex(cats)
+            cd.add_series(f"{MODEL_LABEL.get(mk, mk)} {cond}", [None if pd.isna(v) else round(float(v), 1) for v in g["mean"]])
+    gf = s.shapes.add_chart(XL_CHART_TYPE.LINE_MARKERS, Inches(0.55), Inches(1.4), Inches(7.6), Inches(5.35), cd)
+    style_chart(gf.chart, series_colors(models), title="Mean equity exposure (%) by risk class", y_max=100)
+    b = lambda term: t10.loc[term, "coef"]
+    side_panel(s, 8.45, 1.5, 4.33, 5.2, [
+        (rng(eta["risk_class"]), "partial eta squared of risk class: the dominant attribute"),
+        (rng(eta["horizon_band"]), "partial eta squared of horizon: mostly a one-year switch"),
+        (rng(eta["age_band"]), "partial eta squared of age; no age effect significant after Holm"),
+        (f"{b('risk_level_c'):+.1f} / {b('horizon_level_c'):+.1f} / {b('age_level_c'):+.1f}",
+         "points of equity per risk class / horizon band / age band (pooled regression)")])
+
+    # 14 suitability
+    s = d.content("Suitability (RQ2)", "Most C1-C3 recommendations break the rating ceiling",
+                  "Ratings were shown in the prompt. No menu fund is R5, so C4-C5 investors cannot breach the rating "
+                  "rule. Source: T12, T22, T17, T11.")
+    cats = ["C1", "C2", "C3"]
+    cd = CategoryChartData()
+    cd.categories = cats
+    for mk in models:
+        for cond in ("BASE", "SUIT"):
+            g = t12[(t12.model_key == mk) & (t12.condition == cond)].set_index("risk_class").reindex(cats)
+            cd.add_series(f"{MODEL_LABEL.get(mk, mk)} {cond}", [round(float(v), 1) for v in g["rating_breach_pct"]])
+    gf = s.shapes.add_chart(XL_CHART_TYPE.COLUMN_CLUSTERED, Inches(0.55), Inches(1.4), Inches(7.6), Inches(5.35), cd)
+    style_chart(gf.chart, series_colors(models), title="Replies with a fund above the permitted rating (%)", y_max=100)
+    gf.chart.plots[0].gap_width = 60
+    base22 = t22[(t22.model_key != "all") & (t22.condition == "BASE")]["rating_breach_pct"]
+    m = res[(res["sample"] == "main") & (res.condition == "BASE")]
+    c5h2 = m[(m.risk_class == "C5") & (m.horizon_band == "H2")]["equity_pct"].mean()
+    conf = t17[(t17.condition == "BASE") & t17.group.str.endswith("(conflict)")]["equity_over_cap_pct"]
+    side_panel(s, 8.45, 1.5, 4.33, 5.2, [
+        (rng(base22, "{:.1f}") + "%", "of BASE replies to C1-C3 investors contain a fund above their ceiling"),
+        (f"{c5h2:.0f}%", "mean equity for C5 investors with a 1-3 year horizon (cap 30%)"),
+        (rng(conf, "{:.1f}") + "%", "of BASE replies to aggressive short-horizon investors exceed the equity cap"),
+        (f"{t11['loss_tolerance_breach_pct'].max():.1f}%", "at most, per model and prompt, of portfolios lost more in "
+         "a year than the investor accepts (benign 2021-26 window)")])
+
+    # 15 guardrail
+    s = d.content("Guardrail and models (RQ3, RQ5)", "The protocol helps, but does not produce compliance",
+                  "Paired within investor. The protocol cuts breaches in every model, most for Kimi, yet many "
+                  "correctly classified clients still get a fund above their class. Source: T22, T13, T25, T17, T14.")
+    cd = CategoryChartData()
+    cd.categories = names
+    for cond in ("BASE", "SUIT"):
+        cd.add_series(cond, [float(t22[(t22.model_key == mk) & (t22.condition == cond)]["rating_breach_pct"].iloc[0])
+                             for mk in models])
+    gf = s.shapes.add_chart(XL_CHART_TYPE.COLUMN_CLUSTERED, Inches(0.55), Inches(1.4), Inches(7.6), Inches(5.35), cd)
+    style_chart(gf.chart, [lighten(NAVY, 0.45), NAVY], title="Rating breaches among C1-C3 investors (%)", y_max=100)
+    gf.chart.plots[0].has_data_labels = True
+    gf.chart.plots[0].data_labels.font.size = Pt(10)
+    gf.chart.plots[0].data_labels.number_format = "0.0"
+    gf.chart.plots[0].data_labels.number_format_is_linked = False
+    rb = t13[t13.outcome == "rating_breach"].set_index("model")
+    drop = [rb.loc[mk, "mean_diff"] for mk in models]
+    corr = t25[t25.classified_correctly.astype(str) == "True"].set_index("model_key")
+    listed = t17[(t17.condition == "SUIT") & t17.group.str.endswith("(conflict)")]["conflicts_listed_pct"]
+    q = t14[(t14.condition == "SUIT") & (t14.test == "Cochran's Q")].iloc[0]
+    side_panel(s, 8.45, 1.5, 4.33, 5.2, [
+        (" / ".join(f"{v:+.1f}" for v in drop), "points change in rating breaches over all 200 paired investors (" + ", ".join(names) + ")"),
+        (" / ".join(f"{corr.loc[mk, 'rating_breach_pct']:.1f}%" for mk in models),
+         "still breach although the model classified the C1-C3 client correctly"),
+        (rng(listed, "{:.1f}") + "%", "of SUIT replies flag the conflict for aggressive short-horizon clients"),
+        (f"Q = {q.statistic:.1f}", "models differ under SUIT (Cochran's Q, Holm p < 0.001); alike under BASE")])
+
+    # 16 reliability
+    s = d.content("Reliability (RQ4)", "Same equity level, different funds",
+                  "40 investors asked three times; ten anchors varied one attribute at a time. Source: T15, T16.")
+    cd = CategoryChartData()
+    cats = [f"{MODEL_LABEL.get(r.model, r.model)} {r.condition}" for r in t15.itertuples()]
+    cd.categories = cats
+    cd.add_series("ICC of equity exposure", [round(float(v), 3) for v in t15["icc1_equity"]])
+    cd.add_series("Mean Jaccard similarity of fund sets", [round(float(v), 3) for v in t15["mean_jaccard_fund_sets"]])
+    gf = s.shapes.add_chart(XL_CHART_TYPE.COLUMN_CLUSTERED, Inches(0.55), Inches(1.4), Inches(7.6), Inches(5.35), cd)
+    style_chart(gf.chart, [NAVY, RED], title="Agreement across three repeated queries (0-1)", y_max=1)
+    gf.chart.plots[0].gap_width = 70
+    slope = lambda a: t16[t16.attribute == a]["mean_slope_pp_per_step"]
+    side_panel(s, 8.45, 1.5, 4.33, 5.2, [
+        (rng(100 - 100 * t15["breach_flag_agreement"], "{:.1f}") + "%",
+         "of investors get a different breach verdict across repeats"),
+        (rng(slope("risk"), "{:+.1f}", " to "), "points of equity per risk-class step in the probes"),
+        (rng(slope("horizon"), "{:+.1f}", " to "), "points per horizon step: the stated horizon alone moves little"),
+        (rng(slope("age"), "{:+.1f}", " to "), "points per age-band step")])
+
+
+def takeaways(s, tables: Path, outputs: Path):
+    t09 = pd.read_csv(tables / "T09_anova_partial_eta_squared.csv")
+    t22 = pd.read_csv(tables / "T22_rating_breach_c1_c3.csv")
+    t15 = pd.read_csv(tables / "T15_consistency_repeated_queries.csv")
+    per = t22[t22.model_key != "all"]
+    cards = [
+        ("01  Tailoring is one-dimensional", NAVY, "Stated risk tolerance does the work",
+         f"Partial eta squared {rng(t09[t09.factor == 'risk_class']['partial_eta_sq'])} for risk class against "
+         f"{rng(t09[t09.factor == 'age_band']['partial_eta_sq'])} for age. Horizon acts as a switch below one year."),
+        ("02  A rule in the prompt is not a control", RED, "Enforce suitability in code",
+         f"Under the baseline prompt {rng(per[per.condition == 'BASE']['rating_breach_pct'], '{:.1f}')}% of C1-C3 "
+         f"replies breach the rating ceiling; with the protocol "
+         f"{rng(per[per.condition == 'SUIT']['rating_breach_pct'], '{:.1f}')}% still do. Filter the shelf or check "
+         "every recommendation."),
+        ("03  Audit with repeats", GREY, "One query is not a verdict",
+         f"Equity is stable (ICC {rng(t15['icc1_equity'])}) but fund sets are not (Jaccard "
+         f"{rng(t15['mean_jaccard_fund_sets'])}). Test any protocol on the deployed model, with stress-period "
+         "back-tests."),
+    ]
+    for i, (h, c, t, b) in enumerate(cards):
+        card(s, 0.55 + i * 4.1, 1.5, 3.95, 4.3, h, c, t, b, body_size=15)
+    rect(s, 0.55, 6.0, 12.23, 0.75, PALE2)
+    rect(s, 0.55, 6.0, 0.06, 0.75, RED)
+    text(s, 0.85, 6.1, 11.8, 0.6, [[("Bottom line: ", {"bold": True, "color": NAVY}),
+                                    ("LLMs build sensible-looking portfolios but do not reliably apply a regulatory "
+                                     "rule they have been told about.", {})]], size=12.5)
+
 
 
 # ----------------------------------------------------------------- slides --
@@ -332,7 +501,7 @@ def build(template: Path, outputs: Path, out: Path):
     s = d.content("Experimental design", "One investor per cell, every model, both prompts",
                   "Repeated-measures design: 200 unique investors; condition and model vary within investor.")
     for i, (v, lab) in enumerate((("200", "unique synthetic investors"), ("2", "prompt conditions"),
-                                  ("3", "LLMs: Doubao, DeepSeek, Kimi"), ("2,508", "planned API calls"))):
+                                  ("3", "LLMs: Doubao, DeepSeek, Kimi"), ("2,508", "API calls, all answered"))):
         stat(s, 0.55 + i * 1.62, 1.5, 1.5, v, lab)
     bullets(s, 0.55, 2.9, 6.3, 3.8, [
         ("Full factorial: ", "5 horizons x 5 risk classes x 8 age bands; attributes uncorrelated (Cramer's V = 0)."),
@@ -369,8 +538,11 @@ def build(template: Path, outputs: Path, out: Path):
 
     # 9 fund menu
     s = d.content("Fund menu", "23 real Chinese funds, verified before use",
-                  "Identity checked against two public records per fund; ratings and histories from one source.")
-    menu = pd.read_csv(ROOT / "data" / "fund_menu_candidates.csv", dtype=str)
+                  "Identity checked against two public records per fund. Product risk ratings from Eastmoney "
+                  "(Tiantian Fund), 23 Oct 2026, because the course API has no rating field; adjusted NAV history "
+                  "from the course API (fuyao).")
+    menu_path = ROOT / "data" / "fund_menu.csv"
+    menu = pd.read_csv(menu_path if menu_path.exists() else ROOT / "data" / "fund_menu_candidates.csv", dtype=str)
     counts = menu["asset_class"].value_counts().reindex(["Cash", "Bond", "Hybrid", "Equity", "Commodity"])
     cd = CategoryChartData()
     cd.categories = list(counts.index)
@@ -387,7 +559,8 @@ def build(template: Path, outputs: Path, out: Path):
         ("4 QDII funds: ", "overseas equity inside the R1-R5 system (Nasdaq-100, S&P 500, Hang Seng, global oil)."),
         ("Liquidity test: ", "a pension FOF with a 3-year minimum holding period."),
         ("Domestic only: ", "mainland investors cannot buy foreign-domiciled funds directly."),
-        ("Not trusted blindly: ", "ratings change; one manager re-rated 20+ funds in August 2026."),
+        ("Ratings: ", rating_mix(menu)),
+        ("Sources: ", "ratings from Eastmoney (23 Oct 2026); 5-year NAV history from the course API."),
     ], size=12.5)
 
     # 10 prompts
@@ -431,35 +604,15 @@ def build(template: Path, outputs: Path, out: Path):
               ["Responsiveness and suitability", "Guardrail, reliability, models"], "image4.png")
 
     # 13-16 result slides
-    res_slides = [
-        ("Responsiveness", "How portfolios follow risk, horizon and age", "T05_equity_by_risk_class.csv",
-         "Mean equity exposure by risk class, per model and prompt (Figures 2-4, Table 11)."),
-        ("Suitability", "Where recommendations breach the rules", "T12_suitability_by_risk_class.csv",
-         "Rating-ceiling breaches by risk class, horizon and lock-up breaches, loss-tolerance check."),
-        ("Guardrail and models", "Does the suitability protocol change the advice?", "T13_condition_effects_paired.csv",
-         "Paired BASE vs SUIT differences per model; model comparison."),
-        ("Reliability", "Repeats and one-attribute probes", "T15_consistency_repeated_queries.csv",
-         "ICC of equity over three repeats; probe slopes per attribute."),
-    ]
-    for kicker, title, table_name, what in res_slides:
-        s = d.content(kicker, title)
-        if have and table_name == "T05_equity_by_risk_class.csv":
-            t = pd.read_csv(tables / table_name)
-            cats = ["C1", "C2", "C3", "C4", "C5"]
-            cd = CategoryChartData()
-            cd.categories = cats
-            cols = []
-            for i, mk in enumerate(sorted(t["model_key"].unique())):
-                for cond in ("BASE", "SUIT"):
-                    g = t[(t.model_key == mk) & (t.condition == cond)].set_index("risk_class").reindex(cats)
-                    cd.add_series(f"{MODEL_LABEL.get(mk, mk)} {cond}",
-                                  [None if pd.isna(v) else round(float(v), 1) for v in g["mean"]])
-                    cols.append(lighten(MODEL_RGB[i % 3]) if cond == "BASE" else MODEL_RGB[i % 3])
-            gf = s.shapes.add_chart(XL_CHART_TYPE.LINE_MARKERS, Inches(0.55), Inches(1.4), Inches(7.6), Inches(5.3), cd)
-            style_chart(gf.chart, cols, title="Mean equity exposure (%) by risk class", y_max=100)
-            pending_panel(s, 8.4, 1.5, 4.38, 3.0, "Interpretation is written from the analysis tables.")
-        else:
-            pending_panel(s, 0.55, 1.6, 12.23, 4.8, what)
+    if have:
+        result_slides(d, tables, outputs)
+    else:
+        for kicker, title in (("Responsiveness", "How portfolios follow risk, horizon and age"),
+                              ("Suitability", "Where recommendations breach the rules"),
+                              ("Guardrail and models", "Does the suitability protocol change the advice?"),
+                              ("Reliability", "Repeats and one-attribute probes")):
+            s = d.content(kicker, title)
+            pending_panel(s, 0.55, 1.6, 12.23, 4.8, "Generated from outputs/tables once the experiment has run.")
 
     # 17 section 4
     d.section(4, "Implications & Limits", "启示与局限",
@@ -469,18 +622,23 @@ def build(template: Path, outputs: Path, out: Path):
     # 18 limitations
     s = d.content("Limitations", "What this design can and cannot show")
     for i, (h, b) in enumerate([
-            ("Synthetic clients", "Clear, template-written profiles: close to a best case for tailoring."),
-            ("One shelf, one window", "23 funds, ratings on one date, five years of history; past is not future."),
-            ("Model drift", "Hosted models change; returned model IDs and repeat variation are recorded."),
+            ("Synthetic clients", "Clear, template-written profiles in one message: close to a best case for tailoring."),
+            ("One shelf, no R5 fund", "23 funds rated by one distributor on one date; rating breaches possible only "
+                                      "for C1-C3."),
+            ("Benign window", "Bond and money market funds never lost over 12 months in 2021-26; loss checks are "
+                              "lenient."),
+            ("Model access", "OpenRouter with pinned providers, reasoning off; hosted models change over time."),
             ("One wording", "One protocol and menu order; prompt format matters (Sclar et al., 2024)."),
-            ("Judgement in caps", "Equity caps are our operationalisation; the rating rule is external."),
             ("Keyword coding", "Conflict acknowledgement awaits manual validation (two coders, kappa).")]):
         x, y = 0.55 + (i % 3) * 4.1, 1.5 + (i // 3) * 2.55
         card(s, x, y, 3.95, 2.35, f"{i + 1:02d}  {h}", [NAVY, RED, GREY][i % 3], "", b)
 
     # 19 takeaways
     s = d.content("Takeaways", "Conclusions")
-    pending_panel(s, 0.55, 1.6, 12.23, 4.8, "Three takeaways, one per question group, written from the results.")
+    if have:
+        takeaways(s, tables, outputs)
+    else:
+        pending_panel(s, 0.55, 1.6, 12.23, 4.8, "Three takeaways, one per question group, written from the results.")
 
     # 20 thanks
     s = d.new()

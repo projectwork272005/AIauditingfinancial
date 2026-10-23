@@ -159,8 +159,8 @@ Main-sample coded replies: 1200; units: 200; models: deepseek, doubao, kimi
 | doubao   | BASE        | weighted_risk | horizon_level | 200 |  0.5    | 0      |        0 |
 | doubao   | BASE        | weighted_risk | age_level     | 200 | -0.0888 | 0.2111 |        1 |
 | doubao   | SUIT        | equity_pct    | risk_level    | 199 |  0.8313 | 0      |        0 |
-| doubao   | SUIT        | equity_pct    | horizon_level | 199 |  0.3293 | 0      |        0 |
-| doubao   | SUIT        | equity_pct    | age_level     | 199 | -0.0941 | 0.186  |        1 |
+| doubao   | SUIT        | equity_pct    | horizon_level | 199 |  0.3294 | 0      |        0 |
+| doubao   | SUIT        | equity_pct    | age_level     | 199 | -0.0941 | 0.1862 |        1 |
 | doubao   | SUIT        | weighted_risk | risk_level    | 199 |  0.7353 | 0      |        0 |
 | doubao   | SUIT        | weighted_risk | horizon_level | 199 |  0.457  | 0      |        0 |
 | doubao   | SUIT        | weighted_risk | age_level     | 199 | -0.116  | 0.1027 |        1 |
@@ -265,7 +265,7 @@ Main-sample coded replies: 1200; units: 200; models: deepseek, doubao, kimi
 
 | model    | outcome               | test                 |   n_pairs |   mean_BASE |   mean_SUIT |   mean_diff |   ci_low |   ci_high |   statistic |      p |   effect | effect_name                                     |   cohens_dz |   discordant_base_only |   discordant_suit_only |   p_holm |
 |:---------|:----------------------|:---------------------|----------:|------------:|------------:|------------:|---------:|----------:|------------:|-------:|---------:|:------------------------------------------------|------------:|-----------------------:|-----------------------:|---------:|
-| deepseek | equity_pct            | Wilcoxon signed-rank |       200 |     32.0411 |     28.6536 |     -3.3875 |  -5.1593 |   -1.6157 |   2538.5    | 0      |  -0.4216 | matched-pairs rank-biserial r                   |     -0.2666 |                    nan |                    nan |   0.0003 |
+| deepseek | equity_pct            | Wilcoxon signed-rank |       200 |     32.0411 |     28.6536 |     -3.3875 |  -5.1593 |   -1.6157 |   2545      | 0      |  -0.4201 | matched-pairs rank-biserial r                   |     -0.2666 |                    nan |                    nan |   0.0003 |
 | deepseek | weighted_risk         | Wilcoxon signed-rank |       200 |      2.5721 |      2.4502 |     -0.1219 |  -0.1724 |   -0.0714 |   3313.5    | 0      |  -0.4657 | matched-pairs rank-biserial r                   |     -0.3366 |                    nan |                    nan |   0      |
 | deepseek | rating_breach         | McNemar (exact)      |       200 |     51.5    |     42      |     -9.5    | nan      |  nan      |      0      | 0      |   0.0256 | discordant odds ratio SUIT/BASE (0.5-corrected) |    nan      |                     19 |                      0 |   0      |
 | deepseek | equity_over_cap       | McNemar (exact)      |       200 |     22      |     16      |     -6      | nan      |  nan      |      2      | 0.0042 |   0.1724 | discordant odds ratio SUIT/BASE (0.5-corrected) |    nan      |                     14 |                      2 |   0.0293 |
@@ -277,7 +277,7 @@ Main-sample coded replies: 1200; units: 200; models: deepseek, doubao, kimi
 | doubao   | equity_over_cap       | McNemar (exact)      |       199 |     20.1005 |     13.0653 |     -7.0352 | nan      |  nan      |      2      | 0.0013 |   0.1515 | discordant odds ratio SUIT/BASE (0.5-corrected) |    nan      |                     16 |                      2 |   0.0118 |
 | doubao   | holding_period_breach | McNemar (exact)      |       199 |      0      |      0      |      0      | nan      |  nan      |      0      | 1      |   1      | discordant odds ratio SUIT/BASE (0.5-corrected) |    nan      |                      0 |                      0 |   1      |
 | doubao   | loss_tolerance_breach | McNemar (exact)      |       199 |      0      |      0      |      0      | nan      |  nan      |      0      | 1      |   1      | discordant odds ratio SUIT/BASE (0.5-corrected) |    nan      |                      0 |                      0 |   1      |
-| kimi     | equity_pct            | Wilcoxon signed-rank |       200 |     27.9519 |     22.9933 |     -4.9586 |  -6.5971 |   -3.3201 |   1892      | 0      |  -0.6273 | matched-pairs rank-biserial r                   |     -0.422  |                    nan |                    nan |   0      |
+| kimi     | equity_pct            | Wilcoxon signed-rank |       200 |     27.9519 |     22.9933 |     -4.9586 |  -6.5971 |   -3.3201 |   1875      | 0      |  -0.6307 | matched-pairs rank-biserial r                   |     -0.422  |                    nan |                    nan |   0      |
 | kimi     | weighted_risk         | Wilcoxon signed-rank |       200 |      2.4577 |      2.2532 |     -0.2044 |  -0.2412 |   -0.1677 |   1316.5    | 0      |  -0.823  | matched-pairs rank-biserial r                   |     -0.7761 |                    nan |                    nan |   0      |
 | kimi     | rating_breach         | McNemar              |       200 |     49.5    |     25      |    -24.5    | nan      |  nan      |     47.0204 | 0      |   0.0101 | discordant odds ratio SUIT/BASE (0.5-corrected) |    nan      |                     49 |                      0 |   0      |
 | kimi     | equity_over_cap       | McNemar (exact)      |       200 |     18.5    |     11.5    |     -7      | nan      |  nan      |      2      | 0.0013 |   0.1515 | discordant odds ratio SUIT/BASE (0.5-corrected) |    nan      |                     16 |                      2 |   0.0118 |
@@ -289,14 +289,14 @@ Main-sample coded replies: 1200; units: 200; models: deepseek, doubao, kimi
 | condition   | outcome       | test                        |   n |   statistic |      p |   effect | effect_name                   |   mean_diff |   p_holm |
 |:------------|:--------------|:----------------------------|----:|------------:|-------:|---------:|:------------------------------|------------:|---------:|
 | BASE        | equity_pct    | Friedman                    | 200 |     18.0385 | 0.0001 |   0.0451 | Kendall's W                   |    nan      |   0.0006 |
-| BASE        | equity_pct    | Wilcoxon deepseek vs doubao | 200 |   5195.5    | 0.2552 |   0.1064 | matched-pairs rank-biserial r |      0.7667 |   0.5105 |
-| BASE        | equity_pct    | Wilcoxon deepseek vs kimi   | 200 |   2553      | 0      |   0.5242 | matched-pairs rank-biserial r |      4.0892 |   0      |
-| BASE        | equity_pct    | Wilcoxon doubao vs kimi     | 200 |   4023      | 0      |   0.3906 | matched-pairs rank-biserial r |      3.3225 |   0.0001 |
-| BASE        | rating_breach | Cochran's Q                 | 200 |      2.4615 | 0.2921 | nan      | nan                           |    nan      |   0.5105 |
+| BASE        | equity_pct    | Wilcoxon deepseek vs doubao | 200 |   5193.5    | 0.2537 |   0.1067 | matched-pairs rank-biserial r |      0.7667 |   0.5074 |
+| BASE        | equity_pct    | Wilcoxon deepseek vs kimi   | 200 |   2529      | 0      |   0.5287 | matched-pairs rank-biserial r |      4.0892 |   0      |
+| BASE        | equity_pct    | Wilcoxon doubao vs kimi     | 200 |   3986      | 0      |   0.3962 | matched-pairs rank-biserial r |      3.3225 |   0.0001 |
+| BASE        | rating_breach | Cochran's Q                 | 200 |      2.4615 | 0.2921 | nan      | nan                           |    nan      |   0.5074 |
 | SUIT        | equity_pct    | Friedman                    | 199 |     33.4981 | 0      |   0.0842 | Kendall's W                   |    nan      |   0      |
-| SUIT        | equity_pct    | Wilcoxon deepseek vs doubao | 199 |   2652      | 0.0001 |   0.3865 | matched-pairs rank-biserial r |      3.6426 |   0.0006 |
-| SUIT        | equity_pct    | Wilcoxon deepseek vs kimi   | 199 |   1215.5    | 0      |   0.6652 | matched-pairs rank-biserial r |      5.7146 |   0      |
-| SUIT        | equity_pct    | Wilcoxon doubao vs kimi     | 199 |   3620.5    | 0.0452 |   0.1994 | matched-pairs rank-biserial r |      2.0719 |   0.1355 |
+| SUIT        | equity_pct    | Wilcoxon deepseek vs doubao | 199 |   2654      | 0.0001 |   0.3861 | matched-pairs rank-biserial r |      3.6426 |   0.0006 |
+| SUIT        | equity_pct    | Wilcoxon deepseek vs kimi   | 199 |   1214.5    | 0      |   0.6654 | matched-pairs rank-biserial r |      5.7146 |   0      |
+| SUIT        | equity_pct    | Wilcoxon doubao vs kimi     | 199 |   3618.5    | 0.0447 |   0.1999 | matched-pairs rank-biserial r |      2.0719 |   0.134  |
 | SUIT        | rating_breach | Cochran's Q                 | 199 |     45.234  | 0      | nan      | nan                           |    nan      |   0      |
 
 ## T15_consistency_repeated_queries
@@ -383,32 +383,38 @@ Main-sample coded replies: 1200; units: 200; models: deepseek, doubao, kimi
 
 ## T20_robustness
 
-| variant                                  | model    | condition   |   n |   rho_equity_risk |   rho_equity_horizon |   rho_equity_age |   rating_breach_pct |   rating_breach_over5pct_weight_pct |
-|:-----------------------------------------|:---------|:------------|----:|------------------:|---------------------:|-----------------:|--------------------:|------------------------------------:|
-| primary                                  | deepseek | BASE        | 200 |            0.7641 |               0.4305 |          -0.0621 |             51.5    |                             51.5    |
-| primary                                  | deepseek | SUIT        | 200 |            0.6944 |               0.5017 |          -0.0522 |             42      |                             42      |
-| primary                                  | doubao   | BASE        | 200 |            0.8311 |               0.3844 |          -0.1056 |             51.5    |                             51      |
-| primary                                  | doubao   | SUIT        | 199 |            0.8313 |               0.3293 |          -0.0941 |             40.7035 |                             40.201  |
-| primary                                  | kimi     | BASE        | 200 |            0.7267 |               0.481  |          -0.0438 |             49.5    |                             49      |
-| primary                                  | kimi     | SUIT        | 200 |            0.7146 |               0.4739 |          -0.0456 |             25      |                             24.5    |
-| exclude repaired/extracted parses        | deepseek | BASE        | 200 |            0.7641 |               0.4305 |          -0.0621 |             51.5    |                             51.5    |
-| exclude repaired/extracted parses        | deepseek | SUIT        | 200 |            0.6944 |               0.5017 |          -0.0522 |             42      |                             42      |
-| exclude repaired/extracted parses        | doubao   | BASE        | 200 |            0.8311 |               0.3844 |          -0.1056 |             51.5    |                             51      |
-| exclude repaired/extracted parses        | doubao   | SUIT        | 199 |            0.8313 |               0.3293 |          -0.0941 |             40.7035 |                             40.201  |
-| exclude repaired/extracted parses        | kimi     | BASE        | 200 |            0.7267 |               0.481  |          -0.0438 |             49.5    |                             49      |
-| exclude repaired/extracted parses        | kimi     | SUIT        | 200 |            0.7146 |               0.4739 |          -0.0456 |             25      |                             24.5    |
-| exclude replies with off-menu funds      | deepseek | BASE        | 199 |            0.7619 |               0.4324 |          -0.0632 |             51.7588 |                             51.7588 |
-| exclude replies with off-menu funds      | deepseek | SUIT        | 200 |            0.6944 |               0.5017 |          -0.0522 |             42      |                             42      |
-| exclude replies with off-menu funds      | doubao   | BASE        | 200 |            0.8311 |               0.3844 |          -0.1056 |             51.5    |                             51      |
-| exclude replies with off-menu funds      | doubao   | SUIT        | 199 |            0.8313 |               0.3293 |          -0.0941 |             40.7035 |                             40.201  |
-| exclude replies with off-menu funds      | kimi     | BASE        | 200 |            0.7267 |               0.481  |          -0.0438 |             49.5    |                             49      |
-| exclude replies with off-menu funds      | kimi     | SUIT        | 200 |            0.7146 |               0.4739 |          -0.0456 |             25      |                             24.5    |
-| exclude replies with invalid weight sums | deepseek | BASE        | 200 |            0.7641 |               0.4305 |          -0.0621 |             51.5    |                             51.5    |
-| exclude replies with invalid weight sums | deepseek | SUIT        | 200 |            0.6944 |               0.5017 |          -0.0522 |             42      |                             42      |
-| exclude replies with invalid weight sums | doubao   | BASE        | 200 |            0.8311 |               0.3844 |          -0.1056 |             51.5    |                             51      |
-| exclude replies with invalid weight sums | doubao   | SUIT        | 199 |            0.8313 |               0.3293 |          -0.0941 |             40.7035 |                             40.201  |
-| exclude replies with invalid weight sums | kimi     | BASE        | 200 |            0.7267 |               0.481  |          -0.0438 |             49.5    |                             49      |
-| exclude replies with invalid weight sums | kimi     | SUIT        | 200 |            0.7146 |               0.4739 |          -0.0456 |             25      |                             24.5    |
+| variant                                         | model    | condition   |   n |   rho_equity_risk |   rho_equity_horizon |   rho_equity_age |   equity_mean |   equity_over_cap_pct |   rating_breach_pct |   rating_breach_over5pct_weight_pct |
+|:------------------------------------------------|:---------|:------------|----:|------------------:|---------------------:|-----------------:|--------------:|----------------------:|--------------------:|------------------------------------:|
+| primary                                         | deepseek | BASE        | 200 |            0.7641 |               0.4305 |          -0.0621 |       32.0411 |               22      |             51.5    |                             51.5    |
+| primary                                         | deepseek | SUIT        | 200 |            0.6944 |               0.5017 |          -0.0522 |       28.6536 |               16      |             42      |                             42      |
+| primary                                         | doubao   | BASE        | 200 |            0.8311 |               0.3844 |          -0.1056 |       31.2744 |               20.5    |             51.5    |                             51      |
+| primary                                         | doubao   | SUIT        | 199 |            0.8313 |               0.3294 |          -0.0941 |       24.7457 |               13.0653 |             40.7035 |                             40.201  |
+| primary                                         | kimi     | BASE        | 200 |            0.7267 |               0.481  |          -0.0438 |       27.9519 |               18.5    |             49.5    |                             49      |
+| primary                                         | kimi     | SUIT        | 200 |            0.7146 |               0.4739 |          -0.0456 |       22.9933 |               11.5    |             25      |                             24.5    |
+| exclude repaired/extracted parses               | deepseek | BASE        | 200 |            0.7641 |               0.4305 |          -0.0621 |       32.0411 |               22      |             51.5    |                             51.5    |
+| exclude repaired/extracted parses               | deepseek | SUIT        | 200 |            0.6944 |               0.5017 |          -0.0522 |       28.6536 |               16      |             42      |                             42      |
+| exclude repaired/extracted parses               | doubao   | BASE        | 200 |            0.8311 |               0.3844 |          -0.1056 |       31.2744 |               20.5    |             51.5    |                             51      |
+| exclude repaired/extracted parses               | doubao   | SUIT        | 199 |            0.8313 |               0.3294 |          -0.0941 |       24.7457 |               13.0653 |             40.7035 |                             40.201  |
+| exclude repaired/extracted parses               | kimi     | BASE        | 200 |            0.7267 |               0.481  |          -0.0438 |       27.9519 |               18.5    |             49.5    |                             49      |
+| exclude repaired/extracted parses               | kimi     | SUIT        | 200 |            0.7146 |               0.4739 |          -0.0456 |       22.9933 |               11.5    |             25      |                             24.5    |
+| exclude replies with off-menu funds             | deepseek | BASE        | 199 |            0.7619 |               0.4324 |          -0.0632 |       31.8192 |               21.608  |             51.7588 |                             51.7588 |
+| exclude replies with off-menu funds             | deepseek | SUIT        | 200 |            0.6944 |               0.5017 |          -0.0522 |       28.6536 |               16      |             42      |                             42      |
+| exclude replies with off-menu funds             | doubao   | BASE        | 200 |            0.8311 |               0.3844 |          -0.1056 |       31.2744 |               20.5    |             51.5    |                             51      |
+| exclude replies with off-menu funds             | doubao   | SUIT        | 199 |            0.8313 |               0.3294 |          -0.0941 |       24.7457 |               13.0653 |             40.7035 |                             40.201  |
+| exclude replies with off-menu funds             | kimi     | BASE        | 200 |            0.7267 |               0.481  |          -0.0438 |       27.9519 |               18.5    |             49.5    |                             49      |
+| exclude replies with off-menu funds             | kimi     | SUIT        | 200 |            0.7146 |               0.4739 |          -0.0456 |       22.9933 |               11.5    |             25      |                             24.5    |
+| exclude replies with invalid weight sums        | deepseek | BASE        | 200 |            0.7641 |               0.4305 |          -0.0621 |       32.0411 |               22      |             51.5    |                             51.5    |
+| exclude replies with invalid weight sums        | deepseek | SUIT        | 200 |            0.6944 |               0.5017 |          -0.0522 |       28.6536 |               16      |             42      |                             42      |
+| exclude replies with invalid weight sums        | doubao   | BASE        | 200 |            0.8311 |               0.3844 |          -0.1056 |       31.2744 |               20.5    |             51.5    |                             51      |
+| exclude replies with invalid weight sums        | doubao   | SUIT        | 199 |            0.8313 |               0.3294 |          -0.0941 |       24.7457 |               13.0653 |             40.7035 |                             40.201  |
+| exclude replies with invalid weight sums        | kimi     | BASE        | 200 |            0.7267 |               0.481  |          -0.0438 |       27.9519 |               18.5    |             49.5    |                             49      |
+| exclude replies with invalid weight sums        | kimi     | SUIT        | 200 |            0.7146 |               0.4739 |          -0.0456 |       22.9933 |               11.5    |             25      |                             24.5    |
+| equity from category assumptions for every fund | deepseek | BASE        | 200 |            0.7475 |               0.4622 |          -0.0623 |       33.1857 |               23.5    |             51.5    |                             51.5    |
+| equity from category assumptions for every fund | deepseek | SUIT        | 200 |            0.6785 |               0.5194 |          -0.0488 |       30.0375 |               17      |             42      |                             42      |
+| equity from category assumptions for every fund | doubao   | BASE        | 200 |            0.8063 |               0.4173 |          -0.0886 |       33.7975 |               24.5    |             51.5    |                             51      |
+| equity from category assumptions for every fund | doubao   | SUIT        | 199 |            0.8082 |               0.3792 |          -0.0767 |       26.8769 |               14.5729 |             40.7035 |                             40.201  |
+| equity from category assumptions for every fund | kimi     | BASE        | 200 |            0.6758 |               0.5319 |          -0.0476 |       31.2675 |               20.5    |             49.5    |                             49      |
+| equity from category assumptions for every fund | kimi     | SUIT        | 200 |            0.6617 |               0.5461 |          -0.0827 |       26.15   |               15      |             25      |                             24.5    |
 
 ## T21_regression_with_covariates
 

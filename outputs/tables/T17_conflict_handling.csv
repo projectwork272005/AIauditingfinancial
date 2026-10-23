@@ -3,11 +3,11 @@ deepseek,BASE,C4-C5 with horizon < 3 years (conflict),32,38.314890625000004,59.3
 deepseek,BASE,C4-C5 with horizon >= 5 years (no conflict),32,79.63298437499999,15.625,0.0,100.0,,4.0625
 deepseek,SUIT,C4-C5 with horizon < 3 years (conflict),32,26.66203125,37.5,100.0,100.0,100.0,3.25
 deepseek,SUIT,C4-C5 with horizon >= 5 years (no conflict),32,80.29106250000001,12.5,12.5,100.0,31.25,3.90625
-doubao,BASE,C4-C5 with horizon < 3 years (conflict),32,46.521109374999995,65.625,0.0,96.875,,3.0625
+doubao,BASE,C4-C5 with horizon < 3 years (conflict),32,46.521109375,65.625,0.0,96.875,,3.0625
 doubao,BASE,C4-C5 with horizon >= 5 years (no conflict),32,78.657765625,18.75,0.0,100.0,,3.1875
 doubao,SUIT,C4-C5 with horizon < 3 years (conflict),32,33.8605625,43.75,81.25,100.0,90.625,2.875
 doubao,SUIT,C4-C5 with horizon >= 5 years (no conflict),32,71.7663064516129,12.903225806451612,58.06451612903226,100.0,6.25,3.161290322580645
-kimi,BASE,C4-C5 with horizon < 3 years (conflict),32,29.742109375000005,50.0,50.0,100.0,,3.8125
+kimi,BASE,C4-C5 with horizon < 3 years (conflict),32,29.742109375,50.0,50.0,100.0,,3.8125
 kimi,BASE,C4-C5 with horizon >= 5 years (no conflict),32,79.23495,21.875,0.0,100.0,,4.15625
 kimi,SUIT,C4-C5 with horizon < 3 years (conflict),32,14.000125,18.75,96.875,100.0,100.0,3.9375
 kimi,SUIT,C4-C5 with horizon >= 5 years (no conflict),32,79.2915625,21.875,31.25,100.0,68.75,4.28125

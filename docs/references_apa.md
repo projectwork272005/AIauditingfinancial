@@ -56,4 +56,5 @@ Sharma, M., Tong, M., Korbak, T., Duvenaud, D., Askell, A., Bowman, S. R., Cheng
 
 ## Data sources (cited in the method and in table notes)
 
-Fund identity checks: fund-manager product key facts statements and quarterly reports, as indexed by 10jqka.com.cn, howbuy.com, lixinger.com, cfi.cn and finance.sina.com.cn (retrieved 22 October 2026; per-fund URLs in `data/fund_menu_candidates.csv`). Risk ratings, asset allocation and NAV history: course-provided data service, Tonghuashun financial data API (https://fuyao.aicubes.cn/docs/api-reference/overview/), with Eastmoney/Tiantian Fund as fallback, with the source and retrieval timestamp recorded per fund in `data/fund_menu_verification.csv` and `data/nav/_manifest.csv` once retrieved.
+Fund identity checks: fund-manager key facts statements and periodic reports indexed by 10jqka.com.cn, howbuy.com, lixinger.com, cfi.cn and finance.sina.com.cn (retrieved 22 October 2026; URLs in `data/fund_menu_candidates.csv`). Product risk ratings and reported stock shares: Eastmoney / Tiantian Fund (fundmobapi.eastmoney.com and fund.eastmoney.com, retrieved 23 October 2026; `data/fund_menu_verification.csv`). Adjusted NAV history: course data service, Tonghuashun financial data API (https://fuyao.aicubes.cn/docs/api-reference/overview/; `data/nav/_manifest.csv`).
+

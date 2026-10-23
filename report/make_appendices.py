@@ -56,29 +56,25 @@ def main():
                          "Risk class": f"{p.risk_class} {p.risk_label}", "Objective": p.objective_category,
                          "Employment": p.employment_status, "Experience (y)": p.experience_years,
                          "Amount (CNY)": f"{p.investable_amount_cny:,}"} for p in rows])
-    out += ["Table A1 lists two investors from the main sample: a moderate mid-career investor and a deliberate "
-            "conflict case, a very aggressive student who needs the money within a year. The texts below are "
-            "exactly what the models receive after the words \"Here is my situation:\".", "",
-            "TABLE: Table A1. Selected synthetic investors", md_table(tab),
-            "NOTE: All investors are synthetic. Risk class codes are shown here for the reader but are never shown "
-            "to the models.", ""]
-    for p in rows:
-        out += [f"**{p.investor_id}** ({p.cell_id})", "", code_block(p.profile_text), ""]
+    out += ["The text below is exactly what the models receive after the words \"Here is my situation:\" for "
+            "a deliberate conflict case, a very aggressive student who needs the money within a year. Risk class "
+            "codes are never shown to the models.", ""]
+    p = rows[1]
+    out += [f"**{p.investor_id}** ({p.cell_id})", "", code_block(p.profile_text), ""]
     anchor = probes[probes.anchor_id == "PRB-03"]
     a0 = anchor[anchor.varied_attribute == "anchor"].iloc[0]
     v_risk = anchor[anchor.varied_attribute == "risk"].iloc[0]
     changed = [x for x, y in zip(v_risk.profile_text.split("\n"), a0.profile_text.split("\n")) if x != y][0]
-    out += ["**Probe example.** Anchor PRB-03 and one of its 15 single-attribute versions. Only the varied line "
-            "changes; every other line is identical across all versions.", "",
-            f"*{a0.probe_id}*", "", code_block(a0.profile_text), "",
-            f"*{v_risk.probe_id}* differs only in this line:", "", code_block(changed), ""]
+    out += [f"**Probe example.** Version {v_risk.probe_id} differs from its anchor PRB-03 only in the "
+            "risk-tolerance line, shown below.", "", code_block(changed), ""]
 
     out += ["# Appendix B. Sample Validation Checks", ""]
     checks = validate_profiles.run_main_checks(inv) + validate_profiles.run_probe_checks(probes)
-    out += ["TABLE: Table B1. Validation checks applied to the synthetic samples",
-            md_table(pd.DataFrame([{"ID": c[0], "Check": c[1], "Result": "Pass" if c[2] else "FAIL",
-                                    "Detail": c[3]} for c in checks])),
-            "NOTE: Produced by src/validate_profiles.py, which is independent of the generator. Full report in "
+    out += ["Table B1 lists the 16 checks applied to the two synthetic samples; all pass.", "",
+            "TABLE: Table B1. Validation checks applied to the synthetic samples",
+            md_table(pd.DataFrame([{"ID": c[0], "Check": c[1], "Result": "Pass" if c[2] else "FAIL"}
+                                   for c in checks])),
+            "NOTE: Produced by src/validate_profiles.py, which is independent of the generator; details in "
             "docs/profile_validation_report.md.", ""]
 
     out += ["# Appendix C. Prompts", "",
@@ -104,42 +100,31 @@ def main():
         if r.min_holding_years not in ("", "0"):
             n.append(f"{r.min_holding_years}-year hold")
         notes.append("; ".join(n) if n else "-")
-    d = pd.DataFrame({"Code": menu["code"], "Fund name": menu["name_cn"], "Manager": menu["manager_en"],
+    d = pd.DataFrame({"Code": menu["code"], "Fund name": menu["name_cn"],
                       "Category": menu["category_en"], "Notes": notes,
                       "Rating": menu["risk_rating"].replace({"": "pending"}),
-                      "Equity (%)": menu["fallback_equity_pct"]})
+                      "Equity (%)": pd.to_numeric(menu.get("equity_exposure_pct", menu["fallback_equity_pct"]),
+                                                  errors="coerce").map(lambda v: f"{v:.1f}")})
     out += ["TABLE: Table D1. The 23-fund menu", md_table(d),
-            "NOTE: Identity checked on 22 October 2026 against at least two public records per fund (product key-"
-            "facts statements and periodic reports indexed by 10jqka.com.cn, howbuy.com, lixinger.com, cfi.cn and "
-            "finance.sina.com.cn). Inception dates (2003-2019) and per-fund URLs are in data/fund_menu_candidates.csv. "
-            "Equity (%) is the category assumption, used only where reported stock holdings do not reflect the "
-            "underlying exposure (index feeders, the FOF, gold); otherwise the latest reported stock share is used.", ""]
+            "NOTE: Identity checked on 22 October 2026 against at least two public records per fund; sources, "
+            "managers and inception dates in data/fund_menu_candidates.csv. Ratings: Eastmoney, 23 October 2026. "
+            "Equity (%): category assumption, used for index feeders, the FOF and gold; otherwise the reported stock "
+            "share at 30 June 2026 is used (data/fund_menu.csv).", ""]
 
     out += ["# Appendix E. Coding Rules", "",
-            "TABLE: Table E1. Principal coded fields",
-            md_table(pd.DataFrame([
-                ["parse_status", "ok, fenced, extracted, repaired (trailing commas only) or failed"],
-                ["off_menu_count", "Codes not on the menu; excluded from risk measures, remaining weights rescaled"],
-                ["weight_sum_ok", "Stated weights sum to 100 within 1 point"],
-                ["equity_pct", "Sum of weight x equity exposure of each on-menu fund"],
-                ["weighted_risk", "Sum of weight x product rating (1-5)"],
-                ["rating_breach", "Any fund rated above the investor's ceiling (C1 R1 ... C5 R5)"],
-                ["equity_over_cap", "Equity above min(risk cap, horizon cap) by more than 5 points"],
-                ["holding_period_breach", "A fund's minimum holding period exceeds the stated horizon"],
-                ["mentions_conflict_terms", "Keyword rule: conflict, inconsistent, mismatch, contradict, tension, "
-                                            "at odds, not compatible/consistent/aligned"],
-                ["risk_class_assessed", "SUIT only: class reported by the model"],
-                ["loss_tolerance_breach", "Worst back-tested 12-month return below minus the stated maximum loss"],
-            ], columns=["Field", "Rule"])),
-            "NOTE: Complete data dictionary in docs/coding_sheet.md. Manual validation of the keyword rule: two group "
-            "members independently code a stratified random sample of 60 replies; agreement is reported as Cohen's "
-            "kappa.", ""]
+            "Table 6 summarises the coded measures; docs/coding_sheet.md defines every field. Replies that cannot be "
+            "parsed stay in the data without portfolio measures. Off-menu codes are excluded from the risk measures "
+            "and the remaining weights rescaled to 100. Conflict acknowledgement is a keyword rule (conflict, "
+            "inconsistent, mismatch, contradict, tension, at odds, not compatible, consistent or aligned). For manual "
+            "validation, two group members independently code the stratified random sample of 60 replies in "
+            "docs/manual_coding_sample.csv; agreement with the rule is to be reported as Cohen's kappa.", ""]
 
     manifests = sorted((ROOT / "outputs" / "logs").glob("run_*.json"))
     out += ["# Appendix F. Run Record", ""]
     if manifests:
         recs = [json.loads(m.read_text(encoding="utf-8")) for m in manifests]
-        out += ["TABLE: Table F1. Experiment runs",
+        out += ["Table F1 lists the runs recorded in outputs/logs.", "",
+                "TABLE: Table F1. Experiment runs",
                 md_table(pd.DataFrame([{"Run": r["run_id"], "Started": r.get("started"), "Finished": r.get("finished"),
                                         "Calls ok": r.get("ok"), "Calls failed": r.get("failed")} for r in recs]).astype(str)),
                 ("NOTE: From outputs/logs. The first two runs are the 60-call pilot: 20 Kimi calls failed with reasoning "
@@ -149,21 +134,16 @@ def main():
         out += ["PENDING: The experiment has not yet been run; this appendix is filled from outputs/logs.", ""]
 
     out += ["# Appendix G. Reproducibility", "",
-            "All code, data and logs are in the project repository. The samples are regenerated exactly with "
-            "`python src/generate_profiles.py` (seed 20261022) and checked with `python src/validate_profiles.py`. "
-            "The experiment runs with `python src/run_experiment.py`; coding, back-test, analysis and figures follow "
-            "with `code_responses.py`, `backtest.py`, `analysis.py` and `figures.py`, and `report/report_supplement.py` writes the supplementary tables T22 to T25 cited in Section 9. Every table and figure in "
-            "Sections 9 to 11 is produced by these scripts from the raw logs; no number is typed by hand. "
-            "Automated tests (`python -m pytest tests`) check the parser, the suitability rules, the back-test "
-            "arithmetic and the full pipeline on fixture data.", ""]
+            "Code, data and logs are in the project repository; README.md lists the commands in order. The samples "
+            "are regenerated exactly from seed 20261022. Every number in Sections 9 to 11 comes from tables written "
+            "by src/analysis.py and report/report_supplement.py from the raw logs; none is typed by hand. Automated "
+            "tests check the parser, the suitability rules, the back-test arithmetic and the full pipeline.", ""]
 
     out += ["# Appendix H. AI Use Statement", "",
-            "An AI assistant (Claude, Anthropic) was used to summarise the reference materials, draft the design, "
-            "write and test the code, search for and check literature and fund records, and draft text. Every "
-            "reference was checked against a bibliographic record, and four unverifiable references in the course "
-            "example were dropped. Fund identities were checked against public records. No experimental result was "
-            "produced by the assistant: the audited models' replies are the only source of results. The group "
-            "reviewed and is responsible for all content. The full statement is in AI_use_statement.md.", ""]
+            "An AI assistant (Claude, Anthropic) helped design the study, write and test the code, check literature "
+            "and fund records, and draft text. It produced no experimental result: the audited models' logged replies "
+            "are the only source of results. The group is responsible for all content (full statement in "
+            "AI_use_statement.md).", ""]
 
     (ROOT / "report" / "appendices_generated.md").write_text("\n".join(out), encoding="utf-8")
     print("Wrote report/appendices_generated.md")

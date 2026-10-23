@@ -6,23 +6,24 @@ This statement discloses how AI tools were used in the project. It distinguishes
 
 | Tool | Used for | Extent | How the output was checked |
 |---|---|---|---|
-| Claude (Anthropic), via Claude Code in a cloud session | Reading and summarising the three reference files; drafting the research design; writing the Python pipeline, tests and analysis scripts; searching for and checking literature and fund records; drafting report and slide text | Substantial: most code and first drafts of the documents were AI-generated at the group's request | Code: 10 automated tests, including tests that caught two real bugs during development (a lost first month in the back-test window; a missing-column crash). Samples: 16 independent validation checks. Literature: every reference was checked against a bibliographic record (`docs/references_verification.md`); four references from the reference report could not be confirmed and were dropped. Fund data: code, name, manager, type and inception date were checked against at least two public sources for each fund. |
+| Claude (Anthropic), via Claude Code in a cloud session and in a session on a group member's computer | Reading and summarising the three reference files; drafting the research design; writing the Python pipeline, tests and analysis scripts; searching for and checking literature and fund records; running the experiment scripts with the group's API keys; drafting report and slide text, including the results and discussion sections from the analysis tables | Substantial: most code and first drafts of the documents were AI-generated at the group's request | Code: 11 automated tests, including tests that caught two real bugs during development (a lost first month in the back-test window; a missing-column crash). Samples: 16 independent validation checks. Literature: every reference was checked against a bibliographic record (`docs/references_verification.md`); four references from the reference report could not be confirmed and were dropped. Fund data: code, name, manager, type and inception date were checked against at least two public sources for each fund. |
 
 **Group responsibility.** Group members must read, check and revise every section before submission. In particular they must:
 - confirm that the research questions and design reflect the group's own intentions;
 - re-read the literature review against the cited sources where full texts are available;
 - carry out the manual validation coding (`docs/coding_sheet.md`, Part C);
-- write or revise the interpretation of results in their own words once real results exist.
+- write or revise the interpretation of results (report Sections 9 to 13) in their own words, checking each number against `outputs/tables/`.
 
 **What the AI assistant did not do.**
 - It did not generate any experimental result.
 - It did not stand in for the audited models.
 - It did not invent data, citations or fund codes.
-- Where a step could not be completed (API access, fund ratings), the documents say so instead of filling the gap.
+- It ran the experiment scripts but did not edit their outputs: every result comes from the logged replies of the audited models.
+- Where a step could not be completed as planned (the course's Ark route, a rating field in the course API), the documents say so and record the substitute used.
 
 ## 2. AI as the object of study
 
-The audited models are named in `config/experiment_config.json`: Doubao-Seed (ByteDance), DeepSeek V4 Flash (DeepSeek) and Kimi (Moonshot AI; GLM by Zhipu AI as fallback), Doubao-Seed 2.0 mini, DeepSeek V4 Flash and Kimi K2.6, reached through OpenRouter after the course's Volcano Engine Ark Agent Plan route could not be used (docs/run_status.md). Each is called through its provider's API with fixed, logged settings. Their replies are **data**, stored verbatim in `outputs/raw/`. Model-generated recommendations are always labelled as such and are never presented as financial advice or as statements of fact.
+The audited models are named in `config/experiment_config.json`: Doubao-Seed 2.0 mini (ByteDance), DeepSeek V4 Flash (DeepSeek) and Kimi K2.6 (Moonshot AI), reached through OpenRouter with each model pinned to one serving provider after the course's Volcano Engine Ark Agent Plan route could not be used (`docs/run_status.md`). Every call uses fixed, logged settings. Their replies are **data**, stored verbatim in `outputs/raw/`. Model-generated recommendations are always labelled as such and are never presented as financial advice or as statements of fact.
 
 ## 3. Synthetic and real data
 

@@ -2,7 +2,7 @@
 
 **Working title:** *Who Gets What? A Factorial Audit of How Large Language Models Tailor Mutual Fund Portfolios to Investor Age, Risk Tolerance and Investment Horizon*
 
-**Status (22 October 2026):** design frozen; synthetic samples generated and validated; pipeline, coding, back-test and analysis code implemented and tested on fixtures. **No model has been queried yet.** The experiment requires API keys and network access that the current environment does not have (see Section 11). Nothing in this document reports a result.
+**Status (23 October 2026):** design frozen before the run; the experiment was run on 23 October 2026 (2,508 calls plus a 60-call pilot). Results are reported only in `report/final_report.docx` and `outputs/tables/`; this document records the design as fixed beforehand, with the changes in implementation noted in Section 11.
 
 ---
 
@@ -178,10 +178,11 @@ The equity caps and the 5 pp tolerance are **researcher-defined operationalisati
 
 | Step | Status |
 |---|---|
-| Reference review, design, hypotheses | Done |
+| Reference review, design, hypotheses | Done (fixed before the run) |
 | Investor and probe samples (200 + 160) | Done; validated (16/16 checks) |
 | Fund identity verification (23 funds) | Done via web search, sources recorded |
-| Fund risk ratings, allocation, NAV history | **Pending**: needs `fuyao.aicubes.cn` (course API) documentation and access, or Eastmoney access |
-| Pipeline, coder, back-test, analysis, figures | Implemented; 10 automated tests pass on fixtures |
-| Pilot and main experiment | **Not run**: needs an Ark Agent Plan API key (`ARK_API_KEY`) and the allowed host `ark.cn-beijing.volces.com` |
-| Report and presentation | Drafted from the design; results sections to be written only from real outputs |
+| Fund risk ratings, allocation, NAV history | Done 23 Oct 2026: ratings and stock shares from Eastmoney (the course API has no rating field); NAV from the course API (fuyao) |
+| Pilot and main experiment | Done 23 Oct 2026 via OpenRouter (Ark Agent Plan keys unavailable); 2,508/2,508 calls answered |
+| Coding, back-test, analysis, figures | Done; 11 automated tests pass |
+| Report and presentation | Done; results written only from `outputs/tables/` |
+| Manual double coding (60 replies) | Open: to be done by two group members |

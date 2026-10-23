@@ -43,3 +43,9 @@ SUIT lowers rating breaches in every model (paired McNemar, Holm-adjusted p < 0.
 - report/report_source.md now contains the results (Section 9), discussion (10), implications (11), conclusion (13), abstract findings and result-based limitations (12). All numbers come from outputs/tables (T04-T21) and the supplementary tables T22-T25 written by report/report_supplement.py.
 - Built with `python report/report_supplement.py && python report/make_appendices.py && node report/build_report.js report/final_report.docx`.
 - Still open: group member names and submission date on the title page, manual double coding (Appendix E), slides (need the course template).
+
+## Final build (2026-10-23, cloud session)
+- Report cut to the 6,000-10,000 word limit (about 9,700 words by Word's rules, appendices and references included); all numbers re-checked against outputs/tables; exhibits renumbered (Tables 1-13, Figures 1-9) and every exhibit cited in the text.
+- src/analysis.py: paired outcomes rounded to 6 decimals before rank tests, so identical portfolios tie exactly on every platform (reported values unchanged); new robustness variant with category-based equity for every fund (T20).
+- presentation/presentation.pptx built on the course template; result slides 13-16 and the takeaways read their numbers from outputs/tables.
+- Still open for the group: names and date on the title page; manual double coding of docs/manual_coding_sample.csv (Appendix E); reading and revising the text in their own words.
