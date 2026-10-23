@@ -37,3 +37,16 @@ config menu.as_of = 2026-10-23; menu.source states both sources (the planned wor
 - src/verify_funds.py:
   - Six funds have abbreviated Eastmoney names (006662, 006580, 007300, 050025, 000071, 160416). A name mismatch now passes only if the retrieved manager and inception date both agree with the candidate file; recorded as name_match = "abbreviated (manager and inception match)". All six agree on both.
   - ETF-feeder detection also checks the fund name: 270042 has official type "QDII/股票型" but is an ETF feeder; its reported direct stock share (0%) had been used as equity exposure instead of the 95% feeder category assumption.
+
+## Step 2 - models: BLOCKED (Agent Plan key)
+
+- `python src/run_experiment.py --list-models`: the plan endpoint has no /models route (HTTP 404 for https://ark.cn-beijing.volces.com/api/plan/v3/models).
+- Instead, one test call ("Reply with the word OK.", max_tokens 20) was sent per candidate name to /api/plan/v3/chat/completions on 2026-10-23:
+  - doubao-seed-2.0-mini, deepseek-v4-flash, kimi-k2.6, kimi-k2.8-preview, kimi-k3, glm-5.3-flash: HTTP 401 AuthenticationError ("The API key or AK/SK in the request is missing or invalid").
+  - kimi-k2.5, glm-5, glm-4.7: HTTP 404 UnsupportedModel ("does not support the agent plan feature").
+- The same key is accepted as an account key elsewhere: /api/v3 answers 404 InvalidEndpointOrModel (model not activated for pay-as-you-go), /api/coding/v3 answers 400 InvalidSubscription (no Coding Plan). The key in `AI_agents` is therefore a valid Ark key, but not an Agent Plan key.
+- Volcano's Agent Plan quick start (https://www.volcengine.com/docs/82379/2373738, read 2026-10-23) states that the plan requires its own dedicated Agent Plan API Key from the Agent Plan console; other Ark API keys cannot be used with it.
+- Config model names were set from the official Agent Plan model table (https://www.volcengine.com/docs/82379/2366394): doubao = doubao-seed-2.0-mini, deepseek = deepseek-v4-flash, kimi = kimi-k2.8-preview (kimi-k3 forces thinking and is not in the Small tier). They are not yet confirmed by a successful call.
+- `python src/run_experiment.py --dry-run`: 2,508 planned calls, 0 completed, estimated 4.01 M input tokens.
+
+Needed to continue: an Agent Plan API Key (Agent Plan console, with an active Agent Plan subscription) in `AI_agents`. Steps 3-6 not started; no model output exists.

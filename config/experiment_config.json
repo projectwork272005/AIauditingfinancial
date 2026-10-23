@@ -57,7 +57,7 @@
           "type": "disabled"
         }
       },
-      "model_note": "Model name from the course reference script; confirm against the Agent Plan model list before the run."
+      "model_note": "Name taken from the Agent Plan supported-model table (https://www.volcengine.com/docs/82379/2366394, read 2026-10-23); /models is not offered on the plan endpoint (HTTP 404). Not yet confirmed by a successful call."
     },
     {
       "key": "deepseek",
@@ -65,7 +65,7 @@
       "enabled": true,
       "route": "ark-agent-plan",
       "base_url": "https://ark.cn-beijing.volces.com/api/plan/v3",
-      "model": "SET_AFTER_LISTING_MODELS",
+      "model": "deepseek-v4-flash",
       "api_key_env": [
         "AI_agents",
         "AI_AGENTS",
@@ -78,7 +78,8 @@
         "thinking": {
           "type": "disabled"
         }
-      }
+      },
+      "model_note": "Name taken from the Agent Plan supported-model table (https://www.volcengine.com/docs/82379/2366394, read 2026-10-23); /models is not offered on the plan endpoint (HTTP 404). Not yet confirmed by a successful call."
     },
     {
       "key": "kimi",
@@ -86,7 +87,7 @@
       "enabled": true,
       "route": "ark-agent-plan",
       "base_url": "https://ark.cn-beijing.volces.com/api/plan/v3",
-      "model": "SET_AFTER_LISTING_MODELS",
+      "model": "kimi-k2.8-preview",
       "api_key_env": [
         "AI_agents",
         "AI_AGENTS",
@@ -96,7 +97,7 @@
       "temperature": 0.7,
       "max_tokens_param": "max_tokens",
       "extra_body": {},
-      "model_note": "If Kimi is not offered in the purchased tier, enable the 'glm' entry instead."
+      "model_note": "Name taken from the Agent Plan supported-model table (https://www.volcengine.com/docs/82379/2366394, read 2026-10-23); /models is not offered on the plan endpoint (HTTP 404). Not yet confirmed by a successful call."
     },
     {
       "key": "glm",
