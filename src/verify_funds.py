@@ -53,7 +53,8 @@ def name_match(candidate: str, retrieved: str) -> str:
 
 def reported_allowed(row) -> bool:
     t = row["official_type_cn"]
-    return row["asset_class"] in ("Bond", "Hybrid", "Equity") and "FOF" not in t and "联接" not in t
+    feeder = "联接" in t or "联接" in row["name_cn"]  # 270042's type reads QDII/股票型 but it is an ETF feeder
+    return row["asset_class"] in ("Bond", "Hybrid", "Equity") and "FOF" not in t and not feeder
 
 
 def main():
@@ -67,6 +68,12 @@ def main():
         info = src.basic_info(row["code"])
         info["candidate_name"] = row["name_cn"]
         info["name_match"] = name_match(row["name_cn"], info.get("name", ""))
+        # Data providers show abbreviated display names (e.g. without "(QDII)" or "债券").
+        # Such a fund is still the same product if manager and inception date both agree.
+        mgr = norm(info.get("manager", ""))
+        if (info["name_match"] == "mismatch" and mgr and norm(row["manager_cn"]).startswith(mgr)
+                and str(info.get("inception", "")) == row["inception_date"]):
+            info["name_match"] = "abbreviated (manager and inception match)"
         records.append(info)
         print(f"{row['code']} {row['name_cn']:<28} -> {info.get('name')} | {info.get('risk_rating')} | "
               f"{info['name_match']}")
@@ -87,7 +94,8 @@ def main():
     menu["equity_exposure_pct"] = rep.where(use_rep, pd.to_numeric(menu["fallback_equity_pct"]))
     menu["equity_exposure_basis"] = use_rep.map({True: "reported stock share of net assets",
                                                  False: "category assumption"})
-    ok = menu["code"].map(by_code["name_match"]).isin(["exact", "normalized", "partial"]) & (menu["risk_rating"] != "")
+    ok = menu["code"].map(by_code["name_match"]).isin(["exact", "normalized", "partial",
+                                                     "abbreviated (manager and inception match)"]) & (menu["risk_rating"] != "")
     menu["menu_status"] = ok.map({True: "VERIFIED", False: "NEEDS_REVIEW"})
     menu.to_csv(ROOT / "data" / "fund_menu.csv", index=False)
     print(f"\n{int(ok.sum())}/{len(menu)} funds VERIFIED. Risk ratings:\n"

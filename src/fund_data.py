@@ -73,8 +73,18 @@ class FuyaoSource:
         self.key = next((os.environ[n].strip() for n in names if os.environ.get(n, "").strip()), "")
 
     @staticmethod
+    def ms_to_date(ms):
+        """API timestamps are milliseconds in Asia/Shanghai time (per the docs)."""
+        if ms in (None, ""):
+            return None
+        return pd.to_datetime(ms, unit="ms", utc=True).tz_convert("Asia/Shanghai").strftime("%Y-%m-%d")
+
+    @staticmethod
     def thscode(code: str) -> str:
-        return code if "." in code else f"{code}.OF"
+        # LOF funds (16xxxx) are only found under their Shenzhen listing (code 3001 for .OF).
+        if "." in code:
+            return code
+        return f"{code}.SZ" if code.startswith("16") else f"{code}.OF"
 
     def _get(self, path: str, code: str, kind: str, **params) -> tuple[dict, str]:
         headers = {**UA}
@@ -106,7 +116,7 @@ class FuyaoSource:
         """Search a response for a field whose name mentions risk and whose value is a rating."""
         if isinstance(obj, dict):
             for k, v in obj.items():
-                if "risk" in k.lower() and isinstance(v, (str, int)):
+                if "risk" in k.lower() and "score" not in k.lower() and isinstance(v, (str, int)):
                     val = str(v).strip()
                     m = re.fullmatch(r"R?([1-5])", val.upper())
                     if m:
@@ -130,7 +140,7 @@ class FuyaoSource:
             data, raw = self._get("/api/fund/profile/detail", code, "profile")
             info["raw_profile"] = raw
             item = (self._items(data) or [{}])[0]
-            info.update({"name": item.get("fund_name"), "inception": item.get("estab_date"),
+            info.update({"name": item.get("fund_name"), "inception": self.ms_to_date(item.get("estab_date")),
                          "manager": item.get("mgmt_name"),
                          "type": item.get("fund_type") or item.get("type_name") or item.get("invest_type")})
             found = self._find_risk(item)
@@ -150,15 +160,15 @@ class FuyaoSource:
         try:
             data, raw = self._get("/api/fund/portfolio/holdings", code, "holdings")
             info["raw_holdings"] = raw
-            item = (self._items(data) or [{}])[0]
+            # Summary ratios sit at data level; item[] lists individual positions.
+            summary = data if isinstance(data, dict) else {}
             for k in ("total_stock_ratio_pct", "stock_ratio_pct"):
-                if k in item:
-                    info["reported_equity_pct"] = item[k]
+                if summary.get(k) is not None:
+                    info["reported_equity_pct"] = summary[k]
                     break
-            for k in ("report_date", "end_date", "rpt_date"):
-                if k in item:
-                    info["allocation_report_date"] = item[k]
-                    break
+            item = (self._items(data) or [{}])[0]
+            if item.get("end_date_ms"):
+                info["allocation_report_date"] = self.ms_to_date(item["end_date_ms"])
         except Exception as exc:
             info["holdings_error"] = str(exc)
         return info
@@ -169,7 +179,9 @@ class FuyaoSource:
         if df.empty or "nav_date" not in df:
             raise RuntimeError(f"fuyao nav: no series returned for {code} (raw: {raw})")
         d = df["nav_date"]
-        df["date"] = (pd.to_datetime(d, unit="ms") if pd.api.types.is_numeric_dtype(d)
+        # nav_date is a millisecond timestamp of the Beijing calendar date (Asia/Shanghai).
+        df["date"] = (pd.to_datetime(d, unit="ms", utc=True).dt.tz_convert("Asia/Shanghai")
+                      if pd.api.types.is_numeric_dtype(d)
                       else pd.to_datetime(d)).dt.tz_localize(None).dt.normalize()
         level = pd.to_numeric(df.get("adj_nav"), errors="coerce")
         if level is None or level.isna().all():
@@ -243,12 +255,14 @@ class EastmoneySource:
         rows = json.loads(m.group(1)) if m else []
         df = pd.DataFrame(rows)
         if not df.empty and df["y"].nunique() > 1:
-            df["date"] = pd.to_datetime(df["x"], unit="ms").dt.tz_localize(None).dt.normalize()
+            df["date"] = (pd.to_datetime(df["x"], unit="ms", utc=True).dt.tz_convert("Asia/Shanghai")
+                          .dt.tz_localize(None).dt.normalize())
             df["ret"] = pd.to_numeric(df["equityReturn"], errors="coerce").fillna(0) / 100
         else:  # money market fund: NAV fixed at 1, use income per 10k units
             m2 = re.search(r"var Data_millionCopiesIncome\s*=\s*(\[.*?\]);", r.text, re.S)
             inc = pd.DataFrame(json.loads(m2.group(1)) if m2 else [], columns=["x", "income"])
-            df = inc.assign(date=pd.to_datetime(inc["x"], unit="ms").dt.normalize(),
+            df = inc.assign(date=pd.to_datetime(inc["x"], unit="ms", utc=True).dt.tz_convert("Asia/Shanghai")
+                            .dt.tz_localize(None).dt.normalize(),
                             ret=pd.to_numeric(inc["income"], errors="coerce").fillna(0) / 10_000)
         df = df.sort_values("date")
         df["return_index"] = (1 + df["ret"]).cumprod()
