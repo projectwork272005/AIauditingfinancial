@@ -126,6 +126,11 @@ def make_all(out_root: Path = ROOT / "outputs"):
                color=pal[mk][0], alpha=COND_STYLE[c]["alpha"], label=f"{pal[mk][1]} - {COND_LABEL[c]}")
     ax.set_xticks(range(5), classes)
     ax.set_ylim(0, 100)
+    menu = pd.read_csv(ROOT / "data" / "fund_menu.csv", dtype=str)
+    top_rating = int(menu["risk_rating"].str[1].astype(int).max())
+    for k, cls in enumerate(classes):
+        if k + 1 >= top_rating:   # ceiling C_k -> R_k already covers every fund on the menu
+            ax.text(k, 4, "No breach\npossible", ha="center", va="bottom", fontsize=7, color=MUTED)
     ax.set_xlabel("Investor risk class")
     ax.set_ylabel("Replies with a fund above the permitted\nproduct risk rating (%)")
     legend_below(ax, ncol=3)

@@ -11,6 +11,7 @@ Run: python src/analysis.py
 
 import json
 import sys
+import warnings
 from itertools import combinations
 from pathlib import Path
 
@@ -22,6 +23,10 @@ from scipy import stats
 from statsmodels.stats.anova import anova_lm
 from statsmodels.stats.contingency_tables import cochrans_q, mcnemar
 from statsmodels.stats.multitest import multipletests
+
+# A probe series with identical equity at every level has no defined rank correlation; it is
+# recorded as NaN and skipped by nanmean, so the warning carries no information.
+warnings.filterwarnings("ignore", category=stats.ConstantInputWarning)
 
 ROOT = Path(__file__).resolve().parents[1]
 H_ORD = {f"H{i}": i for i in range(1, 6)}
