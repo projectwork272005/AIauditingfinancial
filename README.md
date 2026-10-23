@@ -48,9 +48,9 @@ python -m pytest -q tests                     # 10 tests, fixture data only
 
 | What | Variable / host | Purpose |
 |---|---|---|
-| Volcano Engine Ark Agent Plan key (course route) | `ARK_API_KEY`, host `ark.cn-beijing.volces.com` | all three models (Doubao, DeepSeek, Kimi; GLM as fallback) through `https://ark.cn-beijing.volces.com/api/plan/v3` |
+| Volcano Engine Ark Agent Plan key (course route) | `AI_agents` (also accepted: `ARK_API_KEY`), host `ark.cn-beijing.volces.com` | all three models (Doubao, DeepSeek, Kimi; GLM as fallback) through `https://ark.cn-beijing.volces.com/api/plan/v3` |
 | *Alternatives (disabled in the config)* | `DEEPSEEK_API_KEY`, `DASHSCOPE_API_KEY`, `OPENAI_API_KEY`, `OPENROUTER_API_KEY` | direct provider routes, kept for reruns outside the course set-up |
-| Course fund-data API | `FUYAO_API_KEY` (if required), host `fuyao.aicubes.cn` + its documentation | risk ratings, allocations, NAV history |
+| Course fund-data API (Tonghuashun data) | `fuyao` (also accepted: `FUYAO_API_KEY`), host `fuyao.aicubes.cn` | risk ratings, allocations, NAV history |
 | Fallback fund data | hosts `fund.eastmoney.com`, `fundf10.eastmoney.com`, `fundmobapi.eastmoney.com`, `api.fund.eastmoney.com` | used only if the course API is unavailable |
 
 Keys go into the environment (never into files or chat). The config file stores only the variable names.
