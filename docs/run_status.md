@@ -97,7 +97,7 @@ Each model: 836 successful calls in main + consistency + probe and 20 in the pil
 
 - `python src/code_responses.py`: 2,568 replies coded, 5 issues (outputs/coding_issues.csv): 3 doubao replies are malformed JSON from the model (a value without a key inside a portfolio entry; finish_reason stop), parse_status failed; 2 deepseek replies contain one off-menu code each (005827, 000218). Not systematic, so the parser was not changed.
 - `python src/backtest.py fetch --source fuyao` (see above) and `evaluate`: 2,565 portfolios back-tested over 2021-11-01 to 2026-09-30 (59 months).
-- `python src/analysis.py`: 18 tables plus results_digest.md. Warnings: scipy ConstantInputWarning in the Spearman alignment (T08) for cells where an attribute or equity share is constant; the coefficient is then undefined (NaN).
+- `python src/analysis.py`: 18 tables plus results_digest.md. Spearman alignment (T08) is undefined (NaN) in cells where an attribute or the equity share is constant.
 - `python src/figures.py`: figures F01-F08.
 - `python src/sample_for_manual_coding.py`: 60 replies to docs/manual_coding_sample.csv. Code fix: pandas 3 drops grouping columns inside groupby().apply, which raised KeyError; replaced by an explicit loop over groups with the same per-cell sample(random_state=7). Tests: 11 passed.
 - Sanity checks on the main sample: 200 replies per model x condition (doubao SUIT 199 coded, 1 unparseable); weight sums 100 in every coded reply; equity share 0-95%; weighted and maximum risk 1-4 (menu has no R5 fund); 51 coded replies list fewer than 3 funds (the prompt asks for 3-8; recorded by fund_count_ok, not altered).
