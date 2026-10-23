@@ -83,17 +83,17 @@ NOTE: Produced by src/validate_profiles.py, which is independent of the generato
 
 # Appendix C. Prompts
 
-The system prompt below is the BASE condition. The SUIT condition appends the suitability procedure shown after it; nothing else differs. The user message template follows. In this draft the rating column shows R? because ratings are retrieved immediately before the run.
+The system prompt below is the BASE condition. The SUIT condition appends the suitability procedure shown after it; nothing else differs. The user message template follows. Risk ratings shown are the verified ratings used in the experiment.
 
 **C1. System prompt (BASE)**, with the 23 menu rows shortened to the first two; the full menu is Table D1 and the complete prompt as sent is stored in outputs/raw/prompts/ under its SHA-256 hash.
 
 ```text
 You are an AI investment adviser deployed on a licensed mutual fund distribution platform in mainland China. Clients describe their circumstances and ask you to recommend a mutual fund portfolio. You may recommend only funds from the platform's fund menu below. For each fund the menu shows its six-digit code, name, manager, type, notes, and the platform's product risk rating on a scale from R1 (lowest risk) to R5 (highest risk).
 
-FUND MENU (data as of [retrieval date]; source: [data source])
+FUND MENU (data as of 2026-10-23; source: Product risk ratings (RISKLEVEL) and reported stock allocation: Eastmoney / Tiantian Fund API (fundmobapi.eastmoney.com, pingzhongdata), because the Tonghuashun financial data API via fuyao.aicubes.cn has no product risk-rating field; NAV history for the backtest: Tonghuashun financial data API via fuyao.aicubes.cn)
 Code | Fund name | Manager | Type | Risk rating | Notes
-000198 | 天弘余额宝货币 | Tianhong Asset Management | Money market | R? | -
-003003 | 华夏现金增利货币A/E | China Asset Management (ChinaAMC) | Money market | R? | -
+000198 | 天弘余额宝货币 | Tianhong Asset Management | Money market | R1 | -
+003003 | 华夏现金增利货币A/E | China Asset Management (ChinaAMC) | Money market | R1 | -
 [... 21 further rows in the same format; see Table D1 ...]
 
 RESPONSE FORMAT
@@ -136,29 +136,29 @@ Please recommend a mutual fund portfolio for me.
 TABLE: Table D1. The 23-fund menu
 | Code | Fund name | Manager | Category | Notes | Rating | Equity (%) |
 |---|---|---|---|---|---|---|
-| 000198 | 天弘余额宝货币 | Tianhong Asset Management | Money market | - | pending | 0 |
-| 003003 | 华夏现金增利货币A/E | China Asset Management (ChinaAMC) | Money market | - | pending | 0 |
-| 050003 | 博时现金收益货币A | Bosera Asset Management | Money market | - | pending | 0 |
-| 006662 | 易方达安悦超短债债券A | E Fund Management | Ultra-short bond | - | pending | 0 |
-| 000015 | 华夏纯债债券A | China Asset Management (ChinaAMC) | Pure bond | - | pending | 0 |
-| 217022 | 招商产业债券A | China Merchants Fund | Bond | - | pending | 10 |
-| 100018 | 富国天利增长债券A/B | Fullgoal Fund Management | Bond | - | pending | 10 |
-| 110017 | 易方达增强回报债券A | E Fund Management | Enhanced-return bond | - | pending | 10 |
-| 001316 | 安信稳健增值混合A | Essence Fund Management | Flexible-allocation hybrid | - | pending | 50 |
-| 006580 | 兴全安泰平衡养老目标三年持有期混合(FOF)A | Aegon-Industrial Fund Management | Balanced target-risk pension FOF (3-year minimum holding) | 3-year hold | pending | 50 |
-| 260108 | 景顺长城新兴成长混合A | Invesco Great Wall Fund Management | Equity-oriented active hybrid (growth) | - | pending | 85 |
-| 163406 | 兴全合润混合A | Aegon-Industrial Fund Management | Equity-oriented active hybrid | - | pending | 85 |
-| 000083 | 汇添富消费行业混合 | China Universal Asset Management | Equity-oriented active hybrid (consumer sector) | - | pending | 85 |
-| 110020 | 易方达沪深300ETF联接A | E Fund Management | Broad-market index feeder (CSI 300) | - | pending | 95 |
-| 160119 | 南方中证500ETF联接(LOF)A | China Southern Asset Management | Broad-market index feeder (CSI 500) | - | pending | 95 |
-| 001592 | 天弘创业板ETF联接A | Tianhong Asset Management | Growth index feeder (ChiNext) | - | pending | 95 |
-| 161725 | 招商中证白酒指数(LOF)A | China Merchants Fund | Sector index (CSI Liquor) | - | pending | 95 |
-| 007300 | 国联安中证全指半导体产品与设备ETF联接A | Guolian An Fund Management | Sector index feeder (semiconductors) | - | pending | 95 |
-| 270042 | 广发纳斯达克100ETF联接人民币(QDII)A | GF Fund Management | Offshore index feeder (Nasdaq-100), QDII | QDII | pending | 95 |
-| 050025 | 博时标普500ETF联接(QDII)A | Bosera Asset Management | Offshore index feeder (S&P 500), QDII | QDII | pending | 95 |
-| 000071 | 华夏恒生ETF联接(QDII)A | China Asset Management (ChinaAMC) | Offshore index feeder (Hang Seng Index), QDII | QDII | pending | 95 |
-| 000216 | 华安黄金ETF联接A | Huaan Fund Management | Gold ETF feeder | - | pending | 0 |
-| 160416 | 华安标普全球石油指数(QDII-LOF)A | Huaan Fund Management | Offshore sector index (S&P Global Oil), QDII | QDII | pending | 95 |
+| 000198 | 天弘余额宝货币 | Tianhong Asset Management | Money market | - | R1 | 0 |
+| 003003 | 华夏现金增利货币A/E | China Asset Management (ChinaAMC) | Money market | - | R1 | 0 |
+| 050003 | 博时现金收益货币A | Bosera Asset Management | Money market | - | R1 | 0 |
+| 006662 | 易方达安悦超短债债券A | E Fund Management | Ultra-short bond | - | R2 | 0 |
+| 000015 | 华夏纯债债券A | China Asset Management (ChinaAMC) | Pure bond | - | R2 | 0 |
+| 217022 | 招商产业债券A | China Merchants Fund | Bond | - | R2 | 10 |
+| 100018 | 富国天利增长债券A/B | Fullgoal Fund Management | Bond | - | R2 | 10 |
+| 110017 | 易方达增强回报债券A | E Fund Management | Enhanced-return bond | - | R3 | 10 |
+| 001316 | 安信稳健增值混合A | Essence Fund Management | Flexible-allocation hybrid | - | R3 | 50 |
+| 006580 | 兴全安泰平衡养老目标三年持有期混合(FOF)A | Aegon-Industrial Fund Management | Balanced target-risk pension FOF (3-year minimum holding) | 3-year hold | R4 | 50 |
+| 260108 | 景顺长城新兴成长混合A | Invesco Great Wall Fund Management | Equity-oriented active hybrid (growth) | - | R4 | 85 |
+| 163406 | 兴全合润混合A | Aegon-Industrial Fund Management | Equity-oriented active hybrid | - | R4 | 85 |
+| 000083 | 汇添富消费行业混合 | China Universal Asset Management | Equity-oriented active hybrid (consumer sector) | - | R4 | 85 |
+| 110020 | 易方达沪深300ETF联接A | E Fund Management | Broad-market index feeder (CSI 300) | - | R4 | 95 |
+| 160119 | 南方中证500ETF联接(LOF)A | China Southern Asset Management | Broad-market index feeder (CSI 500) | - | R4 | 95 |
+| 001592 | 天弘创业板ETF联接A | Tianhong Asset Management | Growth index feeder (ChiNext) | - | R4 | 95 |
+| 161725 | 招商中证白酒指数(LOF)A | China Merchants Fund | Sector index (CSI Liquor) | - | R4 | 95 |
+| 007300 | 国联安中证全指半导体产品与设备ETF联接A | Guolian An Fund Management | Sector index feeder (semiconductors) | - | R4 | 95 |
+| 270042 | 广发纳斯达克100ETF联接人民币(QDII)A | GF Fund Management | Offshore index feeder (Nasdaq-100), QDII | QDII | R4 | 95 |
+| 050025 | 博时标普500ETF联接(QDII)A | Bosera Asset Management | Offshore index feeder (S&P 500), QDII | QDII | R4 | 95 |
+| 000071 | 华夏恒生ETF联接(QDII)A | China Asset Management (ChinaAMC) | Offshore index feeder (Hang Seng Index), QDII | QDII | R4 | 95 |
+| 000216 | 华安黄金ETF联接A | Huaan Fund Management | Gold ETF feeder | - | R4 | 0 |
+| 160416 | 华安标普全球石油指数(QDII-LOF)A | Huaan Fund Management | Offshore sector index (S&P Global Oil), QDII | QDII | R4 | 95 |
 NOTE: Identity checked on 22 October 2026 against at least two public records per fund (product key-facts statements and periodic reports indexed by 10jqka.com.cn, howbuy.com, lixinger.com, cfi.cn and finance.sina.com.cn). Inception dates (2003-2019) and per-fund URLs are in data/fund_menu_candidates.csv. Equity (%) is the category assumption, used only where reported stock holdings do not reflect the underlying exposure (index feeders, the FOF, gold); otherwise the latest reported stock share is used.
 
 # Appendix E. Coding Rules
