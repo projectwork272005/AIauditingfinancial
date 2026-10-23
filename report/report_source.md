@@ -3,13 +3,13 @@ SUBTITLE: Group Research Report - FinTech: Theory and Practice
 META: Shenzhen MSU-BIT University
 META: Group members: [names and student numbers to be completed by the group]
 META: Date: [submission date]
-META: Experiment run on 23 October 2026. Manual double coding of the conflict measure (Appendix E) is to be completed by the group.
+META: Experiment run on 23 October 2026. Double coding of the conflict measure for all main-sample replies (Appendix E) is to be completed by the group.
 
 PAGEBREAK
 
 # Abstract
 
-Retail investors increasingly ask general-purpose chatbots for fund advice, but a chatbot carries none of the suitability duties of a licensed distributor. We audited three Chinese large language models (Doubao, DeepSeek and Kimi) on 200 synthetic investors forming a balanced 5 x 5 x 8 factorial of investment horizon, risk tolerance and age, so that the three attributes are uncorrelated. Every investor was advised by every model under a baseline adviser prompt and under the same prompt with a suitability protocol added, choosing from a menu of 23 verified Chinese funds whose risk ratings were shown. Recommendations were scored against the C1-C5/R1-R5 matching rule, a horizon-based equity cap, a lock-up constraint and the investor's stated loss limit over a 59-month back-test. Risk tolerance dominated the portfolios (partial eta squared 0.66-0.83), horizon came second (0.41-0.53) and age barely mattered (0.02-0.08). Under the baseline prompt, 83-86% of recommendations to C1-C3 investors contained a fund rated above the permitted level. The protocol cut rating breaches by 9.5-24.5 percentage points in every model, yet 42-70% of C1-C3 recommendations still breached the rule, often after the model had classified the investor correctly. Equity levels were highly repeatable (ICC 0.95-0.98) but fund choices were not (Jaccard similarity 0.59-0.70). Suitability rules should therefore be enforced outside the model, not only stated in its prompt.
+Retail investors increasingly ask general-purpose chatbots for fund advice, but a chatbot carries none of the suitability duties of a licensed distributor. We audited three Chinese large language models (Doubao, DeepSeek and Kimi) on 200 synthetic investors forming a balanced 5 x 5 x 8 factorial of investment horizon, risk tolerance and age, so that the three attributes are uncorrelated. Every investor was advised by every model under a baseline adviser prompt and under the same prompt with a suitability protocol added, choosing from a menu of 23 verified Chinese funds whose risk ratings were shown. Recommendations were scored against the C1-C5/R1-R5 matching rule, a horizon-based equity cap, a lock-up constraint and the investor's stated loss limit over a 59-month back-test. Risk tolerance dominated the portfolios (partial eta squared 0.66-0.83), horizon came second (0.41-0.53) and age barely mattered (0.02-0.08). Under the baseline prompt, 83-86% of recommendations to C1-C3 investors contained a fund rated above the permitted level. The protocol cut rating breaches by 9.5-24.5 percentage points in every model, yet 42-70% of C1-C3 recommendations still breached the rule, often after the model had classified the investor correctly. Equity levels were highly repeatable (ICC 0.95-0.98) but fund choices were not (Jaccard similarity 0.59-0.70). In the back-test most portfolios beat a 60/40 mix on the Sharpe ratio and fees were negligible, but cautious investors' extra return came from non-permitted funds. Suitability rules should therefore be enforced outside the model, not only stated in its prompt.
 
 **Keywords:** generative AI; robo-advice; mutual funds; suitability; investor profiling; audit experiment; LLM evaluation
 
@@ -175,7 +175,7 @@ NOTE: Access through OpenRouter (https://openrouter.ai/api/v1) on 23 October 202
 
 The 2,508 calls ran in one random order. Each call is appended to a log as soon as it finishes, with the model requested and returned, request parameters, SHA-256 hashes of both messages, the raw reply, token usage and timestamps; logs are never edited and the prompts were frozen after the pilot. The providers reported 3.72 million prompt and 1.46 million completion tokens for all 2,588 logged calls, costing USD 3.13 in total.
 
-A deterministic script codes each reply, recording whether the JSON parsed directly or only after light repair; off-menu codes are dropped from the risk measures and the remaining weights rescaled, and nothing is imputed (Appendix E). Each portfolio is then back-tested with monthly rebalancing on adjusted net asset values over the longest window of complete months, up to 60, that ends in September 2026 and is covered for every fund. Its worst rolling 12-month return is compared with the maximum one-year loss the investor accepts: none, 5%, 15%, 25% and 40% for C1 to C5. These are historical, descriptive measures, not forecasts.
+A deterministic script codes each reply, recording whether the JSON parsed directly or only after light repair; off-menu codes are dropped from the risk measures and the remaining weights rescaled, and nothing is imputed (Appendix E). Each portfolio is then back-tested with monthly rebalancing on adjusted net asset values over the longest window of complete months, up to 60, that ends in September 2026 and is covered for every fund. Its worst rolling 12-month return is compared with the maximum one-year loss the investor accepts: none, 5%, 15%, 25% and 40% for C1 to C5. These are historical, descriptive measures, not forecasts. A script added after the main analysis (src/performance.py) computes Sharpe and Calmar ratios, net-of-fee returns and three benchmarks: a 60/40 mix, the target-risk fund 006580 and a robo-style, rating-compliant model portfolio per class.
 
 # 8. Evaluation Metrics and Statistical Methods
 
@@ -197,6 +197,7 @@ TABLE: Table 6. Evaluation metrics
 | Classification (SUIT) | Assessed vs actual class; weighted kappa |
 | Reliability | ICC(1,1) of equity over three replicates; Jaccard similarity of fund sets |
 | Probe slope | Change in equity per one-level step of one attribute |
+| Performance (added later) | Return, volatility, Sharpe, drawdown, Calmar; benchmarks; fees |
 NOTE: Equity caps are 0, 20, 50, 80 and 100% for C1-C5 and 10, 30, 50, 80 and 100% for H1-H5; they are the researchers' operationalisation, not regulatory limits. QDII share is also recorded.
 
 ## 8.2 Statistical methods
@@ -307,23 +308,33 @@ FIGURE: outputs/figures/F07_single_attribute_probes.png | Figure 8. Single-attri
 
 ## 9.6 Model differences (RQ5)
 
-Under BASE the models behaved much alike: their breach rates did not differ (Cochran's Q = 2.46, p = 0.29), and their equity levels differed only slightly (Friedman test, Kendall's W = 0.045), with Kimi recommending 3.3-4.1 points less equity than the others. Under SUIT they diverged: Kimi's breach rate of 25.0% compares with 40.7-42.0% for the others (Q = 45.2, p < 0.001), and equity differences grew (W = 0.084; T14). Kimi cost about 7 to 11 times as much per call (USD 2.56 for 876 logged calls, against USD 0.33 for Doubao and USD 0.23 for DeepSeek for 856 calls each).
+Under BASE the models behaved much alike: their breach rates did not differ (Cochran's Q = 2.46, p = 0.29), and their equity levels differed only slightly (Friedman test, Kendall's W = 0.045), with Kimi recommending 3.3-4.1 points less equity than the others. Under SUIT they diverged: Kimi's breach rate of 25.0% compares with 40.7-42.0% for the others (Q = 45.2, p < 0.001), and equity differences grew (W = 0.084; T14).
 
-## 9.7 Historical check
+## 9.7 Historical check and performance
 
-Over the common 59-month window, November 2021 to September 2026, the median worst 12-month return was positive for C1 and C2 recommendations, slightly negative for C3, and -10.5% to -18.7% for C4 and C5 (Table 12, Figure 9). Only four main-sample portfolios lost more in a year than the investor accepted: two DeepSeek C3 recommendations per condition, with worst years down to -18.8% against a 15% limit. The period explains this. The menu's money market and bond funds never had a negative 12-month return and the enhanced-return bond fund lost at most 1.1%, so the rating breaches of C1-C2 investors, which consisted mostly of such funds, caused no such losses. The R4 funds lost 9.3-36.9% in their worst year (the gold fund aside), but the models diluted them enough to keep aggressive investors within their limits.
-
-TABLE: Table 12. Worst rolling 12-month return of recommended portfolios, by risk class
-| Risk class | Stated maximum loss (%) | Median worst 12 months, BASE (%) | Median worst 12 months, SUIT (%) | Lowest, BASE / SUIT (%) | Exceeds stated loss, BASE / SUIT (%) |
-|---|---|---|---|---|---|
-| C1 | 0 | 1.3 | 1.3 | 0.6 / 0.9 | 0.0 / 0.0 |
-| C2 | 5 | 1.3 | 1.4 | -3.3 / -3.6 | 0.0 / 0.0 |
-| C3 | 15 | -2.6 | -0.5 | -18.4 / -18.8 | 1.7 / 1.7 |
-| C4 | 25 | -13.2 | -10.5 | -24.7 / -24.0 | 0.0 / 0.0 |
-| C5 | 40 | -18.7 | -16.5 | -28.3 / -28.0 | 0.0 / 0.0 |
-NOTE: From T24. Pooled over models, n = 120 per cell (119 for SUIT C5); monthly rebalancing on adjusted NAVs. Historical and descriptive, not a forecast.
+Over the common 59-month window, November 2021 to September 2026, the median worst 12-month return was positive for C1 and C2 recommendations, slightly negative for C3, and -10.5% to -18.7% for C4 and C5 (T24, Figure 9). Only four main-sample portfolios lost more in a year than the investor accepted: two DeepSeek C3 recommendations per condition, with worst years down to -18.8% against a 15% limit. The period explains this. The menu's money market and bond funds never had a negative 12-month return and the enhanced-return bond fund lost at most 1.1%, so the rating breaches of C1-C2 investors, which consisted mostly of such funds, caused no such losses.
 
 FIGURE: outputs/figures/F08_backtest_worst_12m_vs_tolerance.png | Figure 9. Worst historical 12-month return against the investor's stated loss limit | Mean worst rolling 12-month return per risk class; dotted line: maximum one-year loss the investor accepts. Window November 2021 to September 2026.
+
+Table 12 adds risk-adjusted measures. Equities were weak in the window (the CSI 300 feeder returned 0.06% a year), so the 60/40 mix earned 1.67%. Most AI portfolios for C2-C5 beat it on the Sharpe ratio; for C4-C5 about three in four also beat the domestic-only model portfolio, helped by QDII funds (Figure 10). For C2-C3 the compliant model portfolio usually did better, and C1 portfolios with a non-permitted fund returned 2.09% a year against 1.48% for R1-only ones (T32). Fees cost at most 0.29 points a year (T30).
+
+TABLE: Table 12. Historical performance against benchmarks
+| Portfolio | Return (% p.a.) | Volatility (% p.a.) | Sharpe | Max drawdown (%) | Calmar | Worst 12 months (%) | Sharpe beats 60/40/target/model (%) |
+|---|---|---|---|---|---|---|---|
+| AI C1 | 2.03 | 0.30 | n.m. | -0.06 | n.m. | 1.30 | n.m. |
+| AI C2 | 2.81 | 0.80 | 1.69 | -0.34 | n.m. | 1.34 | 99/98/35 |
+| AI C3 | 3.24 | 3.44 | 0.67 | -3.28 | 1.06 | -1.89 | 97/92/28 |
+| AI C4 | 3.31 | 9.98 | 0.36 | -13.86 | 0.32 | -12.16 | 81/65/78 |
+| AI C5 | 2.70 | 13.42 | 0.25 | -19.58 | 0.21 | -18.06 | 74/53/76 |
+| 60/40 mix | 1.67 | 10.38 | 0.07 | -16.71 | 0.10 | -14.62 | - |
+| Target-risk | 3.22 | 9.48 | 0.22 | -15.21 | 0.21 | -10.58 | - |
+| Model C2 | 2.53 | 0.55 | 1.93 | -0.23 | n.m. | 1.37 | - |
+| Model C3 | 3.25 | 1.47 | 1.20 | -0.92 | 3.53 | 1.99 | - |
+| Model C4 | 2.01 | 8.62 | 0.10 | -13.02 | 0.15 | -11.70 | - |
+| Model C5 | 1.12 | 13.03 | 0.04 | -22.06 | 0.05 | -18.89 | - |
+NOTE: From T33; AI medians over models and conditions, net of ongoing fees. Sharpe in excess of 000198; n.m.: volatility or drawdown below 0.5%. 60/40: 60% 110020, 40% 000015. Rating-compliant model portfolios: C2 40% 000198, 60% 000015; C3 20% 000198, 50% 000015, 30% 001316; C4/C5 50%/75% 110020, rest 000015.
+
+FIGURE: outputs/figures/F09_cumulative_growth_vs_benchmarks.png | Figure 10. Growth of 100 invested: average AI portfolio and benchmarks, by risk class
 
 ## 9.8 Robustness
 
@@ -381,9 +392,9 @@ Equity levels were repeatable but fund choices were not, and the breach verdict 
 
 **Models and access.** Hosted models change without notice and sample stochastically, so a later rerun may differ (Atil et al., 2024). The models were reached through OpenRouter rather than the course's Ark route, DeepSeek through a third-party provider and all with reasoning disabled, so the results describe the direct-answer behaviour of these deployments.
 
-**Prompts and benchmarks.** Each condition uses one wording and one menu order, so the protocol effect is that of this particular protocol (Sclar et al., 2024). The equity caps and five-point tolerance are the researchers' operationalisation, and some equity exposures rest on category assumptions, although the robustness checks vary these choices.
+**Prompts and benchmarks.** Each condition uses one wording and one menu order, so the protocol effect is that of this particular protocol (Sclar et al., 2024). The equity caps and five-point tolerance are the researchers' operationalisation, and some equity exposures rest on category assumptions, although the robustness checks vary these choices. The model portfolios are a stylised robo-adviser ladder, not a commercial record.
 
-**Coding and scope.** Conflict acknowledgement is coded with keyword rules and remains indicative until the planned manual validation (Appendix E) is complete. Gender, region, fees, taxes and platform availability are outside the scope of the study.
+**Coding and scope.** Conflict acknowledgement is coded with keyword rules; the manual's double coding of every reply is prepared (Appendix E) but not yet done, so it remains indicative, and coding only a sample would deviate from the manual. Gender, region, taxes and platform availability are outside the scope of the study.
 
 # 13. Conclusion
 

@@ -69,7 +69,18 @@ def main() -> None:
            .agg(n=("call_id", "size"), rating_breach_pct=("rating_breach", "mean")).reset_index())
     t25["rating_breach_pct"] = (100 * t25["rating_breach_pct"]).round(1)
     t25.to_csv(TABLES / "T25_suit_breach_by_classification_c1_c3.csv", index=False)
-    print("Wrote T22-T25 to", TABLES)
+
+    perf_path = ROOT / "outputs" / "portfolio_performance.csv"
+    if perf_path.exists():                      # written by src/performance.py
+        perf = pd.read_csv(perf_path)
+        y = main_s.merge(perf, on="call_id", how="inner")
+        y = y[y["risk_class"].isin(["C1", "C2"])]
+        t32 = (y.groupby(["risk_class", "rating_breach"])
+               .agg(n=("call_id", "size"), median_cagr_pct=("cagr_pct", "median"),
+                    median_vol_pct=("vol_pct", "median"), median_max_drawdown_pct=("max_drawdown_pct", "median"))
+               .reset_index().round(3))
+        t32.to_csv(TABLES / "T32_return_by_rating_breach_c1_c2.csv", index=False)
+    print("Wrote T22-T25 and T32 to", TABLES)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,5 @@
+risk_class,rating_breach,n,median_cagr_pct,median_vol_pct,median_max_drawdown_pct
+C1,False,41,1.478,0.107,0.0
+C1,True,199,2.094,0.332,-0.074
+C2,False,93,2.068,0.31,-0.074
+C2,True,147,2.966,1.19,-0.638

@@ -119,3 +119,9 @@ Each model: 836 successful calls in main + consistency + probe and 20 in the pil
 - Models were called via OpenRouter, not Volcano Engine Ark (see Step 2 revised); reasoning disabled for all three.
 - Risk ratings are Eastmoney's (distributor) ratings; the menu has no R5 fund (R1 3, R2 4, R3 2, R4 14).
 - Manual coding of docs/manual_coding_sample.csv (two human coders) is still to be done by the team.
+
+## Additions after the main analysis (2026-10-23, cloud session, offline)
+- src/performance.py: Sharpe (risk-free proxy 000198), Calmar, benchmarks (60/40 = 60% 110020 + 40% 000015; target-risk fund 006580; risk-matched model portfolios C1-C5 built from menu funds), costs (first-tier purchase fees from Eastmoney, identical to fuyao for the 19 funds with fuyao rate tables; fuyao redemption schedules; none retrieved for the LOF funds 163406, 160119, 161725, 160416). Uses only data already in data/nav/ and data/fund_sources/raw/; no new API calls. Outputs: outputs/portfolio_performance.csv, tables T26-T30, T_fund_fees, figures F09-F10.
+- report/report_supplement.py: tables T22-T25 and T32 cited in the report.
+- src/manual_coding.py: blinded double-coding sheets for all 1,199 parsed main-sample replies (docs/manual_coding/), Cohen's kappa, reconciliation and consensus (T31 once coded). The coding itself has not been done.
+- Tests: 15 passed (4 new).

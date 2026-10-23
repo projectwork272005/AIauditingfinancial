@@ -115,9 +115,14 @@ def main():
             "Table 6 summarises the coded measures; docs/coding_sheet.md defines every field. Replies that cannot be "
             "parsed stay in the data without portfolio measures. Off-menu codes are excluded from the risk measures "
             "and the remaining weights rescaled to 100. Conflict acknowledgement is a keyword rule (conflict, "
-            "inconsistent, mismatch, contradict, tension, at odds, not compatible, consistent or aligned). For manual "
-            "validation, two group members independently code the stratified random sample of 60 replies in "
-            "docs/manual_coding_sample.csv; agreement with the rule is to be reported as Cohen's kappa.", ""]
+            "inconsistent, mismatch, contradict, tension, at odds, not compatible, consistent or aligned), the only "
+            "judgement-based measure. As the manual requires, two members code it for every reply independently: "
+            "src/manual_coding.py writes blinded sheets for all 1,199 main-sample replies, reports Cohen's kappa and "
+            "builds the consensus (T31).", ""]
+    t31 = ROOT / "outputs" / "tables" / "T31_manual_coding_agreement.csv"
+    if t31.exists():
+        out += ["TABLE: Table E1. Double coding of the conflict measure",
+                md_table(pd.read_csv(t31).T.reset_index().set_axis(["Measure", "Value"], axis=1)), ""]
 
     manifests = sorted((ROOT / "outputs" / "logs").glob("run_*.json"))
     out += ["# Appendix F. Run Record", ""]
@@ -136,7 +141,7 @@ def main():
     out += ["# Appendix G. Reproducibility", "",
             "Code, data and logs are in the project repository; README.md lists the commands in order. The samples "
             "are regenerated exactly from seed 20261022. Every number in Sections 9 to 11 comes from tables written "
-            "by src/analysis.py and report/report_supplement.py from the raw logs; none is typed by hand. Automated "
+            "by src/analysis.py, src/performance.py and report/report_supplement.py from the raw logs; none is typed by hand. Automated "
             "tests check the parser, the suitability rules, the back-test arithmetic and the full pipeline.", ""]
 
     out += ["# Appendix H. AI Use Statement", "",

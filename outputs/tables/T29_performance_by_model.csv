@@ -1,0 +1,7 @@
+model_key,condition,n,median_cagr_pct,median_vol_pct,median_sharpe,median_max_drawdown_pct,median_calmar,sharpe_above_model_pct
+deepseek,BASE,200,2.785,3.441,0.633,-3.303,0.82,53.846
+deepseek,SUIT,200,2.606,2.424,0.642,-1.95,0.829,56.954
+doubao,BASE,200,2.538,3.158,0.644,-2.771,1.016,31.25
+doubao,SUIT,199,2.292,1.798,0.934,-1.008,3.535,49.057
+kimi,BASE,200,2.886,1.397,0.802,-0.884,1.095,62.5
+kimi,SUIT,200,2.707,0.804,0.662,-0.413,1.464,71.25

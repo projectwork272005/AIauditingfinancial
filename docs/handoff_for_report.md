@@ -49,3 +49,9 @@ SUIT lowers rating breaches in every model (paired McNemar, Holm-adjusted p < 0.
 - src/analysis.py: paired outcomes rounded to 6 decimals before rank tests, so identical portfolios tie exactly on every platform (reported values unchanged); new robustness variant with category-based equity for every fund (T20).
 - presentation/presentation.pptx built on the course template; result slides 13-16 and the takeaways read their numbers from outputs/tables.
 - Still open for the group: names and date on the title page; manual double coding of docs/manual_coding_sample.csv (Appendix E); reading and revising the text in their own words.
+
+## Performance and coding additions (2026-10-23, cloud session)
+- src/performance.py (offline, existing data only): Sharpe (in excess of 000198), Calmar, benchmarks (60/40 = 60% 110020 + 40% 000015; target-risk fund 006580; rating-compliant model portfolios C1-C5 from menu funds, a stylised robo-adviser ladder, not a commercial record), purchase and exit fees. Report: Section 9.7 now "Historical check and performance", Table 12 replaced by a performance-and-benchmark table (worst 12 months kept as a column; per-condition worst-12-month figures remain in T24), new Figure 10 (F09 cumulative growth). Hypotheses table stays Table 13. F10 (risk-return scatter) is available for slides.
+- Word count after the additions: 9,657 by `wc -w` on the LibreOffice text export (the previous build: 9,449 by the same method).
+- src/manual_coding.py: blinded sheets for two coders over all 1,199 main-sample replies (docs/manual_coding/README.md), Cohen's kappa, reconciliation, consensus (T31) and Table E1 in Appendix E once run. The report states that the full double coding is prepared but not done, and that coding only a sample would be a deviation from the manual.
+- Still open for the group: the double coding itself; names and date; the slides do not yet show the performance results.

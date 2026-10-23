@@ -129,7 +129,7 @@ NOTE: Identity checked on 22 October 2026 against at least two public records pe
 
 # Appendix E. Coding Rules
 
-Table 6 summarises the coded measures; docs/coding_sheet.md defines every field. Replies that cannot be parsed stay in the data without portfolio measures. Off-menu codes are excluded from the risk measures and the remaining weights rescaled to 100. Conflict acknowledgement is a keyword rule (conflict, inconsistent, mismatch, contradict, tension, at odds, not compatible, consistent or aligned). For manual validation, two group members independently code the stratified random sample of 60 replies in docs/manual_coding_sample.csv; agreement with the rule is to be reported as Cohen's kappa.
+Table 6 summarises the coded measures; docs/coding_sheet.md defines every field. Replies that cannot be parsed stay in the data without portfolio measures. Off-menu codes are excluded from the risk measures and the remaining weights rescaled to 100. Conflict acknowledgement is a keyword rule (conflict, inconsistent, mismatch, contradict, tension, at odds, not compatible, consistent or aligned), the only judgement-based measure. As the manual requires, two members code it for every reply independently: src/manual_coding.py writes blinded sheets for all 1,199 main-sample replies, reports Cohen's kappa and builds the consensus (T31).
 
 # Appendix F. Run Record
 
@@ -145,7 +145,7 @@ NOTE: From outputs/logs. The first two runs are the 60-call pilot: 20 Kimi calls
 
 # Appendix G. Reproducibility
 
-Code, data and logs are in the project repository; README.md lists the commands in order. The samples are regenerated exactly from seed 20261022. Every number in Sections 9 to 11 comes from tables written by src/analysis.py and report/report_supplement.py from the raw logs; none is typed by hand. Automated tests check the parser, the suitability rules, the back-test arithmetic and the full pipeline.
+Code, data and logs are in the project repository; README.md lists the commands in order. The samples are regenerated exactly from seed 20261022. Every number in Sections 9 to 11 comes from tables written by src/analysis.py, src/performance.py and report/report_supplement.py from the raw logs; none is typed by hand. Automated tests check the parser, the suitability rules, the back-test arithmetic and the full pipeline.
 
 # Appendix H. AI Use Statement
 

@@ -79,7 +79,9 @@ python src/code_responses.py                    # -> outputs/experiment_results.
 python src/backtest.py fetch --source fuyao     # fund histories -> data/nav/
 python src/backtest.py evaluate                 # -> outputs/portfolio_backtest.csv
 python src/analysis.py                          # -> outputs/tables/ (T04-T21 + results_digest.md)
-python report/report_supplement.py              # -> outputs/tables/T22-T25 (cited in the report)
+python src/performance.py                       # Sharpe, Calmar, benchmarks, fees -> T26-T30, T33, F09-F10
+python report/report_supplement.py              # -> outputs/tables/T22-T25, T32 (cited in the report)
+python src/manual_coding.py prepare             # blinded double-coding sheets; then reconcile, finalize
 python src/figures.py                           # -> outputs/figures/
 python src/sample_for_manual_coding.py          # human validation sample
 python src/design_figure.py                     # Figure 1 (design schematic)
