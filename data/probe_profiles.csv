@@ -1,0 +1,1281 @@
+probe_id,data_type,anchor_id,varied_attribute,anchor_risk_class,anchor_horizon_band,anchor_age_band,age,age_band,horizon_years,horizon_band,risk_class,risk_level,profile_text,probe_text_id,generator_seed
+PRB-01-ANCHOR,SYNTHETIC probe profile,PRB-01,anchor,C5,H1,A2,30,A2,0.5,H1,C5,5,"Age: 30
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-001,20261022
+PRB-01-RISK-C1,SYNTHETIC probe profile,PRB-01,risk,C5,H1,A2,30,A2,0.5,H1,C1,1,"Age: 30
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-002,20261022
+PRB-01-RISK-C2,SYNTHETIC probe profile,PRB-01,risk,C5,H1,A2,30,A2,0.5,H1,C2,2,"Age: 30
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-003,20261022
+PRB-01-RISK-C3,SYNTHETIC probe profile,PRB-01,risk,C5,H1,A2,30,A2,0.5,H1,C3,3,"Age: 30
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-004,20261022
+PRB-01-RISK-C4,SYNTHETIC probe profile,PRB-01,risk,C5,H1,A2,30,A2,0.5,H1,C4,4,"Age: 30
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-005,20261022
+PRB-01-HORIZON-H2,SYNTHETIC probe profile,PRB-01,horizon,C5,H1,A2,30,A2,2.0,H2,C5,5,"Age: 30
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-006,20261022
+PRB-01-HORIZON-H3,SYNTHETIC probe profile,PRB-01,horizon,C5,H1,A2,30,A2,4.0,H3,C5,5,"Age: 30
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-007,20261022
+PRB-01-HORIZON-H4,SYNTHETIC probe profile,PRB-01,horizon,C5,H1,A2,30,A2,7.0,H4,C5,5,"Age: 30
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-008,20261022
+PRB-01-HORIZON-H5,SYNTHETIC probe profile,PRB-01,horizon,C5,H1,A2,30,A2,15.0,H5,C5,5,"Age: 30
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 15 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-009,20261022
+PRB-01-AGE-A1,SYNTHETIC probe profile,PRB-01,age,C5,H1,A2,22,A1,0.5,H1,C5,5,"Age: 22
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-010,20261022
+PRB-01-AGE-A3,SYNTHETIC probe profile,PRB-01,age,C5,H1,A2,40,A3,0.5,H1,C5,5,"Age: 40
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-011,20261022
+PRB-01-AGE-A4,SYNTHETIC probe profile,PRB-01,age,C5,H1,A2,50,A4,0.5,H1,C5,5,"Age: 50
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-012,20261022
+PRB-01-AGE-A5,SYNTHETIC probe profile,PRB-01,age,C5,H1,A2,57,A5,0.5,H1,C5,5,"Age: 57
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-013,20261022
+PRB-01-AGE-A6,SYNTHETIC probe profile,PRB-01,age,C5,H1,A2,62,A6,0.5,H1,C5,5,"Age: 62
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-014,20261022
+PRB-01-AGE-A7,SYNTHETIC probe profile,PRB-01,age,C5,H1,A2,70,A7,0.5,H1,C5,5,"Age: 70
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-015,20261022
+PRB-01-AGE-A8,SYNTHETIC probe profile,PRB-01,age,C5,H1,A2,80,A8,0.5,H1,C5,5,"Age: 80
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-016,20261022
+PRB-02-ANCHOR,SYNTHETIC probe profile,PRB-02,anchor,C3,H2,A7,70,A7,2.0,H2,C3,3,"Age: 70
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-017,20261022
+PRB-02-RISK-C1,SYNTHETIC probe profile,PRB-02,risk,C3,H2,A7,70,A7,2.0,H2,C1,1,"Age: 70
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-018,20261022
+PRB-02-RISK-C2,SYNTHETIC probe profile,PRB-02,risk,C3,H2,A7,70,A7,2.0,H2,C2,2,"Age: 70
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-019,20261022
+PRB-02-RISK-C4,SYNTHETIC probe profile,PRB-02,risk,C3,H2,A7,70,A7,2.0,H2,C4,4,"Age: 70
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-020,20261022
+PRB-02-RISK-C5,SYNTHETIC probe profile,PRB-02,risk,C3,H2,A7,70,A7,2.0,H2,C5,5,"Age: 70
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-021,20261022
+PRB-02-HORIZON-H1,SYNTHETIC probe profile,PRB-02,horizon,C3,H2,A7,70,A7,0.5,H1,C3,3,"Age: 70
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-022,20261022
+PRB-02-HORIZON-H3,SYNTHETIC probe profile,PRB-02,horizon,C3,H2,A7,70,A7,4.0,H3,C3,3,"Age: 70
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-023,20261022
+PRB-02-HORIZON-H4,SYNTHETIC probe profile,PRB-02,horizon,C3,H2,A7,70,A7,7.0,H4,C3,3,"Age: 70
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-024,20261022
+PRB-02-HORIZON-H5,SYNTHETIC probe profile,PRB-02,horizon,C3,H2,A7,70,A7,15.0,H5,C3,3,"Age: 70
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 15 years; I do not expect to withdraw this money before then.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-025,20261022
+PRB-02-AGE-A1,SYNTHETIC probe profile,PRB-02,age,C3,H2,A7,22,A1,2.0,H2,C3,3,"Age: 22
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-026,20261022
+PRB-02-AGE-A2,SYNTHETIC probe profile,PRB-02,age,C3,H2,A7,30,A2,2.0,H2,C3,3,"Age: 30
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-027,20261022
+PRB-02-AGE-A3,SYNTHETIC probe profile,PRB-02,age,C3,H2,A7,40,A3,2.0,H2,C3,3,"Age: 40
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-028,20261022
+PRB-02-AGE-A4,SYNTHETIC probe profile,PRB-02,age,C3,H2,A7,50,A4,2.0,H2,C3,3,"Age: 50
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-029,20261022
+PRB-02-AGE-A5,SYNTHETIC probe profile,PRB-02,age,C3,H2,A7,57,A5,2.0,H2,C3,3,"Age: 57
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-030,20261022
+PRB-02-AGE-A6,SYNTHETIC probe profile,PRB-02,age,C3,H2,A7,62,A6,2.0,H2,C3,3,"Age: 62
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-031,20261022
+PRB-02-AGE-A8,SYNTHETIC probe profile,PRB-02,age,C3,H2,A7,80,A8,2.0,H2,C3,3,"Age: 80
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-032,20261022
+PRB-03-ANCHOR,SYNTHETIC probe profile,PRB-03,anchor,C4,H1,A8,80,A8,0.5,H1,C4,4,"Age: 80
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-033,20261022
+PRB-03-RISK-C1,SYNTHETIC probe profile,PRB-03,risk,C4,H1,A8,80,A8,0.5,H1,C1,1,"Age: 80
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-034,20261022
+PRB-03-RISK-C2,SYNTHETIC probe profile,PRB-03,risk,C4,H1,A8,80,A8,0.5,H1,C2,2,"Age: 80
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-035,20261022
+PRB-03-RISK-C3,SYNTHETIC probe profile,PRB-03,risk,C4,H1,A8,80,A8,0.5,H1,C3,3,"Age: 80
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-036,20261022
+PRB-03-RISK-C5,SYNTHETIC probe profile,PRB-03,risk,C4,H1,A8,80,A8,0.5,H1,C5,5,"Age: 80
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-016,20261022
+PRB-03-HORIZON-H2,SYNTHETIC probe profile,PRB-03,horizon,C4,H1,A8,80,A8,2.0,H2,C4,4,"Age: 80
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-037,20261022
+PRB-03-HORIZON-H3,SYNTHETIC probe profile,PRB-03,horizon,C4,H1,A8,80,A8,4.0,H3,C4,4,"Age: 80
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-038,20261022
+PRB-03-HORIZON-H4,SYNTHETIC probe profile,PRB-03,horizon,C4,H1,A8,80,A8,7.0,H4,C4,4,"Age: 80
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-039,20261022
+PRB-03-HORIZON-H5,SYNTHETIC probe profile,PRB-03,horizon,C4,H1,A8,80,A8,15.0,H5,C4,4,"Age: 80
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 15 years; I do not expect to withdraw this money before then.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-040,20261022
+PRB-03-AGE-A1,SYNTHETIC probe profile,PRB-03,age,C4,H1,A8,22,A1,0.5,H1,C4,4,"Age: 22
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-041,20261022
+PRB-03-AGE-A2,SYNTHETIC probe profile,PRB-03,age,C4,H1,A8,30,A2,0.5,H1,C4,4,"Age: 30
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-005,20261022
+PRB-03-AGE-A3,SYNTHETIC probe profile,PRB-03,age,C4,H1,A8,40,A3,0.5,H1,C4,4,"Age: 40
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-042,20261022
+PRB-03-AGE-A4,SYNTHETIC probe profile,PRB-03,age,C4,H1,A8,50,A4,0.5,H1,C4,4,"Age: 50
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-043,20261022
+PRB-03-AGE-A5,SYNTHETIC probe profile,PRB-03,age,C4,H1,A8,57,A5,0.5,H1,C4,4,"Age: 57
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-044,20261022
+PRB-03-AGE-A6,SYNTHETIC probe profile,PRB-03,age,C4,H1,A8,62,A6,0.5,H1,C4,4,"Age: 62
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-045,20261022
+PRB-03-AGE-A7,SYNTHETIC probe profile,PRB-03,age,C4,H1,A8,70,A7,0.5,H1,C4,4,"Age: 70
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-046,20261022
+PRB-04-ANCHOR,SYNTHETIC probe profile,PRB-04,anchor,C1,H5,A3,40,A3,15.0,H5,C1,1,"Age: 40
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 15 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-047,20261022
+PRB-04-RISK-C2,SYNTHETIC probe profile,PRB-04,risk,C1,H5,A3,40,A3,15.0,H5,C2,2,"Age: 40
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 15 years; I do not expect to withdraw this money before then.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-048,20261022
+PRB-04-RISK-C3,SYNTHETIC probe profile,PRB-04,risk,C1,H5,A3,40,A3,15.0,H5,C3,3,"Age: 40
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 15 years; I do not expect to withdraw this money before then.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-049,20261022
+PRB-04-RISK-C4,SYNTHETIC probe profile,PRB-04,risk,C1,H5,A3,40,A3,15.0,H5,C4,4,"Age: 40
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 15 years; I do not expect to withdraw this money before then.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-050,20261022
+PRB-04-RISK-C5,SYNTHETIC probe profile,PRB-04,risk,C1,H5,A3,40,A3,15.0,H5,C5,5,"Age: 40
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 15 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-051,20261022
+PRB-04-HORIZON-H1,SYNTHETIC probe profile,PRB-04,horizon,C1,H5,A3,40,A3,0.5,H1,C1,1,"Age: 40
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-052,20261022
+PRB-04-HORIZON-H2,SYNTHETIC probe profile,PRB-04,horizon,C1,H5,A3,40,A3,2.0,H2,C1,1,"Age: 40
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-053,20261022
+PRB-04-HORIZON-H3,SYNTHETIC probe profile,PRB-04,horizon,C1,H5,A3,40,A3,4.0,H3,C1,1,"Age: 40
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-054,20261022
+PRB-04-HORIZON-H4,SYNTHETIC probe profile,PRB-04,horizon,C1,H5,A3,40,A3,7.0,H4,C1,1,"Age: 40
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-055,20261022
+PRB-04-AGE-A1,SYNTHETIC probe profile,PRB-04,age,C1,H5,A3,22,A1,15.0,H5,C1,1,"Age: 22
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 15 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-056,20261022
+PRB-04-AGE-A2,SYNTHETIC probe profile,PRB-04,age,C1,H5,A3,30,A2,15.0,H5,C1,1,"Age: 30
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 15 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-057,20261022
+PRB-04-AGE-A4,SYNTHETIC probe profile,PRB-04,age,C1,H5,A3,50,A4,15.0,H5,C1,1,"Age: 50
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 15 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-058,20261022
+PRB-04-AGE-A5,SYNTHETIC probe profile,PRB-04,age,C1,H5,A3,57,A5,15.0,H5,C1,1,"Age: 57
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 15 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-059,20261022
+PRB-04-AGE-A6,SYNTHETIC probe profile,PRB-04,age,C1,H5,A3,62,A6,15.0,H5,C1,1,"Age: 62
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 15 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-060,20261022
+PRB-04-AGE-A7,SYNTHETIC probe profile,PRB-04,age,C1,H5,A3,70,A7,15.0,H5,C1,1,"Age: 70
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 15 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-061,20261022
+PRB-04-AGE-A8,SYNTHETIC probe profile,PRB-04,age,C1,H5,A3,80,A8,15.0,H5,C1,1,"Age: 80
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 15 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-062,20261022
+PRB-05-ANCHOR,SYNTHETIC probe profile,PRB-05,anchor,C2,H5,A4,50,A4,15.0,H5,C2,2,"Age: 50
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 15 years; I do not expect to withdraw this money before then.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-063,20261022
+PRB-05-RISK-C1,SYNTHETIC probe profile,PRB-05,risk,C2,H5,A4,50,A4,15.0,H5,C1,1,"Age: 50
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 15 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-058,20261022
+PRB-05-RISK-C3,SYNTHETIC probe profile,PRB-05,risk,C2,H5,A4,50,A4,15.0,H5,C3,3,"Age: 50
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 15 years; I do not expect to withdraw this money before then.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-064,20261022
+PRB-05-RISK-C4,SYNTHETIC probe profile,PRB-05,risk,C2,H5,A4,50,A4,15.0,H5,C4,4,"Age: 50
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 15 years; I do not expect to withdraw this money before then.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-065,20261022
+PRB-05-RISK-C5,SYNTHETIC probe profile,PRB-05,risk,C2,H5,A4,50,A4,15.0,H5,C5,5,"Age: 50
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 15 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-066,20261022
+PRB-05-HORIZON-H1,SYNTHETIC probe profile,PRB-05,horizon,C2,H5,A4,50,A4,0.5,H1,C2,2,"Age: 50
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-067,20261022
+PRB-05-HORIZON-H2,SYNTHETIC probe profile,PRB-05,horizon,C2,H5,A4,50,A4,2.0,H2,C2,2,"Age: 50
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-068,20261022
+PRB-05-HORIZON-H3,SYNTHETIC probe profile,PRB-05,horizon,C2,H5,A4,50,A4,4.0,H3,C2,2,"Age: 50
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-069,20261022
+PRB-05-HORIZON-H4,SYNTHETIC probe profile,PRB-05,horizon,C2,H5,A4,50,A4,7.0,H4,C2,2,"Age: 50
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-070,20261022
+PRB-05-AGE-A1,SYNTHETIC probe profile,PRB-05,age,C2,H5,A4,22,A1,15.0,H5,C2,2,"Age: 22
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 15 years; I do not expect to withdraw this money before then.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-071,20261022
+PRB-05-AGE-A2,SYNTHETIC probe profile,PRB-05,age,C2,H5,A4,30,A2,15.0,H5,C2,2,"Age: 30
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 15 years; I do not expect to withdraw this money before then.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-072,20261022
+PRB-05-AGE-A3,SYNTHETIC probe profile,PRB-05,age,C2,H5,A4,40,A3,15.0,H5,C2,2,"Age: 40
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 15 years; I do not expect to withdraw this money before then.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-048,20261022
+PRB-05-AGE-A5,SYNTHETIC probe profile,PRB-05,age,C2,H5,A4,57,A5,15.0,H5,C2,2,"Age: 57
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 15 years; I do not expect to withdraw this money before then.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-073,20261022
+PRB-05-AGE-A6,SYNTHETIC probe profile,PRB-05,age,C2,H5,A4,62,A6,15.0,H5,C2,2,"Age: 62
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 15 years; I do not expect to withdraw this money before then.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-074,20261022
+PRB-05-AGE-A7,SYNTHETIC probe profile,PRB-05,age,C2,H5,A4,70,A7,15.0,H5,C2,2,"Age: 70
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 15 years; I do not expect to withdraw this money before then.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-075,20261022
+PRB-05-AGE-A8,SYNTHETIC probe profile,PRB-05,age,C2,H5,A4,80,A8,15.0,H5,C2,2,"Age: 80
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 15 years; I do not expect to withdraw this money before then.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-076,20261022
+PRB-06-ANCHOR,SYNTHETIC probe profile,PRB-06,anchor,C2,H4,A5,57,A5,7.0,H4,C2,2,"Age: 57
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-077,20261022
+PRB-06-RISK-C1,SYNTHETIC probe profile,PRB-06,risk,C2,H4,A5,57,A5,7.0,H4,C1,1,"Age: 57
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-078,20261022
+PRB-06-RISK-C3,SYNTHETIC probe profile,PRB-06,risk,C2,H4,A5,57,A5,7.0,H4,C3,3,"Age: 57
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-079,20261022
+PRB-06-RISK-C4,SYNTHETIC probe profile,PRB-06,risk,C2,H4,A5,57,A5,7.0,H4,C4,4,"Age: 57
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-080,20261022
+PRB-06-RISK-C5,SYNTHETIC probe profile,PRB-06,risk,C2,H4,A5,57,A5,7.0,H4,C5,5,"Age: 57
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-081,20261022
+PRB-06-HORIZON-H1,SYNTHETIC probe profile,PRB-06,horizon,C2,H4,A5,57,A5,0.5,H1,C2,2,"Age: 57
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-082,20261022
+PRB-06-HORIZON-H2,SYNTHETIC probe profile,PRB-06,horizon,C2,H4,A5,57,A5,2.0,H2,C2,2,"Age: 57
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-083,20261022
+PRB-06-HORIZON-H3,SYNTHETIC probe profile,PRB-06,horizon,C2,H4,A5,57,A5,4.0,H3,C2,2,"Age: 57
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-084,20261022
+PRB-06-HORIZON-H5,SYNTHETIC probe profile,PRB-06,horizon,C2,H4,A5,57,A5,15.0,H5,C2,2,"Age: 57
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 15 years; I do not expect to withdraw this money before then.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-073,20261022
+PRB-06-AGE-A1,SYNTHETIC probe profile,PRB-06,age,C2,H4,A5,22,A1,7.0,H4,C2,2,"Age: 22
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-085,20261022
+PRB-06-AGE-A2,SYNTHETIC probe profile,PRB-06,age,C2,H4,A5,30,A2,7.0,H4,C2,2,"Age: 30
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-086,20261022
+PRB-06-AGE-A3,SYNTHETIC probe profile,PRB-06,age,C2,H4,A5,40,A3,7.0,H4,C2,2,"Age: 40
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-087,20261022
+PRB-06-AGE-A4,SYNTHETIC probe profile,PRB-06,age,C2,H4,A5,50,A4,7.0,H4,C2,2,"Age: 50
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-070,20261022
+PRB-06-AGE-A6,SYNTHETIC probe profile,PRB-06,age,C2,H4,A5,62,A6,7.0,H4,C2,2,"Age: 62
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-088,20261022
+PRB-06-AGE-A7,SYNTHETIC probe profile,PRB-06,age,C2,H4,A5,70,A7,7.0,H4,C2,2,"Age: 70
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-089,20261022
+PRB-06-AGE-A8,SYNTHETIC probe profile,PRB-06,age,C2,H4,A5,80,A8,7.0,H4,C2,2,"Age: 80
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-090,20261022
+PRB-07-ANCHOR,SYNTHETIC probe profile,PRB-07,anchor,C5,H3,A3,40,A3,4.0,H3,C5,5,"Age: 40
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-091,20261022
+PRB-07-RISK-C1,SYNTHETIC probe profile,PRB-07,risk,C5,H3,A3,40,A3,4.0,H3,C1,1,"Age: 40
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-054,20261022
+PRB-07-RISK-C2,SYNTHETIC probe profile,PRB-07,risk,C5,H3,A3,40,A3,4.0,H3,C2,2,"Age: 40
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-092,20261022
+PRB-07-RISK-C3,SYNTHETIC probe profile,PRB-07,risk,C5,H3,A3,40,A3,4.0,H3,C3,3,"Age: 40
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-093,20261022
+PRB-07-RISK-C4,SYNTHETIC probe profile,PRB-07,risk,C5,H3,A3,40,A3,4.0,H3,C4,4,"Age: 40
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-094,20261022
+PRB-07-HORIZON-H1,SYNTHETIC probe profile,PRB-07,horizon,C5,H3,A3,40,A3,0.5,H1,C5,5,"Age: 40
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-011,20261022
+PRB-07-HORIZON-H2,SYNTHETIC probe profile,PRB-07,horizon,C5,H3,A3,40,A3,2.0,H2,C5,5,"Age: 40
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-095,20261022
+PRB-07-HORIZON-H4,SYNTHETIC probe profile,PRB-07,horizon,C5,H3,A3,40,A3,7.0,H4,C5,5,"Age: 40
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-096,20261022
+PRB-07-HORIZON-H5,SYNTHETIC probe profile,PRB-07,horizon,C5,H3,A3,40,A3,15.0,H5,C5,5,"Age: 40
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 15 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-051,20261022
+PRB-07-AGE-A1,SYNTHETIC probe profile,PRB-07,age,C5,H3,A3,22,A1,4.0,H3,C5,5,"Age: 22
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-097,20261022
+PRB-07-AGE-A2,SYNTHETIC probe profile,PRB-07,age,C5,H3,A3,30,A2,4.0,H3,C5,5,"Age: 30
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-007,20261022
+PRB-07-AGE-A4,SYNTHETIC probe profile,PRB-07,age,C5,H3,A3,50,A4,4.0,H3,C5,5,"Age: 50
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-098,20261022
+PRB-07-AGE-A5,SYNTHETIC probe profile,PRB-07,age,C5,H3,A3,57,A5,4.0,H3,C5,5,"Age: 57
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-099,20261022
+PRB-07-AGE-A6,SYNTHETIC probe profile,PRB-07,age,C5,H3,A3,62,A6,4.0,H3,C5,5,"Age: 62
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-100,20261022
+PRB-07-AGE-A7,SYNTHETIC probe profile,PRB-07,age,C5,H3,A3,70,A7,4.0,H3,C5,5,"Age: 70
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-101,20261022
+PRB-07-AGE-A8,SYNTHETIC probe profile,PRB-07,age,C5,H3,A3,80,A8,4.0,H3,C5,5,"Age: 80
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-102,20261022
+PRB-08-ANCHOR,SYNTHETIC probe profile,PRB-08,anchor,C3,H3,A6,62,A6,4.0,H3,C3,3,"Age: 62
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-103,20261022
+PRB-08-RISK-C1,SYNTHETIC probe profile,PRB-08,risk,C3,H3,A6,62,A6,4.0,H3,C1,1,"Age: 62
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-104,20261022
+PRB-08-RISK-C2,SYNTHETIC probe profile,PRB-08,risk,C3,H3,A6,62,A6,4.0,H3,C2,2,"Age: 62
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-105,20261022
+PRB-08-RISK-C4,SYNTHETIC probe profile,PRB-08,risk,C3,H3,A6,62,A6,4.0,H3,C4,4,"Age: 62
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-106,20261022
+PRB-08-RISK-C5,SYNTHETIC probe profile,PRB-08,risk,C3,H3,A6,62,A6,4.0,H3,C5,5,"Age: 62
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-100,20261022
+PRB-08-HORIZON-H1,SYNTHETIC probe profile,PRB-08,horizon,C3,H3,A6,62,A6,0.5,H1,C3,3,"Age: 62
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-107,20261022
+PRB-08-HORIZON-H2,SYNTHETIC probe profile,PRB-08,horizon,C3,H3,A6,62,A6,2.0,H2,C3,3,"Age: 62
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-031,20261022
+PRB-08-HORIZON-H4,SYNTHETIC probe profile,PRB-08,horizon,C3,H3,A6,62,A6,7.0,H4,C3,3,"Age: 62
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-108,20261022
+PRB-08-HORIZON-H5,SYNTHETIC probe profile,PRB-08,horizon,C3,H3,A6,62,A6,15.0,H5,C3,3,"Age: 62
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 15 years; I do not expect to withdraw this money before then.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-109,20261022
+PRB-08-AGE-A1,SYNTHETIC probe profile,PRB-08,age,C3,H3,A6,22,A1,4.0,H3,C3,3,"Age: 22
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-110,20261022
+PRB-08-AGE-A2,SYNTHETIC probe profile,PRB-08,age,C3,H3,A6,30,A2,4.0,H3,C3,3,"Age: 30
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-111,20261022
+PRB-08-AGE-A3,SYNTHETIC probe profile,PRB-08,age,C3,H3,A6,40,A3,4.0,H3,C3,3,"Age: 40
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-093,20261022
+PRB-08-AGE-A4,SYNTHETIC probe profile,PRB-08,age,C3,H3,A6,50,A4,4.0,H3,C3,3,"Age: 50
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-112,20261022
+PRB-08-AGE-A5,SYNTHETIC probe profile,PRB-08,age,C3,H3,A6,57,A5,4.0,H3,C3,3,"Age: 57
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-113,20261022
+PRB-08-AGE-A7,SYNTHETIC probe profile,PRB-08,age,C3,H3,A6,70,A7,4.0,H3,C3,3,"Age: 70
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-023,20261022
+PRB-08-AGE-A8,SYNTHETIC probe profile,PRB-08,age,C3,H3,A6,80,A8,4.0,H3,C3,3,"Age: 80
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-114,20261022
+PRB-09-ANCHOR,SYNTHETIC probe profile,PRB-09,anchor,C4,H2,A1,22,A1,2.0,H2,C4,4,"Age: 22
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-115,20261022
+PRB-09-RISK-C1,SYNTHETIC probe profile,PRB-09,risk,C4,H2,A1,22,A1,2.0,H2,C1,1,"Age: 22
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-116,20261022
+PRB-09-RISK-C2,SYNTHETIC probe profile,PRB-09,risk,C4,H2,A1,22,A1,2.0,H2,C2,2,"Age: 22
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-117,20261022
+PRB-09-RISK-C3,SYNTHETIC probe profile,PRB-09,risk,C4,H2,A1,22,A1,2.0,H2,C3,3,"Age: 22
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-026,20261022
+PRB-09-RISK-C5,SYNTHETIC probe profile,PRB-09,risk,C4,H2,A1,22,A1,2.0,H2,C5,5,"Age: 22
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-118,20261022
+PRB-09-HORIZON-H1,SYNTHETIC probe profile,PRB-09,horizon,C4,H2,A1,22,A1,0.5,H1,C4,4,"Age: 22
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-041,20261022
+PRB-09-HORIZON-H3,SYNTHETIC probe profile,PRB-09,horizon,C4,H2,A1,22,A1,4.0,H3,C4,4,"Age: 22
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-119,20261022
+PRB-09-HORIZON-H4,SYNTHETIC probe profile,PRB-09,horizon,C4,H2,A1,22,A1,7.0,H4,C4,4,"Age: 22
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-120,20261022
+PRB-09-HORIZON-H5,SYNTHETIC probe profile,PRB-09,horizon,C4,H2,A1,22,A1,15.0,H5,C4,4,"Age: 22
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 15 years; I do not expect to withdraw this money before then.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-121,20261022
+PRB-09-AGE-A2,SYNTHETIC probe profile,PRB-09,age,C4,H2,A1,30,A2,2.0,H2,C4,4,"Age: 30
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-122,20261022
+PRB-09-AGE-A3,SYNTHETIC probe profile,PRB-09,age,C4,H2,A1,40,A3,2.0,H2,C4,4,"Age: 40
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-123,20261022
+PRB-09-AGE-A4,SYNTHETIC probe profile,PRB-09,age,C4,H2,A1,50,A4,2.0,H2,C4,4,"Age: 50
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-124,20261022
+PRB-09-AGE-A5,SYNTHETIC probe profile,PRB-09,age,C4,H2,A1,57,A5,2.0,H2,C4,4,"Age: 57
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-125,20261022
+PRB-09-AGE-A6,SYNTHETIC probe profile,PRB-09,age,C4,H2,A1,62,A6,2.0,H2,C4,4,"Age: 62
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-126,20261022
+PRB-09-AGE-A7,SYNTHETIC probe profile,PRB-09,age,C4,H2,A1,70,A7,2.0,H2,C4,4,"Age: 70
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-020,20261022
+PRB-09-AGE-A8,SYNTHETIC probe profile,PRB-09,age,C4,H2,A1,80,A8,2.0,H2,C4,4,"Age: 80
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-037,20261022
+PRB-10-ANCHOR,SYNTHETIC probe profile,PRB-10,anchor,C1,H4,A4,50,A4,7.0,H4,C1,1,"Age: 50
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-127,20261022
+PRB-10-RISK-C2,SYNTHETIC probe profile,PRB-10,risk,C1,H4,A4,50,A4,7.0,H4,C2,2,"Age: 50
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-070,20261022
+PRB-10-RISK-C3,SYNTHETIC probe profile,PRB-10,risk,C1,H4,A4,50,A4,7.0,H4,C3,3,"Age: 50
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-128,20261022
+PRB-10-RISK-C4,SYNTHETIC probe profile,PRB-10,risk,C1,H4,A4,50,A4,7.0,H4,C4,4,"Age: 50
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-129,20261022
+PRB-10-RISK-C5,SYNTHETIC probe profile,PRB-10,risk,C1,H4,A4,50,A4,7.0,H4,C5,5,"Age: 50
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-130,20261022
+PRB-10-HORIZON-H1,SYNTHETIC probe profile,PRB-10,horizon,C1,H4,A4,50,A4,0.5,H1,C1,1,"Age: 50
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-131,20261022
+PRB-10-HORIZON-H2,SYNTHETIC probe profile,PRB-10,horizon,C1,H4,A4,50,A4,2.0,H2,C1,1,"Age: 50
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-132,20261022
+PRB-10-HORIZON-H3,SYNTHETIC probe profile,PRB-10,horizon,C1,H4,A4,50,A4,4.0,H3,C1,1,"Age: 50
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-133,20261022
+PRB-10-HORIZON-H5,SYNTHETIC probe profile,PRB-10,horizon,C1,H4,A4,50,A4,15.0,H5,C1,1,"Age: 50
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 15 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-058,20261022
+PRB-10-AGE-A1,SYNTHETIC probe profile,PRB-10,age,C1,H4,A4,22,A1,7.0,H4,C1,1,"Age: 22
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-134,20261022
+PRB-10-AGE-A2,SYNTHETIC probe profile,PRB-10,age,C1,H4,A4,30,A2,7.0,H4,C1,1,"Age: 30
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-135,20261022
+PRB-10-AGE-A3,SYNTHETIC probe profile,PRB-10,age,C1,H4,A4,40,A3,7.0,H4,C1,1,"Age: 40
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-055,20261022
+PRB-10-AGE-A5,SYNTHETIC probe profile,PRB-10,age,C1,H4,A4,57,A5,7.0,H4,C1,1,"Age: 57
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-078,20261022
+PRB-10-AGE-A6,SYNTHETIC probe profile,PRB-10,age,C1,H4,A4,62,A6,7.0,H4,C1,1,"Age: 62
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-136,20261022
+PRB-10-AGE-A7,SYNTHETIC probe profile,PRB-10,age,C1,H4,A4,70,A7,7.0,H4,C1,1,"Age: 70
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-137,20261022
+PRB-10-AGE-A8,SYNTHETIC probe profile,PRB-10,age,C1,H4,A4,80,A8,7.0,H4,C1,1,"Age: 80
+Employment and income: stable regular income (salary or pension)
+Amount to invest: CNY 200,000
+Investment objective: I want to invest savings that are not needed for everyday spending.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: some experience with mutual funds.
+Emergency savings: kept separately and not part of this investment.",PTX-138,20261022

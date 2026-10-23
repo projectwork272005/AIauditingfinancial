@@ -1,0 +1,19 @@
+variable,code,label,n,percent
+horizon_band,H1,Short-term,40,20.0
+horizon_band,H2,Short-to-medium term,40,20.0
+horizon_band,H3,Medium-term,40,20.0
+horizon_band,H4,Medium-to-long term,40,20.0
+horizon_band,H5,Long-term,40,20.0
+risk_class,C1,Very conservative,40,20.0
+risk_class,C2,Conservative,40,20.0
+risk_class,C3,Moderate,40,20.0
+risk_class,C4,Aggressive,40,20.0
+risk_class,C5,Very aggressive,40,20.0
+age_band,A1,18-24,25,12.5
+age_band,A2,25-34,25,12.5
+age_band,A3,35-44,25,12.5
+age_band,A4,45-54,25,12.5
+age_band,A5,55-59,25,12.5
+age_band,A6,60-64,25,12.5
+age_band,A7,65-74,25,12.5
+age_band,A8,75-85,25,12.5

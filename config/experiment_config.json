@@ -1,0 +1,205 @@
+{
+  "experiment_id": "AIFUND-2026",
+  "description": "Factorial audit of LLM mutual fund recommendations: 3 models (Volcano Engine Ark Agent Plan) x 2 prompt conditions x 200 synthetic investors, plus consistency and single-attribute probe modules.",
+  "random_seed": 20261022,
+  "menu": {
+    "path": "data/fund_menu.csv",
+    "as_of": "",
+    "source": ""
+  },
+  "conditions": [
+    "BASE",
+    "SUIT"
+  ],
+  "samples": {
+    "pilot": {
+      "n_profiles": 10,
+      "note": "Excluded from analysis; used only to check parsing before the main run."
+    },
+    "main": {
+      "replicate": 1
+    },
+    "consistency": {
+      "extra_replicates": 2,
+      "note": "40 flagged investors queried twice more per condition (replicates 2 and 3)."
+    },
+    "probe": {
+      "replicate": 1,
+      "note": "One call per distinct probe text (probe_text_id)."
+    }
+  },
+  "generation": {
+    "temperature": 0.7,
+    "max_output_tokens": 2500,
+    "json_mode": true,
+    "timeout_s": 180,
+    "max_retries": 5,
+    "temperature_note": "0.7 for every model, as in the course-provided reference script."
+  },
+  "models": [
+    {
+      "key": "doubao",
+      "label": "Doubao-Seed (ByteDance)",
+      "enabled": true,
+      "route": "ark-agent-plan",
+      "base_url": "https://ark.cn-beijing.volces.com/api/plan/v3",
+      "model": "doubao-seed-2.0-mini",
+      "api_key_env": "ARK_API_KEY",
+      "concurrency": 4,
+      "temperature": 0.7,
+      "max_tokens_param": "max_tokens",
+      "extra_body": {
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "model_note": "Model name from the course reference script; confirm against the Agent Plan model list before the run."
+    },
+    {
+      "key": "deepseek",
+      "label": "DeepSeek V4 Flash (DeepSeek)",
+      "enabled": true,
+      "route": "ark-agent-plan",
+      "base_url": "https://ark.cn-beijing.volces.com/api/plan/v3",
+      "model": "SET_AFTER_LISTING_MODELS",
+      "api_key_env": "ARK_API_KEY",
+      "concurrency": 4,
+      "temperature": 0.7,
+      "max_tokens_param": "max_tokens",
+      "extra_body": {
+        "thinking": {
+          "type": "disabled"
+        }
+      }
+    },
+    {
+      "key": "kimi",
+      "label": "Kimi (Moonshot AI)",
+      "enabled": true,
+      "route": "ark-agent-plan",
+      "base_url": "https://ark.cn-beijing.volces.com/api/plan/v3",
+      "model": "SET_AFTER_LISTING_MODELS",
+      "api_key_env": "ARK_API_KEY",
+      "concurrency": 4,
+      "temperature": 0.7,
+      "max_tokens_param": "max_tokens",
+      "extra_body": {},
+      "model_note": "If Kimi is not offered in the purchased tier, enable the 'glm' entry instead."
+    },
+    {
+      "key": "glm",
+      "label": "GLM (Zhipu AI) - fallback third model",
+      "enabled": false,
+      "route": "ark-agent-plan",
+      "base_url": "https://ark.cn-beijing.volces.com/api/plan/v3",
+      "model": "SET_AFTER_LISTING_MODELS",
+      "api_key_env": "ARK_API_KEY",
+      "concurrency": 4,
+      "temperature": 0.7,
+      "max_tokens_param": "max_tokens",
+      "extra_body": {}
+    },
+    {
+      "key": "deepseek",
+      "label": "DeepSeek Flash",
+      "enabled": false,
+      "route": "alternative-direct",
+      "base_url": "https://api.deepseek.com",
+      "model": "SET_AFTER_LISTING_MODELS",
+      "api_key_env": "DEEPSEEK_API_KEY",
+      "concurrency": 6,
+      "temperature": 1.0,
+      "max_tokens_param": "max_tokens",
+      "extra_body": {}
+    },
+    {
+      "key": "qwen",
+      "label": "Qwen (Alibaba Model Studio)",
+      "enabled": false,
+      "route": "alternative-direct",
+      "base_url": "https://dashscope-intl.aliyuncs.com/compatible-mode/v1",
+      "model": "SET_AFTER_LISTING_MODELS",
+      "api_key_env": "DASHSCOPE_API_KEY",
+      "concurrency": 6,
+      "temperature": 1.0,
+      "max_tokens_param": "max_tokens",
+      "extra_body": {
+        "enable_thinking": false
+      }
+    },
+    {
+      "key": "gpt",
+      "label": "OpenAI GPT-5 mini",
+      "enabled": false,
+      "route": "alternative-direct",
+      "base_url": "https://api.openai.com/v1",
+      "model": "gpt-5-mini",
+      "api_key_env": "OPENAI_API_KEY",
+      "concurrency": 6,
+      "temperature": null,
+      "temperature_note": "GPT-5 family accepts only the default temperature (1.0); the parameter is omitted, which equals the 1.0 used for the other models.",
+      "max_tokens_param": "max_completion_tokens",
+      "extra_body": {
+        "reasoning_effort": "minimal"
+      }
+    },
+    {
+      "key": "gemini",
+      "label": "Google Gemini Flash",
+      "enabled": false,
+      "route": "alternative-direct",
+      "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+      "model": "SET_AFTER_LISTING_MODELS",
+      "api_key_env": "GEMINI_API_KEY",
+      "concurrency": 4,
+      "temperature": 1.0,
+      "max_tokens_param": "max_tokens",
+      "extra_body": {
+        "reasoning_effort": "none"
+      }
+    },
+    {
+      "key": "deepseek",
+      "label": "DeepSeek Flash via OpenRouter",
+      "enabled": false,
+      "route": "alternative-openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "SET_AFTER_LISTING_MODELS",
+      "api_key_env": "OPENROUTER_API_KEY",
+      "concurrency": 6,
+      "temperature": 1.0,
+      "max_tokens_param": "max_tokens",
+      "extra_body": {}
+    },
+    {
+      "key": "qwen",
+      "label": "Qwen via OpenRouter",
+      "enabled": false,
+      "route": "alternative-openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "SET_AFTER_LISTING_MODELS",
+      "api_key_env": "OPENROUTER_API_KEY",
+      "concurrency": 6,
+      "temperature": 1.0,
+      "max_tokens_param": "max_tokens",
+      "extra_body": {}
+    },
+    {
+      "key": "gpt",
+      "label": "GPT-5 mini via OpenRouter",
+      "enabled": false,
+      "route": "alternative-openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "openai/gpt-5-mini",
+      "api_key_env": "OPENROUTER_API_KEY",
+      "concurrency": 6,
+      "temperature": null,
+      "max_tokens_param": "max_tokens",
+      "extra_body": {
+        "reasoning": {
+          "effort": "minimal"
+        }
+      }
+    }
+  ]
+}

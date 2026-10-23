@@ -1,0 +1,169 @@
+"""Fund data sources (basic facts, risk rating, asset allocation, NAV history).
+
+Sources are pluggable so that the analysis does not depend on one provider:
+
+  fuyao      course-provided API (https://fuyao.aicubes.cn/). Primary source.
+             The adapter is completed once the API documentation is available;
+             until then it raises NotImplementedError rather than guessing.
+  eastmoney  public Eastmoney / Tiantian Fund endpoints (fallback).
+  csv        hand-imported files: data/nav/<code>.csv with columns
+             date,return_index (a dividend-adjusted total-return index).
+
+Every raw response is saved under data/fund_sources/raw/ with a UTC timestamp
+so that each number used in the analysis can be traced to its source.
+
+Self-test (prints parsed fields; run after network access is enabled):
+  python src/fund_data.py --source eastmoney --probe 110020
+"""
+
+import argparse
+import json
+import os
+import re
+from datetime import datetime, timezone
+from pathlib import Path
+
+import pandas as pd
+import requests
+
+ROOT = Path(__file__).resolve().parents[1]
+RAW_DIR = ROOT / "data" / "fund_sources" / "raw"
+RISK_TEXT = {"低风险": "R1", "中低风险": "R2", "中风险": "R3", "中高风险": "R4", "高风险": "R5"}
+UA = {"User-Agent": "Mozilla/5.0 (academic research; synthetic-investor audit)"}
+
+
+def stamp() -> str:
+    return datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+
+
+def save_raw(source: str, code: str, kind: str, text: str) -> str:
+    RAW_DIR.mkdir(parents=True, exist_ok=True)
+    path = RAW_DIR / f"{source}_{code}_{kind}_{stamp()}.txt"
+    path.write_text(text, encoding="utf-8")
+    return str(path.relative_to(ROOT))
+
+
+class FuyaoSource:
+    """Course-provided API. Endpoint paths, parameters and authentication are
+    filled in from the official documentation; nothing here is guessed."""
+    name = "fuyao"
+    base_url = "https://fuyao.aicubes.cn"
+
+    def __init__(self):
+        self.token = os.environ.get("FUYAO_API_KEY", "")
+
+    def basic_info(self, code: str) -> dict:
+        raise NotImplementedError("Fuyao adapter pending: API documentation not yet provided.")
+
+    def nav_history(self, code: str, start: str, end: str) -> pd.DataFrame:
+        raise NotImplementedError("Fuyao adapter pending: API documentation not yet provided.")
+
+
+class EastmoneySource:
+    name = "eastmoney"
+
+    def _get(self, url: str, **kw) -> requests.Response:
+        resp = requests.get(url, headers={**UA, **kw.pop("headers", {})}, timeout=30, **kw)
+        resp.raise_for_status()
+        return resp
+
+    def basic_info(self, code: str) -> dict:
+        info = {"code": code, "source": self.name, "retrieved_utc": stamp()}
+        url = ("https://fundmobapi.eastmoney.com/FundMNewApi/FundMNNBasicInformation"
+               f"?FCODE={code}&deviceid=Wap&plat=Wap&product=EFund&version=6.0.0")
+        try:
+            r = self._get(url)
+            info["raw_basic"] = save_raw(self.name, code, "basic", r.text)
+            d = (r.json() or {}).get("Datas") or {}
+            info.update({"name": d.get("SHORTNAME"), "type": d.get("FTYPE"),
+                         "manager": d.get("JJGS"), "inception": d.get("ESTABDATE"),
+                         "risk_level_raw": d.get("RISKLEVEL"), "basic_url": url})
+            lvl = str(d.get("RISKLEVEL", "")).strip()
+            if lvl in {"1", "2", "3", "4", "5"}:
+                info["risk_rating"] = f"R{lvl}"
+        except Exception as exc:  # recorded, not hidden
+            info["basic_error"] = f"{type(exc).__name__}: {exc}"
+        if not info.get("risk_rating"):
+            page = f"https://fund.eastmoney.com/{code}.html"
+            try:
+                r = self._get(page)
+                r.encoding = "utf-8"
+                info["raw_page"] = save_raw(self.name, code, "page", r.text)
+                m = re.search(r"(中低风险|中高风险|低风险|中风险|高风险)", r.text)
+                if m:
+                    info["risk_rating"] = RISK_TEXT[m.group(1)]
+                    info["risk_rating_text"] = m.group(1)
+                    info["risk_url"] = page
+            except Exception as exc:
+                info["page_error"] = f"{type(exc).__name__}: {exc}"
+        try:
+            pz = self._get(f"https://fund.eastmoney.com/pingzhongdata/{code}.js")
+            info["raw_pingzhong"] = save_raw(self.name, code, "pingzhongdata", pz.text)
+            m = re.search(r"var Data_assetAllocation\s*=\s*(\{.*?\});", pz.text, re.S)
+            if m:
+                alloc = json.loads(m.group(1))
+                cats = alloc.get("categories") or []
+                for s in alloc.get("series", []):
+                    if s.get("name") == "股票占净比" and cats:
+                        info["reported_equity_pct"] = s["data"][-1]
+                        info["allocation_report_date"] = cats[-1]
+        except Exception as exc:
+            info["allocation_error"] = f"{type(exc).__name__}: {exc}"
+        return info
+
+    def nav_history(self, code: str, start: str, end: str) -> pd.DataFrame:
+        """Daily total-return index from Eastmoney's daily growth rates
+        (equityReturn, which accounts for distributions). Money market funds
+        are handled through income per 10,000 units."""
+        r = self._get(f"https://fund.eastmoney.com/pingzhongdata/{code}.js")
+        raw = save_raw(self.name, code, "nav", r.text)
+        m = re.search(r"var Data_netWorthTrend\s*=\s*(\[.*?\]);", r.text, re.S)
+        rows = json.loads(m.group(1)) if m else []
+        df = pd.DataFrame(rows)
+        if not df.empty and df["y"].nunique() > 1:
+            df["date"] = pd.to_datetime(df["x"], unit="ms").dt.tz_localize(None).dt.normalize()
+            df["ret"] = pd.to_numeric(df["equityReturn"], errors="coerce").fillna(0) / 100
+        else:  # money market fund: NAV fixed at 1, use income per 10k units
+            m2 = re.search(r"var Data_millionCopiesIncome\s*=\s*(\[.*?\]);", r.text, re.S)
+            inc = pd.DataFrame(json.loads(m2.group(1)) if m2 else [], columns=["x", "income"])
+            df = inc.assign(date=pd.to_datetime(inc["x"], unit="ms").dt.normalize(),
+                            ret=pd.to_numeric(inc["income"], errors="coerce").fillna(0) / 10_000)
+        df = df.sort_values("date")
+        df["return_index"] = (1 + df["ret"]).cumprod()
+        df = df[(df["date"] >= start) & (df["date"] <= end)][["date", "return_index"]]
+        df.attrs.update({"source": self.name, "raw_file": raw})
+        return df
+
+
+class CSVSource:
+    name = "csv"
+
+    def basic_info(self, code: str) -> dict:
+        path = ROOT / "data" / "fund_ratings_manual.csv"
+        if path.exists():
+            m = pd.read_csv(path, dtype=str).set_index("code")
+            if code in m.index:
+                return {"code": code, "source": self.name, **m.loc[code].to_dict()}
+        return {"code": code, "source": self.name, "basic_error": "not in data/fund_ratings_manual.csv"}
+
+    def nav_history(self, code: str, start: str, end: str) -> pd.DataFrame:
+        df = pd.read_csv(ROOT / "data" / "nav" / f"{code}.csv", parse_dates=["date"])
+        return df[(df["date"] >= start) & (df["date"] <= end)][["date", "return_index"]]
+
+
+SOURCES = {"fuyao": FuyaoSource, "eastmoney": EastmoneySource, "csv": CSVSource}
+
+
+def get_source(name: str):
+    return SOURCES[name]()
+
+
+if __name__ == "__main__":
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--source", default="fuyao", choices=list(SOURCES))
+    ap.add_argument("--probe", default="110020")
+    a = ap.parse_args()
+    src = get_source(a.source)
+    print(json.dumps(src.basic_info(a.probe), ensure_ascii=False, indent=2))
+    nav = src.nav_history(a.probe, "2021-10-01", "2026-09-30")
+    print(nav.head(), nav.tail(), len(nav), sep="\n")

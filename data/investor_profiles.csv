@@ -1,0 +1,1801 @@
+investor_id,data_type,cell_id,age,age_band,age_band_label,life_stage,horizon_years,horizon_band,horizon_label,risk_class,risk_level,risk_label,objective_category,objective_text,liquidity_need,employment_status,income_stability,experience_level,experience_years,investable_amount_cny,emergency_savings,profile_text,in_consistency_subsample,generator_seed
+INV-001,SYNTHETIC investor profile,H3-C4-A8,80,A8,75-85,Late retirement,3.0,H3,Medium-term,C4,4,Aggressive,Retirement income,supplement my pension over the next few years,Moderate,"Retired, receives a pension",Stable,Extensive,19,150000,Held separately,"Age: 80
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 150,000
+Investment objective: I want to supplement my pension over the next few years.
+Investment horizon: about 3 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: 19 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-002,SYNTHETIC investor profile,H3-C4-A7,66,A7,65-74,Early retirement,4.5,H3,Medium-term,C4,4,Aggressive,Retirement income,supplement my pension over the next few years,Moderate,"Retired, receives a pension",Stable,Moderate,7,230000,Held separately,"Age: 66
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 230,000
+Investment objective: I want to supplement my pension over the next few years.
+Investment horizon: about 4.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: 7 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-003,SYNTHETIC investor profile,H2-C4-A3,40,A3,35-44,Mid career,2.5,H2,Short-to-medium term,C4,4,Aggressive,Short-term goal,save for a planned car purchase and moving costs,Moderate,Salaried employee,Stable,Moderate,9,490000,Held separately,"Age: 40
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 490,000
+Investment objective: I want to save for a planned car purchase and moving costs.
+Investment horizon: about 2.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: 9 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-004,SYNTHETIC investor profile,H2-C2-A4,54,A4,45-54,Late career,2.5,H2,Short-to-medium term,C2,2,Conservative,Short-term goal,save for a child's wedding,Moderate,Self-employed,Variable,No experience,0,100000,Held separately,"Age: 54
+Employment and income: Self-employed (variable income)
+Amount to invest: CNY 100,000
+Investment objective: I want to save for a child's wedding.
+Investment horizon: about 2.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-005,SYNTHETIC investor profile,H2-C4-A6,63,A6,60-64,Retirement transition,1.5,H2,Short-to-medium term,C4,4,Aggressive,Short-term goal,save for a planned home upgrade,Moderate,"Retired, receives a pension",Stable,Extensive,13,870000,Held separately,"Age: 63
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 870,000
+Investment objective: I want to save for a planned home upgrade.
+Investment horizon: about 1.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: 13 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-006,SYNTHETIC investor profile,H4-C4-A7,69,A7,65-74,Early retirement,7.0,H4,Medium-to-long term,C4,4,Aggressive,Retirement income,supplement my pension later in retirement,Low,"Retired, receives a pension",Stable,Extensive,11,360000,Held separately,"Age: 69
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 360,000
+Investment objective: I want to supplement my pension later in retirement.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: 11 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-007,SYNTHETIC investor profile,H4-C5-A4,49,A4,45-54,Late career,7.0,H4,Medium-to-long term,C5,5,Very aggressive,Wealth accumulation,grow my savings for future family needs,Low,Salaried employee,Stable,Limited,2,200000,Held separately,"Age: 49
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 200,000
+Investment objective: I want to grow my savings for future family needs.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: 2 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-008,SYNTHETIC investor profile,H1-C5-A2,25,A2,25-34,Early career,0.5,H1,Short-term,C5,5,Very aggressive,Near-term spending,keep money ready for wedding expenses later this year,High,Salaried employee,Stable,Moderate,7,120000,Held separately,"Age: 25
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 120,000
+Investment objective: I want to keep money ready for wedding expenses later this year.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: 7 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-009,SYNTHETIC investor profile,H4-C2-A1,19,A1,18-24,Early adulthood (study or first job),7.0,H4,Medium-to-long term,C2,2,Conservative,Wealth accumulation,grow my savings for future family needs,Low,University student with part-time income,Variable,Limited,1,40000,Held separately,"Age: 19
+Employment and income: University student with part-time income (variable income)
+Amount to invest: CNY 40,000
+Investment objective: I want to grow my savings for future family needs.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: 1 year of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-010,SYNTHETIC investor profile,H4-C1-A1,23,A1,18-24,Early adulthood (study or first job),7.0,H4,Medium-to-long term,C1,1,Very conservative,Wealth accumulation,grow my savings for future family needs,Low,Early-career salaried employee,Stable,Moderate,5,25000,Held separately,"Age: 23
+Employment and income: Early-career salaried employee (stable income)
+Amount to invest: CNY 25,000
+Investment objective: I want to grow my savings for future family needs.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: 5 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-011,SYNTHETIC investor profile,H1-C1-A4,52,A4,45-54,Late career,0.25,H1,Short-term,C1,1,Very conservative,Near-term spending,hold money for a home renovation planned within the year,High,Salaried employee,Stable,Limited,2,420000,Held separately,"Age: 52
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 420,000
+Investment objective: I want to hold money for a home renovation planned within the year.
+Investment horizon: about 3 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: 2 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-012,SYNTHETIC investor profile,H1-C3-A7,74,A7,65-74,Early retirement,0.75,H1,Short-term,C3,3,Moderate,Near-term spending,keep money available for planned medical and family expenses within the year,High,"Retired, receives a pension",Stable,Limited,2,430000,Held separately,"Age: 74
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 430,000
+Investment objective: I want to keep money available for planned medical and family expenses within the year.
+Investment horizon: about 9 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: 2 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-013,SYNTHETIC investor profile,H5-C2-A3,44,A3,35-44,Mid career,12.0,H5,Long-term,C2,2,Conservative,Retirement accumulation,accumulate savings for retirement,Low,Salaried employee,Stable,Extensive,24,320000,Held separately,"Age: 44
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 320,000
+Investment objective: I want to accumulate savings for retirement.
+Investment horizon: about 12 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: 24 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-014,SYNTHETIC investor profile,H1-C5-A6,64,A6,60-64,Retirement transition,0.25,H1,Short-term,C5,5,Very aggressive,Near-term spending,hold money for a home renovation planned within the year,High,"Salaried employee, planning to retire within a few years",Stable,No experience,0,200000,Held separately,"Age: 64
+Employment and income: Salaried employee, planning to retire within a few years (stable income)
+Amount to invest: CNY 200,000
+Investment objective: I want to hold money for a home renovation planned within the year.
+Investment horizon: about 3 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-015,SYNTHETIC investor profile,H1-C3-A2,30,A2,25-34,Early career,0.25,H1,Short-term,C3,3,Moderate,Near-term spending,keep money ready for wedding expenses later this year,High,Salaried employee,Stable,Extensive,11,70000,Held separately,"Age: 30
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 70,000
+Investment objective: I want to keep money ready for wedding expenses later this year.
+Investment horizon: about 3 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: 11 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-016,SYNTHETIC investor profile,H3-C1-A4,51,A4,45-54,Late career,3.0,H3,Medium-term,C1,1,Very conservative,Medium-term goal,save for a child's education,Moderate,Salaried employee,Stable,Extensive,17,310000,Held separately,"Age: 51
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 310,000
+Investment objective: I want to save for a child's education.
+Investment horizon: about 3 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: 17 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-017,SYNTHETIC investor profile,H4-C2-A5,58,A5,55-59,Pre-retirement,7.0,H4,Medium-to-long term,C2,2,Conservative,Retirement income,build savings to supplement my pension in retirement,Low,Salaried employee,Stable,Moderate,9,580000,Held separately,"Age: 58
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 580,000
+Investment objective: I want to build savings to supplement my pension in retirement.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: 9 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-018,SYNTHETIC investor profile,H4-C2-A7,73,A7,65-74,Early retirement,6.0,H4,Medium-to-long term,C2,2,Conservative,Retirement income,supplement my pension later in retirement,Low,"Retired, receives a pension",Stable,Moderate,9,200000,Held separately,"Age: 73
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 200,000
+Investment objective: I want to supplement my pension later in retirement.
+Investment horizon: about 6 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: 9 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-019,SYNTHETIC investor profile,H1-C5-A7,66,A7,65-74,Early retirement,0.25,H1,Short-term,C5,5,Very aggressive,Near-term spending,hold money for a family member's planned expense within the year,High,"Retired, receives a pension",Stable,No experience,0,410000,Held separately,"Age: 66
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 410,000
+Investment objective: I want to hold money for a family member's planned expense within the year.
+Investment horizon: about 3 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-020,SYNTHETIC investor profile,H5-C1-A8,79,A8,75-85,Late retirement,10.0,H5,Long-term,C1,1,Very conservative,Legacy,build a legacy for my children or grandchildren,Low,"Retired, receives a pension",Stable,Moderate,8,740000,Held separately,"Age: 79
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 740,000
+Investment objective: I want to build a legacy for my children or grandchildren.
+Investment horizon: about 10 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: 8 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-021,SYNTHETIC investor profile,H5-C5-A4,54,A4,45-54,Late career,20.0,H5,Long-term,C5,5,Very aggressive,Retirement income,fund a long retirement,Low,Self-employed,Variable,Limited,2,280000,Held separately,"Age: 54
+Employment and income: Self-employed (variable income)
+Amount to invest: CNY 280,000
+Investment objective: I want to fund a long retirement.
+Investment horizon: about 20 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: 2 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-022,SYNTHETIC investor profile,H2-C2-A8,80,A8,75-85,Late retirement,1.5,H2,Short-to-medium term,C2,2,Conservative,Short-term goal,fund planned travel and support for family members over the next few years,Moderate,"Retired, receives a pension",Stable,Limited,1,470000,Held separately,"Age: 80
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 470,000
+Investment objective: I want to fund planned travel and support for family members over the next few years.
+Investment horizon: about 1.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: 1 year of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-023,SYNTHETIC investor profile,H5-C2-A6,62,A6,60-64,Retirement transition,10.0,H5,Long-term,C2,2,Conservative,Retirement income,fund a long retirement,Low,"Salaried employee, planning to retire within a few years",Stable,Extensive,19,260000,Held separately,"Age: 62
+Employment and income: Salaried employee, planning to retire within a few years (stable income)
+Amount to invest: CNY 260,000
+Investment objective: I want to fund a long retirement.
+Investment horizon: about 10 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: 19 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-024,SYNTHETIC investor profile,H4-C2-A3,43,A3,35-44,Mid career,7.0,H4,Medium-to-long term,C2,2,Conservative,Wealth accumulation,grow my savings for future family needs,Low,Self-employed,Variable,Moderate,5,470000,Held separately,"Age: 43
+Employment and income: Self-employed (variable income)
+Amount to invest: CNY 470,000
+Investment objective: I want to grow my savings for future family needs.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: 5 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-025,SYNTHETIC investor profile,H2-C2-A3,39,A3,35-44,Mid career,2.5,H2,Short-to-medium term,C2,2,Conservative,Short-term goal,save for a home down payment,Moderate,Salaried employee,Stable,Moderate,7,130000,Held separately,"Age: 39
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 130,000
+Investment objective: I want to save for a home down payment.
+Investment horizon: about 2.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: 7 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-026,SYNTHETIC investor profile,H5-C3-A5,58,A5,55-59,Pre-retirement,10.0,H5,Long-term,C3,3,Moderate,Retirement income,fund a long retirement,Low,Salaried employee,Stable,Moderate,7,200000,Held separately,"Age: 58
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 200,000
+Investment objective: I want to fund a long retirement.
+Investment horizon: about 10 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: 7 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-027,SYNTHETIC investor profile,H3-C5-A4,48,A4,45-54,Late career,4.5,H3,Medium-term,C5,5,Very aggressive,Medium-term goal,save for a child's education,Moderate,Self-employed,Variable,Moderate,9,110000,Held separately,"Age: 48
+Employment and income: Self-employed (variable income)
+Amount to invest: CNY 110,000
+Investment objective: I want to save for a child's education.
+Investment horizon: about 4.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: 9 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-028,SYNTHETIC investor profile,H4-C4-A2,25,A2,25-34,Early career,6.0,H4,Medium-to-long term,C4,4,Aggressive,Wealth accumulation,grow my savings for future family needs,Low,Salaried employee,Stable,Moderate,6,270000,Held separately,"Age: 25
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 270,000
+Investment objective: I want to grow my savings for future family needs.
+Investment horizon: about 6 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: 6 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-029,SYNTHETIC investor profile,H5-C5-A1,19,A1,18-24,Early adulthood (study or first job),12.0,H5,Long-term,C5,5,Very aggressive,Retirement accumulation,accumulate savings for retirement,Low,University student with part-time income,Variable,No experience,0,25000,Held separately,"Age: 19
+Employment and income: University student with part-time income (variable income)
+Amount to invest: CNY 25,000
+Investment objective: I want to accumulate savings for retirement.
+Investment horizon: about 12 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-030,SYNTHETIC investor profile,H2-C3-A5,56,A5,55-59,Pre-retirement,2.0,H2,Short-to-medium term,C3,3,Moderate,Short-term goal,save for a child's wedding,Moderate,Salaried employee,Stable,Limited,3,190000,Held separately,"Age: 56
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 190,000
+Investment objective: I want to save for a child's wedding.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: 3 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-031,SYNTHETIC investor profile,H1-C2-A6,61,A6,60-64,Retirement transition,0.5,H1,Short-term,C2,2,Conservative,Near-term spending,hold money for a home renovation planned within the year,High,"Salaried employee, planning to retire within a few years",Stable,No experience,0,690000,Held separately,"Age: 61
+Employment and income: Salaried employee, planning to retire within a few years (stable income)
+Amount to invest: CNY 690,000
+Investment objective: I want to hold money for a home renovation planned within the year.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-032,SYNTHETIC investor profile,H5-C2-A4,50,A4,45-54,Late career,10.0,H5,Long-term,C2,2,Conservative,Retirement income,fund a long retirement,Low,Salaried employee,Stable,Limited,1,190000,Held separately,"Age: 50
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 190,000
+Investment objective: I want to fund a long retirement.
+Investment horizon: about 10 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: 1 year of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-033,SYNTHETIC investor profile,H2-C4-A5,58,A5,55-59,Pre-retirement,2.0,H2,Short-to-medium term,C4,4,Aggressive,Short-term goal,save for a child's wedding,Moderate,Salaried employee,Stable,No experience,0,310000,Held separately,"Age: 58
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 310,000
+Investment objective: I want to save for a child's wedding.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-034,SYNTHETIC investor profile,H5-C1-A2,31,A2,25-34,Early career,12.0,H5,Long-term,C1,1,Very conservative,Retirement accumulation,accumulate savings for retirement,Low,Self-employed,Variable,Moderate,9,230000,Held separately,"Age: 31
+Employment and income: Self-employed (variable income)
+Amount to invest: CNY 230,000
+Investment objective: I want to accumulate savings for retirement.
+Investment horizon: about 12 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: 9 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-035,SYNTHETIC investor profile,H3-C2-A3,36,A3,35-44,Mid career,4.0,H3,Medium-term,C2,2,Conservative,Medium-term goal,save for a larger home,Moderate,Self-employed,Variable,No experience,0,350000,Held separately,"Age: 36
+Employment and income: Self-employed (variable income)
+Amount to invest: CNY 350,000
+Investment objective: I want to save for a larger home.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-036,SYNTHETIC investor profile,H3-C3-A1,21,A1,18-24,Early adulthood (study or first job),3.0,H3,Medium-term,C3,3,Moderate,Medium-term goal,save for postgraduate study,Moderate,University student with part-time income,Variable,No experience,0,50000,Held separately,"Age: 21
+Employment and income: University student with part-time income (variable income)
+Amount to invest: CNY 50,000
+Investment objective: I want to save for postgraduate study.
+Investment horizon: about 3 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-037,SYNTHETIC investor profile,H2-C5-A8,77,A8,75-85,Late retirement,1.5,H2,Short-to-medium term,C5,5,Very aggressive,Short-term goal,fund planned travel and support for family members over the next few years,Moderate,"Retired, receives a pension",Stable,Extensive,19,710000,Held separately,"Age: 77
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 710,000
+Investment objective: I want to fund planned travel and support for family members over the next few years.
+Investment horizon: about 1.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: 19 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-038,SYNTHETIC investor profile,H3-C3-A8,81,A8,75-85,Late retirement,4.5,H3,Medium-term,C3,3,Moderate,Retirement income,supplement my pension over the next few years,Moderate,"Retired, receives a pension",Stable,No experience,0,260000,Held separately,"Age: 81
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 260,000
+Investment objective: I want to supplement my pension over the next few years.
+Investment horizon: about 4.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-039,SYNTHETIC investor profile,H4-C2-A2,30,A2,25-34,Early career,8.0,H4,Medium-to-long term,C2,2,Conservative,Wealth accumulation,grow my savings for future family needs,Low,Salaried employee,Stable,No experience,0,90000,Held separately,"Age: 30
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 90,000
+Investment objective: I want to grow my savings for future family needs.
+Investment horizon: about 8 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-040,SYNTHETIC investor profile,H1-C2-A1,22,A1,18-24,Early adulthood (study or first job),0.75,H1,Short-term,C2,2,Conservative,Near-term spending,"set aside money for a planned purchase this year, such as a car",High,Early-career salaried employee,Stable,Limited,2,20000,Held separately,"Age: 22
+Employment and income: Early-career salaried employee (stable income)
+Amount to invest: CNY 20,000
+Investment objective: I want to set aside money for a planned purchase this year, such as a car.
+Investment horizon: about 9 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: 2 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-041,SYNTHETIC investor profile,H5-C2-A8,75,A8,75-85,Late retirement,12.0,H5,Long-term,C2,2,Conservative,Legacy,build a legacy for my children or grandchildren,Low,"Retired, receives a pension",Stable,No experience,0,410000,Held separately,"Age: 75
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 410,000
+Investment objective: I want to build a legacy for my children or grandchildren.
+Investment horizon: about 12 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-042,SYNTHETIC investor profile,H2-C4-A2,30,A2,25-34,Early career,2.5,H2,Short-to-medium term,C4,4,Aggressive,Short-term goal,save for a home down payment,Moderate,Salaried employee,Stable,Limited,3,180000,Held separately,"Age: 30
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 180,000
+Investment objective: I want to save for a home down payment.
+Investment horizon: about 2.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: 3 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-043,SYNTHETIC investor profile,H3-C3-A7,72,A7,65-74,Early retirement,3.0,H3,Medium-term,C3,3,Moderate,Retirement income,supplement my pension over the next few years,Moderate,"Retired, receives a pension",Stable,Extensive,23,660000,Held separately,"Age: 72
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 660,000
+Investment objective: I want to supplement my pension over the next few years.
+Investment horizon: about 3 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: 23 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-044,SYNTHETIC investor profile,H3-C5-A1,21,A1,18-24,Early adulthood (study or first job),4.0,H3,Medium-term,C5,5,Very aggressive,Medium-term goal,build savings toward a future home deposit,Moderate,University student with part-time income,Variable,Limited,3,55000,Held separately,"Age: 21
+Employment and income: University student with part-time income (variable income)
+Amount to invest: CNY 55,000
+Investment objective: I want to build savings toward a future home deposit.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: 3 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-045,SYNTHETIC investor profile,H4-C3-A5,57,A5,55-59,Pre-retirement,9.0,H4,Medium-to-long term,C3,3,Moderate,Retirement income,build savings to supplement my pension in retirement,Low,Salaried employee,Stable,Moderate,7,220000,Held separately,"Age: 57
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 220,000
+Investment objective: I want to build savings to supplement my pension in retirement.
+Investment horizon: about 9 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: 7 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-046,SYNTHETIC investor profile,H5-C1-A3,40,A3,35-44,Mid career,10.0,H5,Long-term,C1,1,Very conservative,Retirement accumulation,accumulate savings for retirement,Low,Self-employed,Variable,Extensive,17,450000,Held separately,"Age: 40
+Employment and income: Self-employed (variable income)
+Amount to invest: CNY 450,000
+Investment objective: I want to accumulate savings for retirement.
+Investment horizon: about 10 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: 17 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-047,SYNTHETIC investor profile,H4-C4-A4,50,A4,45-54,Late career,5.0,H4,Medium-to-long term,C4,4,Aggressive,Wealth accumulation,build long-term wealth,Low,Self-employed,Variable,No experience,0,630000,Held separately,"Age: 50
+Employment and income: Self-employed (variable income)
+Amount to invest: CNY 630,000
+Investment objective: I want to build long-term wealth.
+Investment horizon: about 5 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-048,SYNTHETIC investor profile,H4-C1-A6,64,A6,60-64,Retirement transition,5.0,H4,Medium-to-long term,C1,1,Very conservative,Retirement income,build savings to supplement my pension in retirement,Low,"Salaried employee, planning to retire within a few years",Stable,Moderate,6,470000,Held separately,"Age: 64
+Employment and income: Salaried employee, planning to retire within a few years (stable income)
+Amount to invest: CNY 470,000
+Investment objective: I want to build savings to supplement my pension in retirement.
+Investment horizon: about 5 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: 6 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-049,SYNTHETIC investor profile,H3-C3-A2,31,A2,25-34,Early career,4.0,H3,Medium-term,C3,3,Moderate,Medium-term goal,save for a larger home,Moderate,Salaried employee,Stable,Extensive,12,50000,Held separately,"Age: 31
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 50,000
+Investment objective: I want to save for a larger home.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: 12 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-050,SYNTHETIC investor profile,H5-C3-A3,40,A3,35-44,Mid career,20.0,H5,Long-term,C3,3,Moderate,Retirement accumulation,accumulate savings for retirement,Low,Salaried employee,Stable,No experience,0,310000,Held separately,"Age: 40
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 310,000
+Investment objective: I want to accumulate savings for retirement.
+Investment horizon: about 20 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-051,SYNTHETIC investor profile,H2-C1-A5,58,A5,55-59,Pre-retirement,2.0,H2,Short-to-medium term,C1,1,Very conservative,Short-term goal,save for a planned home upgrade,Moderate,Salaried employee,Stable,Extensive,22,920000,Held separately,"Age: 58
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 920,000
+Investment objective: I want to save for a planned home upgrade.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: 22 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-052,SYNTHETIC investor profile,H4-C4-A3,40,A3,35-44,Mid career,7.0,H4,Medium-to-long term,C4,4,Aggressive,Wealth accumulation,grow my savings for future family needs,Low,Salaried employee,Stable,No experience,0,770000,Held separately,"Age: 40
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 770,000
+Investment objective: I want to grow my savings for future family needs.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-053,SYNTHETIC investor profile,H3-C3-A5,56,A5,55-59,Pre-retirement,4.5,H3,Medium-term,C3,3,Moderate,Retirement preparation,build a reserve to cover the first years of retirement,Moderate,Salaried employee,Stable,Extensive,10,340000,Held separately,"Age: 56
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 340,000
+Investment objective: I want to build a reserve to cover the first years of retirement.
+Investment horizon: about 4.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: 10 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-054,SYNTHETIC investor profile,H5-C3-A4,46,A4,45-54,Late career,20.0,H5,Long-term,C3,3,Moderate,Retirement accumulation,accumulate savings for retirement,Low,Salaried employee,Stable,No experience,0,190000,Held separately,"Age: 46
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 190,000
+Investment objective: I want to accumulate savings for retirement.
+Investment horizon: about 20 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-055,SYNTHETIC investor profile,H3-C5-A2,34,A2,25-34,Early career,4.0,H3,Medium-term,C5,5,Very aggressive,Medium-term goal,save for a child's education,Moderate,Salaried employee,Stable,Extensive,16,70000,Held separately,"Age: 34
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 70,000
+Investment objective: I want to save for a child's education.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: 16 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-056,SYNTHETIC investor profile,H4-C3-A1,18,A1,18-24,Early adulthood (study or first job),8.0,H4,Medium-to-long term,C3,3,Moderate,Wealth accumulation,build long-term wealth,Low,University student with part-time income,Variable,No experience,0,60000,Held separately,"Age: 18
+Employment and income: University student with part-time income (variable income)
+Amount to invest: CNY 60,000
+Investment objective: I want to build long-term wealth.
+Investment horizon: about 8 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-057,SYNTHETIC investor profile,H5-C2-A5,57,A5,55-59,Pre-retirement,25.0,H5,Long-term,C2,2,Conservative,Retirement income,fund a long retirement,Low,Salaried employee,Stable,Moderate,4,280000,Held separately,"Age: 57
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 280,000
+Investment objective: I want to fund a long retirement.
+Investment horizon: about 25 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: 4 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-058,SYNTHETIC investor profile,H4-C5-A1,18,A1,18-24,Early adulthood (study or first job),8.0,H4,Medium-to-long term,C5,5,Very aggressive,Wealth accumulation,build long-term wealth,Low,University student with part-time income,Variable,No experience,0,70000,Held separately,"Age: 18
+Employment and income: University student with part-time income (variable income)
+Amount to invest: CNY 70,000
+Investment objective: I want to build long-term wealth.
+Investment horizon: about 8 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-059,SYNTHETIC investor profile,H3-C4-A4,45,A4,45-54,Late career,4.5,H3,Medium-term,C4,4,Aggressive,Medium-term goal,save for a larger home,Moderate,Salaried employee,Stable,No experience,0,150000,Held separately,"Age: 45
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 150,000
+Investment objective: I want to save for a larger home.
+Investment horizon: about 4.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-060,SYNTHETIC investor profile,H4-C5-A8,78,A8,75-85,Late retirement,9.0,H4,Medium-to-long term,C5,5,Very aggressive,Retirement income,supplement my pension later in retirement,Low,"Retired, receives a pension",Stable,Limited,1,100000,Held separately,"Age: 78
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 100,000
+Investment objective: I want to supplement my pension later in retirement.
+Investment horizon: about 9 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: 1 year of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-061,SYNTHETIC investor profile,H3-C4-A2,27,A2,25-34,Early career,3.5,H3,Medium-term,C4,4,Aggressive,Medium-term goal,save for a child's education,Moderate,Salaried employee,Stable,Moderate,5,70000,Held separately,"Age: 27
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 70,000
+Investment objective: I want to save for a child's education.
+Investment horizon: about 3.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: 5 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-062,SYNTHETIC investor profile,H1-C4-A2,26,A2,25-34,Early career,0.5,H1,Short-term,C4,4,Aggressive,Near-term spending,"set aside money for a planned purchase this year, such as a car",High,Salaried employee,Stable,Moderate,8,50000,Held separately,"Age: 26
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 50,000
+Investment objective: I want to set aside money for a planned purchase this year, such as a car.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: 8 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-063,SYNTHETIC investor profile,H4-C2-A8,75,A8,75-85,Late retirement,7.0,H4,Medium-to-long term,C2,2,Conservative,Retirement income,supplement my pension later in retirement,Low,"Retired, receives a pension",Stable,No experience,0,330000,Held separately,"Age: 75
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 330,000
+Investment objective: I want to supplement my pension later in retirement.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-064,SYNTHETIC investor profile,H3-C1-A5,57,A5,55-59,Pre-retirement,3.0,H3,Medium-term,C1,1,Very conservative,Retirement preparation,build a reserve to cover the first years of retirement,Moderate,Salaried employee,Stable,No experience,0,710000,Held separately,"Age: 57
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 710,000
+Investment objective: I want to build a reserve to cover the first years of retirement.
+Investment horizon: about 3 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-065,SYNTHETIC investor profile,H3-C1-A3,42,A3,35-44,Mid career,3.5,H3,Medium-term,C1,1,Very conservative,Medium-term goal,save for a child's education,Moderate,Self-employed,Variable,Moderate,6,260000,Held separately,"Age: 42
+Employment and income: Self-employed (variable income)
+Amount to invest: CNY 260,000
+Investment objective: I want to save for a child's education.
+Investment horizon: about 3.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: 6 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-066,SYNTHETIC investor profile,H2-C1-A4,50,A4,45-54,Late career,2.5,H2,Short-to-medium term,C1,1,Very conservative,Short-term goal,save for a planned home upgrade,Moderate,Salaried employee,Stable,Extensive,26,350000,Held separately,"Age: 50
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 350,000
+Investment objective: I want to save for a planned home upgrade.
+Investment horizon: about 2.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: 26 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-067,SYNTHETIC investor profile,H1-C4-A3,43,A3,35-44,Mid career,0.25,H1,Short-term,C4,4,Aggressive,Near-term spending,keep funds ready for a child's tuition payment due within the year,High,Salaried employee,Stable,No experience,0,380000,Held separately,"Age: 43
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 380,000
+Investment objective: I want to keep funds ready for a child's tuition payment due within the year.
+Investment horizon: about 3 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-068,SYNTHETIC investor profile,H5-C1-A7,69,A7,65-74,Early retirement,20.0,H5,Long-term,C1,1,Very conservative,Legacy,build a legacy for my children or grandchildren,Low,"Retired, receives a pension",Stable,Limited,1,170000,Held separately,"Age: 69
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 170,000
+Investment objective: I want to build a legacy for my children or grandchildren.
+Investment horizon: about 20 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: 1 year of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-069,SYNTHETIC investor profile,H4-C4-A8,77,A8,75-85,Late retirement,9.0,H4,Medium-to-long term,C4,4,Aggressive,Retirement income,supplement my pension later in retirement,Low,"Retired, receives a pension",Stable,Limited,3,300000,Held separately,"Age: 77
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 300,000
+Investment objective: I want to supplement my pension later in retirement.
+Investment horizon: about 9 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: 3 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-070,SYNTHETIC investor profile,H1-C4-A5,57,A5,55-59,Pre-retirement,0.25,H1,Short-term,C4,4,Aggressive,Near-term spending,keep funds ready for a child's tuition payment due within the year,High,Salaried employee,Stable,Moderate,4,350000,Held separately,"Age: 57
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 350,000
+Investment objective: I want to keep funds ready for a child's tuition payment due within the year.
+Investment horizon: about 3 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: 4 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-071,SYNTHETIC investor profile,H1-C2-A7,67,A7,65-74,Early retirement,0.25,H1,Short-term,C2,2,Conservative,Near-term spending,keep money available for planned medical and family expenses within the year,High,"Retired, receives a pension",Stable,Extensive,14,970000,Held separately,"Age: 67
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 970,000
+Investment objective: I want to keep money available for planned medical and family expenses within the year.
+Investment horizon: about 3 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: 14 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-072,SYNTHETIC investor profile,H2-C5-A4,48,A4,45-54,Late career,1.5,H2,Short-to-medium term,C5,5,Very aggressive,Short-term goal,save for a planned home upgrade,Moderate,Salaried employee,Stable,Extensive,12,160000,Held separately,"Age: 48
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 160,000
+Investment objective: I want to save for a planned home upgrade.
+Investment horizon: about 1.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: 12 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-073,SYNTHETIC investor profile,H4-C3-A6,63,A6,60-64,Retirement transition,6.0,H4,Medium-to-long term,C3,3,Moderate,Retirement income,build savings to supplement my pension in retirement,Low,"Retired, receives a pension",Stable,Moderate,8,240000,Held separately,"Age: 63
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 240,000
+Investment objective: I want to build savings to supplement my pension in retirement.
+Investment horizon: about 6 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: 8 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-074,SYNTHETIC investor profile,H3-C1-A1,22,A1,18-24,Early adulthood (study or first job),4.0,H3,Medium-term,C1,1,Very conservative,Medium-term goal,save for postgraduate study,Moderate,Early-career salaried employee,Stable,Limited,1,20000,Held separately,"Age: 22
+Employment and income: Early-career salaried employee (stable income)
+Amount to invest: CNY 20,000
+Investment objective: I want to save for postgraduate study.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: 1 year of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-075,SYNTHETIC investor profile,H4-C5-A7,71,A7,65-74,Early retirement,5.0,H4,Medium-to-long term,C5,5,Very aggressive,Retirement income,supplement my pension later in retirement,Low,"Retired, receives a pension",Stable,Limited,1,100000,Held separately,"Age: 71
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 100,000
+Investment objective: I want to supplement my pension later in retirement.
+Investment horizon: about 5 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: 1 year of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-076,SYNTHETIC investor profile,H5-C5-A3,37,A3,35-44,Mid career,25.0,H5,Long-term,C5,5,Very aggressive,Retirement accumulation,accumulate savings for retirement,Low,Salaried employee,Stable,Extensive,15,430000,Held separately,"Age: 37
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 430,000
+Investment objective: I want to accumulate savings for retirement.
+Investment horizon: about 25 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: 15 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-077,SYNTHETIC investor profile,H5-C4-A7,67,A7,65-74,Early retirement,10.0,H5,Long-term,C4,4,Aggressive,Legacy,build a legacy for my children or grandchildren,Low,"Retired, receives a pension",Stable,No experience,0,620000,Held separately,"Age: 67
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 620,000
+Investment objective: I want to build a legacy for my children or grandchildren.
+Investment horizon: about 10 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-078,SYNTHETIC investor profile,H1-C5-A8,84,A8,75-85,Late retirement,0.75,H1,Short-term,C5,5,Very aggressive,Near-term spending,keep money available for planned medical and family expenses within the year,High,"Retired, receives a pension",Stable,Moderate,9,190000,Held separately,"Age: 84
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 190,000
+Investment objective: I want to keep money available for planned medical and family expenses within the year.
+Investment horizon: about 9 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: 9 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-079,SYNTHETIC investor profile,H5-C5-A8,85,A8,75-85,Late retirement,10.0,H5,Long-term,C5,5,Very aggressive,Legacy,build a legacy for my children or grandchildren,Low,"Retired, receives a pension",Stable,No experience,0,390000,Held separately,"Age: 85
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 390,000
+Investment objective: I want to build a legacy for my children or grandchildren.
+Investment horizon: about 10 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-080,SYNTHETIC investor profile,H2-C4-A1,20,A1,18-24,Early adulthood (study or first job),2.0,H2,Short-to-medium term,C4,4,Aggressive,Short-term goal,save for a planned car purchase and moving costs,Moderate,University student with part-time income,Variable,Limited,1,30000,Held separately,"Age: 20
+Employment and income: University student with part-time income (variable income)
+Amount to invest: CNY 30,000
+Investment objective: I want to save for a planned car purchase and moving costs.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: 1 year of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-081,SYNTHETIC investor profile,H3-C2-A4,53,A4,45-54,Late career,3.0,H3,Medium-term,C2,2,Conservative,Medium-term goal,save for a child's education,Moderate,Salaried employee,Stable,No experience,0,550000,Held separately,"Age: 53
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 550,000
+Investment objective: I want to save for a child's education.
+Investment horizon: about 3 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-082,SYNTHETIC investor profile,H1-C2-A3,35,A3,35-44,Mid career,0.5,H1,Short-term,C2,2,Conservative,Near-term spending,keep funds ready for a child's tuition payment due within the year,High,Salaried employee,Stable,Limited,3,130000,Held separately,"Age: 35
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 130,000
+Investment objective: I want to keep funds ready for a child's tuition payment due within the year.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: 3 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-083,SYNTHETIC investor profile,H4-C1-A4,51,A4,45-54,Late career,8.0,H4,Medium-to-long term,C1,1,Very conservative,Wealth accumulation,build long-term wealth,Low,Salaried employee,Stable,No experience,0,960000,Held separately,"Age: 51
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 960,000
+Investment objective: I want to build long-term wealth.
+Investment horizon: about 8 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-084,SYNTHETIC investor profile,H1-C1-A5,59,A5,55-59,Pre-retirement,0.75,H1,Short-term,C1,1,Very conservative,Near-term spending,hold money for a home renovation planned within the year,High,Salaried employee,Stable,No experience,0,200000,Held separately,"Age: 59
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 200,000
+Investment objective: I want to hold money for a home renovation planned within the year.
+Investment horizon: about 9 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-085,SYNTHETIC investor profile,H1-C1-A1,18,A1,18-24,Early adulthood (study or first job),0.25,H1,Short-term,C1,1,Very conservative,Near-term spending,"set aside money for a planned purchase this year, such as a car",High,University student with part-time income,Variable,No experience,0,25000,Held separately,"Age: 18
+Employment and income: University student with part-time income (variable income)
+Amount to invest: CNY 25,000
+Investment objective: I want to set aside money for a planned purchase this year, such as a car.
+Investment horizon: about 3 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-086,SYNTHETIC investor profile,H2-C2-A5,59,A5,55-59,Pre-retirement,2.0,H2,Short-to-medium term,C2,2,Conservative,Short-term goal,save for a planned home upgrade,Moderate,Salaried employee,Stable,Limited,2,170000,Held separately,"Age: 59
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 170,000
+Investment objective: I want to save for a planned home upgrade.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: 2 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-087,SYNTHETIC investor profile,H1-C4-A4,54,A4,45-54,Late career,0.5,H1,Short-term,C4,4,Aggressive,Near-term spending,hold money for a home renovation planned within the year,High,Self-employed,Variable,No experience,0,110000,Held separately,"Age: 54
+Employment and income: Self-employed (variable income)
+Amount to invest: CNY 110,000
+Investment objective: I want to hold money for a home renovation planned within the year.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-088,SYNTHETIC investor profile,H3-C2-A8,81,A8,75-85,Late retirement,4.0,H3,Medium-term,C2,2,Conservative,Retirement income,supplement my pension over the next few years,Moderate,"Retired, receives a pension",Stable,Extensive,13,130000,Held separately,"Age: 81
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 130,000
+Investment objective: I want to supplement my pension over the next few years.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: 13 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-089,SYNTHETIC investor profile,H1-C2-A2,28,A2,25-34,Early career,0.75,H1,Short-term,C2,2,Conservative,Near-term spending,keep money ready for wedding expenses later this year,High,Self-employed,Variable,Limited,1,70000,Held separately,"Age: 28
+Employment and income: Self-employed (variable income)
+Amount to invest: CNY 70,000
+Investment objective: I want to keep money ready for wedding expenses later this year.
+Investment horizon: about 9 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: 1 year of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-090,SYNTHETIC investor profile,H2-C1-A8,79,A8,75-85,Late retirement,2.0,H2,Short-to-medium term,C1,1,Very conservative,Short-term goal,pay for planned home adaptations for later life,Moderate,"Retired, receives a pension",Stable,No experience,0,690000,Held separately,"Age: 79
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 690,000
+Investment objective: I want to pay for planned home adaptations for later life.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-091,SYNTHETIC investor profile,H1-C1-A3,37,A3,35-44,Mid career,0.75,H1,Short-term,C1,1,Very conservative,Near-term spending,hold money for a home renovation planned within the year,High,Self-employed,Variable,Limited,2,510000,Held separately,"Age: 37
+Employment and income: Self-employed (variable income)
+Amount to invest: CNY 510,000
+Investment objective: I want to hold money for a home renovation planned within the year.
+Investment horizon: about 9 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: 2 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-092,SYNTHETIC investor profile,H1-C4-A1,20,A1,18-24,Early adulthood (study or first job),0.25,H1,Short-term,C4,4,Aggressive,Near-term spending,keep money ready for wedding expenses later this year,High,University student with part-time income,Variable,No experience,0,55000,Held separately,"Age: 20
+Employment and income: University student with part-time income (variable income)
+Amount to invest: CNY 55,000
+Investment objective: I want to keep money ready for wedding expenses later this year.
+Investment horizon: about 3 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-093,SYNTHETIC investor profile,H1-C3-A1,20,A1,18-24,Early adulthood (study or first job),0.25,H1,Short-term,C3,3,Moderate,Near-term spending,keep money ready for wedding expenses later this year,High,University student with part-time income,Variable,Limited,1,50000,Held separately,"Age: 20
+Employment and income: University student with part-time income (variable income)
+Amount to invest: CNY 50,000
+Investment objective: I want to keep money ready for wedding expenses later this year.
+Investment horizon: about 3 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: 1 year of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-094,SYNTHETIC investor profile,H3-C4-A1,20,A1,18-24,Early adulthood (study or first job),3.0,H3,Medium-term,C4,4,Aggressive,Medium-term goal,build savings toward a future home deposit,Moderate,University student with part-time income,Variable,No experience,0,65000,Held separately,"Age: 20
+Employment and income: University student with part-time income (variable income)
+Amount to invest: CNY 65,000
+Investment objective: I want to build savings toward a future home deposit.
+Investment horizon: about 3 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-095,SYNTHETIC investor profile,H3-C1-A6,62,A6,60-64,Retirement transition,4.0,H3,Medium-term,C1,1,Very conservative,Retirement preparation,build a reserve to cover the first years of retirement,Moderate,"Retired, receives a pension",Stable,Extensive,17,570000,Held separately,"Age: 62
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 570,000
+Investment objective: I want to build a reserve to cover the first years of retirement.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: 17 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-096,SYNTHETIC investor profile,H3-C2-A5,57,A5,55-59,Pre-retirement,4.0,H3,Medium-term,C2,2,Conservative,Retirement preparation,build a reserve to cover the first years of retirement,Moderate,Salaried employee,Stable,Extensive,10,250000,Held separately,"Age: 57
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 250,000
+Investment objective: I want to build a reserve to cover the first years of retirement.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: 10 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-097,SYNTHETIC investor profile,H5-C5-A6,64,A6,60-64,Retirement transition,12.0,H5,Long-term,C5,5,Very aggressive,Retirement income,fund a long retirement,Low,"Retired, receives a pension",Stable,Limited,1,450000,Held separately,"Age: 64
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 450,000
+Investment objective: I want to fund a long retirement.
+Investment horizon: about 12 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: 1 year of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-098,SYNTHETIC investor profile,H1-C5-A1,21,A1,18-24,Early adulthood (study or first job),0.75,H1,Short-term,C5,5,Very aggressive,Near-term spending,"set aside money for a planned purchase this year, such as a car",High,University student with part-time income,Variable,No experience,0,55000,Held separately,"Age: 21
+Employment and income: University student with part-time income (variable income)
+Amount to invest: CNY 55,000
+Investment objective: I want to set aside money for a planned purchase this year, such as a car.
+Investment horizon: about 9 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-099,SYNTHETIC investor profile,H3-C5-A6,63,A6,60-64,Retirement transition,3.0,H3,Medium-term,C5,5,Very aggressive,Retirement preparation,build a reserve to cover the first years of retirement,Moderate,"Salaried employee, planning to retire within a few years",Stable,No experience,0,250000,Held separately,"Age: 63
+Employment and income: Salaried employee, planning to retire within a few years (stable income)
+Amount to invest: CNY 250,000
+Investment objective: I want to build a reserve to cover the first years of retirement.
+Investment horizon: about 3 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-100,SYNTHETIC investor profile,H3-C1-A7,66,A7,65-74,Early retirement,3.0,H3,Medium-term,C1,1,Very conservative,Retirement income,supplement my pension over the next few years,Moderate,"Retired, receives a pension",Stable,Extensive,15,720000,Held separately,"Age: 66
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 720,000
+Investment objective: I want to supplement my pension over the next few years.
+Investment horizon: about 3 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: 15 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-101,SYNTHETIC investor profile,H4-C2-A4,54,A4,45-54,Late career,8.0,H4,Medium-to-long term,C2,2,Conservative,Wealth accumulation,build long-term wealth,Low,Salaried employee,Stable,Limited,1,120000,Held separately,"Age: 54
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 120,000
+Investment objective: I want to build long-term wealth.
+Investment horizon: about 8 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: 1 year of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-102,SYNTHETIC investor profile,H3-C5-A8,79,A8,75-85,Late retirement,3.0,H3,Medium-term,C5,5,Very aggressive,Retirement income,supplement my pension over the next few years,Moderate,"Retired, receives a pension",Stable,Extensive,16,630000,Held separately,"Age: 79
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 630,000
+Investment objective: I want to supplement my pension over the next few years.
+Investment horizon: about 3 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: 16 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-103,SYNTHETIC investor profile,H5-C2-A7,67,A7,65-74,Early retirement,12.0,H5,Long-term,C2,2,Conservative,Legacy,build a legacy for my children or grandchildren,Low,"Retired, receives a pension",Stable,Limited,1,130000,Held separately,"Age: 67
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 130,000
+Investment objective: I want to build a legacy for my children or grandchildren.
+Investment horizon: about 12 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: 1 year of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-104,SYNTHETIC investor profile,H4-C1-A8,85,A8,75-85,Late retirement,5.0,H4,Medium-to-long term,C1,1,Very conservative,Retirement income,supplement my pension later in retirement,Low,"Retired, receives a pension",Stable,Moderate,5,450000,Held separately,"Age: 85
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 450,000
+Investment objective: I want to supplement my pension later in retirement.
+Investment horizon: about 5 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: 5 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-105,SYNTHETIC investor profile,H4-C5-A5,59,A5,55-59,Pre-retirement,6.0,H4,Medium-to-long term,C5,5,Very aggressive,Retirement income,build savings to supplement my pension in retirement,Low,Salaried employee,Stable,Moderate,7,500000,Held separately,"Age: 59
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 500,000
+Investment objective: I want to build savings to supplement my pension in retirement.
+Investment horizon: about 6 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: 7 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-106,SYNTHETIC investor profile,H2-C4-A4,54,A4,45-54,Late career,2.0,H2,Short-to-medium term,C4,4,Aggressive,Short-term goal,save for a planned home upgrade,Moderate,Salaried employee,Stable,Moderate,6,130000,Held separately,"Age: 54
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 130,000
+Investment objective: I want to save for a planned home upgrade.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: 6 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-107,SYNTHETIC investor profile,H3-C5-A5,56,A5,55-59,Pre-retirement,4.5,H3,Medium-term,C5,5,Very aggressive,Retirement preparation,build a reserve to cover the first years of retirement,Moderate,Salaried employee,Stable,Limited,2,270000,Held separately,"Age: 56
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 270,000
+Investment objective: I want to build a reserve to cover the first years of retirement.
+Investment horizon: about 4.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: 2 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-108,SYNTHETIC investor profile,H2-C3-A3,36,A3,35-44,Mid career,2.0,H2,Short-to-medium term,C3,3,Moderate,Short-term goal,save for a home down payment,Moderate,Salaried employee,Stable,Moderate,8,510000,Held separately,"Age: 36
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 510,000
+Investment objective: I want to save for a home down payment.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: 8 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-109,SYNTHETIC investor profile,H5-C4-A1,23,A1,18-24,Early adulthood (study or first job),20.0,H5,Long-term,C4,4,Aggressive,Retirement accumulation,accumulate savings for retirement,Low,Early-career salaried employee,Stable,No experience,0,35000,Held separately,"Age: 23
+Employment and income: Early-career salaried employee (stable income)
+Amount to invest: CNY 35,000
+Investment objective: I want to accumulate savings for retirement.
+Investment horizon: about 20 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-110,SYNTHETIC investor profile,H2-C3-A6,62,A6,60-64,Retirement transition,2.5,H2,Short-to-medium term,C3,3,Moderate,Short-term goal,save for a child's wedding,Moderate,"Retired, receives a pension",Stable,No experience,0,300000,Held separately,"Age: 62
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 300,000
+Investment objective: I want to save for a child's wedding.
+Investment horizon: about 2.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-111,SYNTHETIC investor profile,H2-C5-A2,30,A2,25-34,Early career,2.5,H2,Short-to-medium term,C5,5,Very aggressive,Short-term goal,save for a planned car purchase and moving costs,Moderate,Salaried employee,Stable,Extensive,12,150000,Held separately,"Age: 30
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 150,000
+Investment objective: I want to save for a planned car purchase and moving costs.
+Investment horizon: about 2.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: 12 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-112,SYNTHETIC investor profile,H1-C2-A5,55,A5,55-59,Pre-retirement,0.25,H1,Short-term,C2,2,Conservative,Near-term spending,hold money for a home renovation planned within the year,High,Salaried employee,Stable,Moderate,4,380000,Held separately,"Age: 55
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 380,000
+Investment objective: I want to hold money for a home renovation planned within the year.
+Investment horizon: about 3 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: 4 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-113,SYNTHETIC investor profile,H1-C1-A8,79,A8,75-85,Late retirement,0.5,H1,Short-term,C1,1,Very conservative,Near-term spending,keep money available for planned medical and family expenses within the year,High,"Retired, receives a pension",Stable,Moderate,7,110000,Held separately,"Age: 79
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 110,000
+Investment objective: I want to keep money available for planned medical and family expenses within the year.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: 7 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-114,SYNTHETIC investor profile,H5-C4-A4,53,A4,45-54,Late career,20.0,H5,Long-term,C4,4,Aggressive,Retirement income,fund a long retirement,Low,Salaried employee,Stable,Moderate,8,130000,Held separately,"Age: 53
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 130,000
+Investment objective: I want to fund a long retirement.
+Investment horizon: about 20 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: 8 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-115,SYNTHETIC investor profile,H1-C2-A8,77,A8,75-85,Late retirement,0.25,H1,Short-term,C2,2,Conservative,Near-term spending,keep money available for planned medical and family expenses within the year,High,"Retired, receives a pension",Stable,Moderate,7,680000,Held separately,"Age: 77
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 680,000
+Investment objective: I want to keep money available for planned medical and family expenses within the year.
+Investment horizon: about 3 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: 7 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-116,SYNTHETIC investor profile,H5-C3-A7,68,A7,65-74,Early retirement,12.0,H5,Long-term,C3,3,Moderate,Legacy,build a legacy for my children or grandchildren,Low,"Retired, receives a pension",Stable,Extensive,24,380000,Held separately,"Age: 68
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 380,000
+Investment objective: I want to build a legacy for my children or grandchildren.
+Investment horizon: about 12 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: 24 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-117,SYNTHETIC investor profile,H3-C4-A5,58,A5,55-59,Pre-retirement,3.5,H3,Medium-term,C4,4,Aggressive,Retirement preparation,build a reserve to cover the first years of retirement,Moderate,Self-employed,Variable,Moderate,5,930000,Held separately,"Age: 58
+Employment and income: Self-employed (variable income)
+Amount to invest: CNY 930,000
+Investment objective: I want to build a reserve to cover the first years of retirement.
+Investment horizon: about 3.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: 5 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-118,SYNTHETIC investor profile,H5-C1-A4,50,A4,45-54,Late career,20.0,H5,Long-term,C1,1,Very conservative,Retirement income,fund a long retirement,Low,Salaried employee,Stable,Extensive,16,170000,Held separately,"Age: 50
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 170,000
+Investment objective: I want to fund a long retirement.
+Investment horizon: about 20 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: 16 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-119,SYNTHETIC investor profile,H5-C1-A6,63,A6,60-64,Retirement transition,12.0,H5,Long-term,C1,1,Very conservative,Retirement income,fund a long retirement,Low,"Retired, receives a pension",Stable,Extensive,13,320000,Held separately,"Age: 63
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 320,000
+Investment objective: I want to fund a long retirement.
+Investment horizon: about 12 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: 13 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-120,SYNTHETIC investor profile,H4-C4-A6,64,A6,60-64,Retirement transition,5.0,H4,Medium-to-long term,C4,4,Aggressive,Retirement income,build savings to supplement my pension in retirement,Low,"Retired, receives a pension",Stable,Extensive,26,510000,Held separately,"Age: 64
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 510,000
+Investment objective: I want to build savings to supplement my pension in retirement.
+Investment horizon: about 5 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: 26 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-121,SYNTHETIC investor profile,H5-C4-A5,58,A5,55-59,Pre-retirement,10.0,H5,Long-term,C4,4,Aggressive,Retirement income,fund a long retirement,Low,Salaried employee,Stable,Moderate,8,540000,Held separately,"Age: 58
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 540,000
+Investment objective: I want to fund a long retirement.
+Investment horizon: about 10 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: 8 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-122,SYNTHETIC investor profile,H1-C5-A4,48,A4,45-54,Late career,0.75,H1,Short-term,C5,5,Very aggressive,Near-term spending,hold money for a home renovation planned within the year,High,Self-employed,Variable,No experience,0,290000,Held separately,"Age: 48
+Employment and income: Self-employed (variable income)
+Amount to invest: CNY 290,000
+Investment objective: I want to hold money for a home renovation planned within the year.
+Investment horizon: about 9 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-123,SYNTHETIC investor profile,H1-C3-A6,63,A6,60-64,Retirement transition,0.5,H1,Short-term,C3,3,Moderate,Near-term spending,keep funds ready for a child's tuition payment due within the year,High,"Retired, receives a pension",Stable,No experience,0,290000,Held separately,"Age: 63
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 290,000
+Investment objective: I want to keep funds ready for a child's tuition payment due within the year.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-124,SYNTHETIC investor profile,H2-C1-A1,24,A1,18-24,Early adulthood (study or first job),2.5,H2,Short-to-medium term,C1,1,Very conservative,Short-term goal,save for a planned car purchase and moving costs,Moderate,Early-career salaried employee,Stable,No experience,0,75000,Held separately,"Age: 24
+Employment and income: Early-career salaried employee (stable income)
+Amount to invest: CNY 75,000
+Investment objective: I want to save for a planned car purchase and moving costs.
+Investment horizon: about 2.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-125,SYNTHETIC investor profile,H5-C2-A2,32,A2,25-34,Early career,10.0,H5,Long-term,C2,2,Conservative,Retirement accumulation,accumulate savings for retirement,Low,Salaried employee,Stable,No experience,0,120000,Held separately,"Age: 32
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 120,000
+Investment objective: I want to accumulate savings for retirement.
+Investment horizon: about 10 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-126,SYNTHETIC investor profile,H2-C3-A7,70,A7,65-74,Early retirement,2.0,H2,Short-to-medium term,C3,3,Moderate,Short-term goal,pay for planned home adaptations for later life,Moderate,"Retired, receives a pension",Stable,Extensive,25,380000,Held separately,"Age: 70
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 380,000
+Investment objective: I want to pay for planned home adaptations for later life.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: 25 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-127,SYNTHETIC investor profile,H3-C2-A1,19,A1,18-24,Early adulthood (study or first job),4.0,H3,Medium-term,C2,2,Conservative,Medium-term goal,build savings toward a future home deposit,Moderate,University student with part-time income,Variable,No experience,0,50000,Held separately,"Age: 19
+Employment and income: University student with part-time income (variable income)
+Amount to invest: CNY 50,000
+Investment objective: I want to build savings toward a future home deposit.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-128,SYNTHETIC investor profile,H2-C4-A8,84,A8,75-85,Late retirement,2.0,H2,Short-to-medium term,C4,4,Aggressive,Short-term goal,fund planned travel and support for family members over the next few years,Moderate,"Retired, receives a pension",Stable,No experience,0,330000,Held separately,"Age: 84
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 330,000
+Investment objective: I want to fund planned travel and support for family members over the next few years.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-129,SYNTHETIC investor profile,H2-C2-A1,24,A1,18-24,Early adulthood (study or first job),1.5,H2,Short-to-medium term,C2,2,Conservative,Short-term goal,save for a planned car purchase and moving costs,Moderate,Early-career salaried employee,Stable,Limited,2,60000,Held separately,"Age: 24
+Employment and income: Early-career salaried employee (stable income)
+Amount to invest: CNY 60,000
+Investment objective: I want to save for a planned car purchase and moving costs.
+Investment horizon: about 1.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: 2 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-130,SYNTHETIC investor profile,H1-C1-A7,72,A7,65-74,Early retirement,0.75,H1,Short-term,C1,1,Very conservative,Near-term spending,keep money available for planned medical and family expenses within the year,High,"Retired, receives a pension",Stable,Limited,3,160000,Held separately,"Age: 72
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 160,000
+Investment objective: I want to keep money available for planned medical and family expenses within the year.
+Investment horizon: about 9 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: 3 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-131,SYNTHETIC investor profile,H5-C4-A6,60,A6,60-64,Retirement transition,20.0,H5,Long-term,C4,4,Aggressive,Retirement income,fund a long retirement,Low,"Salaried employee, planning to retire within a few years",Stable,Moderate,4,240000,Held separately,"Age: 60
+Employment and income: Salaried employee, planning to retire within a few years (stable income)
+Amount to invest: CNY 240,000
+Investment objective: I want to fund a long retirement.
+Investment horizon: about 20 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: 4 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-132,SYNTHETIC investor profile,H4-C1-A2,28,A2,25-34,Early career,8.0,H4,Medium-to-long term,C1,1,Very conservative,Wealth accumulation,grow my savings for future family needs,Low,Salaried employee,Stable,No experience,0,260000,Held separately,"Age: 28
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 260,000
+Investment objective: I want to grow my savings for future family needs.
+Investment horizon: about 8 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-133,SYNTHETIC investor profile,H2-C5-A1,18,A1,18-24,Early adulthood (study or first job),1.5,H2,Short-to-medium term,C5,5,Very aggressive,Short-term goal,save for a home down payment,Moderate,University student with part-time income,Variable,No experience,0,35000,Held separately,"Age: 18
+Employment and income: University student with part-time income (variable income)
+Amount to invest: CNY 35,000
+Investment objective: I want to save for a home down payment.
+Investment horizon: about 1.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-134,SYNTHETIC investor profile,H2-C5-A5,56,A5,55-59,Pre-retirement,1.5,H2,Short-to-medium term,C5,5,Very aggressive,Short-term goal,save for a planned home upgrade,Moderate,Salaried employee,Stable,No experience,0,270000,Held separately,"Age: 56
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 270,000
+Investment objective: I want to save for a planned home upgrade.
+Investment horizon: about 1.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-135,SYNTHETIC investor profile,H4-C3-A7,72,A7,65-74,Early retirement,6.0,H4,Medium-to-long term,C3,3,Moderate,Retirement income,supplement my pension later in retirement,Low,"Retired, receives a pension",Stable,No experience,0,340000,Held separately,"Age: 72
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 340,000
+Investment objective: I want to supplement my pension later in retirement.
+Investment horizon: about 6 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-136,SYNTHETIC investor profile,H1-C4-A8,82,A8,75-85,Late retirement,0.75,H1,Short-term,C4,4,Aggressive,Near-term spending,hold money for a family member's planned expense within the year,High,"Retired, receives a pension",Stable,Moderate,6,420000,Held separately,"Age: 82
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 420,000
+Investment objective: I want to hold money for a family member's planned expense within the year.
+Investment horizon: about 9 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: 6 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-137,SYNTHETIC investor profile,H2-C3-A2,31,A2,25-34,Early career,2.5,H2,Short-to-medium term,C3,3,Moderate,Short-term goal,save for a planned car purchase and moving costs,Moderate,Self-employed,Variable,Limited,3,250000,Held separately,"Age: 31
+Employment and income: Self-employed (variable income)
+Amount to invest: CNY 250,000
+Investment objective: I want to save for a planned car purchase and moving costs.
+Investment horizon: about 2.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: 3 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-138,SYNTHETIC investor profile,H5-C3-A1,19,A1,18-24,Early adulthood (study or first job),25.0,H5,Long-term,C3,3,Moderate,Retirement accumulation,accumulate savings for retirement,Low,University student with part-time income,Variable,No experience,0,95000,Held separately,"Age: 19
+Employment and income: University student with part-time income (variable income)
+Amount to invest: CNY 95,000
+Investment objective: I want to accumulate savings for retirement.
+Investment horizon: about 25 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-139,SYNTHETIC investor profile,H2-C3-A4,52,A4,45-54,Late career,2.0,H2,Short-to-medium term,C3,3,Moderate,Short-term goal,save for a child's wedding,Moderate,Salaried employee,Stable,No experience,0,170000,Held separately,"Age: 52
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 170,000
+Investment objective: I want to save for a child's wedding.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-140,SYNTHETIC investor profile,H1-C3-A3,36,A3,35-44,Mid career,0.5,H1,Short-term,C3,3,Moderate,Near-term spending,keep funds ready for a child's tuition payment due within the year,High,Salaried employee,Stable,Limited,2,470000,Held separately,"Age: 36
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 470,000
+Investment objective: I want to keep funds ready for a child's tuition payment due within the year.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: 2 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-141,SYNTHETIC investor profile,H2-C3-A1,22,A1,18-24,Early adulthood (study or first job),2.5,H2,Short-to-medium term,C3,3,Moderate,Short-term goal,save for a home down payment,Moderate,Early-career salaried employee,Stable,No experience,0,40000,Held separately,"Age: 22
+Employment and income: Early-career salaried employee (stable income)
+Amount to invest: CNY 40,000
+Investment objective: I want to save for a home down payment.
+Investment horizon: about 2.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-142,SYNTHETIC investor profile,H5-C3-A8,76,A8,75-85,Late retirement,15.0,H5,Long-term,C3,3,Moderate,Legacy,build a legacy for my children or grandchildren,Low,"Retired, receives a pension",Stable,Moderate,5,280000,Held separately,"Age: 76
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 280,000
+Investment objective: I want to build a legacy for my children or grandchildren.
+Investment horizon: about 15 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: 5 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-143,SYNTHETIC investor profile,H5-C2-A1,24,A1,18-24,Early adulthood (study or first job),12.0,H5,Long-term,C2,2,Conservative,Retirement accumulation,accumulate savings for retirement,Low,Early-career salaried employee,Stable,Limited,2,85000,Held separately,"Age: 24
+Employment and income: Early-career salaried employee (stable income)
+Amount to invest: CNY 85,000
+Investment objective: I want to accumulate savings for retirement.
+Investment horizon: about 12 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: 2 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-144,SYNTHETIC investor profile,H1-C5-A5,57,A5,55-59,Pre-retirement,0.25,H1,Short-term,C5,5,Very aggressive,Near-term spending,keep funds ready for a child's tuition payment due within the year,High,Self-employed,Variable,Moderate,6,240000,Held separately,"Age: 57
+Employment and income: Self-employed (variable income)
+Amount to invest: CNY 240,000
+Investment objective: I want to keep funds ready for a child's tuition payment due within the year.
+Investment horizon: about 3 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: 6 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-145,SYNTHETIC investor profile,H5-C5-A5,59,A5,55-59,Pre-retirement,20.0,H5,Long-term,C5,5,Very aggressive,Retirement income,fund a long retirement,Low,Salaried employee,Stable,No experience,0,160000,Held separately,"Age: 59
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 160,000
+Investment objective: I want to fund a long retirement.
+Investment horizon: about 20 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-146,SYNTHETIC investor profile,H3-C3-A4,47,A4,45-54,Late career,4.0,H3,Medium-term,C3,3,Moderate,Medium-term goal,save for a larger home,Moderate,Self-employed,Variable,Extensive,27,560000,Held separately,"Age: 47
+Employment and income: Self-employed (variable income)
+Amount to invest: CNY 560,000
+Investment objective: I want to save for a larger home.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: 27 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-147,SYNTHETIC investor profile,H4-C3-A2,28,A2,25-34,Early career,5.0,H4,Medium-to-long term,C3,3,Moderate,Wealth accumulation,grow my savings for future family needs,Low,Self-employed,Variable,Extensive,10,190000,Held separately,"Age: 28
+Employment and income: Self-employed (variable income)
+Amount to invest: CNY 190,000
+Investment objective: I want to grow my savings for future family needs.
+Investment horizon: about 5 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: 10 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-148,SYNTHETIC investor profile,H2-C1-A6,63,A6,60-64,Retirement transition,2.0,H2,Short-to-medium term,C1,1,Very conservative,Short-term goal,save for a planned home upgrade,Moderate,"Salaried employee, planning to retire within a few years",Stable,Limited,1,300000,Held separately,"Age: 63
+Employment and income: Salaried employee, planning to retire within a few years (stable income)
+Amount to invest: CNY 300,000
+Investment objective: I want to save for a planned home upgrade.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: 1 year of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-149,SYNTHETIC investor profile,H4-C2-A6,60,A6,60-64,Retirement transition,8.0,H4,Medium-to-long term,C2,2,Conservative,Retirement income,build savings to supplement my pension in retirement,Low,"Retired, receives a pension",Stable,Extensive,10,410000,Held separately,"Age: 60
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 410,000
+Investment objective: I want to build savings to supplement my pension in retirement.
+Investment horizon: about 8 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: 10 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-150,SYNTHETIC investor profile,H1-C4-A7,70,A7,65-74,Early retirement,0.5,H1,Short-term,C4,4,Aggressive,Near-term spending,keep money available for planned medical and family expenses within the year,High,"Retired, receives a pension",Stable,Limited,2,220000,Held separately,"Age: 70
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 220,000
+Investment objective: I want to keep money available for planned medical and family expenses within the year.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: 2 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-151,SYNTHETIC investor profile,H4-C1-A3,38,A3,35-44,Mid career,5.0,H4,Medium-to-long term,C1,1,Very conservative,Wealth accumulation,grow my savings for future family needs,Low,Salaried employee,Stable,Extensive,14,110000,Held separately,"Age: 38
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 110,000
+Investment objective: I want to grow my savings for future family needs.
+Investment horizon: about 5 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: 14 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-152,SYNTHETIC investor profile,H5-C3-A2,34,A2,25-34,Early career,15.0,H5,Long-term,C3,3,Moderate,Retirement accumulation,accumulate savings for retirement,Low,Salaried employee,Stable,Extensive,12,80000,Held separately,"Age: 34
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 80,000
+Investment objective: I want to accumulate savings for retirement.
+Investment horizon: about 15 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: 12 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-153,SYNTHETIC investor profile,H3-C4-A6,60,A6,60-64,Retirement transition,4.5,H3,Medium-term,C4,4,Aggressive,Retirement preparation,build a reserve to cover the first years of retirement,Moderate,"Salaried employee, planning to retire within a few years",Stable,Limited,1,480000,Held separately,"Age: 60
+Employment and income: Salaried employee, planning to retire within a few years (stable income)
+Amount to invest: CNY 480,000
+Investment objective: I want to build a reserve to cover the first years of retirement.
+Investment horizon: about 4.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: 1 year of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-154,SYNTHETIC investor profile,H2-C1-A3,39,A3,35-44,Mid career,2.5,H2,Short-to-medium term,C1,1,Very conservative,Short-term goal,save for a planned car purchase and moving costs,Moderate,Salaried employee,Stable,Extensive,12,410000,Held separately,"Age: 39
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 410,000
+Investment objective: I want to save for a planned car purchase and moving costs.
+Investment horizon: about 2.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: 12 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-155,SYNTHETIC investor profile,H5-C4-A3,41,A3,35-44,Mid career,25.0,H5,Long-term,C4,4,Aggressive,Retirement accumulation,accumulate savings for retirement,Low,Salaried employee,Stable,Limited,3,180000,Held separately,"Age: 41
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 180,000
+Investment objective: I want to accumulate savings for retirement.
+Investment horizon: about 25 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: 3 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-156,SYNTHETIC investor profile,H4-C3-A8,81,A8,75-85,Late retirement,5.0,H4,Medium-to-long term,C3,3,Moderate,Retirement income,supplement my pension later in retirement,Low,"Retired, receives a pension",Stable,Moderate,8,190000,Held separately,"Age: 81
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 190,000
+Investment objective: I want to supplement my pension later in retirement.
+Investment horizon: about 5 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: 8 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-157,SYNTHETIC investor profile,H4-C3-A3,37,A3,35-44,Mid career,7.0,H4,Medium-to-long term,C3,3,Moderate,Wealth accumulation,build long-term wealth,Low,Self-employed,Variable,No experience,0,110000,Held separately,"Age: 37
+Employment and income: Self-employed (variable income)
+Amount to invest: CNY 110,000
+Investment objective: I want to build long-term wealth.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-158,SYNTHETIC investor profile,H3-C3-A3,44,A3,35-44,Mid career,4.0,H3,Medium-term,C3,3,Moderate,Medium-term goal,save for a larger home,Moderate,Salaried employee,Stable,No experience,0,230000,Held separately,"Age: 44
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 230,000
+Investment objective: I want to save for a larger home.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-159,SYNTHETIC investor profile,H2-C4-A7,69,A7,65-74,Early retirement,2.5,H2,Short-to-medium term,C4,4,Aggressive,Short-term goal,pay for planned home adaptations for later life,Moderate,"Retired, receives a pension",Stable,Moderate,6,650000,Held separately,"Age: 69
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 650,000
+Investment objective: I want to pay for planned home adaptations for later life.
+Investment horizon: about 2.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: 6 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-160,SYNTHETIC investor profile,H1-C3-A5,55,A5,55-59,Pre-retirement,0.5,H1,Short-term,C3,3,Moderate,Near-term spending,hold money for a home renovation planned within the year,High,Salaried employee,Stable,Limited,3,390000,Held separately,"Age: 55
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 390,000
+Investment objective: I want to hold money for a home renovation planned within the year.
+Investment horizon: about 6 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: 3 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-161,SYNTHETIC investor profile,H3-C4-A3,37,A3,35-44,Mid career,3.0,H3,Medium-term,C4,4,Aggressive,Medium-term goal,save for a larger home,Moderate,Salaried employee,Stable,No experience,0,260000,Held separately,"Age: 37
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 260,000
+Investment objective: I want to save for a larger home.
+Investment horizon: about 3 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-162,SYNTHETIC investor profile,H5-C5-A7,70,A7,65-74,Early retirement,20.0,H5,Long-term,C5,5,Very aggressive,Legacy,build a legacy for my children or grandchildren,Low,"Retired, receives a pension",Stable,Limited,1,800000,Held separately,"Age: 70
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 800,000
+Investment objective: I want to build a legacy for my children or grandchildren.
+Investment horizon: about 20 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: 1 year of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-163,SYNTHETIC investor profile,H3-C1-A8,85,A8,75-85,Late retirement,3.5,H3,Medium-term,C1,1,Very conservative,Retirement income,supplement my pension over the next few years,Moderate,"Retired, receives a pension",Stable,Extensive,20,210000,Held separately,"Age: 85
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 210,000
+Investment objective: I want to supplement my pension over the next few years.
+Investment horizon: about 3.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: 20 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-164,SYNTHETIC investor profile,H4-C3-A4,51,A4,45-54,Late career,5.0,H4,Medium-to-long term,C3,3,Moderate,Wealth accumulation,build long-term wealth,Low,Salaried employee,Stable,Moderate,4,780000,Held separately,"Age: 51
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 780,000
+Investment objective: I want to build long-term wealth.
+Investment horizon: about 5 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: 4 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-165,SYNTHETIC investor profile,H3-C1-A2,30,A2,25-34,Early career,4.0,H3,Medium-term,C1,1,Very conservative,Medium-term goal,save for a larger home,Moderate,Salaried employee,Stable,Moderate,4,80000,Held separately,"Age: 30
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 80,000
+Investment objective: I want to save for a larger home.
+Investment horizon: about 4 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: 4 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-166,SYNTHETIC investor profile,H1-C5-A3,39,A3,35-44,Mid career,0.25,H1,Short-term,C5,5,Very aggressive,Near-term spending,hold money for a home renovation planned within the year,High,Salaried employee,Stable,No experience,0,390000,Held separately,"Age: 39
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 390,000
+Investment objective: I want to hold money for a home renovation planned within the year.
+Investment horizon: about 3 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-167,SYNTHETIC investor profile,H2-C2-A6,61,A6,60-64,Retirement transition,1.5,H2,Short-to-medium term,C2,2,Conservative,Short-term goal,save for a child's wedding,Moderate,"Retired, receives a pension",Stable,Limited,3,840000,Held separately,"Age: 61
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 840,000
+Investment objective: I want to save for a child's wedding.
+Investment horizon: about 1.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: 3 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-168,SYNTHETIC investor profile,H1-C4-A6,62,A6,60-64,Retirement transition,0.25,H1,Short-term,C4,4,Aggressive,Near-term spending,keep funds ready for a child's tuition payment due within the year,High,"Salaried employee, planning to retire within a few years",Stable,Limited,3,440000,Held separately,"Age: 62
+Employment and income: Salaried employee, planning to retire within a few years (stable income)
+Amount to invest: CNY 440,000
+Investment objective: I want to keep funds ready for a child's tuition payment due within the year.
+Investment horizon: about 3 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: 3 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-169,SYNTHETIC investor profile,H5-C4-A2,30,A2,25-34,Early career,20.0,H5,Long-term,C4,4,Aggressive,Retirement accumulation,accumulate savings for retirement,Low,Salaried employee,Stable,No experience,0,140000,Held separately,"Age: 30
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 140,000
+Investment objective: I want to accumulate savings for retirement.
+Investment horizon: about 20 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-170,SYNTHETIC investor profile,H2-C5-A3,35,A3,35-44,Mid career,2.0,H2,Short-to-medium term,C5,5,Very aggressive,Short-term goal,save for a planned car purchase and moving costs,Moderate,Salaried employee,Stable,Limited,1,110000,Held separately,"Age: 35
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 110,000
+Investment objective: I want to save for a planned car purchase and moving costs.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: 1 year of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-171,SYNTHETIC investor profile,H1-C2-A4,46,A4,45-54,Late career,0.75,H1,Short-term,C2,2,Conservative,Near-term spending,hold money for a home renovation planned within the year,High,Salaried employee,Stable,Moderate,5,130000,Held separately,"Age: 46
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 130,000
+Investment objective: I want to hold money for a home renovation planned within the year.
+Investment horizon: about 9 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: 5 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-172,SYNTHETIC investor profile,H4-C4-A1,23,A1,18-24,Early adulthood (study or first job),7.0,H4,Medium-to-long term,C4,4,Aggressive,Wealth accumulation,build long-term wealth,Low,Early-career salaried employee,Stable,No experience,0,75000,Held separately,"Age: 23
+Employment and income: Early-career salaried employee (stable income)
+Amount to invest: CNY 75,000
+Investment objective: I want to build long-term wealth.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-173,SYNTHETIC investor profile,H5-C1-A5,58,A5,55-59,Pre-retirement,10.0,H5,Long-term,C1,1,Very conservative,Retirement income,fund a long retirement,Low,Salaried employee,Stable,No experience,0,610000,Held separately,"Age: 58
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 610,000
+Investment objective: I want to fund a long retirement.
+Investment horizon: about 10 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-174,SYNTHETIC investor profile,H1-C3-A8,77,A8,75-85,Late retirement,0.25,H1,Short-term,C3,3,Moderate,Near-term spending,hold money for a family member's planned expense within the year,High,"Retired, receives a pension",Stable,Moderate,8,590000,Held separately,"Age: 77
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 590,000
+Investment objective: I want to hold money for a family member's planned expense within the year.
+Investment horizon: about 3 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: 8 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-175,SYNTHETIC investor profile,H1-C1-A2,25,A2,25-34,Early career,0.75,H1,Short-term,C1,1,Very conservative,Near-term spending,"set aside money for a planned purchase this year, such as a car",High,Self-employed,Variable,No experience,0,190000,Held separately,"Age: 25
+Employment and income: Self-employed (variable income)
+Amount to invest: CNY 190,000
+Investment objective: I want to set aside money for a planned purchase this year, such as a car.
+Investment horizon: about 9 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-176,SYNTHETIC investor profile,H3-C2-A7,74,A7,65-74,Early retirement,3.0,H3,Medium-term,C2,2,Conservative,Retirement income,supplement my pension over the next few years,Moderate,"Retired, receives a pension",Stable,Limited,3,230000,Held separately,"Age: 74
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 230,000
+Investment objective: I want to supplement my pension over the next few years.
+Investment horizon: about 3 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: 3 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-177,SYNTHETIC investor profile,H4-C1-A7,70,A7,65-74,Early retirement,8.0,H4,Medium-to-long term,C1,1,Very conservative,Retirement income,supplement my pension later in retirement,Low,"Retired, receives a pension",Stable,Moderate,4,190000,Held separately,"Age: 70
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 190,000
+Investment objective: I want to supplement my pension later in retirement.
+Investment horizon: about 8 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: 4 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-178,SYNTHETIC investor profile,H2-C1-A2,32,A2,25-34,Early career,2.5,H2,Short-to-medium term,C1,1,Very conservative,Short-term goal,save for a home down payment,Moderate,Self-employed,Variable,Extensive,11,130000,Held separately,"Age: 32
+Employment and income: Self-employed (variable income)
+Amount to invest: CNY 130,000
+Investment objective: I want to save for a home down payment.
+Investment horizon: about 2.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: 11 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-179,SYNTHETIC investor profile,H3-C2-A6,64,A6,60-64,Retirement transition,3.0,H3,Medium-term,C2,2,Conservative,Retirement preparation,build a reserve to cover the first years of retirement,Moderate,"Salaried employee, planning to retire within a few years",Stable,Extensive,19,1190000,Held separately,"Age: 64
+Employment and income: Salaried employee, planning to retire within a few years (stable income)
+Amount to invest: CNY 1,190,000
+Investment objective: I want to build a reserve to cover the first years of retirement.
+Investment horizon: about 3 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: 19 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-180,SYNTHETIC investor profile,H4-C4-A5,59,A5,55-59,Pre-retirement,5.0,H4,Medium-to-long term,C4,4,Aggressive,Retirement income,build savings to supplement my pension in retirement,Low,Self-employed,Variable,Extensive,22,1170000,Held separately,"Age: 59
+Employment and income: Self-employed (variable income)
+Amount to invest: CNY 1,170,000
+Investment objective: I want to build savings to supplement my pension in retirement.
+Investment horizon: about 5 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: 22 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-181,SYNTHETIC investor profile,H5-C1-A1,24,A1,18-24,Early adulthood (study or first job),12.0,H5,Long-term,C1,1,Very conservative,Retirement accumulation,accumulate savings for retirement,Low,Early-career salaried employee,Stable,Limited,1,85000,Held separately,"Age: 24
+Employment and income: Early-career salaried employee (stable income)
+Amount to invest: CNY 85,000
+Investment objective: I want to accumulate savings for retirement.
+Investment horizon: about 12 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: 1 year of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-182,SYNTHETIC investor profile,H5-C5-A2,31,A2,25-34,Early career,15.0,H5,Long-term,C5,5,Very aggressive,Retirement accumulation,accumulate savings for retirement,Low,Salaried employee,Stable,Extensive,13,210000,Held separately,"Age: 31
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 210,000
+Investment objective: I want to accumulate savings for retirement.
+Investment horizon: about 15 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: 13 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-183,SYNTHETIC investor profile,H1-C3-A4,49,A4,45-54,Late career,0.75,H1,Short-term,C3,3,Moderate,Near-term spending,hold money for a home renovation planned within the year,High,Salaried employee,Stable,No experience,0,190000,Held separately,"Age: 49
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 190,000
+Investment objective: I want to hold money for a home renovation planned within the year.
+Investment horizon: about 9 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-184,SYNTHETIC investor profile,H2-C5-A7,69,A7,65-74,Early retirement,1.5,H2,Short-to-medium term,C5,5,Very aggressive,Short-term goal,fund planned travel and support for family members over the next few years,Moderate,"Retired, receives a pension",Stable,Limited,1,120000,Held separately,"Age: 69
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 120,000
+Investment objective: I want to fund planned travel and support for family members over the next few years.
+Investment horizon: about 1.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: 1 year of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-185,SYNTHETIC investor profile,H3-C3-A6,62,A6,60-64,Retirement transition,3.0,H3,Medium-term,C3,3,Moderate,Retirement preparation,build a reserve to cover the first years of retirement,Moderate,"Salaried employee, planning to retire within a few years",Stable,Limited,1,190000,Held separately,"Age: 62
+Employment and income: Salaried employee, planning to retire within a few years (stable income)
+Amount to invest: CNY 190,000
+Investment objective: I want to build a reserve to cover the first years of retirement.
+Investment horizon: about 3 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: 1 year of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-186,SYNTHETIC investor profile,H2-C1-A7,71,A7,65-74,Early retirement,1.5,H2,Short-to-medium term,C1,1,Very conservative,Short-term goal,pay for planned home adaptations for later life,Moderate,"Retired, receives a pension",Stable,Moderate,5,460000,Held separately,"Age: 71
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 460,000
+Investment objective: I want to pay for planned home adaptations for later life.
+Investment horizon: about 1.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: 5 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-187,SYNTHETIC investor profile,H1-C1-A6,60,A6,60-64,Retirement transition,0.75,H1,Short-term,C1,1,Very conservative,Near-term spending,hold money for a home renovation planned within the year,High,"Salaried employee, planning to retire within a few years",Stable,No experience,0,520000,Held separately,"Age: 60
+Employment and income: Salaried employee, planning to retire within a few years (stable income)
+Amount to invest: CNY 520,000
+Investment objective: I want to hold money for a home renovation planned within the year.
+Investment horizon: about 9 months; I do not expect to withdraw this money before then.
+Liquidity need: high - I will need to withdraw most of this money at the end of the horizon.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-188,SYNTHETIC investor profile,H3-C2-A2,29,A2,25-34,Early career,4.5,H3,Medium-term,C2,2,Conservative,Medium-term goal,save for a child's education,Moderate,Salaried employee,Stable,Extensive,11,90000,Held separately,"Age: 29
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 90,000
+Investment objective: I want to save for a child's education.
+Investment horizon: about 4.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: 11 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-189,SYNTHETIC investor profile,H3-C5-A3,43,A3,35-44,Mid career,4.5,H3,Medium-term,C5,5,Very aggressive,Medium-term goal,save for a larger home,Moderate,Salaried employee,Stable,Moderate,6,410000,Held separately,"Age: 43
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 410,000
+Investment objective: I want to save for a larger home.
+Investment horizon: about 4.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: 6 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-190,SYNTHETIC investor profile,H4-C5-A2,34,A2,25-34,Early career,8.0,H4,Medium-to-long term,C5,5,Very aggressive,Wealth accumulation,grow my savings for future family needs,Low,Salaried employee,Stable,No experience,0,190000,Held separately,"Age: 34
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 190,000
+Investment objective: I want to grow my savings for future family needs.
+Investment horizon: about 8 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-191,SYNTHETIC investor profile,H3-C5-A7,73,A7,65-74,Early retirement,3.0,H3,Medium-term,C5,5,Very aggressive,Retirement income,supplement my pension over the next few years,Moderate,"Retired, receives a pension",Stable,Moderate,7,460000,Held separately,"Age: 73
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 460,000
+Investment objective: I want to supplement my pension over the next few years.
+Investment horizon: about 3 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: 7 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-192,SYNTHETIC investor profile,H2-C3-A8,85,A8,75-85,Late retirement,2.0,H2,Short-to-medium term,C3,3,Moderate,Short-term goal,pay for planned home adaptations for later life,Moderate,"Retired, receives a pension",Stable,Moderate,5,410000,Held separately,"Age: 85
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 410,000
+Investment objective: I want to pay for planned home adaptations for later life.
+Investment horizon: about 2 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: 5 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-193,SYNTHETIC investor profile,H5-C4-A8,84,A8,75-85,Late retirement,15.0,H5,Long-term,C4,4,Aggressive,Legacy,build a legacy for my children or grandchildren,Low,"Retired, receives a pension",Stable,Limited,1,470000,Held separately,"Age: 84
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 470,000
+Investment objective: I want to build a legacy for my children or grandchildren.
+Investment horizon: about 15 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Aggressive. I can accept a temporary decline of up to about 25% in a year. My priority is long-term growth. If the stock market fell by 20%, I would hold my investments and possibly add a little more.
+Investment experience: 1 year of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-194,SYNTHETIC investor profile,H4-C5-A6,61,A6,60-64,Retirement transition,9.0,H4,Medium-to-long term,C5,5,Very aggressive,Retirement income,build savings to supplement my pension in retirement,Low,"Retired, receives a pension",Stable,Limited,1,230000,Held separately,"Age: 61
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 230,000
+Investment objective: I want to build savings to supplement my pension in retirement.
+Investment horizon: about 9 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: 1 year of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-195,SYNTHETIC investor profile,H5-C3-A6,63,A6,60-64,Retirement transition,25.0,H5,Long-term,C3,3,Moderate,Retirement income,fund a long retirement,Low,"Retired, receives a pension",Stable,Extensive,21,250000,Held separately,"Age: 63
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 250,000
+Investment objective: I want to fund a long retirement.
+Investment horizon: about 25 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Moderate. I can accept a temporary decline of up to about 15% in a year. My priority is a balance between growth and stability. If the stock market fell by 20%, I would hold my investments and wait for a recovery.
+Investment experience: 21 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-196,SYNTHETIC investor profile,H2-C2-A7,72,A7,65-74,Early retirement,1.5,H2,Short-to-medium term,C2,2,Conservative,Short-term goal,fund planned travel and support for family members over the next few years,Moderate,"Retired, receives a pension",Stable,Limited,2,140000,Held separately,"Age: 72
+Employment and income: Retired, receives a pension (stable income)
+Amount to invest: CNY 140,000
+Investment objective: I want to fund planned travel and support for family members over the next few years.
+Investment horizon: about 1.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: 2 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",True,20261022
+INV-197,SYNTHETIC investor profile,H2-C5-A6,63,A6,60-64,Retirement transition,1.5,H2,Short-to-medium term,C5,5,Very aggressive,Short-term goal,save for a planned home upgrade,Moderate,"Salaried employee, planning to retire within a few years",Stable,Limited,3,160000,Held separately,"Age: 63
+Employment and income: Salaried employee, planning to retire within a few years (stable income)
+Amount to invest: CNY 160,000
+Investment objective: I want to save for a planned home upgrade.
+Investment horizon: about 1.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: 3 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-198,SYNTHETIC investor profile,H4-C1-A5,55,A5,55-59,Pre-retirement,7.0,H4,Medium-to-long term,C1,1,Very conservative,Retirement income,build savings to supplement my pension in retirement,Low,Salaried employee,Stable,No experience,0,810000,Held separately,"Age: 55
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 810,000
+Investment objective: I want to build savings to supplement my pension in retirement.
+Investment horizon: about 7 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Very conservative. I am not willing to accept any loss of the money I invest. My priority is protecting the capital I invest. If the stock market fell by 20%, I would sell all of my investments.
+Investment experience: no previous investment experience.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-199,SYNTHETIC investor profile,H4-C5-A3,39,A3,35-44,Mid career,8.0,H4,Medium-to-long term,C5,5,Very aggressive,Wealth accumulation,grow my savings for future family needs,Low,Salaried employee,Stable,Extensive,11,150000,Held separately,"Age: 39
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 150,000
+Investment objective: I want to grow my savings for future family needs.
+Investment horizon: about 8 years; I do not expect to withdraw this money before then.
+Liquidity need: low - no withdrawals are planned before the end of the horizon.
+Risk tolerance: Very aggressive. I can accept a temporary decline of 40% or more in a year. My priority is the highest possible long-term return. If the stock market fell by 20%, I would invest substantially more.
+Investment experience: 11 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",False,20261022
+INV-200,SYNTHETIC investor profile,H2-C2-A2,30,A2,25-34,Early career,1.5,H2,Short-to-medium term,C2,2,Conservative,Short-term goal,save for a planned car purchase and moving costs,Moderate,Salaried employee,Stable,Limited,3,240000,Held separately,"Age: 30
+Employment and income: Salaried employee (stable income)
+Amount to invest: CNY 240,000
+Investment objective: I want to save for a planned car purchase and moving costs.
+Investment horizon: about 1.5 years; I do not expect to withdraw this money before then.
+Liquidity need: moderate - I will withdraw the money when the goal falls due.
+Risk tolerance: Conservative. I can accept a temporary decline of up to about 5% in a year. My priority is stability, with modest growth. If the stock market fell by 20%, I would sell part of my investments.
+Investment experience: 3 years of experience with mutual funds and bank wealth-management products.
+Emergency savings: kept separately and not part of this investment.",True,20261022

@@ -1,0 +1,14 @@
+# Secrets never enter the repository
+.env
+*.key
+secrets*
+# Python / tooling
+__pycache__/
+*.pyc
+.pytest_cache/
+# Office lock files
+~$*
+.~lock*
+
+# Course materials (third-party; not published)
+reference_materials/
