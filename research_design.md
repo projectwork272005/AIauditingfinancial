@@ -120,7 +120,7 @@ Secondary attributes (objective, employment, experience, amount) are not indepen
    - Failed calls are retried on later runs and never filled in.
    - Every call is written as one JSON line containing: call ID, model requested and returned, request parameters, SHA-256 of both prompts, the full user prompt, raw reply, finish reason, token usage, latency and timestamps.
 5. **Coding** (`src/code_responses.py`). Deterministic and rule-based (`docs/coding_sheet.md`).
-6. **Historical check** (`src/backtest.py`). Returns of every recommended mix over 60 months (2021-10 to 2026-09), rebalanced monthly.
+6. **Historical check** (`src/backtest.py`). Returns of every recommended mix over the longest common window of complete months (at most 60) ending September 2026, rebalanced monthly. Fund return histories come from the course data service (fuyao.aicubes.cn, Tonghuashun data; adjusted NAV).
 
 ## 8. Dependent variables and metrics
 

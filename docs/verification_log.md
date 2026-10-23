@@ -15,6 +15,11 @@ Search access in the build environment was limited: direct page fetching failed 
 
 ## Fund data
 
+| # | Item | Source (read 2026-10-23) | Outcome |
+|---|---|---|---|
+| F-1 | Course data service: base URL https://fuyao.aicubes.cn, header X-api-key, envelope {code, message, request_id, data}, error codes 2001/2003/1001-1003, throttling 429/4001 | https://fuyao.aicubes.cn/docs/api-reference/overview/ (via search extracts; direct page fetch not available in the build environment) | Confirmed; implemented in src/fund_data.py (FuyaoSource) |
+| F-2 | Endpoints /api/fund/profile/detail, /api/fund/performance/nav (range week ... fyear; nav_type unit,adj; adj_nav is adjusted, not cumulative NAV), /api/fund/portfolio/holdings (total_stock_ratio_pct), /api/fund/diagnostics/detail; OTC fund codes use suffix .OF | Fund reference pages under https://fuyao.aicubes.cn/docs/api-reference/ | Confirmed from documentation; field carrying the risk rating, span of range=fyear and money-market adj_nav behaviour to be confirmed at the first live call (raw responses saved) |
+
 See `data/fund_menu_verification.csv` for per-fund entries.
 
 ## Literature

@@ -204,7 +204,7 @@ The 2,508 calls run in one random order across models, conditions and modules. E
 
 A deterministic script codes each reply, so the same logs always give the same dataset. It records whether the JSON parsed directly or only after removing a code fence, extracting the object from surrounding text or deleting trailing commas. Unparseable replies stay in the data without portfolio measures. Off-menu codes count as feasibility errors and are dropped from the risk measures, with the remaining weights rescaled to 100. Nothing is imputed (rules in Appendix E).
 
-Each coded portfolio is then back-tested over the 60 months from October 2021 to September 2026. Dividend-adjusted fund returns are taken at month ends and the portfolio is rebalanced monthly. The script computes annualised return, volatility, maximum drawdown and the worst rolling 12-month return, and compares the last with the maximum one-year loss the investor said they could accept: none, 5%, 15%, 25% and 40% for C1 to C5. These are historical, descriptive measures, not forecasts.
+Each coded portfolio is then back-tested over the longest window of complete months, up to 60, that ends in September 2026 and is covered for every fund (the exact window is reported with the results). Adjusted net asset values from the course data service are taken at month ends and the portfolio is rebalanced monthly. The script computes annualised return, volatility, maximum drawdown and the worst rolling 12-month return, and compares the last with the maximum one-year loss the investor said they could accept: none, 5%, 15%, 25% and 40% for C1 to C5. These are historical, descriptive measures, not forecasts.
 
 # 8. Evaluation Metrics and Statistical Methods
 

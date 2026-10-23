@@ -13,8 +13,9 @@ Step 2 (offline):
 
 Method
 ------
-* Window: 60 complete months ending at the last month-end before data
-  retrieval (default 2021-10-01 to 2026-09-30).
+* Window: the longest run of complete months, up to 60, that ends at
+  2026-09-30 and for which every menu fund has data (start chosen
+  automatically; the window used is written to every output row).
 * Fund return index -> month-end values -> monthly returns.
 * Portfolio = recommended weights, rebalanced monthly (on-menu funds only,
   weights renormalised exactly as in code_responses.py).
@@ -41,7 +42,18 @@ from design import MAX_ONE_YEAR_LOSS_PCT
 
 ROOT = Path(__file__).resolve().parents[1]
 NAV_DIR = ROOT / "data" / "nav"
-DEFAULT_START, DEFAULT_END = "2021-10-01", "2026-09-30"
+DEFAULT_START, DEFAULT_END = "auto", "2026-09-30"
+MAX_MONTHS = 60
+
+
+def auto_start(indices: dict[str, pd.Series], end: str) -> str:
+    """First day of the first month for which every fund has a base value at the
+    previous month-end, but no earlier than MAX_MONTHS months before `end`."""
+    first_common = max(s.dropna().index.min() for s in indices.values())
+    first_month_end = first_common + pd.offsets.MonthEnd(0)
+    start_data = first_month_end + pd.Timedelta(days=1)
+    start_cap = pd.Timestamp(end) - pd.DateOffset(months=MAX_MONTHS) + pd.Timedelta(days=1)
+    return max(start_data, start_cap).strftime("%Y-%m-%d")
 
 
 def monthly_returns(index_by_code: dict[str, pd.Series], start: str, end: str) -> pd.DataFrame:
@@ -89,7 +101,8 @@ def fetch(source_name: str, start: str, end: str):
     menu = pd.read_csv(ROOT / "data" / "fund_menu.csv", dtype=str)
     NAV_DIR.mkdir(parents=True, exist_ok=True)
     manifest = []
-    fetch_start = (pd.Timestamp(start) - pd.DateOffset(months=2)).strftime("%Y-%m-%d")
+    base = pd.Timestamp(end) - pd.DateOffset(months=MAX_MONTHS) if start == "auto" else pd.Timestamp(start)
+    fetch_start = (base - pd.DateOffset(months=2)).strftime("%Y-%m-%d")
     for code in menu["code"]:
         when = datetime.now(timezone.utc).isoformat(timespec="seconds")
         try:
@@ -106,7 +119,10 @@ def fetch(source_name: str, start: str, end: str):
 
 
 def evaluate(start: str, end: str):
-    monthly = monthly_returns(load_indices(), start, end)
+    indices = load_indices()
+    if start == "auto":
+        start = auto_start(indices, end)
+    monthly = monthly_returns(indices, start, end)
     menu = pd.read_csv(ROOT / "data" / "fund_menu.csv", dtype=str).set_index("code")
     missing = sorted(set(menu.index) - set(monthly.columns))
     if missing:

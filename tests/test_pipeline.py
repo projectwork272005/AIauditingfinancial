@@ -135,3 +135,11 @@ def test_monthly_returns_month_end_alignment():
     s = pd.Series(np.linspace(1.0, 1.3, len(days)), index=days)
     mr = backtest.monthly_returns({"X": s}, "2024-01-01", "2024-03-31")
     assert list(mr.index.month) == [1, 2, 3] and mr["X"].notna().all()
+
+
+def test_auto_window_starts_after_first_common_month_end():
+    a = pd.Series(1.0, index=pd.bdate_range("2021-10-25", "2026-09-30"))
+    b = pd.Series(1.0, index=pd.bdate_range("2019-01-01", "2026-09-30"))
+    assert backtest.auto_start({"A": a, "B": b}, "2026-09-30") == "2021-11-01"
+    c = pd.Series(1.0, index=pd.bdate_range("2015-01-01", "2026-09-30"))
+    assert backtest.auto_start({"C": c}, "2026-09-30") == "2021-10-01"     # capped at 60 months
