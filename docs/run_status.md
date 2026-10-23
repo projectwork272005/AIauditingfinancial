@@ -73,3 +73,8 @@ Other changes:
 - First pass: doubao 20/20 and deepseek 20/20 ok; kimi 0/20, every call finish_reason "length" with 2,499 of 2,500 completion tokens spent on reasoning and empty content (Kimi reasons by default on OpenRouter). Reasoning was then disabled for kimi, matching the other two models (the original Ark config also disabled thinking for doubao and deepseek). The 20 failed records stay in outputs/raw/calls_kimi.jsonl; the rerun retried them: 20/20 ok.
 - `python src/code_responses.py`: 60 replies coded, 0 issues; parse_status ok 60/60; off-menu codes 0; weight sum 100 in every reply; funds per reply: doubao mean 5.0, deepseek 4.75, kimi 5.85 (range 3-7).
 - Cost per successful call: doubao USD 0.00040, deepseek 0.00031, kimi 0.00277; forecast for the main run (836 calls per model) USD 2.91. Pilot spend including the failed kimi calls: about USD 0.28.
+
+## Step 5 (part) - NAV data for the backtest
+
+- `python src/backtest.py fetch --source fuyao` (2026-10-23): 23/23 funds, range=fyear, adj_nav, dates 2021-10-20/22 to 2026-09-30 (window end fixed at 2026-09-30 by backtest.py).
+- adj_nav check against unit_nav from the same raw files: adj_nav includes distributions. Examples over the five years: 000015 unit -2.1% vs adj +17.5%; 100018 +0.9% vs +17.9%; 110017 +2.2% vs +22.4%; 161725 -61.6% vs -59.5%; money market funds unit 0% vs adj +7.4% to +7.7%. Funds with adj_nav equal to unit_nav throughout (e.g. 110020, 000083, 163406) show no distribution in the window.
