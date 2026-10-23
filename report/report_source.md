@@ -25,9 +25,9 @@ The evidence so far is mixed. Fieberg et al. (2025) found that 32 models adjuste
 
 This study addresses four gaps. It crosses horizon, risk tolerance and age orthogonally, so that the weight a model gives each attribute can be separated. It scores advice against an external regulatory rule using real product ratings rather than the researchers' idea of a good portfolio. It tests within the same investors whether a prompt-level suitability protocol makes a model behave more like a regulated adviser. And it back-tests every recommended portfolio against the loss the investor said they could bear.
 
-Sections 2 and 3 set out the questions and the literature, Sections 4 to 8 the method, Sections 9 to 11 the results and their interpretation, and Sections 12 and 13 the limitations and conclusions.
-
 # 2. Research Questions and Hypotheses
+
+Of the course's four evaluation dimensions (feasibility, suitability, fairness and performance), suitability is the primary focus; feasibility and performance are secondary outcomes, and fairness is excluded by design, since profiles carry no gender, name or region.
 
 **RQ1 (responsiveness).** How strongly do recommended portfolios vary with risk tolerance, investment horizon and age, and how much weight does each attribute carry?
 
@@ -127,11 +127,11 @@ NOTE: Each class also states a priority, from protecting capital (C1) to the hig
 
 The main sample is a balanced full factorial: each of the 200 combinations occurs exactly once, giving 40 investors per horizon band and risk class and 25 per age band, with every pair of attributes independent (Cramer's V = 0). Random sampling would have produced uneven cells and confounded age with horizon. Exact values were drawn within cells with a fixed seed, and identifiers were assigned after shuffling.
 
-The price of orthogonality is realism: the sample contains, for example, 80-year-olds with horizons above ten years. Each profile therefore also states employment, objective, liquidity need, experience and amount, derived from age and horizon by explicit rules: only investors aged 60 or older are retired, experience cannot exceed age minus 18, and legacy goals occur only from age 65 with a long horizon, which is how an 80-year-old can coherently hold a 12-year horizon. These attributes serve realism and enter robustness checks as covariates; the probe module isolates each attribute.
+The price of orthogonality is realism: the sample contains, for example, 80-year-olds with horizons above ten years. Each profile therefore also states employment and income, objective, liquidity need, experience and amount, so that it covers the know-your-client items of the suitability rules (CSRC, 2020); these are derived from age and horizon by explicit rules: only investors aged 60 or older are retired, experience cannot exceed age minus 18, and legacy goals occur only from age 65 with a long horizon, which is how an 80-year-old can coherently hold a 12-year horizon. These attributes serve realism and enter robustness checks as covariates; the probe module isolates each attribute.
 
 ## 5.3 Validation, consistency subsample and probes
 
-A validation script written independently of the generator applies 16 checks to counts, identifiers, factorial coverage, band consistency, the consistency rules, duplicates and attribute independence; all pass (Appendix B). Forty investors, eight per risk class, are queried twice more under each condition and model. For the probe module, ten anchors were rewritten with one attribute moved through all its levels, using neutral wording valid at every level; the 160 versions reduce to 138 distinct texts. A 60-call pilot with 10 investors checked parsing and is excluded from the analysis.
+A validation script written independently of the generator applies 16 checks to counts, identifiers, factorial coverage, band consistency, the consistency rules, duplicates and attribute independence; all pass (Appendix B). Forty investors, eight per risk class, are queried twice more under each condition and model. For the probe module (audit pairs differing in one attribute), ten anchors were rewritten with one attribute moved through all its levels, using neutral wording valid at every level; the 160 versions reduce to 138 distinct texts. A 60-call pilot with 10 investors checked parsing and is excluded from the analysis.
 
 # 6. Fund Menu and Data Sources
 

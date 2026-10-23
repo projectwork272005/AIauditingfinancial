@@ -82,6 +82,7 @@ python src/analysis.py                          # -> outputs/tables/ (T04-T21 + 
 python src/performance.py                       # Sharpe, Calmar, benchmarks, fees -> T26-T30, T33, F09-F10
 python report/report_supplement.py              # -> outputs/tables/T22-T25, T32 (cited in the report)
 python src/manual_coding.py prepare             # blinded double-coding sheets; then reconcile, finalize
+python src/record_book.py                       # Excel record book -> outputs/record_book.xlsx
 python src/figures.py                           # -> outputs/figures/
 python src/sample_for_manual_coding.py          # human validation sample
 python src/design_figure.py                     # Figure 1 (design schematic)

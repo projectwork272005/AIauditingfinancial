@@ -139,7 +139,7 @@ def main():
         out += ["PENDING: The experiment has not yet been run; this appendix is filled from outputs/logs.", ""]
 
     out += ["# Appendix G. Reproducibility", "",
-            "Code, data and logs are in the project repository; README.md lists the commands in order. The samples "
+            "Code, data and logs are in the project repository, and the Excel record book (outputs/record_book.xlsx) archives every profile, prompt and conversation; README.md lists the commands in order. The samples "
             "are regenerated exactly from seed 20261022. Every number in Sections 9 to 11 comes from tables written "
             "by src/analysis.py, src/performance.py and report/report_supplement.py from the raw logs; none is typed by hand. Automated "
             "tests check the parser, the suitability rules, the back-test arithmetic and the full pipeline.", ""]

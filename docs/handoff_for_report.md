@@ -55,3 +55,9 @@ SUIT lowers rating breaches in every model (paired McNemar, Holm-adjusted p < 0.
 - Word count after the additions: 9,657 by `wc -w` on the LibreOffice text export (the previous build: 9,449 by the same method).
 - src/manual_coding.py: blinded sheets for two coders over all 1,199 main-sample replies (docs/manual_coding/README.md), Cohen's kappa, reconciliation, consensus (T31) and Table E1 in Appendix E once run. The report states that the full double coding is prepared but not done, and that coding only a sample would be a deviation from the manual.
 - Still open for the group: the double coding itself; names and date; the slides do not yet show the performance results.
+
+## Submission checklist items (2026-10-23, cloud session)
+- Primary focus stated in Section 2: suitability (feasibility and performance secondary, fairness excluded by design); Section 5.2 states that profiles cover the KYC items of the suitability rules; probes described as audit pairs.
+- Excel record book: outputs/record_book.xlsx (src/record_book.py): profiles, probe pairs, fund menu and verification, prompts, all 2,588 logged conversations with full prompt and reply, coded results, holdings, back-test, performance, benchmarks, fund history and fees, double-coding status.
+- Presentation: presentation/add_performance_and_notes.py adds slide 17 (performance and benchmarks), updates the coding box on the limitations slide, renumbers pages and writes speaker notes with a 25-minute timing plan (21 slides). Run it after build_presentation.py; the template is not in the repository, so the script edits the built deck.
+- Still open for the group: double coding of docs/manual_coding (two members), names and student IDs, group registration in the course workbook by 25 October, submission by email by 25 October.
