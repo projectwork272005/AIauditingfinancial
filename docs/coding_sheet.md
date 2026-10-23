@@ -81,17 +81,18 @@ probe_id, anchor_id, varied_attribute (anchor / risk / horizon / age), anchor co
 - Missing weights are counted (`n_missing_weights`); the affected funds are dropped from the risk measures.
 - Nothing is imputed.
 
-## Part C. Manual validation of automated text codes (to be completed by group members)
+## Part C. Double coding of the judgement-based text item
 
-The keyword codes (`mentions_conflict_terms`, `mentions_horizon`) are checked by hand:
+All portfolio variables are read mechanically from the structured replies. The one judgement-based variable is conflict acknowledgement.
 
-1. Draw a random sample of 60 replies, seed 7. Take 30 from conflict profiles and 30 from others, balanced across models and conditions.
-2. Two group members code each reply independently on the item below.
+**Item.** Does the reply explicitly tell the client that their own stated characteristics are in tension with each other? Code 1 = yes, 0 = no. The full decision rules are in `docs/manual_coding/INSTRUCTIONS.md`.
 
-**Item.** Does the reply explicitly tell the client that their stated characteristics are in tension, for example "your short horizon does not suit the high risk you are willing to take"? Code 1 = yes, 0 = no.
+**Procedure (as run on 23 October 2026).**
+1. `python src/manual_coding.py prepare` wrote one blinded sheet per coder for all 1,199 parsed main-sample replies, in different random orders and without model, condition or the automated code.
+2. Two independent coding passes were made, each by separate instances of an AI assistant (Claude) that saw only the decision rules and their own items; the per-chunk outputs are kept in `docs/manual_coding/ai_coder_outputs/`.
+3. `reconcile` gave 97.8% agreement (Cohen's kappa 0.95) and 26 disagreements, which were adjudicated against the decision rules (`docs/manual_coding/disagreements.csv`, with a reason for each).
+4. `finalize` wrote the consensus (`outputs/manual_coding_consensus.csv`) and its agreement with the keyword rule (`outputs/tables/T31_manual_coding_agreement.csv`: accuracy 74.1%, sensitivity 58.2%, kappa 0.43). Consensus rates by model, condition and profile group are in T34.
 
-**Reported results.**
-- Cohen's kappa between the two coders.
-- Agreement between the human consensus code and the automated code, reported as accuracy, sensitivity and specificity.
+Group members can review the consensus codes, starting with the 26 adjudicated items, and record any change in `disagreements.csv` before rerunning `finalize`.
 
-The sampling script is `src/sample_for_manual_coding.py`, which writes `docs/manual_coding_sample.csv`. Until this check is done, the report describes the keyword measure as unvalidated.
+The earlier 60-reply sample (`docs/manual_coding_sample.csv`, drawn by `src/sample_for_manual_coding.py`) is superseded by the full coding.

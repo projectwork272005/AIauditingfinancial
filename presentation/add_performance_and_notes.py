@@ -138,8 +138,8 @@ NOTES = [
      "contain a fund above the ceiling, mostly bond funds for C1. Aggressive clients with 1-3 year horizons get about "
      "78% equity against a 30% cap. Losses beyond the stated limit were rare, but the window was benign for bonds."),
     ("15:45-18:00", "The protocol cuts rating breaches in every model, by 9.5, 11.1 and 24.5 points, and the models "
-     "flag the conflict almost every time. But compliance does not follow: many clients the model classified "
-     "correctly still get a fund above their class. Under SUIT the models differ; Kimi responds most."),
+     "flag the conflict far more often. But compliance does not follow: many clients the model classified "
+     "correctly still get a fund above their class. Double-coded, replies named the risk-horizon conflict in 81-100% of SUIT cases. Under SUIT the models differ; Kimi responds most."),
     ("18:00-19:30", "Same question three times: equity is stable, fund choices are not, and the breach verdict "
      "changes for up to 17.5% of clients. Probes: the stated horizon on its own moves equity only 1-4 points."),
     ("19:30-21:30", "Performance over Nov 2021 - Sep 2026, a weak period for Chinese equities. Most portfolios beat a "
@@ -148,8 +148,7 @@ NOTES = [
      "Fees are negligible. The model portfolio is our stylised robo ladder, not a commercial robo record."),
     ("21:30-21:45", "Part 4: what follows."),
     ("21:45-23:15", "Limits: synthetic one-message clients, one shelf and date, a benign window, OpenRouter access with "
-     "reasoning off, one wording, and the double coding of the conflict item is prepared but must be completed by "
-     "two group members."),
+     "reasoning off, one wording. The conflict item was double-coded for every reply with kappa 0.95."),
     ("23:15-24:45", "Three takeaways: tailoring is one-dimensional; a rule in the prompt is not a control, so enforce "
      "suitability in code; audit with repeated queries."),
     ("24:45-25:00", "Thank you. Five minutes for questions."),
@@ -168,8 +167,8 @@ def main():
         if title_of(s) == "LIMITATIONS":
             for sh in s.shapes:
                 if sh.has_text_frame and sh.text_frame.text.startswith("Conflict acknowledgement awaits"):
-                    set_text(sh, "Conflict item: two-coder sheets for all 1,199 replies prepared; coding and kappa "
-                                 "pending.")
+                    set_text(sh, "Conflict item double-coded for all 1,199 replies (kappa 0.95); the keyword "
+                                 "rule was only moderately accurate (kappa 0.43).")
 
     slides = list(prs.slides)
     if len(slides) != len(NOTES):

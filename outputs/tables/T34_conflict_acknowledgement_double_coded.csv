@@ -1,0 +1,13 @@
+condition,group,model_key,n,conflict_acknowledged_pct,keyword_rule_pct
+BASE,"C4-C5, horizon < 3 years",deepseek,32,81.2,6.2
+BASE,"C4-C5, horizon < 3 years",doubao,32,40.6,0.0
+BASE,"C4-C5, horizon < 3 years",kimi,32,100.0,50.0
+BASE,all other investors,deepseek,168,6.5,1.8
+BASE,all other investors,doubao,168,4.2,2.4
+BASE,all other investors,kimi,168,23.2,9.5
+SUIT,"C4-C5, horizon < 3 years",deepseek,32,100.0,100.0
+SUIT,"C4-C5, horizon < 3 years",doubao,32,81.2,81.2
+SUIT,"C4-C5, horizon < 3 years",kimi,32,100.0,96.9
+SUIT,all other investors,deepseek,168,44.6,38.7
+SUIT,all other investors,doubao,167,9.0,60.5
+SUIT,all other investors,kimi,168,84.5,53.0

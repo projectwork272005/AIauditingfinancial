@@ -1,0 +1,241 @@
+item_id,code,note
+R0233,0,
+R0311,1,aggressive stance vs 2-year horizon mismatch
+R0836,0,
+R0074,1,horizon short for such risk but willingness
+R0434,0,
+R0307,0,
+R0175,1,
+R0097,0,
+R0899,0,
+R1072,1,
+R0414,0,
+R0881,0,
+R0998,1,
+R0794,0,
+R0145,0,
+R1024,1,
+R0225,0,
+R0286,0,
+R0384,0,
+R0708,0,
+R0847,1,
+R0287,0,
+R0999,0,
+R0821,0,
+R1110,0,
+R0458,0,
+R0313,0,borderline: 'even with no prior experience' not framed as conflict
+R1032,0,borderline: age caution without contrast
+R0840,1,borderline: balance aggressive tolerance with 1.5y horizon
+R0673,1,borderline: aggressive comfort vs short horizon via However
+R0966,1,
+R0577,0,
+R0652,1,growth preference vs months-away need
+R0835,0,
+R0494,0,
+R0984,0,conflict only with product
+R0449,0,
+R0727,0,
+R0496,1,sell-on-decline vs 7-year horizon
+R0536,1,
+R0335,0,
+R1094,1,
+R0444,0,
+R0584,0,
+R1191,1,experience vs conservative tolerance
+R0279,1,
+R0506,1,
+R1133,0,
+R0855,0,
+R0929,0,borderline: experience vs portfolio only
+R0679,0,borderline: no experience caution without contrast
+R0742,0,
+R0872,1,borderline: sell-on-decline despite long horizon
+R1108,0,
+R1198,1,borderline: sell-on-20% not suited to 7-year horizon
+R0722,0,
+R1178,0,
+R0551,0,
+R0163,1,horizon short vs stated tolerance
+R0395,1,
+R0079,0,borderline: horizon vs portfolio not vs appetite
+R0333,1,
+R0257,1,conservative tolerance vs need for returns above cash
+R0451,0,
+R0142,0,
+R1008,0,
+R0699,1,
+R0826,1,tolerance not used due to tuition
+R0029,0,
+R0440,0,
+R0823,0,borderline: conflict listed is horizon vs funds
+R0268,0,
+R1156,1,borderline: short horizon even with moderate tolerance
+R0103,1,
+R0967,1,borderline: balances liquidity need with aggressive goal
+R1097,0,
+R0568,0,borderline: conflict with hypothetical growth desire
+R0959,0,
+R0318,1,
+R0911,1,age vs aggressive profile
+R0123,0,
+R0921,0,
+R1139,0,borderline: experience vs portfolio only
+R1001,0,
+R0887,0,
+R0512,0,
+R0357,1,
+R0477,0,
+R0569,0,
+R1112,1,
+R0199,0,
+R0007,1,borderline: horizon moderate while tolerance very aggressive
+R0642,0,
+R0253,1,
+R1123,0,conflict only with product holding period
+R0633,1,
+R0590,0,
+R0945,1,
+R0363,0,borderline: horizon vs portfolio only
+R0466,1,short horizon vs desire for growth
+R0178,1,
+R0925,1,borderline: hold through downturns vs 3y horizon
+R0610,0,
+R0277,0,
+R0802,0,
+R0750,0,borderline: 'regardless of horizon' not a contrast
+R0272,0,
+R1185,0,
+R1149,0,
+R0760,0,
+R0010,0,
+R1180,0,
+R0880,0,
+R0154,0,borderline: age caution without contrast to appetite
+R0052,0,
+R0589,0,
+R0235,0,conflict is tolerance vs product drawdown
+R0184,0,
+R0032,0,
+R1017,0,
+R1016,0,
+R0149,0,
+R0240,1,experience vs conservative tolerance
+R0861,1,
+R0630,0,borderline: horizon vs product holding period
+R1031,1,age vs 15y horizon; tolerance vs legacy growth
+R1125,0,
+R0964,0,
+R1093,0,
+R1138,1,
+R0898,1,
+R0554,1,experience vs conservative profile
+R0629,0,
+R0700,1,moderate tolerance vs growth need over 20y
+R0548,0,
+R0969,0,
+R1102,0,
+R0179,1,conservative tolerance vs 10y horizon
+R0918,1,
+R1090,1,
+R0683,0,
+R0591,1,age/experience vs aggressive tolerance
+R0791,0,
+R0412,0,
+R0058,1,borderline: aggressive supports risk however horizon short
+R0941,0,
+R0981,1,
+R0752,1,
+R0062,0,borderline: 'even with limited experience' not framed as conflict
+R0875,1,
+R0666,0,
+R1193,0,
+R0259,0,
+R0231,0,
+R0726,0,borderline: horizon vs equity allocation only
+R1034,1,borderline: risk aversion vs capacity / growth language vs stability
+R0112,0,
+R0410,1,
+R0621,0,
+R0289,1,
+R0118,1,
+R0564,0,
+R0771,0,borderline: horizon vs portfolio only
+R0576,0,
+R0161,0,
+R0404,0,
+R0973,1,aggressive tolerance vs 3-month liquidity need
+R0559,1,
+R0660,0,
+R0596,0,
+R0592,1,
+R0080,0,borderline: 'while accounting for' horizon not framed as conflict
+R0674,0,
+R1194,1,
+R0468,0,
+R1048,1,
+R1131,0,
+R0418,0,
+R0663,1,
+R0499,0,
+R0829,0,
+R0086,1,experience vs stated tolerance
+R1051,0,conflict is client vs equity products
+R0891,1,
+R0582,1,
+R0933,1,
+R0436,0,conflict is horizon vs equity products
+R0787,0,
+R0426,1,
+R1121,1,conservative tolerance vs horizon/liquidity allowing growth
+R0362,0,borderline: horizon vs conservative positioning not framed as client conflict
+R1100,0,
+R0151,0,borderline: 'balances tolerance with growth need' mild
+R0098,1,sell-on-decline vs 8y horizon
+R1167,1,
+R0567,1,borderline: balances aggressive tolerance with 2.5y need
+R1195,1,
+R0167,1,
+R0838,1,
+R0282,0,
+R0051,0,
+R0439,0,
+R0046,1,
+R0988,0,
+R0570,0,
+R1059,1,
+R0139,0,
+R1058,0,
+R0692,1,
+R1002,0,
+R0437,1,
+R0454,0,
+R0696,0,
+R0769,1,
+R0372,0,
+R0970,1,experience vs conservative tolerance
+R0809,0,
+R0108,1,
+R0943,0,
+R1065,0,
+R0281,0,
+R0519,1,experience vs conservative tolerance
+R0741,1,borderline: 10y horizon but sell-on-decline
+R0954,1,sell behavior inconsistent with tolerance and horizon
+R0266,0,
+R0641,1,borderline: long horizon but age 64
+R0294,0,
+R0793,0,
+R0415,0,
+R0934,0,conflict is tolerance vs equity products
+R0817,0,
+R0002,1,
+R0754,0,borderline: horizon/age vs portfolio only
+R0505,1,
+R0316,0,borderline: horizon vs portfolio only
+R0152,0,
+R1150,1,
+R0377,0,
+R0425,0,
+R1047,1,

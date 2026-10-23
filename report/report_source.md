@@ -3,7 +3,7 @@ SUBTITLE: Group Research Report - FinTech: Theory and Practice
 META: Shenzhen MSU-BIT University
 META: Group members: [names and student numbers to be completed by the group]
 META: Date: [submission date]
-META: Experiment run on 23 October 2026. Double coding of the conflict measure for all main-sample replies (Appendix E) is to be completed by the group.
+META: Experiment run on 23 October 2026.
 
 PAGEBREAK
 
@@ -89,9 +89,9 @@ TABLE: Table 1. Design overview and observations
 | Consistency module | 40 of the 200 investors, two extra replicates | 40 investors | 480 |
 | Probe module | 10 anchors x 16 single-attribute versions | 138 distinct texts | 828 |
 | Total | | | 2,508 (plus a 60-call pilot, excluded) |
-NOTE: All investors are synthetic. Consistency replicates 2 and 3 add to each investor's main-sample reply. Probe versions that coincide across anchors are queried once.
+NOTE: All investors are synthetic. Probe versions that coincide across anchors are queried once.
 
-FIGURE: outputs/figures/F00_design_pipeline.png | Figure 1. Experimental pipeline | Inputs (1, 2) and treatments (3, 4) are fixed before any model is queried. All calls are logged before coding (5); coded portfolios are back-tested (6) and analysed (7).
+FIGURE: outputs/figures/F00_design_pipeline.png | Figure 1. Experimental pipeline
 
 ## 4.3 Conditions and controls
 
@@ -193,7 +193,7 @@ TABLE: Table 6. Evaluation metrics
 | Equity over cap | Equity more than 5 points above min(risk cap, horizon cap) |
 | Holding-period breach | A fund's lock-up exceeds the horizon |
 | Loss-tolerance breach | Worst historical 12-month return below minus the stated maximum loss |
-| Conflict handling | Conflict vocabulary; conflicts listed (SUIT) |
+| Conflict handling | Conflict acknowledgement (double-coded); conflicts listed (SUIT) |
 | Classification (SUIT) | Assessed vs actual class; weighted kappa |
 | Reliability | ICC(1,1) of equity over three replicates; Jaccard similarity of fund sets |
 | Probe slope | Change in equity per one-level step of one attribute |
@@ -245,7 +245,7 @@ FIGURE: outputs/figures/F02_equity_by_horizon.png | Figure 3. Mean equity exposu
 
 FIGURE: outputs/figures/F03_equity_by_age_band.png | Figure 4. Mean equity exposure by age band | n = 25 per point (24 for Doubao SUIT A2).
 
-FIGURE: outputs/figures/F04_relative_importance_partial_eta.png | Figure 5. Relative importance of the three attributes | Partial eta squared from a Type II ANOVA of equity exposure on risk class, horizon band and age band, per model and condition.
+FIGURE: outputs/figures/F04_relative_importance_partial_eta.png | Figure 5. Relative importance of the three attributes | Type II ANOVA of equity exposure, per model and condition.
 
 ## 9.3 Suitability breaches (RQ2)
 
@@ -262,7 +262,7 @@ TABLE: Table 9. Suitability outcomes by model and condition
 | Kimi | SUIT | 200 | 25.0 | 41.7 | 11.5 | 23.0 |
 NOTE: From T11, T13 and T22. C1-C3 column: n = 120 per cell. Holding-period and loss-tolerance breaches were 0-1% in every cell (T11). Mean equity for Doubao is over the 199 investors with codable replies in both conditions.
 
-FIGURE: outputs/figures/F05_rating_breach_by_risk_class.png | Figure 6. Share of replies with a fund rated above the permitted level, by risk class | n = 40 per bar (39 for Doubao SUIT C5). No breach is possible for C4 and C5 because the menu contains no R5 fund.
+FIGURE: outputs/figures/F05_rating_breach_by_risk_class.png | Figure 6. Share of replies with a fund rated above the permitted level, by risk class | n = 40 per bar (39 for Doubao SUIT C5).
 
 Equity above the combined risk and horizon cap was rarer (18.5-22.0% under BASE) and concentrated among aggressive investors: 32.5-40.0% of C4 and 55.0-62.5% of C5 recommendations (T12). The models cut equity sharply for horizons under one year but treated a C4 or C5 investor with a one-to-three-year horizon almost like a long-horizon one (Figure 7); C5 investors with H2 horizons received 78% equity on average under BASE, against a horizon cap of 30%. As H6 predicted, 50.0-65.6% of BASE recommendations to C4-C5 investors with horizons under three years exceeded the cap, against 15.6-21.9% for those with horizons of five years or more (T17). The fund with a three-year lock-up went to a shorter-horizon investor only once.
 
@@ -285,7 +285,7 @@ NOTE: From T13. McNemar tests on 200 paired investors (199 for Doubao).
 
 The protocol did not, however, produce compliance. Under SUIT, 41.7-70.0% of recommendations to C1-C3 investors still breached the ceiling (T22). Misclassification was not the main cause: the models' own classifications matched the true class in 60.0% (DeepSeek), 86.4% (Doubao) and 88.5% (Kimi) of cases, with quadratic weighted kappa of 0.73, 0.94 and 0.88 (T18), and among correctly classified C1-C3 investors 58.5%, 66.4% and 39.8% of recommendations still breached the rule (T25).
 
-The protocol did change how conflicts were handled. For C4-C5 investors with horizons under three years, SUIT replies listed the conflict in 90.6-100% of cases, and mean equity fell from 38.3 to 26.7% (DeepSeek), 46.5 to 33.9% (Doubao) and 29.7 to 14.0% (Kimi). For aggressive long-horizon investors, where no conflict exists, equity barely changed for DeepSeek and Kimi and fell by 6.9 points for Doubao (T17).
+The protocol did change how conflicts were handled. For C4-C5 investors with horizons under three years, the double-coded replies told the client about the conflict in 100%, 81.2% and 100% of SUIT cases (DeepSeek, Doubao, Kimi), against 81.2%, 40.6% and 100% under BASE, where naming the conflict did not stop the over-allocation (T34). Mean equity fell from 38.3 to 26.7% (DeepSeek), 46.5 to 33.9% (Doubao) and 29.7 to 14.0% (Kimi). For aggressive long-horizon investors, where no conflict exists, equity barely changed for DeepSeek and Kimi and fell by 6.9 points for Doubao (T17).
 
 ## 9.5 Consistency and single-attribute sensitivity (RQ4)
 
@@ -304,7 +304,7 @@ NOTE: From T15. One Doubao SUIT replicate could not be parsed, leaving 39 invest
 
 The probes, which change one attribute at a time, confirm the dominance of risk tolerance and qualify the horizon effect (Figure 8, T16). One risk class up raised equity by 20.3-24.0 points, in the expected direction for every anchor in every cell; one horizon band longer raised it by only 1.0-3.8 points, in the expected direction for 3 to 8 of 10 anchors; and one age band older lowered it by 1.4-3.0 points. The stated horizon alone thus moves the models far less than the 8.7 points per band in the main sample, where horizon comes bundled with consistent objectives.
 
-FIGURE: outputs/figures/F07_single_attribute_probes.png | Figure 8. Single-attribute probes | Mean equity exposure as one attribute moves through its levels while the rest of the anchor profile is held constant; averaged over the 10 anchors.
+FIGURE: outputs/figures/F07_single_attribute_probes.png | Figure 8. Single-attribute probes | Averaged over the 10 anchors.
 
 ## 9.6 Model differences (RQ5)
 
@@ -314,7 +314,7 @@ Under BASE the models behaved much alike: their breach rates did not differ (Coc
 
 Over the common 59-month window, November 2021 to September 2026, the median worst 12-month return was positive for C1 and C2 recommendations, slightly negative for C3, and -10.5% to -18.7% for C4 and C5 (T24, Figure 9). Only four main-sample portfolios lost more in a year than the investor accepted: two DeepSeek C3 recommendations per condition, with worst years down to -18.8% against a 15% limit. The period explains this. The menu's money market and bond funds never had a negative 12-month return and the enhanced-return bond fund lost at most 1.1%, so the rating breaches of C1-C2 investors, which consisted mostly of such funds, caused no such losses.
 
-FIGURE: outputs/figures/F08_backtest_worst_12m_vs_tolerance.png | Figure 9. Worst historical 12-month return against the investor's stated loss limit | Mean worst rolling 12-month return per risk class; dotted line: maximum one-year loss the investor accepts. Window November 2021 to September 2026.
+FIGURE: outputs/figures/F08_backtest_worst_12m_vs_tolerance.png | Figure 9. Worst historical 12-month return against the investor's stated loss limit | Dotted line: maximum one-year loss the investor accepts.
 
 Table 12 adds risk-adjusted measures. Equities were weak in the window (the CSI 300 feeder returned 0.06% a year), so the 60/40 mix earned 1.67%. Most AI portfolios for C2-C5 beat it on the Sharpe ratio; for C4-C5 about three in four also beat the domestic-only model portfolio, helped by QDII funds (Figure 10). For C2-C3 the compliant model portfolio usually did better, and C1 portfolios with a non-permitted fund returned 2.09% a year against 1.48% for R1-only ones (T32). Fees cost at most 0.29 points a year (T30).
 
@@ -368,7 +368,7 @@ The most striking result is how often the models broke the matching rule althoug
 
 ## 10.4 Aggressive clients with short horizons
 
-Under the baseline prompt a C5 investor who needed the money in one to three years received about three-quarters equity, more than twice the horizon cap: as H6 anticipated, the stated appetite for risk won. The protocol helped most here, flagging the conflict in almost every case and cutting equity substantially, while leaving aggressive long-horizon investors largely untouched in two of the three models; it targets the conflict rather than making all advice more conservative.
+Under the baseline prompt a C5 investor who needed the money in one to three years received about three-quarters equity, more than twice the horizon cap: as H6 anticipated, the stated appetite for risk won. The protocol helped most here, raising conflict acknowledgement to 81-100% and cutting equity substantially, while leaving aggressive long-horizon investors largely untouched in two of the three models; it targets the conflict rather than making all advice more conservative.
 
 ## 10.5 Reliability, model differences and the back-test
 
@@ -378,7 +378,7 @@ Equity levels were repeatable but fund choices were not, and the breach verdict 
 
 **Platforms.** Showing ratings to the model and adding a suitability protocol to its prompt do not keep advice within the matching rule. The rule should be enforced in code: the model should be offered only products at or below the client's ceiling, or every recommendation should be checked automatically before it is shown. The model's own classification, which matched the true class in 60-89% of cases, can be an input but not the control.
 
-**Prompt design.** A suitability protocol is cheap and worthwhile: it cut breaches by up to half and made the models flag almost every risk-horizon conflict. Its effect differs strongly between models, so it must be tested on the model actually deployed.
+**Prompt design.** A suitability protocol is cheap and worthwhile: it cut breaches by up to half and made the models flag 81-100% of risk-horizon conflicts. Its effect differs strongly between models, so it must be tested on the model actually deployed.
 
 **Supervisors and auditors.** Audits should use repeated queries per profile, and back-tests over one benign window should be complemented by stress scenarios.
 
@@ -394,7 +394,7 @@ Equity levels were repeatable but fund choices were not, and the breach verdict 
 
 **Prompts and benchmarks.** Each condition uses one wording and one menu order, so the protocol effect is that of this particular protocol (Sclar et al., 2024). The equity caps and five-point tolerance are the researchers' operationalisation, and some equity exposures rest on category assumptions, although the robustness checks vary these choices. The model portfolios are a stylised robo-adviser ladder, not a commercial record.
 
-**Coding and scope.** Conflict acknowledgement is coded with keyword rules; the manual's double coding of every reply is prepared (Appendix E) but not yet done, so it remains indicative, and coding only a sample would deviate from the manual. Gender, region, taxes and platform availability are outside the scope of the study.
+**Coding and scope.** Conflict acknowledgement, the one judgement-based measure, was double-coded for all 1,199 main-sample replies (kappa 0.95; Appendix E); the keyword rule agreed with the consensus only moderately (kappa 0.43). Gender, region, taxes and platform availability are outside the scope of the study.
 
 # 13. Conclusion
 

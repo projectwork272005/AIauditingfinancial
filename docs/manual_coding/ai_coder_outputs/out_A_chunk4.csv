@@ -1,0 +1,241 @@
+item_id,code,note
+R0398,1,
+R0914,0,
+R0058,1,borderline: aggressive tolerance supports risk however horizon short
+R1056,0,borderline: age/horizon warning not contrasted explicitly
+R0800,1,
+R0160,1,
+R0423,1,
+R0848,0,
+R0973,1,despite aggressive tolerance vs liquidity need
+R0801,0,
+R0792,1,borderline: short horizon vs willingness to hold through decline
+R0858,1,borderline: while client accepts declines horizon near-term
+R0740,0,
+R0318,1,
+R0539,0,
+R0256,1,
+R0618,0,
+R0837,0,
+R0756,1,
+R0759,1,
+R0625,1,
+R0448,0,
+R0718,1,
+R0386,0,
+R0020,0,
+R0604,0,
+R0352,1,
+R0656,1,
+R0343,0,
+R1036,0,borderline: conflicts are client vs products
+R0927,1,borderline: no experience vs long horizon in conflicts list
+R0881,0,
+R0657,0,
+R0157,1,
+R0674,0,
+R0821,0,
+R0346,1,
+R0578,0,
+R0903,0,borderline: implicit balancing only
+R0283,0,
+R0302,0,
+R0713,0,
+R0916,0,
+R0287,0,
+R0889,0,
+R0370,0,
+R0451,0,
+R1152,0,borderline: no explicit contrast tolerance vs horizon
+R0166,0,
+R0934,0,client vs product only
+R0313,0,borderline: even with no experience weak
+R1154,0,
+R0473,0,borderline: sell reaction contrary to long-term investing generic
+R0373,0,
+R0415,0,
+R0830,1,borderline: short horizon even with moderate tolerance
+R0167,1,
+R0972,0,borderline: horizon short for portfolio not client tolerance
+R0325,1,
+R0284,0,
+R0527,0,borderline: inexperience noted not contrasted
+R0828,1,borderline: liquidity preference despite stated low liquidity need
+R0182,1,
+R1102,0,
+R0079,0,borderline: horizon short for portfolio
+R1058,0,
+R0383,0,
+R1106,0,
+R0807,1,borderline: balances aggressive tolerance with reality of short horizon
+R0823,1,borderline: horizon shorter than ideal though aggressive structure matches return priority
+R0428,0,
+R0096,0,
+R1139,0,borderline: limited experience vs portfolio complexity
+R0350,0,
+R0850,0,
+R0634,0,
+R0936,0,borderline: horizon vs hybrid fund; tolerance only implied
+R0682,0,
+R1037,0,
+R0601,0,
+R1143,0,
+R0702,0,
+R0757,0,
+R0171,1,
+R0528,0,
+R0384,0,
+R0638,1,
+R0692,1,
+R0092,1,
+R0950,1,
+R0815,0,
+R0277,0,
+R0605,0,
+R0493,0,
+R0582,1,
+R1038,0,
+R0708,0,
+R0201,0,
+R1173,1,
+R0554,1,experience vs conservative profile in conflicts
+R0071,0,
+R0968,1,
+R0579,0,
+R0044,0,borderline: conflicts entry does not state tension
+R0293,0,
+R0732,0,
+R0200,1,
+R0920,1,
+R0550,0,
+R0427,1,borderline: balances aggressive tolerance with 2-year goal; horizon short for aggressive strategy
+R0297,0,
+R0144,1,
+R0676,0,
+R0441,0,borderline: horizon short vs portfolio only
+R0752,1,
+R0678,1,
+R0134,0,
+R0330,0,
+R1045,1,experience vs conservative preference in conflicts
+R0822,1,
+R1110,0,
+R0052,0,
+R0645,0,
+R0045,1,borderline: aggressive tolerance but horizon short for such allocation
+R0378,0,
+R1044,0,
+R1132,0,
+R0316,0,borderline: horizon short vs portfolio only
+R0786,0,
+R0628,0,
+R0244,0,
+R1096,1,experience vs conservative behavior in conflicts
+R0667,1,borderline: willingness/experience yet retirement stage and spending need
+R0412,0,
+R0874,1,
+R1122,1,
+R0646,0,
+R0505,1,
+R0675,1,
+R0851,0,borderline: age vs aggressive positioning (portfolio)
+R0194,1,horizon could accept more risk but loss aversion
+R0223,1,
+R1000,0,
+R0221,1,borderline: conflicts entry frames no-loss tolerance vs sell reaction
+R0272,0,
+R0711,0,
+R0014,1,
+R0432,0,
+R0745,0,
+R0873,1,
+R0744,0,
+R0866,0,
+R1119,1,
+R0212,1,
+R0673,1,borderline: stated risk comfort; however short horizon
+R0018,1,horizon could support equity but aversion to loss
+R0809,0,
+R0154,0,borderline: age/horizon recovery warning not contrasted with tolerance
+R0743,0,
+R1088,1,
+R1179,1,borderline: aligns with aggressive tolerance though short horizon
+R0015,0,
+R0855,0,
+R0074,1,
+R0882,0,
+R1171,1,
+R1099,1,
+R0444,0,
+R0878,1,
+R0981,1,
+R0709,0,borderline: trade-off portfolio vs long retirement only
+R0901,1,
+R0094,0,
+R0077,1,
+R0345,1,
+R1073,0,borderline: sell reaction may disrupt long-term plan
+R0705,0,
+R1008,0,
+R0890,1,borderline: conflicts entry calls sell reaction inconsistent with tolerance
+R0946,1,
+R0224,1,
+R1157,0,
+R0216,0,
+R0522,0,
+R0918,1,
+R0895,1,
+R0397,0,
+R0388,1,
+R0481,0,
+R0151,0,borderline: balances moderate tolerance with growth need (mild)
+R1178,0,
+R0512,0,
+R0785,0,
+R1021,0,
+R1159,0,
+R0298,1,
+R0153,1,
+R0840,1,borderline: balances very aggressive tolerance with 1.5-year horizon
+R1068,0,
+R0303,0,
+R1009,0,borderline: aligns with tolerance while recognizing horizon (soft)
+R0495,1,
+R1053,0,
+R1198,0,borderline: sell reaction not recommended for horizon (advice)
+R1057,0,
+R0747,1,
+R0170,1,
+R0416,1,age vs 25-year horizon in conflicts
+R0251,1,
+R0944,0,
+R0609,1,
+R0046,1,
+R0410,1,
+R0839,1,borderline: balances aggressive tolerance with reality of horizon
+R0002,1,
+R0917,1,borderline: near-retirement timing though tolerance very high
+R0113,1,
+R0399,0,
+R0603,0,borderline: soft juxtaposition only
+R0278,0,
+R0639,0,
+R0497,1,
+R0591,1,
+R0929,0,borderline: limited experience vs portfolio complexity
+R0381,0,
+R0680,1,
+R0739,0,
+R1025,1,borderline: can afford volatility though horizon short
+R0438,0,
+R1050,0,
+R0647,0,
+R1094,1,
+R1123,0,
+R1150,1,
+R0311,1,
+R0391,0,
+R0542,0,
+R0406,1,borderline: long-term appreciation goal though short horizon
+R0698,0,borderline: inexperience and tolerance only softly juxtaposed
+R0103,1,

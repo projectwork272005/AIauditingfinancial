@@ -114,15 +114,22 @@ def main():
     out += ["# Appendix E. Coding Rules", "",
             "Table 6 summarises the coded measures; docs/coding_sheet.md defines every field. Replies that cannot be "
             "parsed stay in the data without portfolio measures. Off-menu codes are excluded from the risk measures "
-            "and the remaining weights rescaled to 100. Conflict acknowledgement is a keyword rule (conflict, "
-            "inconsistent, mismatch, contradict, tension, at odds, not compatible, consistent or aligned), the only "
-            "judgement-based measure. As the manual requires, two members code it for every reply independently: "
-            "src/manual_coding.py writes blinded sheets for all 1,199 main-sample replies, reports Cohen's kappa and "
-            "builds the consensus (T31).", ""]
+            "and the remaining weights rescaled to 100. Conflict acknowledgement, the only judgement-based measure, was "
+            "coded for every main-sample reply by two independent coding passes, blind to each other, to model and "
+            "condition and to the keyword rule; disagreements were resolved against the written decision rules "
+            "(docs/coding_sheet.md). Both passes and the adjudication were run with an AI assistant (Appendix H).", ""]
     t31 = ROOT / "outputs" / "tables" / "T31_manual_coding_agreement.csv"
     if t31.exists():
-        out += ["TABLE: Table E1. Double coding of the conflict measure",
-                md_table(pd.read_csv(t31).T.reset_index().set_axis(["Measure", "Value"], axis=1)), ""]
+        k = pd.read_csv(t31).iloc[0]
+        e1 = pd.DataFrame([
+            ["Replies coded", f"{int(k.n_items):,}"],
+            ["Agreement between coders", f"{k.intercoder_agreement_pct:.1f}% (Cohen's kappa {k.cohens_kappa:.2f})"],
+            ["Disagreements resolved", f"{int(k.n_disagreements)}"],
+            ["Keyword rule vs consensus", f"accuracy {k.automated_vs_consensus_accuracy_pct:.1f}%, sensitivity "
+                                          f"{k.automated_sensitivity_pct:.1f}%, kappa {k.automated_vs_consensus_kappa:.2f}"],
+        ], columns=["Measure", "Value"])
+        out += ["TABLE: Table E1. Double coding of the conflict measure", md_table(e1),
+                "NOTE: From T31; consensus rates by model and condition in T34.", ""]
 
     manifests = sorted((ROOT / "outputs" / "logs").glob("run_*.json"))
     out += ["# Appendix F. Run Record", ""]
@@ -146,7 +153,7 @@ def main():
 
     out += ["# Appendix H. AI Use Statement", "",
             "An AI assistant (Claude, Anthropic) helped design the study, write and test the code, check literature "
-            "and fund records, and draft text. It produced no experimental result: the audited models' logged replies "
+            "and fund records, double-code the conflict measure, and draft text. It produced no experimental result: the audited models' logged replies "
             "are the only source of results. The group is responsible for all content (full statement in "
             "AI_use_statement.md).", ""]
 

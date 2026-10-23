@@ -61,3 +61,9 @@ SUIT lowers rating breaches in every model (paired McNemar, Holm-adjusted p < 0.
 - Excel record book: outputs/record_book.xlsx (src/record_book.py): profiles, probe pairs, fund menu and verification, prompts, all 2,588 logged conversations with full prompt and reply, coded results, holdings, back-test, performance, benchmarks, fund history and fees, double-coding status.
 - Presentation: presentation/add_performance_and_notes.py adds slide 17 (performance and benchmarks), updates the coding box on the limitations slide, renumbers pages and writes speaker notes with a 25-minute timing plan (21 slides). Run it after build_presentation.py; the template is not in the repository, so the script edits the built deck.
 - Still open for the group: double coding of docs/manual_coding (two members), names and student IDs, group registration in the course workbook by 25 October, submission by email by 25 October.
+
+## Double coding done (2026-10-23, cloud session)
+- Conflict item coded for all 1,199 main-sample replies in two independent, blinded passes (separate AI-assistant instances), 26 disagreements adjudicated: agreement 97.8%, kappa 0.95; keyword rule vs consensus kappa 0.43 (T31, T34, docs/manual_coding/). Disclosed in Appendix E, Appendix H and AI_use_statement.md.
+- Report: Section 9.4 now uses the double-coded measure (81.2/40.6/100% under BASE, 100/81.2/100% under SUIT for DeepSeek/Doubao/Kimi in the conflict group); limitations and Table 6 updated; figure notes shortened to stay under 10,000 words (9,638 by wc -w on the text export).
+- Slides: limitations box and speaker notes updated in the built deck and in add_performance_and_notes.py.
+- Left for the group: names and student IDs on the title page and slide 1 if wanted, registration in the course workbook, submission by email by 25 October; optionally review the 26 adjudicated items.

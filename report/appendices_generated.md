@@ -129,7 +129,16 @@ NOTE: Identity checked on 22 October 2026 against at least two public records pe
 
 # Appendix E. Coding Rules
 
-Table 6 summarises the coded measures; docs/coding_sheet.md defines every field. Replies that cannot be parsed stay in the data without portfolio measures. Off-menu codes are excluded from the risk measures and the remaining weights rescaled to 100. Conflict acknowledgement is a keyword rule (conflict, inconsistent, mismatch, contradict, tension, at odds, not compatible, consistent or aligned), the only judgement-based measure. As the manual requires, two members code it for every reply independently: src/manual_coding.py writes blinded sheets for all 1,199 main-sample replies, reports Cohen's kappa and builds the consensus (T31).
+Table 6 summarises the coded measures; docs/coding_sheet.md defines every field. Replies that cannot be parsed stay in the data without portfolio measures. Off-menu codes are excluded from the risk measures and the remaining weights rescaled to 100. Conflict acknowledgement, the only judgement-based measure, was coded for every main-sample reply by two independent coding passes, blind to each other, to model and condition and to the keyword rule; disagreements were resolved against the written decision rules (docs/coding_sheet.md). Both passes and the adjudication were run with an AI assistant (Appendix H).
+
+TABLE: Table E1. Double coding of the conflict measure
+| Measure | Value |
+|---|---|
+| Replies coded | 1,199 |
+| Agreement between coders | 97.8% (Cohen's kappa 0.95) |
+| Disagreements resolved | 26 |
+| Keyword rule vs consensus | accuracy 74.1%, sensitivity 58.2%, kappa 0.43 |
+NOTE: From T31; consensus rates by model and condition in T34.
 
 # Appendix F. Run Record
 
@@ -149,4 +158,4 @@ Code, data and logs are in the project repository, and the Excel record book (ou
 
 # Appendix H. AI Use Statement
 
-An AI assistant (Claude, Anthropic) helped design the study, write and test the code, check literature and fund records, and draft text. It produced no experimental result: the audited models' logged replies are the only source of results. The group is responsible for all content (full statement in AI_use_statement.md).
+An AI assistant (Claude, Anthropic) helped design the study, write and test the code, check literature and fund records, double-code the conflict measure, and draft text. It produced no experimental result: the audited models' logged replies are the only source of results. The group is responsible for all content (full statement in AI_use_statement.md).

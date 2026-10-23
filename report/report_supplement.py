@@ -80,7 +80,19 @@ def main() -> None:
                     median_vol_pct=("vol_pct", "median"), median_max_drawdown_pct=("max_drawdown_pct", "median"))
                .reset_index().round(3))
         t32.to_csv(TABLES / "T32_return_by_rating_breach_c1_c2.csv", index=False)
-    print("Wrote T22-T25 and T32 to", TABLES)
+    cons_path = ROOT / "outputs" / "manual_coding_consensus.csv"
+    if cons_path.exists():                      # written by src/manual_coding.py finalize
+        cons = pd.read_csv(cons_path)
+        z = cons.merge(res[["call_id", "model_key", "condition", "profile_risk_horizon_conflict"]], on="call_id")
+        z["group"] = z["profile_risk_horizon_conflict"].map({True: "C4-C5, horizon < 3 years",
+                                                             False: "all other investors"})
+        t34 = (z.groupby(["condition", "group", "model_key"])
+               .agg(n=("call_id", "size"), conflict_acknowledged_pct=("consensus", "mean"),
+                    keyword_rule_pct=("automated", "mean")).reset_index())
+        t34[["conflict_acknowledged_pct", "keyword_rule_pct"]] = (100 * t34[["conflict_acknowledged_pct",
+                                                                              "keyword_rule_pct"]]).round(1)
+        t34.to_csv(TABLES / "T34_conflict_acknowledgement_double_coded.csv", index=False)
+    print("Wrote T22-T25, T32 and T34 to", TABLES)
 
 
 if __name__ == "__main__":

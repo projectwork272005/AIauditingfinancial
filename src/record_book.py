@@ -72,7 +72,7 @@ def readme(sheets: dict) -> pd.DataFrame:
         "8-Performance": "Sharpe, Calmar, net-of-fee returns per portfolio (outputs/portfolio_performance.csv)",
         "9-Benchmarks": "60/40 mix, target-risk fund and risk-matched model portfolios (T26)",
         "10-Fund history and fees": "Fund-level return history metrics and fee rates (T_fund_history_metrics, T_fund_fees)",
-        "11-Double coding": "Status of the two-coder coding of the conflict item (docs/manual_coding)",
+        "11-Double coding": "Conflict item: both coding passes, consensus and keyword code (docs/manual_coding)",
     }
     return pd.DataFrame([{"sheet": k, "rows": len(v), "content": notes.get(k, "")} for k, v in sheets.items()])
 

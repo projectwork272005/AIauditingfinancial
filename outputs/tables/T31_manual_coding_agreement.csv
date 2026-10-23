@@ -1,0 +1,2 @@
+n_items,n_disagreements,intercoder_agreement_pct,cohens_kappa,consensus_yes_pct,automated_vs_consensus_accuracy_pct,automated_sensitivity_pct,automated_specificity_pct,automated_vs_consensus_kappa
+1199,26,97.832,0.954,37.531,74.062,58.222,83.578,0.43
