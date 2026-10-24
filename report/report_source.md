@@ -23,23 +23,23 @@ Fluency is not suitability. A licensed fund distributor in mainland China must a
 
 The evidence so far is mixed. Fieberg et al. (2025) found that 32 models adjusted risk exposure to investor traits, and Choukhmane et al. (2026) that LLM advice would move most respondents towards life-cycle prescriptions. Yet Ross and Lo (2026) describe GPT-4o as a decision tree keyed mainly on self-reported risk tolerance, and Foltyn and Olsson (2026) show that a single gendered word shifts recommended equity across 33 models.
 
-This study addresses four gaps. It crosses horizon, risk tolerance and age orthogonally, so that the weight a model gives each attribute can be separated. It scores advice against an external regulatory rule using real product ratings rather than the researchers' idea of a good portfolio. It tests within the same investors whether a prompt-level suitability protocol makes a model behave more like a regulated adviser. And it back-tests every recommended portfolio against the loss the investor said they could bear.
+This study addresses four gaps: it crosses horizon, risk tolerance and age orthogonally, so that the weight of each attribute can be separated; scores advice against a regulatory rule with real product ratings; tests within the same investors whether a prompt-level suitability protocol helps; and back-tests every recommended portfolio against the loss the investor said they could bear.
 
 # 2. Research Questions and Hypotheses
 
-Of the course's four evaluation dimensions (feasibility, suitability, fairness and performance), suitability is the primary focus; feasibility and performance are secondary outcomes, and fairness is excluded by design, since profiles carry no gender, name or region.
+The study follows the four evaluation dimensions of the course manual: feasibility, suitability, fairness and performance. Suitability is the primary focus: RQ1 to RQ3 ask whether portfolios follow investors' risk tolerance, horizon and other stated constraints, and whether a suitability protocol improves compliance. Feasibility (valid, executable advice; Section 9.1) and performance (returns, risk-adjusted measures and benchmarks; Section 9.7) are secondary outcomes reported descriptively, and RQ4 examines the stability of the output. Fairness is not tested, because no profiles differ only in a demographic signal such as gender, name or region.
 
-**RQ1 (responsiveness).** How strongly do recommended portfolios vary with risk tolerance, investment horizon and age, and how much weight does each attribute carry?
+**RQ1 (Responsiveness to investor characteristics).** How strongly do recommended portfolios vary with risk tolerance, investment horizon and age, and how much weight does each attribute carry?
 
-**RQ2 (suitability).** How often do recommendations breach the product-risk matching rule, horizon-based limits, holding-period constraints and the investor's stated loss tolerance?
+**RQ2 (Suitability breaches).** How often do recommendations breach the product-risk matching rule, horizon-based limits, holding-period constraints and the investor's stated loss tolerance?
 
-**RQ3 (prompt-level guardrail).** Does an explicit suitability protocol in the deployment prompt reduce breaches, and does it make advice more conservative than the profile warrants?
+**RQ3 (Effectiveness of the suitability protocol).** Does an explicit suitability protocol in the deployment prompt reduce breaches, and does it make advice more conservative than the profile warrants?
 
-**RQ4 (reliability).** How consistent are recommendations across repeated queries, and how do they change when a single attribute is altered?
+**RQ4 (Reliability and sensitivity).** How consistent are recommendations for the same investor across repeated queries, in equity exposure, fund choice and breach status, and how do they change when a single attribute is altered?
 
-**RQ5 (model differences).** Do models from different developers differ on these dimensions?
+**RQ5 (Model differences).** Do models from different developers differ on RQ1 to RQ4?
 
-The hypotheses were fixed before any model was queried.
+The hypotheses were fixed before any model was queried; H1-H4 address RQ1, H6 RQ2, H5 RQ3 and H7 RQ4.
 
 - **H1.** Portfolio risk rises with risk tolerance in every model and condition.
 - **H2.** Portfolio risk rises with investment horizon, other attributes held constant.
@@ -73,7 +73,7 @@ Audit studies identify differential treatment by varying one attribute of otherw
 
 ## 4.1 Relationship to the reference materials
 
-The course's example audit, API-calling script and presentation template served as orientation only; this study uses its own question, profiles, prompts and fund menu. Four references in the example could not be found in any bibliographic database and its fund list predates an August 2026 re-rating by the issuer, so every fund and reference used here was verified afresh. Our runner keeps the example script's OpenAI-compatible calls and retries and adds append-only logging, prompt hashing and randomised call order.
+The course's example audit, API-calling script and presentation template served as orientation only; this study uses its own question, profiles, prompts and fund menu. Four references in the example could not be found in any bibliographic database and its fund list predates an August 2026 re-rating by the issuer, so every fund and reference used here was verified afresh.
 
 ## 4.2 Design overview
 
@@ -237,7 +237,7 @@ TABLE: Table 8. Responsiveness of equity exposure to the three investor attribut
 | Kimi | SUIT | 0.71 | 0.47 | -0.05 | 0.66 | 0.46 | 0.02 |
 NOTE: Spearman correlations (n = 200; 199 for Doubao SUIT) from T08 and Type II ANOVA from T09. All risk and horizon effects have Holm-adjusted p < 0.001; no age effect has Holm-adjusted p < 0.05.
 
-The pooled regression with investor-clustered errors gives 18.2 percentage points more equity per risk-class step (95% CI 16.5 to 19.8), 8.7 per horizon step (7.0 to 10.4) and 1.2 less per age band (-2.1 to -0.3), with R squared 0.73 (T10); adding experience, amount and income stability leaves these estimates unchanged (T21). Risk class alone accounts for 51-70% of the total variance in equity, horizon and age together for 15-23% (T09). QDII shares, 7.2-10.7% on average, rise with risk class and horizon and are unrelated to age (T19).
+The pooled regression with investor-clustered errors gives 18.2 percentage points more equity per risk-class step (95% CI 16.5 to 19.8), 8.7 per horizon step (7.0 to 10.4) and 1.2 less per age band (-2.1 to -0.3), with R squared 0.73 (T10); adding experience, amount and income stability leaves these estimates unchanged (T21). Risk class alone accounts for 51-70% of the total variance in equity, horizon and age together for 15-23% (T09).
 
 FIGURE: outputs/figures/F01_equity_by_risk_class.png | Figure 2. Mean equity exposure by investor risk class | Dotted line: equity ceiling implied by the risk class (0, 20, 50, 80 and 100%). n = 40 per point (39 for Doubao SUIT C5).
 
