@@ -181,24 +181,25 @@ A deterministic script codes each reply, recording whether the JSON parsed direc
 
 ## 8.1 Metrics
 
-Table 6 defines the outcomes. Equity exposure is the main continuous outcome because suitability rules and life-cycle theory speak to it most directly. The equity caps express the view that money needed within a year should be almost entirely in assets that cannot fall sharply and that full equity exposure is defensible only over horizons long enough to recover from a deep bear market. Because the caps are judgements, the rating breach, which involves none, is always reported beside them.
+Table 6 groups the outcomes by the four evaluation dimensions of Section 2. Equity exposure is the main continuous outcome because suitability rules and life-cycle theory speak to it most directly. Because the equity caps are judgements, the rating breach, which involves none, is always reported beside them.
 
-TABLE: Table 6. Evaluation metrics
-| Metric | Calculation |
-|---|---|
-| Feasibility | Valid JSON with an on-menu fund; off-menu codes; weights summing to 100 within 1 point |
-| Equity exposure (%) | Sum of weight x fund equity exposure (main outcome) |
-| Weighted product risk (1-5) | Sum of weight x rating |
-| Rating breach | Any fund rated above the investor's ceiling; weight of such funds |
-| Equity over cap | Equity more than 5 points above min(risk cap, horizon cap) |
-| Holding-period breach | A fund's lock-up exceeds the horizon |
-| Loss-tolerance breach | Worst historical 12-month return below minus the stated maximum loss |
-| Conflict handling | Conflict acknowledgement (double-coded); conflicts listed (SUIT) |
-| Classification (SUIT) | Assessed vs actual class; weighted kappa |
-| Reliability | ICC(1,1) of equity over three replicates; Jaccard similarity of fund sets |
-| Probe slope | Change in equity per one-level step of one attribute |
-| Performance (added later) | Return, volatility, Sharpe, drawdown, Calmar; benchmarks; fees |
-NOTE: Equity caps are 0, 20, 50, 80 and 100% for C1-C5 and 10, 30, 50, 80 and 100% for H1-H5; they are the researchers' operationalisation, not regulatory limits. QDII share is also recorded.
+TABLE: Table 6. Evaluation metrics by dimension
+| Dimension | Metric | Calculation |
+|---|---|---|
+| Feasibility | Executable advice | Valid JSON with an on-menu fund; off-menu codes; weights summing to 100 within 1 point |
+| Suitability (primary; RQ1-RQ3) | Equity exposure (%) | Sum of weight x fund equity exposure (main outcome) |
+| | Weighted product risk (1-5) | Sum of weight x rating |
+| | Rating breach | Any fund rated above the investor's ceiling; weight of such funds |
+| | Equity over cap | Equity more than 5 points above min(risk cap, horizon cap) |
+| | Holding-period breach | A fund's lock-up exceeds the horizon |
+| | Loss-tolerance breach | Worst historical 12-month return below minus the stated maximum loss |
+| | Classification (SUIT) | Assessed vs actual class; weighted kappa |
+| | Conflict handling | Conflict acknowledgement (double-coded); conflicts listed (SUIT) |
+| Performance (added later) | Return and risk | Return, volatility, Sharpe, drawdown, Calmar; three benchmarks; fees |
+| Additional (RQ4) | Reliability | ICC(1,1) of equity over three replicates; Jaccard similarity of fund sets |
+| | Probe slope | Change in equity per one-level step of one attribute |
+| Fairness | Not tested | No profiles differ only in a demographic signal |
+NOTE: Equity caps are 0, 20, 50, 80 and 100% for C1-C5 and 10, 30, 50, 80 and 100% for H1-H5; they are the researchers' operationalisation, not regulatory limits. RQ5 compares the models on all suitability and reliability measures.
 
 ## 8.2 Statistical methods
 
