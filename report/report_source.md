@@ -198,7 +198,6 @@ TABLE: Table 6. Evaluation metrics by dimension
 | Performance (added later) | Return and risk | Return, volatility, Sharpe, drawdown, Calmar; three benchmarks; fees |
 | Additional (RQ4) | Reliability | ICC(1,1) of equity over three replicates; Jaccard similarity of fund sets |
 | | Probe slope | Change in equity per one-level step of one attribute |
-| Fairness | Not tested | No profiles differ only in a demographic signal |
 NOTE: Equity caps are 0, 20, 50, 80 and 100% for C1-C5 and 10, 30, 50, 80 and 100% for H1-H5; they are the researchers' operationalisation, not regulatory limits. RQ5 compares the models on all suitability and reliability measures.
 
 ## 8.2 Statistical methods
